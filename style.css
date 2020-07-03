@@ -3,3 +3,99 @@ Theme Name: Humsafar
 Author:Team
 Version:1.0
 */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+a:link,
+a:visited {
+    color: #006ec3;
+}
+
+p {
+    line-height: 1.65em;
+}
+
+/* General Layout */
+
+div.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* General Layout */
+
+/* Header */
+.site-header {
+    border-bottom: 2px solid #999;
+}
+
+/* Header */
+
+/* Footer */
+.site-footer {
+    margin-top: 30px;
+    border-top: 2px solid #999;
+}
+
+/* Footer */
+
+/* BLog Post */
+article.post {
+    border-bottom: 2px dotted #bbbbbb;
+}
+
+article.post:last-of-type {
+    border-bottom: 0;
+}
+
+/* BLog Post */
+
+/* Navigation Menus */
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav ul li {
+    display: inline-block;
+}
+
+.site-header nav ul li a {
+    display: block;
+    padding: 10px 18px;
+    border: 1px solid #bbbbbb;
+    border-bottom: 0;
+    text-decoration: none;
+}
+
+.site-header nav ul li a:hover {
+    background-color: #EEEEEE;
+}
+
+.site-header nav ul li.current-menu-item a {
+    background-color: #006ec3;
+    color: white;
+}
+
+/* Footer Nav */
+.site-footer nav ul li {
+    padding: 0 10px;
+    border-right: 1px dotted #bbbbbb;
+}
+
+.site-footer nav ul li:last-of-type {
+    border-right: 0;
+}
+
+/* Footer Nav */
+
+/* Navigation Menus */
+
+article.page h2 {
+    font-size: 300%;
+}

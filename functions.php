@@ -12,7 +12,7 @@ null, '1.0' );
 wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/library/animate.css', null, '1.0' );
 wp_enqueue_style( 'owl-css', get_template_directory_uri() . '/library/owl.carousel.min.css', null, '1.0' );
 wp_enqueue_style( 'owl-css', get_template_directory_uri() . '/library/owl.default.theme.min.css', null, '1.0' );
-}
+wp_enqueue_style( 'style', get_stylesheet_uri( ));}
 
 add_action('wp_enqueue_scripts','website_files');
 
