@@ -7,4 +7,4 @@ Hii, This is Vanshika.
 
 
 
-<?php echo "<br><br> As you try to try working on Workspace page it is showing inndex page only. this is a feature of wordpress. so for testing test it locally and then copy the file to the workspace directory.";
+<?php echo "<br><br> As you try to try working on Workspace page it is showing inndex page only. this is a feature of wordpress. so for testing test it locally and then copy the file to the workspace directory.<br> You can copy the vendors folder locally. It contains nice libraries.";
