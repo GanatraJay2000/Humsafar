@@ -1,7 +1,0 @@
-<style rel="stylesheet" href="../vendors/custom_date_picker/date_picker.css" />
-
-<input type='text' autocomplete="off"class="datepicker-here" data-position="top right" data-date-format="yyyy-mm-dd">
-									    ^-change accordingly	  ^-change accordingly
-
-<scriptsrc="../vendors/custom_date_picker/date_picker.js"></script>
-<scriptsrc="../vendors/custom_date_picker/date_picker.en.js"></script>
