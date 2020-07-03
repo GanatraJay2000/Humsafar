@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="../vendors/datatables/datatables.css" />
+
+<table id="myTable"></table>
+
+
+<script src="../vendors/datatables/datatables.js"></script>
+
+<script>
+	$(document).ready( function () {
+    		$('#myTable').DataTable();
+	} );
+</script>
