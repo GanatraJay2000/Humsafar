@@ -15,3 +15,9 @@ wp_enqueue_style( 'owl-css', get_template_directory_uri() . '/library/owl.defaul
 }
 
 add_action('wp_enqueue_scripts','website_files');
+
+// Navigation Menus
+register_nav_menus( array(
+    'primary'=>__( 'Primary Menu' ),
+    'footer'=> __( 'Footer Menu' ),
+) );
