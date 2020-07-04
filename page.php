@@ -12,5 +12,4 @@ while(have_posts())
 <?php
 }
 ?>
-
 <?php get_footer(); ?>
