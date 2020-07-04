@@ -6,9 +6,30 @@ jQuery(document).ready(function ($) {
         loop: true,
         margin: 30,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2300,
+        mouseDrag: false,
+        touchDrag: false,
+        pullDrag: false,
+
         dots: false,
         stagePadding: 60,
+        responsive: {
+            // breakpoint from 0 up
+            0: {
+                items: 1,
+            },
+            // breakpoint from 480 up
+            600: {
+                items: 2,
+            },
+            // breakpoint from 768 up
+            768: {
+                items: 3,
+            },
+            1000: {
+                items: 4,
+            }
+        }
     });
 
 });

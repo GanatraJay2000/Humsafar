@@ -41,7 +41,7 @@
             ?>
             </nav>
         </div>
-        <!-- 
+        <!--         
         <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
         <h5><?php bloginfo( 'description' ); ?></h5>
 
@@ -56,7 +56,8 @@
             
             ?>
         </nav> -->
+
     </header>
     <!-- Site Header -->
 
-    <div class="container m-5">
+    <div class="container m-lg-5 my-3 mx-0">

@@ -17,6 +17,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 14px;
     color: #333;
+    overflow-x: hidden;
 }
 
 a:link,
@@ -44,9 +45,6 @@ div.container {
 /* Header */
 
 /* Footer */
-.site-footer {
-    margin-top: 30px;
-}
 
 /* Footer */
 
@@ -186,3 +184,66 @@ article.post:last-of-type {
 article.page h2 {
     font-size: 300%;
 }
+
+
+
+/* Clients  */
+.carousel {
+    /* background-color: #ffffe0 !important; */
+    background-color: #c5d7be !important;
+    height: 200px;
+    display: flex !important;
+    align-items: center;
+}
+
+.block {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.block img {
+    transition: transform ease 0.38s;
+}
+
+.block::after {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    content: '';
+    background: #fff;
+    height: 2.5px;
+    border-radius: 2px;
+    width: 0%;
+    transition: width ease 0.28s, left ease 0.28s;
+}
+
+.block:hover img {
+    transform: translate(0px, -10px);
+}
+
+.block:hover::after {
+    left: 40%;
+    width: 20%;
+}
+
+/* Clients  */
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .site-nav .nav-links {
+        display: none;
+    }
+}
+
+/* Media Queries */
