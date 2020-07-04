@@ -6,7 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+	
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+
+
+	
+	
+	<style>
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,800,700,600);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
@@ -1262,6 +1269,48 @@ figure.snip1477.hover figcaption {
   padding:0px;
   margin:0px;
 }
+
+/***  gallery   ***/
+
+
+div#quad { 
+  background-color: #000; 
+  font-size: 0; width: 60%; 
+  margin: 0 auto;
+  box-shadow: 0 0 12px rgba(0,0,0,0.8);
+}
+div#quad figure { 
+  margin: 0; width: 50%; 
+  height: auto; transition: 1s; 
+  display: inline-block; 
+  position: relative; overflow: hidden; 
+}
+div#quad figure:hover { cursor: pointer; z-index: 4; }
+div#quad figure img { width: 100%; height: auto; }
+div#quad figure:nth-child(1) { transform-origin: top left; }
+div#quad figure:nth-child(2) { transform-origin: top right; }
+div#quad figure:nth-child(3) { transform-origin: bottom left; }
+div#quad figure:nth-child(4) { transform-origin: bottom right; }
+div#quad figure figcaption { 
+  margin: 0; opacity: 0; 
+  background: rgba(0,0,0,0.3); 
+  color: #fff; padding: .3rem; 
+  font-size: 1.2rem; 
+  position: absolute; 
+  bottom: 0; width: 100%;
+	transition: 1s 1s opacity; 
+}
+.expanded { transform: scale(2); z-index: 5;  }
+div#quad figure.expanded figcaption { opacity: 1; }
+div.full figure:not(.expanded) { pointer-events: none; }
+
+
+/***   Lightbox Gallery   ***/
+
+.row {
+  margin: 15px;
+}
+
     </style>
 </head>
 
@@ -1269,52 +1318,14 @@ figure.snip1477.hover figcaption {
     <html>
 
 	<body>
+	
     
     	<div class="container">
         
-        	<h1>Some usefull fonts</h1>
-                <div>
-                    <a href = "https://fonts.google.com/specimen/Alex+Brush#standard-styles">Alex Brush</a><br>
-		            <a href ="https://fonts.google.com/specimen/PT+Sans#standard-styles">PT Sans</a><br>
-		            <a href ="https://fonts.google.com/specimen/Crimson+Text">Crimson Text</a><br>
-                    <a href =" https://fonts.google.com/specimen/Overpass+Mono#standard-styles">Overpass Mono</a><br>
-                </div>
+        	
     
             <h1>Image Hover Effects</h1>
-                
-                <div class="sep">
-                    <figure class="snip1477">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample38.jpg" alt="sample38" />
-                        <div class="title">
-                          <div>
-                            <p>Penny</p>
-                            <h4>Tool</h4>
-                          </div>
-                        </div>
-                        <figcaption>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </figcaption>
-                        <a href="#"></a>
-                    </figure>
-                </div>
     
-                <div class="sep">
-      
-                    <figure class="snip1477"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg" alt="sample35" />
-                        <div class="title">
-                          <div>
-                            <p>Hans</p>
-                            <h4>Down</h4>
-                          </div>
-                        </div>
-                        <figcaption>
-                          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </figcaption>
-                        <a href="#"></a>
-                    </figure>
-                </div>
-    
-
     		    <div class="sep">
 
                 <h2>Zoom In &amp; Zoom Out</h2>
@@ -1426,7 +1437,111 @@ figure.snip1477.hover figcaption {
 		</div>
     
     
+    <div class="sep">
+      <figure class="snip1477">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample38.jpg" alt="sample38" />
+  <div class="title">
+    <div>
+      <p>Penny</p>
+      <h4>Tool</h4>
+    </div>
+  </div>
+  <figcaption>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+    </div>
     
+    <div class="sep">
+      
+      <figure class="snip1477"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg" alt="sample35" />
+  <div class="title">
+    <div>
+      <p>Hans</p>
+      <h4>Down</h4>
+    </div>
+  </div>
+  <figcaption>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+    </div>
+    <div class="sep"><h1>Image Gallery</h1></div>
+	
+	<div class="sep">
+	<div id="quad">
+  <figure>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/rose-red-wine.jpg" alt="rose-red-wine">
+  <figcaption>Rose Red Wine</figcaption>
+  </figure>
+  <figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/green-glass-bottle.jpg" alt>
+    <figcaption>Green Glass Bottle</figcaption>
+  </figure>
+  <figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/guinness-barrels.jpg" alt>
+    <figcaption>Guinness Barrels, Dublin</figcaption>
+  </figure>
+  <figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/crystal-skull-vodka.jpg" alt>
+    <figcaption>Crystal Skull Vodka</figcaption>
+  </figure>
+</div>
+</div>
+
+<h1>Lighbox Gallery</h1>
+
+<div class="container">
+  <div class="row">
+    <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
+    </a>
+    <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded">
+    </a>
+    <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded">
+    </a>
+  </div>
+  <div class="row">
+    <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
+    </a>
+    <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid rounded">
+    </a>
+    <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded">
+    </a>
+  </div>
+</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js'></script> 
+ 
+ <script>
+	
+	$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+	
+	</script>
+	<script>
+			
+			var quadimages = document.querySelectorAll("#quad figure");
+for(i=0; i<quadimages.length; i++) {
+  quadimages[i].addEventListener('click', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
+}
+			
+			</script>
+	
+
+ 
+ 
+			
 	</body>
     
 </html>
