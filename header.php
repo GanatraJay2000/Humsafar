@@ -12,6 +12,36 @@
 
     <!-- Site Header -->
     <header class="site-header">
+
+
+        <div class="site-nav">
+            <nav class="item nav-links">
+                <?php
+
+            $args = array(
+                'theme_location'=>'primary_one',
+            );
+
+            wp_nav_menu($args); 
+            
+            ?>
+            </nav>
+            <div class="item nav-brand">
+                <img src="<?php echo get_template_directory_uri() . '/icon.png' ?>" alt="">
+            </div>
+            <nav class="item nav-links">
+                <?php
+
+            $args = array(
+                'theme_location'=>'primary_two',
+            );
+
+            wp_nav_menu($args); 
+            
+            ?>
+            </nav>
+        </div>
+        <!-- 
         <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
         <h5><?php bloginfo( 'description' ); ?></h5>
 
@@ -25,8 +55,8 @@
             wp_nav_menu($args); 
             
             ?>
-        </nav>
+        </nav> -->
     </header>
     <!-- Site Header -->
 
-    <div class="container">
+    <div class="container m-5">

@@ -11,11 +11,12 @@
             wp_nav_menu($args); 
             
             ?>
+        <div class="rights"><?php bloginfo( 'name' ) ?> - &copy; <?php echo date('Y'); ?></div>
     </nav>
 
 
 
-    <p><?php bloginfo( 'name' ) ?> - &copy; <?php echo date('Y'); ?></p>
+
 </footer>
 
 

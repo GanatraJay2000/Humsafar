@@ -18,6 +18,7 @@ add_action('wp_enqueue_scripts','website_files');
 
 // Navigation Menus
 register_nav_menus( array(
-    'primary'=>__( 'Primary Menu' ),
+    'primary_one' => __( 'Primary One Menu' ),
+    'primary_two'=>__( 'Primary Two Menu' ),
     'footer'=> __( 'Footer Menu' ),
 ) );

@@ -3,6 +3,15 @@ Theme Name: Humsafar
 Author:Team
 Version:1.0
 */
+:root {
+    --primary-color: rgb(251, 227, 128);
+    --bg-color: #012e29;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -30,16 +39,13 @@ div.container {
 /* General Layout */
 
 /* Header */
-.site-header {
-    border-bottom: 2px solid #999;
-}
+
 
 /* Header */
 
 /* Footer */
 .site-footer {
     margin-top: 30px;
-    border-top: 2px solid #999;
 }
 
 /* Footer */
@@ -61,26 +67,87 @@ article.post:last-of-type {
     padding: 0;
 }
 
-.site-nav ul li {
-    display: inline-block;
+
+
+.site-header .site-nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 20px;
 }
 
-.site-header nav ul li a {
-    display: block;
-    padding: 10px 18px;
-    border: 1px solid #bbbbbb;
-    border-bottom: 0;
+.site-nav {
+    background: url('./back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    padding: 20px 60px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.site-nav .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.site-nav a {
+    color: var(--primary-color) !important;
+    background: transparent;
+    font-family: "Times New Roman", serif;
+    font-size: 19px;
+    padding: 0 35px;
+    letter-spacing: 1.4px;
     text-decoration: none;
 }
 
-.site-header nav ul li a:hover {
-    background-color: #EEEEEE;
+.site-nav a:hover {
+    color: var(--primary-color) !important;
+    background: transparent !important;
+    text-decoration: none;
 }
 
-.site-header nav ul li.current-menu-item a {
-    background-color: #006ec3;
-    color: white;
+.site-nav a:focus {
+    color: var(--primary-color) !important;
+    background: transparent !important;
+    text-decoration: none;
 }
+
+.site-nav .nav-brand img {
+    width: 140px;
+}
+
+.site-nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.site-nav li ul {
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.site-nav li ul li {
+    padding: 5px 0;
+    display: none;
+    background: #0f030388;
+    text-align: center;
+}
+
+.site-nav li:hover>ul,
+.site-nav li:hover>ul li {
+    display: block;
+}
+
+.site-nav li:hover>a {
+    color: rgb(216, 227, 231) !important;
+}
+
+
 
 /* Footer Nav */
 .site-footer nav ul li {
@@ -90,6 +157,20 @@ article.post:last-of-type {
 
 .site-footer nav ul li:last-of-type {
     border-right: 0;
+}
+
+.site-footer .site-nav {
+    padding: 20px 60px 0 60px;
+}
+
+.site-footer .site-nav .rights {
+
+    padding: 10px;
+    font-family: "Times New Roman", serif;
+    color: rgb(236, 235, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer Nav */
