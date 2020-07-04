@@ -108,6 +108,12 @@ article.post:last-of-type {
     text-decoration: none;
 }
 
+.site-nav nav ul li.current-menu-item a {
+    color: #f2fffc !important;
+    background: transparent !important;
+    text-decoration: none;
+}
+
 .site-nav a:focus {
     color: var(--primary-color) !important;
     background: transparent !important;
