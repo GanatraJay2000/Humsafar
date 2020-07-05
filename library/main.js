@@ -31,5 +31,13 @@ jQuery(document).ready(function ($) {
             }
         }
     });
-
+    $("#navTogglerBtn").click(function () {
+        if ($("#responsive-nav").css("display") == "none") {
+            $("#responsive-nav").css("display", "block");
+            $("#responsive-nav").css("max-height", "1000px");
+        } else {
+            $("#responsive-nav").css("display", "none");
+            $("#responsive-nav").css("max-height", "0px");
+        }
+    });
 });

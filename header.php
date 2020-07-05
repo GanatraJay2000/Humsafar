@@ -41,23 +41,36 @@
             ?>
             </nav>
         </div>
-        <!--         
-        <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-        <h5><?php bloginfo( 'description' ); ?></h5>
-
-        <nav class="site-nav">
-            <?php
+        <div id="responsive-nav" class="my-responsive-nav bg-dark">
+            <nav class="item nav-links">
+                <?php
 
             $args = array(
-                'theme_location'=>'primary',
+                'theme_location'=>'primary_one',
             );
 
             wp_nav_menu($args); 
             
             ?>
-        </nav> -->
+            </nav>
+            <nav class="item nav-links">
+                <?php
+
+            $args = array(
+                'theme_location'=>'primary_two',
+            );
+
+            wp_nav_menu($args); 
+            
+            ?>
+            </nav>
+
+        </div>
+        <button id="navTogglerBtn" class="nav-toggle-btn btn btn-outline-dark"><i class="fa fa-bars"
+                aria-hidden="true"></i></button>
 
     </header>
+
     <!-- Site Header -->
 
     <div class="container m-lg-5 my-3 mx-0">
