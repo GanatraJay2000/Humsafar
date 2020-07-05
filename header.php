@@ -1,3 +1,4 @@
+<?php global $wpdb; ?>
 <!DOCTYPE html>
 <html <?php language_attributes( ); ?>>
 

@@ -139,7 +139,7 @@ article.post:last-of-type {
     white-space: nowrap;
 }
 
-.site-nav a {
+.site-header .site-nav a {
     color: var(--primary-color) !important;
     background: transparent;
     font-family: "Times New Roman", serif;
@@ -314,16 +314,18 @@ article.post:last-of-type {
     flex-basis: 0;
     padding: 20px 0.9rem;
     letter-spacing: 1px;
-    font-size: 1.1em;
+    font-size: 16px !important;
     font-family: var(--Rubik);
-    line-height: 1.75em;
+    line-height: 30px;
 }
 
 
 .site-footer h2 {
+    font-family: "Times New Roman",
+        serif;
     background-position: 140% 0;
     background-color: var(--primary-color);
-    font-family: var(--Josefin);
+    /* font-family: var(--Josefin); */
     background-image: linear-gradient(-75deg,
             transparent 0,
             transparent 50%,
@@ -407,7 +409,7 @@ article.page h2 {
 /* Clients  */
 .carousel {
     /* background-color: #ffffe0 !important; */
-    background-color: #c5d7be77 !important;
+    background-color: #c5d7be44 !important;
     height: 200px;
     display: flex !important;
     align-items: center;

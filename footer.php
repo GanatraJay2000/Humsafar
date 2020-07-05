@@ -42,10 +42,10 @@
                 <h2>Join Mailing List</h2>
             </div>
             <p>Stay Updated with our latest</p>
-            <div class="form-element d-flex align-items-center">
-                <input type="text" class="input-element" placeholder="Email">
-                <button class="btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-            </div>
+            <form action="add_to_mail_list.php" method="POST" class="form-element d-flex align-items-center">
+                <input type="email" maxlength="100" name="email" required class="input-element" placeholder="Email">
+                <button type="submit" class="btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+            </form>
         </div>
         <div class="social-links">
             <div>
