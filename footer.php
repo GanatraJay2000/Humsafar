@@ -25,7 +25,9 @@
 <footer class="site-footer">
     <div class="wrapper">
         <div>
-            <h2>Explore</h2>
+            <div>
+                <h2>Explore</h2>
+            </div>
             <nav class="site-nav">
                 <?php
             $args = array(
@@ -36,7 +38,9 @@
             </nav>
         </div>
         <div class="newsletter" data-aos="fade-right" data-aos-delay="300">
-            <h2>Join Mailing List</h2>
+            <div>
+                <h2>Join Mailing List</h2>
+            </div>
             <p>Stay Updated with our latest</p>
             <div class="form-element d-flex align-items-center">
                 <input type="text" class="input-element" placeholder="Email">
@@ -44,7 +48,9 @@
             </div>
         </div>
         <div class="social-links">
-            <h2 class="text-center">Connects</h2>
+            <div>
+                <h2 class="text-center">Connects</h2>
+            </div>
             <div class="text-center">
                 <span><i style="" class="fab fa-facebook" aria-hidden="true"></i></span>
                 <span><i style="" class="fab fa-instagram" aria-hidden="true"></i></span>
