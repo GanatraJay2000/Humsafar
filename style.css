@@ -59,7 +59,7 @@ div.wrapper.content {
 }
 
 .page-title h1 {
-    font-size: 60px;
+    font-size: 4vw;
     font-weight: 100 !important;
     color: #c9930086;
     font-family: Baloo;
@@ -209,10 +209,11 @@ article.post:last-of-type {
     border-top: 0;
     outline: 0;
     display: none;
+    color: var(--primary-color);
 }
 
 .nav-toggle-btn:hover {
-    color: var(--primary-color);
+    color: white;
 }
 
 .my-responsive-nav {
@@ -279,10 +280,10 @@ article.post:last-of-type {
     background: url("./back.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
     color: white;
     font-family: "Times New Roman", serif;
-    font-size: 1.1em;
+    font-size: 0.95em;
     padding: 0;
     margin: 0;
 }
@@ -318,10 +319,7 @@ article.post:last-of-type {
     line-height: 1.75em;
 }
 
-/* .site-footer .wrapper h2 {
-  color: var(--primary-color);
-  font-family: var(--Josefin);
-} */
+
 .site-footer h2 {
     background-position: 140% 0;
     background-color: var(--primary-color);
@@ -461,6 +459,10 @@ article.page h2 {
     .nav-toggle-btn {
         display: block;
     }
+
+    .page-title h1 {
+        font-size: 6vw;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -473,11 +475,20 @@ article.page h2 {
     .site-footer .wrapper>div {
         margin-bottom: 20px;
     }
+
+    .page-title h1 {
+        font-size: 8vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .site-footer .wrapper {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .page-title h1 {
+        font-size: 10vw;
+
     }
 }
 

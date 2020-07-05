@@ -49,9 +49,9 @@
         </div>
         <div class="social-links">
             <div>
-                <h2 class="text-center">Connects</h2>
+                <h2 class="text-lg-center">Connects</h2>
             </div>
-            <div class="text-center">
+            <div class="text-lg-center">
                 <span><i style="" class="fab fa-facebook" aria-hidden="true"></i></span>
                 <span><i style="" class="fab fa-instagram" aria-hidden="true"></i></span>
                 <span><i style="" class="fab fa-twitter" aria-hidden="true"></i></span>

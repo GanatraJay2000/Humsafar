@@ -66,7 +66,7 @@
             </nav>
 
         </div>
-        <button id="navTogglerBtn" class="nav-toggle-btn btn btn-outline-dark"><i class="fa fa-bars"
+        <button id="navTogglerBtn" class="nav-toggle-btn btn btn-dark"><i class="fa fa-bars"
                 aria-hidden="true"></i></button>
 
     </header>
