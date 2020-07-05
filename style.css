@@ -31,6 +31,7 @@ body {
     font-size: 14px;
     color: #333;
     overflow-x: hidden;
+    background-color: #faf8f5;
 }
 
 a:link,
@@ -44,11 +45,48 @@ p {
 
 /* General Layout */
 
-div.container {
-    max-width: 920px;
-    margin: 0 auto;
-    padding: 0 20px;
+div.wrapper.content {
+    width: 80%;
+    margin: 0 auto !important;
+    padding: 60px 0;
 }
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.page-title h1 {
+    font-size: 60px;
+    font-weight: 100 !important;
+    color: #c9930086;
+    font-family: Baloo;
+    border-bottom: 2px solid #c9930086;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.page-title h1 .bow {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: -15px;
+}
+
+.bow div {
+    background: #faf8f5;
+    padding: 0 15px;
+    color: #c9930086;
+
+}
+
+
 
 /* General Layout */
 

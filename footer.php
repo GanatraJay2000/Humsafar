@@ -1,6 +1,6 @@
 </div>
 
-<div class="mt-5 text-center">
+<div class="text-center">
     <div class="carousel owl-carousel owl-theme text-dark">
         <div class="block">
             <img src="http://efactor4u.com/efactor/wordpress/wp-content/uploads/2017/08/balloon-safari-logo-2.png"

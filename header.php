@@ -73,4 +73,4 @@
 
     <!-- Site Header -->
 
-    <div class="container m-lg-5 my-3 mx-0">
+    <div class="content wrapper">
