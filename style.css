@@ -476,7 +476,8 @@ article.page h2 {
     }
 
     .site-header .site-nav a {
-        padding: 0 45px;
+
+        padding: 0 15px;
     }
 }
 

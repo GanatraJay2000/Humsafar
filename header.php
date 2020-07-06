@@ -27,11 +27,14 @@
             
             ?>
             </nav>
+
             <div class="item nav-brand d-flex">
-                <img src="<?php echo get_template_directory_uri() . '/icon.png' ?>" alt="">
-                <div class="brand-title">
-                    <img src="<?php echo get_template_directory_uri() . '/title.png' ?>" alt="">
-                </div>
+                <a href="<?php echo site_url('weddings'); ?>">
+                    <img src="<?php echo get_template_directory_uri() . '/icon.png' ?>" alt="">
+                    <div class="brand-title">
+                        <img src="<?php echo get_template_directory_uri() . '/title.png' ?>" alt="">
+                    </div>
+                </a>
             </div>
             <nav class="item nav-links pri2">
                 <?php
