@@ -62,15 +62,14 @@
         <div class="reach-us" data-aos="fade-left" data-aos-delay="200">
             <h2>Reach Us</h2>
             <div>
-                <div><a href="mailto:www.humsafar.co">www.humsafar.co</a></div>
-                <div><a href="mailto:humsafarweddings@gmail.com">humsafarweddings@gmail.com</a></div>
-                <div><a href="mailto:contact@humsafar.co">contact@humsafar.co</a></div>
+                <div><a href="https://www.humsafar.co">www.humsafar.co</a></div>
+                <div><a href="mailto:weddings@humsafar.co">weddings@humsafar.co</a></div>
                 <div>+91 83053 77774</div>
             </div>
         </div>
     </div>
 
-    <div class="rights"><?php bloginfo( 'name' ) ?>.co &copy; <?php echo date('Y'); ?> &nbsp;&nbsp;
+    <div class="rights"><?php bloginfo( 'name' ) ?>.co @ <?php echo date('Y'); ?> &nbsp;&nbsp;
         <!-- Created and Designed by the TEAM -->
     </div>
 </footer>
