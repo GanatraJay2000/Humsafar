@@ -182,6 +182,7 @@
 			    <img id="my-img20" src="https://image.flaticon.com/icons/svg/859/859937.svg" alt="couple" onmouseover='hover20()' onmouseout='unhover20()'/>
 			    <div><p><i>Grand Entry</i></p></div>
 			</div>
+            <br><br><br>
 			
 		</div>		
 	    </div>
