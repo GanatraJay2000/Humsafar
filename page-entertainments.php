@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('new'); ?>
 
 <?php
 
@@ -11,4 +11,4 @@ while(have_posts())
 <?php
 }
 ?>
-<?php get_footer(); ?>
+<?php get_footer('new'); ?>

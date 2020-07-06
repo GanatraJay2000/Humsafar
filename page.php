@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php 
+
+if(is_page(57) || $post->post_parent == 57){
+    get_header( 'new' );
+}
+else{
+    get_header();
+}
+
+?>
 
 <?php
 
@@ -19,4 +28,11 @@ while(have_posts())
 <?php
 }
 ?>
-<?php get_footer(); ?>
+<?php 
+if(is_page(57) || $post->post_parent == 57){
+    get_footer( 'new' );
+}
+else{
+    get_footer();
+}
+ ?>

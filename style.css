@@ -567,3 +567,70 @@ article.page h2 {
 }
 
 /* Media Queries */
+
+
+
+
+/* 
+EEEE 
+EE   
+EEEE 
+EE
+EEEE  
+*/
+
+
+.entertainment-site-footer {
+    background: url('./b5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: 250px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.entertainment-site-footer .overlay {
+    backdrop-filter: blur(2px) hue-rotate(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    z-index: 1;
+}
+
+.entertainment-site-footer .wrapper {
+    position: absolute;
+    z-index: 2;
+    padding: 20px 10px 0px 10px;
+}
+
+.entertainment-site-footer .wrapper img.item {
+    margin: 5px 10px 10px 10px;
+}
+
+.entertainment-site-footer .wrapper .item {
+    margin: 5px 10px 0px 10px;
+    font-size: 18px;
+}
+
+.entertainment-site-footer .wrapper .item a {
+    color: #fff;
+}
+
+.entertainment-site-footer .wrapper .fab {
+    margin: 1px 4px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.entertainment-site-footer .wrapper .fab:hover {
+    color: #ff0044;
+}
