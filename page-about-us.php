@@ -4,10 +4,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
 
-    body {
-        background-color: #fcf7ff;
-    }
-
     .heading {
         padding-top: 10px;
         margin-bottom: 0;
@@ -27,32 +23,27 @@
 
     }
 
-    h1:before {
+    h1::before,
+    h1::after {
         content: "";
         display: block;
         width: 150px;
         height: 3px;
         background: #000;
         position: absolute;
-        left: 0;
-        margin-left: 20%;
         top: 30%;
         z-index: -2;
         background-color: #b28f5e;
     }
 
+    h1::before {
+        left: 0;
+        margin-left: 20%;
+    }
+
     h1:after {
-        content: "";
-        display: block;
-        width: 150px;
-        height: 3px;
-        background: #000;
-        position: absolute;
         right: 0;
         margin-right: 20%;
-        top: 30%;
-        z-index: -2;
-        background-color: #b28f5e;
     }
 
     .about-part {
@@ -113,6 +104,22 @@
 
         .flex-container .image {
             text-align: center;
+        }
+    }
+
+    @media screen and (max-width : 700px) {
+
+        .heading h1::before,
+        .heading h1::after {
+            width: 100px;
+        }
+    }
+
+    @media screen and (max-width : 500px) {
+
+        .heading h1::before,
+        .heading h1::after {
+            width: 60px;
         }
     }
 </style>

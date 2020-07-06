@@ -31,7 +31,7 @@ body {
     font-size: 14px;
     color: #333;
     overflow-x: hidden;
-    background-color: #faf8f5;
+    background-color: #fcf7ff;
 }
 
 a:link,
@@ -46,7 +46,7 @@ p {
 /* General Layout */
 
 div.wrapper.content {
-    width: 80%;
+    width: 90%;
     margin: 0 auto !important;
     padding: 60px 0;
 }
@@ -172,6 +172,11 @@ article.post:last-of-type {
 
 .site-nav .nav-brand img {
     width: 140px;
+    transition: ease 200ms transform;
+}
+
+.site-nav .nav-brand:hover img {
+    transform: scale(1.1);
 }
 
 .nav-brand .brand-title {

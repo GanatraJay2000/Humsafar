@@ -28,8 +28,8 @@
             ?>
             </nav>
 
-            <div class="item nav-brand d-flex">
-                <a href="<?php echo site_url('weddings'); ?>">
+            <div class="item nav-brand">
+                <a class="d-flex" href="<?php echo site_url('weddings'); ?>">
                     <img src="<?php echo get_template_directory_uri() . '/icon.png' ?>" alt="">
                     <div class="brand-title">
                         <img src="<?php echo get_template_directory_uri() . '/title.png' ?>" alt="">
