@@ -40,4 +40,24 @@ jQuery(document).ready(function ($) {
             $("#responsive-nav").css("max-height", "0px");
         }
     });
+    $("#entTogglerBtn").click(function () {
+        if ($("#ent-responsive-nav").css("display") == "none") {
+            $("#ent-responsive-nav").css("display", "block");
+            $("#ent-responsive-nav").css("max-height", "1000px");
+        } else {
+            $("#ent-responsive-nav").css("display", "none");
+            $("#ent-responsive-nav").css("max-height", "0px");
+        }
+    });
+    $(".ent-responsive-nav a").click(function () {
+        if ($("#ent-responsive-nav").css("display") == "none") {
+            $("#ent-responsive-nav").css("display", "block");
+            $("#ent-responsive-nav").css("max-height", "1000px");
+        } else {
+            $("#ent-responsive-nav").css("display", "none");
+            $("#ent-responsive-nav").css("max-height", "0px");
+        }
+    });
+
+
 });

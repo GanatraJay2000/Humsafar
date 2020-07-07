@@ -168,8 +168,12 @@
                 as we know "Client satisfaction is the main and only asset of any service."</p>
         </div>
 
+
+
     </div>
-    <h1><span>*</span></h1>
+    <div class="heading">
+        <h1><span>*</span></h1>
+    </div>
     <br>
     <br>
     <br>

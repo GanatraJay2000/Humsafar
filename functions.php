@@ -27,91 +27,75 @@ register_nav_menus( array(
     'primary_one' => __( 'Primary One Menu' ),
     'primary_two'=>__( 'Primary Two Menu' ),
     'footer'=> __( 'Footer Menu' ),
+    'entertainment_primary'=> __( 'Entertainment Primary Menu' ),
 ) );
 
 
-
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
-
-function events_custom_init() {
-
+function add_custom_post() {
     $labels = array(
-        'name' => _x('Events', 'post type general name'),
-        'singular_name' => _x('Event', 'post type singular name'),
-        'add_new' => _x('Add New', 'Events'),
-        'add_new_item' => __('Add New Event'),
-        'edit_item' => __('Edit Event'),
-        'new_item' => __('New Event'),
-        'view_item' => __('View Event'),
-        'search_items' => __('Search Event'),
-        'not_found' =>  __('Nothing found'),
-        'not_found_in_trash' => __('Nothing found in Trash'),
-        'parent_item_colon' => ''
+    'name' => _x('Events', 'post type general name'),
+    'singular_name' => _x('Event', 'post type singular name'),
+    'add_new' => _x('Add New', 'Events'),
+    'add_new_item' => __('Add New Event'),
+    'edit_item' => __('Edit Event'),
+    'new_item' => __('New Event'),
+    'view_item' => __('View Event'),
+    'search_items' => __('Search Event'),
+    'not_found' => __('Nothing found'),
+    'not_found_in_trash' => __('Nothing found in Trash'),
+    'parent_item_colon' => '',
+
     );
 
     $args = array(
-        'labels' => $labels,
-        'public' => true,
-        'publicly_queryable' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'show_in_nav_menus' => false,
-        'query_var' => true,
-        'rewrite' => array('slug','pages'),
-        'capability_type' => 'post',
-        'hierarchical' => true,
-        'menu_position' => 5,
-        'supports' => array('title','editor','thumbnail','excerpt',)
-      );
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'show_in_nav_menus' => false,
+    'query_var' => true,
+    'rewrite' => array('slug','pages'),
+    'capability_type' => 'post',
+    'hierarchical' => true,
+    'menu_position' => 5,
+    'supports' => array('title','editor','thumbnail','excerpt',),
+    'menu_icon' => 'dashicons-calendar'
+    );
 
     register_post_type( 'events' , $args );
-}
-add_action( 'init', 'events_custom_init' );
-
-
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
-
-function artists_custom_init() {
 
     $labels = array(
-        'name' => _x('Artists', 'post type general name'),
-        'singular_name' => _x('Artist', 'post type singular name'),
-        'add_new' => _x('Add New', 'artists'),
-        'add_new_item' => __('Add New artist'),
-        'edit_item' => __('Edit Artist'),
-        'new_item' => __('New Artist'),
-        'view_item' => __('View Artist'),
-        'search_items' => __('Search Artist'),
-        'not_found' =>  __('Nothing found'),
-        'not_found_in_trash' => __('Nothing found in Trash'),
-        'parent_item_colon' => ''
+    'name' => _x('Artists', 'post type general name'),
+    'singular_name' => _x('Artist', 'post type singular name'),
+    'add_new' => _x('Add New', 'artists'),
+    'add_new_item' => __('Add New artist'),
+    'edit_item' => __('Edit Artist'),
+    'new_item' => __('New Artist'),
+    'view_item' => __('View Artist'),
+    'search_items' => __('Search Artist'),
+    'not_found' => __('Nothing found'),
+    'not_found_in_trash' => __('Nothing found in Trash'),
+    'parent_item_colon' => ''
     );
 
     $args = array(
-        'labels' => $labels,
-        'public' => true,
-        'publicly_queryable' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'show_in_nav_menus' => false,
-        'query_var' => true,
-        'rewrite' => array('slug','pages'),
-        'capability_type' => 'post',
-        'hierarchical' => true,
-        'menu_position' => 5,
-        'supports' => array('title','editor','thumbnail','excerpt',)
-      );
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'show_in_nav_menus' => false,
+    'query_var' => true,
+    'rewrite' => array('slug','pages'),
+    'capability_type' => 'post',
+    'hierarchical' => true,
+    'menu_position' => 5,
+    'supports' => array('title','editor','thumbnail','excerpt',),
+    'menu_icon'=>'dashicons-groups',
+    );
 
     register_post_type( 'artists' , $args );
-}
-add_action( 'init', 'artists_custom_init' );
-
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
-
-function destinations_custom_init() {
 
     $labels = array(
         'name' => _x('Destinations', 'post type general name'),
@@ -139,47 +123,10 @@ function destinations_custom_init() {
         'capability_type' => 'post',
         'hierarchical' => true,
         'menu_position' => 5,
-        'supports' => array('title','editor','thumbnail','excerpt',)
+        'supports' => array('title','editor','thumbnail','excerpt',),
+        'menu_icon' => 'dashicons-location-alt',
       );
 
     register_post_type( 'destinations' , $args );
 }
-add_action( 'init', 'destinations_custom_init' );
-
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
-
-function services_custom_init() {
-
-    $labels = array(
-        'name' => _x('Services', 'post type general name'),
-        'singular_name' => _x('Service', 'post type singular name'),
-        'add_new' => _x('Services', 'Services'),
-        'add_new_item' => __('Add New Service'),
-        'edit_item' => __('Edit Service'),
-        'new_item' => __('New Service'),
-        'view_item' => __('View Service'),
-        'search_items' => __('Search Services'),
-        'not_found' =>  __('Nothing found'),
-        'not_found_in_trash' => __('Nothing found in Trash'),
-        'parent_item_colon' => ''
-    );
-
-    $args = array(
-        'labels' => $labels,
-        'public' => true,
-        'publicly_queryable' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'show_in_nav_menus' => false,
-        'query_var' => true,
-        'rewrite' => array('slug','pages'),
-        'capability_type' => 'post',
-        'hierarchical' => true,
-        'menu_position' => 5,
-        'supports' => array('title','editor','thumbnail','excerpt',)
-      );
-
-    register_post_type( 'services' , $args );
-}
-add_action( 'init', 'services_custom_init' );
+add_action( 'init', 'add_custom_post' );

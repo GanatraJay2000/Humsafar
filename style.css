@@ -571,66 +571,225 @@ article.page h2 {
 
 
 
-/* 
-EEEE 
-EE   
-EEEE 
-EE
-EEEE  
-*/
 
 
-.entertainment-site-footer {
-    background: url('./b5.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
+
+
+
+/* .ent-header {} */
+
+.ent-header .flexer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ent-nav .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ent-nav .wrapper .item {
+    padding: 10px;
+}
+
+.ent-nav .wrapper img.item {
+    width: 350px;
+}
+
+.ent-nav ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.ent-nav ul li a {
+    color: #444;
+    text-decoration: none;
+}
+
+.ent-nav ul li {
+    color: #666;
+    display: block;
+    position: relative;
+    padding-top: 20px;
+}
+
+
+
+.ent-nav .wrapper ul {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.ent-nav .wrapper ul li {
+    display: inline-block;
+    padding: 5px 25px;
+}
+
+.ent-nav .wrapper li ul {
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    border-radius: 4px;
+    padding-bottom: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+.ent-nav .wrapper li ul li {
+    padding: 5px 20px;
+    display: none;
+    background: #00000000;
+    text-align: center;
+}
+
+.ent-nav .wrapper li:hover>ul,
+.ent-nav li:hover>ul li {
+    display: block;
+}
+
+
+.ent-responsive-nav {
+    display: none;
+    margin-left: 0 !important;
+    padding-left: 10px;
+}
+
+.ent-responsive-nav ul li {
+    display: block;
+    font-size: 16px;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.ent-responsive-nav li {
+    padding-top: 10px;
+}
+
+.ent-responsive-nav a {
+    color: #444;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+
+
+
+
+.ent-footer {
+    margin-top: 30px;
     min-height: 250px;
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    position: relative;
 
 }
 
-.entertainment-site-footer .overlay {
-    backdrop-filter: blur(2px) hue-rotate(0deg);
+.ent-footer .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./b5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    z-index: -2;
+}
+
+.ent-footer .overlay {
+
+    backdrop-filter: blur(2px) hue-rotate(45deg);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: #00000090;
-    z-index: 1;
+    z-index: -1;
 }
 
-.entertainment-site-footer .wrapper {
-    position: absolute;
-    z-index: 2;
+.ent-footer .wrapper {
     padding: 20px 10px 0px 10px;
 }
 
-.entertainment-site-footer .wrapper img.item {
+.ent-footer .wrapper img.item {
     margin: 5px 10px 10px 10px;
 }
 
-.entertainment-site-footer .wrapper .item {
-    margin: 5px 10px 0px 10px;
-    font-size: 18px;
+.ent-footer .wrapper .item {
+    margin: 5px 10px 10px 10px;
+    font-size: 14px;
 }
 
-.entertainment-site-footer .wrapper .item a {
+.ent-footer .wrapper ul.item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ent-footer .wrapper ul.item li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.ent-footer .wrapper .item a {
     color: #fff;
 }
 
-.entertainment-site-footer .wrapper .fab {
+.ent-footer .wrapper .fab {
     margin: 1px 4px;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
-.entertainment-site-footer .wrapper .fab:hover {
+.ent-footer .wrapper .fab:hover {
     color: #ff0044;
+}
+
+.ent-toggle-btn {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .ent-nav .wrapper img.item {
+        width: 250px;
+    }
+
+    .ent-nav {
+        /* justify-content: flex-end; */
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .ent-nav .nav-links {
+        display: none;
+    }
+
+    .ent-toggle-btn {
+        display: block;
+        right: 30px;
+    }
+
+    .desktop-nav-element {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ent-footer .wrapper ul.item li {
+        flex-basis: 100%;
+        padding: 5px 5px;
+        text-align: center;
+    }
+
+
+    .ent-footer .wrapper .item {
+        margin: 5px 5px 10px 5px;
+        font-size: 12px;
+    }
 }
