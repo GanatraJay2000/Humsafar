@@ -578,11 +578,26 @@ article.page h2 {
 
 /* .ent-header {} */
 
+.ent-header.scrolled {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    transition: position 200ms ease;
+}
+
+
 .ent-header .flexer {
     padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+
+
 }
 
 .ent-nav .wrapper {
@@ -685,7 +700,6 @@ article.page h2 {
     font-size: 18px;
     font-weight: 500;
     position: relative;
-
 }
 
 .ent-footer .background {
@@ -714,7 +728,9 @@ article.page h2 {
 }
 
 .ent-footer .wrapper {
+    position: relative;
     padding: 20px 10px 0px 10px;
+    z-index: 1;
 }
 
 .ent-footer .wrapper img.item {

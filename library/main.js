@@ -59,5 +59,10 @@ jQuery(document).ready(function ($) {
         }
     });
 
-
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".ent-header");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
 });
