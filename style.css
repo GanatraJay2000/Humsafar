@@ -642,6 +642,10 @@ article.page h2 {
     color: #ff004466;
 }
 
+.ent-nav ul li:hover a {
+    color: #ff004466;
+}
+
 
 
 .ent-nav .wrapper ul {
