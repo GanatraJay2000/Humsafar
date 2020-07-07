@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
     $(function () {
         $(document).scroll(function () {
             var $nav = $(".ent-header");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            $nav.toggleClass('scrolled', $(this).scrollTop() > (1.5 * $nav.height()));
         });
     });
 });
