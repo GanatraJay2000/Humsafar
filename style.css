@@ -638,7 +638,9 @@ article.page h2 {
     padding-top: 20px;
 }
 
-.ent-nav ul li:hover {}
+.ent-nav ul li:hover {
+    color: #ff004466;
+}
 
 
 
