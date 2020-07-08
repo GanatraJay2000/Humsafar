@@ -315,7 +315,8 @@ article.post:last-of-type {
     border-top: 0;
     outline: 0;
     display: none;
-    background-color: var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 .nav-toggle-btn:hover {
@@ -581,6 +582,10 @@ article.page h2 {
 }
 
 @media screen and (max-width: 1100px) {
+    .site-nav {
+        padding: 20px 10px;
+    }
+
     .site-nav .nav-links {
         display: none;
     }
@@ -588,7 +593,7 @@ article.page h2 {
     .nav-brand .brand-title {
         display: block;
         width: 200px !important;
-        transform: scale(1.4);
+        transform: scale(1.6) !important;
         text-align: center;
     }
 
