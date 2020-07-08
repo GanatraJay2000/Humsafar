@@ -1,4 +1,12 @@
 jQuery(document).ready(function ($) {
+
+    // var myVar;
+    // myVar = setTimeout(showPage, 800);
+
+    // function showPage() {
+    //     document.getElementById("load-screen").style.display = "none";
+    //     document.body.style.overflow = "visible";
+    // }
     $('.owl-carousel').owlCarousel({
         animateIn: 'animate__slideInLeft',
         animateOut: 'animate__slideOutRight',

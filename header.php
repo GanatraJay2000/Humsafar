@@ -10,7 +10,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+    <div id="load-screen">
+        <div id="loader"></div>
+    </div>
     <!-- Site Header -->
     <header class="site-header">
 

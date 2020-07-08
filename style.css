@@ -31,12 +31,101 @@ html {
     margin: 0 !important;
 }
 
+/* 
+#load-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden !important;
+    background-image: url("./back.png");
+    background-color: var(--bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    transition: opacity 1s ease-out;
+    opacity: 1;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    border-top: 5px solid var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+} */
+
 body {
     font-family: Arial, sans-serif;
     font-size: 14px;
     color: #333;
     overflow-x: hidden;
     background-color: #fcf7ff;
+    /* overflow: hidden; */
 }
 
 a:link,
@@ -260,7 +349,7 @@ article.post:last-of-type {
 .my-responsive-nav a {
     text-decoration: none;
     color: var(--primary-color);
-    font-size: 1.3em;
+    font-size: 16px;
     font-family: var(--Josefin);
 }
 

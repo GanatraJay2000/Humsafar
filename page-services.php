@@ -4,6 +4,10 @@
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
 
+    body {
+        background-color: #fff;
+    }
+
     .service-part {
         text-align: center;
         font-family: 'playfair display', serif;
@@ -21,7 +25,7 @@
         margin: 0;
     }
 
-    h1 {
+    .heading h1 {
         font-family: sans-serif;
         margin: auto;
         text-align: center;
@@ -32,8 +36,8 @@
 
     }
 
-    h1::before,
-    h1::after {
+    .heading h1::before,
+    .heading h1::after {
         content: "";
         display: block;
         width: 150px;
@@ -45,12 +49,12 @@
         background-color: #b28f5e;
     }
 
-    h1::before {
+    .heading h1::before {
         left: 0;
         margin-left: 20%;
     }
 
-    h1:after {
+    .heading h1:after {
         right: 0;
         margin-right: 20%;
     }

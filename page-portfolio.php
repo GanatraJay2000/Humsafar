@@ -11,7 +11,7 @@
 
     body {
         font-family: 'Playfair Display', cursive;
-        font-size: 2rem;
+        font-size: 1rem;
         background-color: #fcf7ff;
     }
 
