@@ -1,6 +1,6 @@
 </div>
 
-<footer class="entertainment-site-footer mask">
+<footer class="ent-footer mask">
 
     <div class="wrapper d-flex justify-content-around w-100 flex-wrap">
         <div class="d-flex flex-column align-items-center">
@@ -8,11 +8,11 @@
             <div class="item">
                 Jp Road, Opposite Gurudwara, Four Bunglows, Andheri West Mumbai, Maharashtra 400053
             </div>
-            <div class="item">
-                <a href="http://www.humsafar.co">www.humsafar.co</a> | <a
-                    href="mailto:info@humsafar.co">info@humsafar.co</a> | +91
-                83053 77774
-            </div>
+            <ul class="item">
+                <li><a href="http://www.humsafar.co">www.humsafar.co</a> </li>
+                <li><a href="mailto:info@humsafar.co">info@humsafar.co</a></li>
+                <li> +91 83053 77774</li>
+            </ul>
             <div class="item">
                 <div class="text-lg-center">
                     <span><i class="fab fa-facebook" aria-hidden="true"></i></span>
@@ -27,11 +27,11 @@
             </div>
         </div>
     </div>
+    <div class="background"></div>
     <div class="overlay"></div>
 </footer>
+<!-- <?php //wp_footer(); ?> -->
 
-
-<?php wp_footer(); ?>
 
 </body>
 

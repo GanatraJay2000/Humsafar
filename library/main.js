@@ -1,4 +1,12 @@
 jQuery(document).ready(function ($) {
+
+    // var myVar;
+    // myVar = setTimeout(showPage, 800);
+
+    // function showPage() {
+    //     document.getElementById("load-screen").style.display = "none";
+    //     document.body.style.overflow = "visible";
+    // }
     $('.owl-carousel').owlCarousel({
         animateIn: 'animate__slideInLeft',
         animateOut: 'animate__slideOutRight',
@@ -40,4 +48,41 @@ jQuery(document).ready(function ($) {
             $("#responsive-nav").css("max-height", "0px");
         }
     });
+    $("#entTogglerBtn").click(function () {
+        if ($("#ent-responsive-nav").css("display") == "none") {
+            $("#ent-responsive-nav").css("display", "block");
+            $("#ent-responsive-nav").css("max-height", "1000px");
+        } else {
+            $("#ent-responsive-nav").css("display", "none");
+            $("#ent-responsive-nav").css("max-height", "0px");
+        }
+    });
+    $(".ent-responsive-nav a").click(function () {
+        if ($("#ent-responsive-nav").css("display") == "none") {
+            $("#ent-responsive-nav").css("display", "block");
+            $("#ent-responsive-nav").css("max-height", "1000px");
+        } else {
+            $("#ent-responsive-nav").css("display", "none");
+            $("#ent-responsive-nav").css("max-height", "0px");
+        }
+    });
+
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".ent-header");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > (1.5 * $nav.height()));
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+    // LighBox
+
 });
