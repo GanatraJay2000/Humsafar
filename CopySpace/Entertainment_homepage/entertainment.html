@@ -15,6 +15,11 @@
 </head>
 
 <style>
+body{
+
+  font-family: "Times New Roman", Times, serif;
+
+}
 
 hr{
 width:60px;
@@ -26,6 +31,19 @@ height:1px;}
 .thumb{
   margin-top: 10px;
   margin-bottom: 10px;
+   
+
+
+}
+.img-thumbnail
+{
+ border:0px;
+}
+
+p{
+margin-right:5px;
+margin-left:5px;
+
 }
 
 button{
@@ -34,8 +52,8 @@ color:black;
 background-color:white;
 border:1px solid black;
 padding:2px 20px 2px 20px;
-
-font-size:25px;
+transition: transform .2s;
+font-size:20px;
 }
 
 .card{
@@ -48,6 +66,24 @@ button:hover {
 
 color:white;
 background-color:black;
+ -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+
+}
+.card-img-top{
+height:150px;
+width:auto;}
+
+
+
+@media only screen and (max-width: 765px) {
+.thumb{
+ padding:0px;
+ width:40%;
+ margin-left:30px;
+
+}
 }
 </style>
 <body>
@@ -129,7 +165,7 @@ background-color:black;
         </div></div></div>
 
 <center>
-<button class="animate__animated animate__pulse"> VIEW ALL ARTISTS </button></center>
+<button> VIEW ALL ARTISTS </button></center>
 
 </br></br>
 <div class="container" width="100%">
@@ -158,7 +194,7 @@ background-color:black;
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 			
 <div class="card animate__animated animate__zoomIn" style="width: 350px;">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <img class="card-img-top" src="armaan.png">
   <div class="card-body">
     <h4 class="card-title">ARMAAN SHARMA</h4><h6>CREATIVE DIRECTOR<hr></hr></br></h6>
     <p class="card-text">Our Founder & Director at Humsafar.Co has founded the company in 2010 after his amazing skills in Event Management & Wedding Planning. He has designed over 200 Weddings in Luxury & Destination Theme though out his Wedding Career.</p>
@@ -166,7 +202,7 @@ background-color:black;
   </div></div></div>
   <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
   <div class="card animate__animated animate__zoomIn" style="width: 350px;">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <img class="card-img-top" src="ritika.png">
   <div class="card-body">
      <h4 class="card-title">RITIKA KAUL</h4><h6>ARTIST MANAGER<hr></hr></br></h6>
     <p class="card-text">Managing an artist is a job not less an being an artist itself. Ritika Kaul our experienced and talented Artist Manager knows the importance of properly handling the schedule of Artist (of any field) to make your event a grand success.</p>
@@ -175,7 +211,7 @@ background-color:black;
 </div></div>
  <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
   <div class="card animate__animated animate__zoomIn" style="width: 350px">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <img class="card-img-top" src="chetan.png">
   <div class="card-body">
       <h4 class="card-title">CHETAN MEWARA</h4><h6>HOSPITALITY & LOGISTICS HEAD<hr></hr></br></h6>
     <p class="card-text">We know what is the importance of Hospitality & Logistics in any wedding. Our Hospitality & Logistics Head Chetan Mewara keeps his keen observation in finding the right kind of management and hospitality to look after the guests into any type of Wedding.</p>
