@@ -621,7 +621,7 @@ article.page h2 {
     .nav-brand .brand-title {
         display: block;
         /* width: 170px !important; */
-        transform: scale(1.3);
+        transform: scale(1.6);
         text-align: center;
     }
 
@@ -659,7 +659,7 @@ article.page h2 {
     .nav-brand .brand-title {
         display: block;
         width: 140px !important;
-        transform: scale(1.3);
+        transform: scale(1.6);
         text-align: center;
     }
 }
