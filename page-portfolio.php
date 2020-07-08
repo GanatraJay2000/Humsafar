@@ -1,16 +1,13 @@
 <?php get_header() ?>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
-
     * {
         margin: 0;
         padding: 0;
     }
 
     body {
-        font-family: 'Playfair Display', cursive;
+        font-family: 'Playfair Display', serif;
 
         background-color: #fcf7ff;
     }

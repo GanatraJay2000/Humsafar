@@ -82,7 +82,4 @@ jQuery(document).ready(function ($) {
 
 
 
-
-    // LighBox
-
 });
