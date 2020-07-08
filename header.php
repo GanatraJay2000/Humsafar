@@ -22,7 +22,7 @@
                 <?php
 
             $args = array(
-                'theme_location'=>'primary_one',
+                'theme_location'=>'primary_one',                         
             );
 
             wp_nav_menu($args); 
@@ -58,6 +58,8 @@
 
             $args = array(
                 'theme_location'=>'primary_one',
+                'link_before'=> '<label style="width:100%;">',
+                'link_after'=> '</label>',
             );
 
             wp_nav_menu($args); 
@@ -69,6 +71,8 @@
 
             $args = array(
                 'theme_location'=>'primary_two',
+                'link_before'=> '<label style="width:100%;">',
+                'link_after'=> '</label>',
             );
 
             wp_nav_menu($args); 
