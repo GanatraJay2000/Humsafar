@@ -921,8 +921,28 @@ nav.item.nav-links label {
     font-size: 14px;
     text-decoration: none;
     padding: 0px 10px;
+    position: relative;
 }
 
+.ent-responsive-nav a:hover {
+    color: #999;
+    letter-spacing: 2px;
+}
+
+.ent-responsive-nav label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    width: 0%;
+    transition: 350ms width ease;
+    background-color: #333;
+}
+
+.ent-responsive-nav label:hover::after {
+    width: 60%;
+}
 
 
 
@@ -1006,6 +1026,10 @@ nav.item.nav-links label {
     display: none;
 }
 
+.desktop-nav-element {
+    display: block;
+}
+
 @media screen and (max-width: 1100px) {
     .ent-nav .wrapper img.item {
         width: 250px;
@@ -1047,4 +1071,11 @@ nav.item.nav-links label {
         margin: 5px 5px 10px 5px;
         font-size: 12px;
     }
+}
+
+.book-artist-modal .form-control {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #666;
+    position: relative;
 }

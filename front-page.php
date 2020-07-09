@@ -35,6 +35,7 @@
         background-size: 16px 16px; */
         /* background-image: url("./hotel-wallpaper-black.png"); */
         background-image: url("./assets/5-dots.png");
+        background-attachment: fixed;
         /* background-image: url("./webb-dark.png"); */
         color: #aaa;
         padding: 0 !important;
