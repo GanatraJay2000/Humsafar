@@ -70,6 +70,10 @@
         padding-top: 10px;
     }
 
+    .front-page-view .content .entertainment.items {
+        padding-top: 0;
+    }
+
     /* .front-page-view .content .wedding { */
     /* } */
     .front-page-view .content .entertainment {
