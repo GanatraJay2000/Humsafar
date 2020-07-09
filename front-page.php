@@ -174,7 +174,8 @@
     }
 
     .front-page-view .content .items hr {
-        margin: 25px 120px 20px 120px;
+        margin: 20px 120px 20px 120px;
+        border: 1px solid #aaa !important;
     }
 
     @media screen and (max-width: 768px) {
@@ -185,7 +186,7 @@
         .front-page-view .content {
             position: relative;
             flex-direction: column;
-            margin-top: 30px;
+            margin-top: 20px;
             height: 100%;
         }
 
