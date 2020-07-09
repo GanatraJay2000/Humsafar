@@ -19,9 +19,9 @@
     <!-- Site Header -->
     <header class="ent-header shadow-sm">
         <div class="flexer">
-            <div class="ent-nav-left">
-                <div class="desktop-nav-element">
-                    meow
+            <div class="desktop-nav-element">
+                <div class="ent-nav-left">
+                    <button class="book-artist">BOOK ARTIST</button>
                 </div>
             </div>
 
@@ -46,7 +46,12 @@
             </div>
             <div class="ent-nav-right">
                 <div class="desktop-nav-element">
-                    barks
+                    <div class="social-icons">
+                        <span><i style="" class="fab fa-facebook" aria-hidden="true"></i></span>
+                        <span><i style="" class="fab fa-instagram" aria-hidden="true"></i></span>
+                        <span><i style="" class="fab fa-twitter" aria-hidden="true"></i></span>
+                        <span><i style="" class="fab fa-youtube" aria-hidden="true"></i></span>
+                    </div>
                 </div>
                 <button id="entTogglerBtn" class="ent-toggle-btn btn btn-sm">
                     <i class="fa fa-bars" aria-hidden="true"></i>

@@ -775,15 +775,40 @@ article.page h2 {
 
 .ent-header .flexer {
     padding: 10px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     width: 100%;
     background-color: #fff;
-
-
 }
+
+.book-artist {
+    border: 1px solid #202020;
+    background-color: transparent;
+    padding: 7px 20px;
+    transition: 250ms ease background-color, 250ms ease color;
+}
+
+.ent-nav-right .social-icons {
+    font-size: 24px;
+}
+
+.ent-nav-right .social-icons span {
+    padding: 0 5px;
+    color: #202020;
+}
+
+.ent-nav-right .social-icons span:hover {
+    color: #88776a;
+}
+
+.book-artist:hover {
+    background-color: #202020;
+    color: #f0f0f0;
+}
+
 
 .ent-nav .wrapper {
     display: flex;
@@ -796,7 +821,8 @@ article.page h2 {
 }
 
 .ent-nav .wrapper img.item {
-    width: 350px;
+    width: 550px;
+    padding: 0;
 }
 
 .ent-nav ul {
@@ -807,21 +833,21 @@ article.page h2 {
 .ent-nav ul li a {
     color: #444;
     text-decoration: none;
+    padding: 0 15px 0 15px;
+    text-transform: uppercase;
+    font-family: serif;
 }
 
 .ent-nav ul li {
     color: #666;
     display: block;
     position: relative;
-    padding-top: 20px;
+    padding: 20px 15px 0 15px;
 }
 
-.ent-nav ul li:hover {
-    color: #ff004466;
-}
 
-.ent-nav ul li:hover a {
-    color: #ff004466;
+.ent-nav ul li:hover>a {
+    color: rgb(158, 136, 121);
 }
 
 
@@ -833,28 +859,43 @@ article.page h2 {
 
 .ent-nav .wrapper ul li {
     display: inline-block;
-    padding: 5px 25px;
+    padding: 5px 25px !important;
 }
 
 .ent-nav .wrapper li ul {
     background-color: #fff;
     display: none;
-    padding: 15px;
+    padding: 15px 10px !important;
+    padding-bottom: 0;
     position: absolute;
     border-radius: 4px;
+
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
 .ent-nav .wrapper li ul li {
-    padding: 5px 20px;
+    text-align: left;
+    padding: 5px 10px !important;
     display: none;
     background: #00000000;
-    text-align: center;
 }
 
 .ent-nav .wrapper li:hover>ul,
 .ent-nav li:hover>ul li {
     display: block;
+}
+
+nav.item.nav-links {
+    padding-top: 20px !important;
+    padding-bottom: 0 !important;
+}
+
+nav.item.nav-links li {
+    padding-bottom: 0 !important;
+}
+
+nav.item.nav-links label {
+    margin: 0 !important;
 }
 
 
@@ -968,6 +1009,10 @@ article.page h2 {
 @media screen and (max-width: 1100px) {
     .ent-nav .wrapper img.item {
         width: 250px;
+    }
+
+    .ent-header .flexer {
+        padding: 20px 10px;
     }
 
     .ent-nav {
