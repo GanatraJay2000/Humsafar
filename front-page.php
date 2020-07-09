@@ -65,7 +65,9 @@
         flex: 1;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        padding: 0;
+        padding-top: 10px;
     }
 
     /* .front-page-view .content .wedding { */
@@ -75,7 +77,7 @@
     }
 
     .front-page-view .content .items .link {
-        height: 250px;
+        height: 200px;
         width: 320px;
         /* border: 1px solid lightcyan; */
         text-align: center;
