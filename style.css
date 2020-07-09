@@ -450,6 +450,7 @@ article.post:last-of-type {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0px 30px;
+    justify-content: center;
 }
 
 .site-footer .site-nav {
@@ -481,6 +482,7 @@ article.post:last-of-type {
     font-size: 13px !important;
     font-family: var(--Rubik);
     line-height: 25px;
+    max-width: 275px;
 }
 
 
@@ -629,6 +631,10 @@ article.page h2 {
     .site-header .site-nav a {
 
         padding: 0 15px;
+    }
+
+    .site-footer {
+        justify-content: center;
     }
 }
 
