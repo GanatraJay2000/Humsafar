@@ -244,7 +244,7 @@
         </div>
     </div>
     <footer class="connects">
-        <div>+91 83053 77774 &nbsp;&nbsp;&nbsp;weddings@humsafar.co</div>
+        <div>+91 83053 77774 &nbsp;weddings@humsafar.co</div>
         <div class="text-lg-center">
             <span><i class="fab fa-facebook" aria-hidden="true"></i></span>
             <span><i class="fab fa-instagram" aria-hidden="true"></i></span>
