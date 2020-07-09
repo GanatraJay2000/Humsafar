@@ -43,6 +43,7 @@
         max-width: 100%;
     }
 
+
     .front-page-view {
         height: 100vh;
         width: 100%;
@@ -168,6 +169,10 @@
         font-size: 20px;
     }
 
+    footer a {
+        color: #aaa !important;
+    }
+
     .front-page-view .content .items hr {
         margin: 25px 120px 20px 120px;
     }
@@ -244,7 +249,7 @@
         </div>
     </div>
     <footer class="connects">
-        <div>+91 83053 77774 &nbsp;weddings@humsafar.co</div>
+        <div>+91 83053 77774 &nbsp;<a href="mailto:weddings@humsafar.co">weddings@humsafar.co</a></div>
         <div class="text-lg-center">
             <span><i class="fab fa-facebook" aria-hidden="true"></i></span>
             <span><i class="fab fa-instagram" aria-hidden="true"></i></span>
