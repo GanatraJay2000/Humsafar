@@ -146,7 +146,7 @@
 
     .wedding .permalink a:hover {
         border: 2px solid #deb158;
-        background-color: white;
+        background-color: transparent;
         color: #deb158;
     }
 
