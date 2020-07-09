@@ -203,10 +203,11 @@ button:hover {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: inherit; /* Enable scroll if needed */
   background-color: #ffffff;
   padding-top: 20px;
 }
+
 
 /* Modal Content/Box */
 .modal-content {
@@ -501,22 +502,12 @@ button:hover {
 		
 		</div>
 
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   
-    
+	
+	
 	$('#login a').click(function(e){
 	  $('#form1').css('display','none');
 	  $('#form3').css('display','none');
@@ -542,7 +533,19 @@ window.onclick = function(event) {
 	  $('#form2').css('display','none');
 	  $('#form1').css('display','block');
 	  e.preventDefault();
+	  $('body').css('overflow', 'hidden');
 	});
+	
+	$("#myModal").on("show", function () {
+      $("body").addClass("modal-open");
+      }).on("hidden", function () {
+      $("body").removeClass("modal-open")
+    });
+ 
+ $('.close').click(function(e) {
+    e.preventDefault();
+	$('body').css('overflow', 'auto');
+  });
   
 </script>
 		
