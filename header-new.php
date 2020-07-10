@@ -65,7 +65,7 @@
                 <?php
 
             $args = array(
-                'theme_location'=>'entertainment_primary',
+                'theme_location'=>'entertainment_primary_responsive',
                 'link_before'=> '<label style="width:100%;">',
                     'link_after'=> '</label>',
             );

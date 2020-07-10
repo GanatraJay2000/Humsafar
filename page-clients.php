@@ -61,59 +61,6 @@
         color: #3d3d3d;
     }
 
-    .heading {
-        padding-top: 10px;
-        margin: auto;
-        margin-bottom: 0;
-        text-align: center;
-        color: #2f2e2e;
-        font-size: 45px;
-        //background-color:rgba(0,0,0,0.5);
-        width: 70%;
-    }
-
-    .heading p {
-        margin: 0;
-    }
-
-    h1 {
-        font-family: sans-serif;
-        margin: auto;
-        text-align: center;
-        font-size: 40px;
-        max-width: 600px;
-        position: relative;
-        color: #b28f5e;
-
-    }
-
-    h1:before {
-        content: "";
-        display: block;
-        width: 150px;
-        height: 3px;
-        background: #000;
-        position: absolute;
-        left: 0;
-        margin-left: 20%;
-        top: 30%;
-        z-index: -2;
-        background-color: #b28f5e;
-    }
-
-    h1:after {
-        content: "";
-        display: block;
-        width: 150px;
-        height: 3px;
-        background: #000;
-        position: absolute;
-        right: 0;
-        margin-right: 20%;
-        top: 30%;
-        z-index: -2;
-        background-color: #b28f5e;
-    }
 
     .container {
         margin: 10px auto;

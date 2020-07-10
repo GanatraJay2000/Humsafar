@@ -29,8 +29,10 @@ add_action('wp_enqueue_scripts','website_files');
 register_nav_menus( array(
     'primary_one' => __( 'Primary One Menu' ),
     'primary_two'=>__( 'Primary Two Menu' ),
+    'primary_responsive' => __('Primary Responsive'),
     'footer'=> __( 'Footer Menu' ),
     'entertainment_primary'=> __( 'Entertainment Primary Menu' ),
+    'entertainment_primary_responsive'=> __( 'Entertainment Primary Responsive' ),
 ) );
 
 
