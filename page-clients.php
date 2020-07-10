@@ -61,7 +61,7 @@
         color: #3d3d3d;
     }
 
-    /* .heading {
+    .heading {
         padding-top: 10px;
         margin: auto;
         margin-bottom: 0;
@@ -74,9 +74,9 @@
 
     .heading p {
         margin: 0;
-    } */
+    }
 
-    /* h1 {
+    h1 {
         font-family: sans-serif;
         margin: auto;
         text-align: center;
@@ -113,7 +113,7 @@
         top: 30%;
         z-index: -2;
         background-color: #b28f5e;
-    } */
+    }
 
     .container {
         margin: 10px auto;
@@ -140,7 +140,7 @@
         margin: 0% 11%;
     }
 
-    .blog-part hr {
+    hr {
         width: 80%;
     }
 
@@ -301,10 +301,11 @@
     /* The Close Button (x) */
     .close {
         position: absolute;
-        right: 15px;
+        right: 18px;
         top: 5px;
         font-size: 60px;
         color: #000000;
+        z-index: 10;
     }
 
     .close:hover,
