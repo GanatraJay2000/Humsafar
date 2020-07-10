@@ -52,7 +52,7 @@
         margin: 0 !important;
         display: flex;
         justify-content: center;
-        align-items: center;
+        padding-top: 50px !important;
     }
 
     .front-page-view .content {
@@ -68,11 +68,11 @@
         justify-content: center;
         align-items: flex-start;
         padding: 0;
-        padding-top: 10px;
+        padding-top: 50px;
     }
 
     .front-page-view .content .entertainment.items {
-        padding-top: 0;
+        padding-top: 50px;
     }
 
     /* .front-page-view .content .wedding { */
@@ -186,6 +186,15 @@
     }
 
     @media screen and (max-width: 768px) {
+        html {
+            margin-top: 0 !important;
+        }
+
+        .front-page-view {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+
         .front-page-view .content .entertainment {
             border: 0;
         }
@@ -195,6 +204,10 @@
             flex-direction: column;
             margin-top: 20px;
             height: 100%;
+        }
+
+        .front-page-view .content .items {
+            padding-top: 0px !important;
         }
 
         .front-page-view .content .items .link .image img {
