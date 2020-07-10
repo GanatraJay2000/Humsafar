@@ -61,7 +61,7 @@
         color: #3d3d3d;
     }
 
-    .heading {
+    /* .heading {
         padding-top: 10px;
         margin: auto;
         margin-bottom: 0;
@@ -74,9 +74,9 @@
 
     .heading p {
         margin: 0;
-    }
+    } */
 
-    h1 {
+    /* h1 {
         font-family: sans-serif;
         margin: auto;
         text-align: center;
@@ -113,7 +113,7 @@
         top: 30%;
         z-index: -2;
         background-color: #b28f5e;
-    }
+    } */
 
     .container {
         margin: 10px auto;
@@ -140,7 +140,7 @@
         margin: 0% 11%;
     }
 
-    hr {
+    .blog-part hr {
         width: 80%;
     }
 
@@ -156,8 +156,8 @@
     }
 
     /* Full-width input fields */
-    input[type=text],
-    input[type=password] {
+    .blog-part input[type=text],
+    .blog-part input[type=password] {
         width: 100%;
         padding: 15px;
         margin: 5px 0 22px 0;
@@ -166,14 +166,14 @@
         border-bottom: 1px solid black;
     }
 
-    input[type=text]:focus,
-    input[type=password]:focus {
+    .blog-part input[type=text]:focus,
+    .blog-part input[type=password]:focus {
         outline: none;
         border-bottom: 1px solid #bba45b;
     }
 
     /* Set a style for all buttons */
-    button {
+    .blog-part button {
         background-color: #bba45b;
         font-family: 'playfair display', serif;
         color: white;
@@ -197,7 +197,7 @@
         float: right;
     }
 
-    button:hover {
+    .blog-part button:hover {
         opacity: 1;
     }
 
@@ -445,7 +445,7 @@
             margin: 8px;
         }
 
-        hr {
+        .blog-part hr {
             width: 100%;
         }
 
