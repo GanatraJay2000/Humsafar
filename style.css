@@ -1091,12 +1091,16 @@ nav.item.nav-links label {
 }
 
 .book-artist-modal .modal-body .form-control:focus {
-    border-bottom: 1.6px solid #f0ca85 !important;
+    border-bottom: 1.6px solid #a768cc !important;
     box-shadow: none !important;
     outline: 0;
 }
 
+/* #cca968 */
 
+.book-artist-modal .modal-body .form-group .form-group:focus-within {
+    color: #a768cc;
+}
 
 
 @media screen and (max-width: 1100px) {

@@ -108,17 +108,17 @@
                         <form action="" method="">
                             <div class="d-flex flex-wrap text-left px-lg-5 mx-lg-5">
                                 <div class="form-group col-lg-6 col-12">
-                                    <div class="form-group">Name<input required class="form-control" autocomplete="off"
-                                            name="name">
+                                    <div class="form-group"><label>Name</label><input type="text" required
+                                            class="form-control" autocomplete="off" name="name">
                                     </div>
-                                    <div class="form-group">Company Name<input required class="form-control"
+                                    <div class="form-group">Company Name<input type="text" required class="form-control"
                                             autocomplete="off" name="company_name">
                                     </div>
-                                    <div class="form-group">Phone Number<input required class="form-control"
-                                            autocomplete="off" name="phone_no">
+                                    <div class="form-group">Phone Number<input type="number" required
+                                            class="form-control" autocomplete="off" name="phone_no">
                                     </div>
-                                    <div class="form-group">Email Id<input required class="form-control" name="email_id"
-                                            autocomplete="off">
+                                    <div class="form-group">Email Id<input type="email" required class="form-control"
+                                            name="email_id" autocomplete="off">
                                     </div>
                                     <div class="form-group">Address<textarea rows="1" class="form-control"
                                             name="address" autocomplete="off"></textarea>
@@ -126,20 +126,20 @@
                                 </div>
                                 <div class="form-group col-lg-6 col-12">
                                     <div class="form-group">
-                                        Date of Event <input required type='text' name="date_of_event"
+                                        Date of Event <input type="date" required type='text' name="date_of_event"
                                             autocomplete="off" class="form-control datepicker-here"
                                             data-position="top right" data-date-format="yyyy-mm-dd">
                                     </div>
-                                    <div class="form-group">Event Venu/City<input required class="form-control"
-                                            autocomplete="off" name="venue">
+                                    <div class="form-group">Event Venu/City<input type="text" required
+                                            class="form-control" autocomplete="off" name="venue">
                                     </div>
-                                    <div class="form-group">Event Type<input required class="form-control"
+                                    <div class="form-group">Event Type<input type="text" required class="form-control"
                                             autocomplete="off" name="event_type">
                                     </div>
                                     <div class="form-group">Artist Type<select class="form-control" autocomplete="off"
                                             name="artist_type"></select>
                                     </div>
-                                    <div class="form-group">Artist Name<input required class="form-control"
+                                    <div class="form-group">Artist Name<input type="text" required class="form-control"
                                             autocomplete="off" name="artist_name">
                                     </div>
                                 </div>
@@ -166,15 +166,15 @@
         <form action="" method="">
             <div class="d-flex flex-wrap text-left px-5 mx-5">
                 <div class="form-group col-lg-6 col-12">
-                    <div class="form-group">Name<input required class="form-control" autocomplete="off" name="name">
+                    <div class="form-group">Name<input type="text" required class="form-control" autocomplete="off" name="name">
                     </div>
-                    <div class="form-group">Company Name<input required class="form-control" autocomplete="off"
+                    <div class="form-group">Company Name<input type="text" required class="form-control" autocomplete="off"
                             name="company_name">
                     </div>
-                    <div class="form-group">Phone Number<input required class="form-control" autocomplete="off"
+                    <div class="form-group">Phone Number<input type="text" required class="form-control" autocomplete="off"
                             name="phone_no">
                     </div>
-                    <div class="form-group">Email Id<input required class="form-control" name="email_id"
+                    <div class="form-group">Email Id<input type="text" required class="form-control" name="email_id"
                             autocomplete="off">
                     </div>
                     <div class="form-group">Address<textarea rows="1" class="form-control" name="address"
@@ -183,20 +183,20 @@
                 </div>
                 <div class="form-group col-lg-6 col-12">
                     <div class="form-group">
-                        Date of Event <input required type='text' name="date_of_event" autocomplete="off"
+                        Date of Event <input type="text" required type='text' name="date_of_event" autocomplete="off"
                             class="form-control datepicker-here" data-position="top right"
                             data-date-format="yyyy-mm-dd">
                     </div>
-                    <div class="form-group">Event Venu/City<input required class="form-control" autocomplete="off"
+                    <div class="form-group">Event Venu/City<input type="text" required class="form-control" autocomplete="off"
                             name="venue">
                     </div>
-                    <div class="form-group">Event Type<input required class="form-control" autocomplete="off"
+                    <div class="form-group">Event Type<input type="text" required class="form-control" autocomplete="off"
                             name="event_type">
                     </div>
                     <div class="form-group">Artist Type<select class="form-control" autocomplete="off"
                             name="artist_type"></select>
                     </div>
-                    <div class="form-group">Artist Name<input required class="form-control" autocomplete="off"
+                    <div class="form-group">Artist Name<input type="text" required class="form-control" autocomplete="off"
                             name="artist_name">
                     </div>
                 </div>
