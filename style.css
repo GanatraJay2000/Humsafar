@@ -31,6 +31,12 @@ html {
     margin: 0 !important;
 }
 
+.form-group {
+    padding-top: 2px !important;
+    padding-bottom: 4px !important;
+    margin: 0;
+}
+
 /* 
 #load-screen {
     position: absolute;
@@ -766,7 +772,7 @@ article.page h2 {
     position: sticky;
     top: 0;
     z-index: 10;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     transition: position 200ms ease;
     background-color: #fff;
@@ -780,7 +786,7 @@ article.page h2 {
     justify-content: space-around;
     align-items: flex-start;
     position: relative;
-    width: 100%;
+    width: 100vw;
     background-color: #fff;
 }
 
@@ -916,17 +922,22 @@ nav.item.nav-links label {
     padding-top: 10px;
 }
 
+
 .ent-responsive-nav a {
     color: #444;
     font-size: 14px;
     text-decoration: none;
-    padding: 0px 10px;
+    padding: 0px 0px 0 10px;
     position: relative;
 }
 
 .ent-responsive-nav a:hover {
     color: #999;
     letter-spacing: 2px;
+}
+
+.ent-responsive-nav label {
+    width: calc(100vw - 20px) !important;
 }
 
 .ent-responsive-nav label::after {
@@ -960,7 +971,7 @@ nav.item.nav-links label {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background: url('./b5.png');
     background-repeat: no-repeat;
@@ -975,7 +986,7 @@ nav.item.nav-links label {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background: #00000090;
     z-index: -1;
@@ -1030,6 +1041,64 @@ nav.item.nav-links label {
     display: block;
 }
 
+
+.book-artist-modal,
+.book-artist-modal .modal-dialog {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100vw;
+}
+
+.book-artist-modal {
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+.book-artist-modal .modal-dialog {
+    display: flex;
+    justify-content: center;
+    width: 100vw !important;
+    padding: 0 !important;
+    max-width: 100vw;
+}
+
+.book-artist-modal .modal-content {
+    width: 700px !important;
+}
+
+.book-artist-modal .modal-body {
+    display: block;
+    padding: 10px;
+}
+
+.book-artist-modal .modal-body button {
+    padding: 3px 30px;
+}
+
+.book-artist-modal .modal-body .form-group {
+    padding-bottom: 15px;
+}
+
+.book-artist-modal .modal-body .form-control {
+
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    height: 30px;
+    border-bottom: 1px solid #33333377;
+}
+
+.book-artist-modal .modal-body .form-control:focus {
+    border-bottom: 1.6px solid #f0ca85 !important;
+    box-shadow: none !important;
+    outline: 0;
+}
+
+
+
+
 @media screen and (max-width: 1100px) {
     .ent-nav .wrapper img.item {
         width: 250px;
@@ -1057,11 +1126,14 @@ nav.item.nav-links label {
     .desktop-nav-element {
         display: none;
     }
+
+
+
 }
 
 @media screen and (max-width:500px) {
     .ent-footer .wrapper ul.item li {
-        flex-basis: 100%;
+        flex-basis: 100vw;
         padding: 5px 5px;
         text-align: center;
     }
@@ -1071,11 +1143,4 @@ nav.item.nav-links label {
         margin: 5px 5px 10px 5px;
         font-size: 12px;
     }
-}
-
-.book-artist-modal .form-control {
-    border: 0;
-    border-radius: 0;
-    border-bottom: 1px solid #666;
-    position: relative;
 }

@@ -534,10 +534,42 @@
         </div>
 
 
+        <?php  
 
-        <div class="posts">
-            <pre>    </pre>
+        $clients = new WP_QUERY(array(
+            'posts_per_page' => -1,
+            'post_type' => 'event'
+        ));
+        while($clients->have_posts()){
+            $clients->the_post(); ?>
+
+
+        <div class="image">
+            <a href="#"><img id="my-img1"
+                    src="https://static.wixstatic.com/media/98d8c3_2568e6c7c84e41cc804ccaf554873fab~mv2.jpg/v1/fill/w_960,h_641,al_c,q_90/98d8c3_2568e6c7c84e41cc804ccaf554873fab~mv2.webp"
+                    alt="deepak-nikita" /></a>
         </div>
+        <div class="kebab">
+            <a href="#"><img src="https://image.flaticon.com/icons/svg/483/483345.svg" width="15" height="15" /></a>
+        </div>
+        <div class="date">
+            <p>Jul 29, 2018</p>
+        </div>
+        <div class="name">
+            <p><a href="#">Deepak & Nikita</a></p>
+        </div>
+        <div class="text">
+            <p><a href="#">Deepak & Nikita are an adorable couple. They shied away from the usual spotlight (and
+                    sometimes the camera) that is always on the bride & ...</a></p>
+            <br>
+            <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+        </div>
+        <div class="date">
+            <p>275 views &ensp; &ensp; <a href="#">Write comment</a></p>
+        </div>
+
+
+        <?php } ?>
 
         <div class="image">
             <a href="#"><img id="my-img1"
