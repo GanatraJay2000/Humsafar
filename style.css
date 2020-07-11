@@ -362,22 +362,26 @@ article.post:last-of-type {
     border-top: 1px solid #f2fffc;
     position: relative;
     padding: 20px;
+    padding-top: 0px;
     display: none;
     max-height: 0;
     transition: max-height 500ms ease-in !important;
 }
 
 .my-responsive-nav ul {
+    padding-top: 0;
     margin: 0;
 }
-
-
 
 .my-responsive-nav ul li {
     list-style: none;
     padding: 10px !important;
     display: block;
     position: relative;
+}
+
+.my-responsive-nav ul li:first-child {
+    padding-top: 0;
 }
 
 .my-responsive-nav ul li::after {
@@ -894,6 +898,11 @@ article.page h2 {
 
 nav.item.nav-links {
     padding-top: 20px !important;
+    padding-bottom: 0 !important;
+}
+
+.my-responsive-nav nav {
+    padding-top: 0px !important;
     padding-bottom: 0 !important;
 }
 
