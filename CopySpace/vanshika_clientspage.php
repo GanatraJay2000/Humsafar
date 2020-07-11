@@ -180,7 +180,7 @@
 		}
 
 		/* Set a style for all buttons */
-		button {
+		.blog-part button {
 			background-color: #bba45b;
 			font-family: 'playfair display', serif;
 			color: white;
@@ -193,18 +193,18 @@
 			opacity: 0.9;
 		}
 
-		.signupbtn {
+		.blog-part .signupbtn {
 			margin-bottom: 20px;
 		}
 
-		.firstbtn {
+		.blog-part .firstbtn {
 			background-color: #fcf7ff;
 			border: 1px solid;
 			color: #bba45b;
 			float: right;
 		}
 
-		button:hover {
+		.blog-part button:hover {
 			opacity: 1;
 		}
 
@@ -465,13 +465,16 @@
 				width: 90%;
 				margin-top: 0;
 			}
+			.modal-content2 {
+				width: 300px;
+			}
 
 			.login {
 				background-color: #bba45b;
 				height: 36px;
 			}
 
-			.firstbtn {
+			.blog-part .firstbtn {
 				background-color: #bba45b;
 				border: 1px solid #bba45b;
 				color: white;
@@ -749,6 +752,7 @@
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function () {
 			modal.style.display = "none";
+			$('body').css('overflow', 'auto');
 		}
 
 		// When the user clicks anywhere outside of the modal, close it
@@ -777,6 +781,7 @@
 		// When the user clicks on <span> (x), close the modal
 		span2.onclick = function () {
 			modal2.style.display = "none";
+			$('body').css('overflow', 'auto');
 		}
 
 		// When the user clicks anywhere outside of the modal, close it
@@ -810,6 +815,7 @@
 			$('#content2').css('display', 'none');
 			$('#content1').css('display', 'block');
 			e.preventDefault();
+			$('body').css('overflow', 'hidden');
 		});
 	</script>
 
@@ -824,6 +830,7 @@
 			$('#content2-2').css('display', 'none');
 			$('#content1-2').css('display', 'block');
 			e.preventDefault();
+			$('body').css('overflow', 'hidden');
 		});
 	</script>
 
