@@ -40,6 +40,7 @@
     ul.title {
         padding: 0;
         margin: 0;
+        text-align: center;
     }
 
     ul.title li {
@@ -200,6 +201,10 @@
         div.home-page {
             padding: 0 !important;
             margin: 10px !important;
+        }
+
+        ul.title li::after {
+            content: '';
         }
     }
 
