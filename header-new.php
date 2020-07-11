@@ -108,8 +108,8 @@
                         <form action="" method="">
                             <div class="d-flex flex-wrap text-left px-lg-5 mx-lg-5">
                                 <div class="form-group col-lg-6 col-12">
-                                    <div class="form-group"><label>Name</label><input type="text" required
-                                            class="form-control" autocomplete="off" name="name">
+                                    <div class="form-group">Name<input type="text" required class="form-control"
+                                            autocomplete="off" name="name">
                                     </div>
                                     <div class="form-group">Company Name<input type="text" required class="form-control"
                                             autocomplete="off" name="company_name">

@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
     //     document.getElementById("load-screen").style.display = "none";
     //     document.body.style.overflow = "visible";
     // }
-    $('.owl-carousel').owlCarousel({
+    $('.carousel').owlCarousel({
         animateIn: 'animate__slideInLeft',
         animateOut: 'animate__slideOutRight',
         items: 4,
@@ -76,10 +76,51 @@ jQuery(document).ready(function ($) {
 
 
 
-
-
-
-
+    // $('.testimonials').owlCarousel({
+    //     animateIn: 'animate__slideInLeft',
+    //     animateOut: 'animate__slideOutRight',
+    //     autoplay: true,
+    //     margin: 10,
+    //     loop: true,
+    //     autoplaySpeed: 300,
+    //     responsive: {
+    //         // breakpoint from 0 up
+    //         0: {
+    //             items: 1,
+    //         },
+    //         // breakpoint from 480 up
+    //         600: {
+    //             items: 2,
+    //         },
+    //         // breakpoint from 768 up
+    //         768: {
+    //             items: 3,
+    //         },
+    //         1000: {
+    //             items: 3,
+    //         }
+    //     }
+    // });
+    $('.testimonials').owlCarousel({
+        loop: true,
+        margin: 10,
+        stagePadding: 0,
+        autoplay: true,
+        responsiveClass: true,
+        nav: true,
+        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+            }
+        }
+    })
 
 
 });
