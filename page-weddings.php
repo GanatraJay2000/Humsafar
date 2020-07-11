@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,300&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,300&display=swap'); */
 
     .home-page {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        font-family: 'Playfair Display', sans-serif !important;
+        font-family: "Playfair Display", sans-serif !important;
         margin: 0px 120px;
         margin-top: -30px;
     }
