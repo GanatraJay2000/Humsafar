@@ -24,11 +24,11 @@
 
 <footer class="site-footer">
     <div class="wrapper">
-        <div>
-            <div>
+        <div class=" text-lg-center">
+            <div class=" text-lg-center">
                 <h2>Explore</h2>
             </div>
-            <nav class="site-nav">
+            <nav class="site-nav text-lg-center">
                 <?php
             $args = array(
                 'theme_location'=>'footer',
@@ -37,7 +37,7 @@
             ?>
             </nav>
         </div>
-        <div class="newsletter" data-aos="fade-right" data-aos-delay="300">
+        <div class="newsletter " data-aos="fade-right" data-aos-delay="300">
             <div>
                 <h2>Join Mailing List</h2>
             </div>
@@ -47,11 +47,11 @@
                 <button type="submit" class="btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
             </form>
         </div>
-        <div class="social-links">
+        <div class="social-links text-lg-center">
             <div>
-                <h2 class="text-lg-center">Connects</h2>
+                <h2>Connects</h2>
             </div>
-            <div class="text-lg-center">
+            <div>
                 <span><i style="" class="fab fa-facebook" aria-hidden="true"></i></span>
                 <span><i style="" class="fab fa-instagram" aria-hidden="true"></i></span>
                 <span><i style="" class="fab fa-twitter" aria-hidden="true"></i></span>
@@ -59,7 +59,7 @@
                 <span><i style="" class="fab fa-youtube" aria-hidden="true"></i></span>
             </div>
         </div>
-        <div class="reach-us" data-aos="fade-left" data-aos-delay="200">
+        <div class="reach-us text-lg-center" data-aos="fade-left" data-aos-delay="200">
             <h2>Reach Us</h2>
             <div>
                 <div><a href="https://www.humsafar.co">www.humsafar.co</a></div>
