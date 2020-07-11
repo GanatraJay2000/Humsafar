@@ -909,6 +909,7 @@ nav.item.nav-links label {
     display: none;
     margin-left: 0 !important;
     padding-left: 10px;
+    background-color: #fff;
 }
 
 .ent-responsive-nav ul li {
@@ -1074,6 +1075,7 @@ nav.item.nav-links label {
 
 .book-artist-modal .modal-body button {
     padding: 3px 30px;
+    margin-top: 10px;
 }
 
 .book-artist-modal .modal-body .form-group {
