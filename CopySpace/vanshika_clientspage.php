@@ -465,6 +465,9 @@
 				width: 90%;
 				margin-top: 0;
 			}
+			.modal-content2 {
+				width: 300px;
+			}
 
 			.login {
 				background-color: #bba45b;
