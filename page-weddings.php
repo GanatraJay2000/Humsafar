@@ -129,7 +129,6 @@
         display: flex !important;
         align-items: center;
         overflow: hidden;
-        padding: 50px;
     }
 
     .testimonial-card {

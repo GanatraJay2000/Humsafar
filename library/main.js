@@ -8,17 +8,18 @@ jQuery(document).ready(function ($) {
     //     document.body.style.overflow = "visible";
     // }
     $('.carousel').owlCarousel({
-        animateIn: 'animate__slideInLeft',
-        animateOut: 'animate__slideOutRight',
+        // animateIn: 'animate__slideInLeft',
+        // animateOut: 'animate__slideOutRight',
         items: 4,
         loop: true,
         margin: 30,
         autoplay: true,
-        autoplaySpeed: 2300,
+        autoplayTimeout: 8000,
+        autoplaySpeed: 4000,
         mouseDrag: false,
         touchDrag: false,
         pullDrag: false,
-
+        rtl: true,
         dots: false,
         stagePadding: 60,
         responsive: {
@@ -103,9 +104,13 @@ jQuery(document).ready(function ($) {
     // });
     $('.testimonials').owlCarousel({
         loop: true,
+        // animateIn: 'animate__fadeIn',
+        // animateOut: 'animate__fadeOut',
         margin: 10,
         stagePadding: 0,
         autoplay: true,
+        autoplayTimeout: 12000,
+        autoplaySpeed: 4000,
         responsiveClass: true,
         nav: true,
         navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],

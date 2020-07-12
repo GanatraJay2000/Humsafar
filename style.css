@@ -171,7 +171,6 @@ article.post:last-of-type {
     background-size: cover;
     background-position: right bottom;
     padding: 20px 40px;
-    font-size: 18px;
     align-items: center;
 }
 
@@ -189,7 +188,7 @@ article.post:last-of-type {
     color: var(--primary-color) !important;
     background: transparent;
     font-family: "Times New Roman", serif;
-    font-size: 19px;
+    font-size: 16px;
     padding: 0 15px;
     letter-spacing: 1.4px;
     text-decoration: none;
@@ -234,6 +233,8 @@ article.post:last-of-type {
 .site-nav li ul {
     display: none;
     padding-top: 10px;
+    padding-bottom: 10px;
+    background: #0f030388;
     position: absolute;
     border-radius: 4px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -242,7 +243,6 @@ article.post:last-of-type {
 .site-nav li ul li {
     padding: 5px 0;
     display: none;
-    background: #0f030388;
     text-align: center;
 }
 
