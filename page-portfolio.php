@@ -256,6 +256,9 @@
     }
 
     @media screen and (max-width : 700px) {
+        main.lightbox-wrapper {
+            max-width: 100% !important;
+        }
 
         .heading h1::before,
         .heading h1::after {
