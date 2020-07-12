@@ -260,13 +260,18 @@
             border-radius: 5px;
         }
 
+        .post:nth-child(even) {
+            flex-direction: column;
+            border-radius: 5px;
+        }
+
         .post .content {
             padding: 20px;
-            text-align: center;
+            text-align: center !important;
         }
 
         .post .heading {
-            text-align: center;
+            text-align: center !important;
         }
 
         .post .image {
