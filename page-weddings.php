@@ -27,6 +27,7 @@
     }
 
     .sub-title {
+        text-align: center;
         margin: 10px 0;
         font-size: 17px;
         margin-bottom: 15px;
@@ -70,13 +71,17 @@
 
     .post {
         margin: 20px 0px;
-        border: 0.5px solid #cc9d5c88;
+        border: 0.5px solid #d0d0d0;
         border-radius: 5px;
         display: flex;
         flex-direction: row;
         background: transparent;
         text-decoration: none;
         color: #444;
+    }
+
+    .post:nth-child(even) {
+        flex-direction: row-reverse;
     }
 
     .post:hover {
@@ -90,13 +95,22 @@
         max-height: 300px;
     }
 
+    .post:nth-child(even) .image {
+        border-radius: 0 5px 5px 0;
+    }
+
     .post .content {
         flex-basis: 50%;
         padding: 40px;
         color: #444;
         text-decoration: none;
         position: relative;
+        text-align: left;
     }
+
+    /* .post:nth-child(even) .content {
+        text-align: right;
+    } */
 
     .post .content small {
         font-family: sans-serif;
@@ -111,6 +125,10 @@
         display: block !important;
     }
 
+    /* .post:nth-child(even) .content .heading {
+        text-align: right;
+    } */
+
     .post-footer {
         border-top: 0.7px solid #444444aa;
         margin-top: 26px !important;
@@ -120,6 +138,21 @@
         justify-content: space-between;
     }
 
+    .post:hover {
+        border: 0.5px solid #cc9d5c88;
+    }
+
+    .post:hover .heading {
+        color: #b28f5e;
+    }
+
+    .post button.heart {
+        border: none !important;
+        background: transparent;
+        padding: 0;
+        outline: none !important;
+        box-shadow: 0;
+    }
 
 
 
@@ -229,6 +262,11 @@
 
         .post .content {
             padding: 20px;
+            text-align: center;
+        }
+
+        .post .heading {
+            text-align: center;
         }
 
         .post .image {
@@ -274,7 +312,7 @@
     <button class="inquire">Inquire</button>
     <div class="heading"><i>Find our Recent post here!</i></div>
     <hr class="title">
-    <div class="post">
+    <a href="#" class="post">
         <img class="image"
             src="https://images.unsplash.com/flagged/photo-1566150217714-ebfea356f885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
             alt="hahaha">
@@ -285,10 +323,15 @@
                 quia suscipit totam.</div>
             <div class="post-footer">
                 <div>282 views &nbsp;&nbsp; Write a Comment</div>
-                <div><i class="text-danger fa fa-heart" aria-hidden="true"></i> 5</div>
+                <div>
+                    <button class="heart">
+                        <i class="heart text-danger far fa-heart" aria-hidden="true"></i>
+                    </button>
+                    5
+                </div>
             </div>
         </div>
-    </div>
+    </a>
     <a href="#" class="post">
         <img class="image"
             src="https://images.unsplash.com/photo-1519307212971-dd9561667ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
@@ -300,54 +343,60 @@
                 quia suscipit totam.</div>
             <div class="post-footer">
                 <div>211 views &nbsp;&nbsp; Write a Comment</div>
-                <div><i class="text-danger fa fa-heart" aria-hidden="true"></i> 3</div>
-            </div>
-        </div>
-    </a>
-    <div class="heading"><i>Testimonials</i></div>
-    <hr class="title">
-    <div class="owl-carousel testimonials owl-theme ">
-        <div class="testimonial-card">
-            <div class="testimonial-card-content">
-                <img src="https://images.unsplash.com/flagged/photo-1566150217714-ebfea356f885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                    alt="Post-1">
-                <div class="detail">
-                    <h6>Prem & Varsha</h6>
-                    <p>Thanks for your hardwwork.</p>
+                <div>
+                    <button class="heart">
+                        <i class="heart text-danger far fa-heart" aria-hidden="true"></i>
+                    </button>
+                    3
                 </div>
             </div>
         </div>
-        <div class="testimonial-card">
-            <div class="testimonial-card-content">
-                <img src="https://images.unsplash.com/photo-1460364157752-926555421a7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-                    alt="Post-3">
-                <div class="detail">
-                    <h6>Prem & Varsha</h6>
-                    <p>Thanks for your hardwwork.</p>
-                </div>
-            </div>
-        </div>
-        <div class="testimonial-card">
-            <div class="testimonial-card-content">
-                <img src="https://images.unsplash.com/photo-1519307212971-dd9561667ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-                    alt="Post-2">
-                <div class="detail">
-                    <h6>Prem & Varsha</h6>
-                    <p>Thanks for your hardwwork.</p>
-                </div>
-            </div>
-        </div>
-        <div class="testimonial-card">
-            <div class="testimonial-card-content">
-                <img src="https://images.unsplash.com/photo-1507874915569-4a58ec33669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-                    alt="Post-5">
-                <div class="detail">
-                    <h6>Prem & Varsha</h6>
-                    <p>Thanks for your hardwwork.</p>
-                </div>
+</div>
+</a>
+<div class="heading"><i>Testimonials</i></div>
+<hr class="title">
+<div class="owl-carousel testimonials owl-theme ">
+    <div class="testimonial-card">
+        <div class="testimonial-card-content">
+            <img src="https://images.unsplash.com/flagged/photo-1566150217714-ebfea356f885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                alt="Post-1">
+            <div class="detail">
+                <h6>Prem & Varsha</h6>
+                <p>Thanks for your hardwwork.</p>
             </div>
         </div>
     </div>
+    <div class="testimonial-card">
+        <div class="testimonial-card-content">
+            <img src="https://images.unsplash.com/photo-1460364157752-926555421a7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                alt="Post-3">
+            <div class="detail">
+                <h6>Prem & Varsha</h6>
+                <p>Thanks for your hardwwork.</p>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial-card">
+        <div class="testimonial-card-content">
+            <img src="https://images.unsplash.com/photo-1519307212971-dd9561667ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                alt="Post-2">
+            <div class="detail">
+                <h6>Prem & Varsha</h6>
+                <p>Thanks for your hardwwork.</p>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial-card">
+        <div class="testimonial-card-content">
+            <img src="https://images.unsplash.com/photo-1507874915569-4a58ec33669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                alt="Post-5">
+            <div class="detail">
+                <h6>Prem & Varsha</h6>
+                <p>Thanks for your hardwwork.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </div>
