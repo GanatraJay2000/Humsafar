@@ -121,7 +121,7 @@ jQuery(document).ready(function ($) {
             450: {
                 items: 2,
             },
-            1000: {
+            900: {
                 items: 3,
             }
         }
