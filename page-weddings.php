@@ -108,9 +108,9 @@
         text-align: left;
     }
 
-    /* .post:nth-child(even) .content {
+    .post:nth-child(even) .content {
         text-align: right;
-    } */
+    }
 
     .post .content small {
         font-family: sans-serif;
@@ -125,9 +125,9 @@
         display: block !important;
     }
 
-    /* .post:nth-child(even) .content .heading {
+    .post:nth-child(even) .content .heading {
         text-align: right;
-    } */
+    }
 
     .post-footer {
         border-top: 0.7px solid #444444aa;
