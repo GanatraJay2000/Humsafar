@@ -7,18 +7,19 @@ jQuery(document).ready(function ($) {
     //     document.getElementById("load-screen").style.display = "none";
     //     document.body.style.overflow = "visible";
     // }
-    $('.owl-carousel').owlCarousel({
-        animateIn: 'animate__slideInLeft',
-        animateOut: 'animate__slideOutRight',
+    $('.carousel').owlCarousel({
+        // animateIn: 'animate__slideInLeft',
+        // animateOut: 'animate__slideOutRight',
         items: 4,
         loop: true,
         margin: 30,
         autoplay: true,
-        autoplaySpeed: 2300,
+        autoplayTimeout: 8000,
+        autoplaySpeed: 4000,
         mouseDrag: false,
         touchDrag: false,
         pullDrag: false,
-
+        rtl: true,
         dots: false,
         stagePadding: 60,
         responsive: {
@@ -76,10 +77,55 @@ jQuery(document).ready(function ($) {
 
 
 
-
-
-
-
+    // $('.testimonials').owlCarousel({
+    //     animateIn: 'animate__slideInLeft',
+    //     animateOut: 'animate__slideOutRight',
+    //     autoplay: true,
+    //     margin: 10,
+    //     loop: true,
+    //     autoplaySpeed: 300,
+    //     responsive: {
+    //         // breakpoint from 0 up
+    //         0: {
+    //             items: 1,
+    //         },
+    //         // breakpoint from 480 up
+    //         600: {
+    //             items: 2,
+    //         },
+    //         // breakpoint from 768 up
+    //         768: {
+    //             items: 3,
+    //         },
+    //         1000: {
+    //             items: 3,
+    //         }
+    //     }
+    // });
+    $('.testimonials').owlCarousel({
+        loop: true,
+        // animateIn: 'animate__fadeIn',
+        // animateOut: 'animate__fadeOut',
+        margin: 10,
+        stagePadding: 0,
+        autoplay: true,
+        autoplayTimeout: 12000,
+        autoplaySpeed: 4000,
+        responsiveClass: true,
+        nav: true,
+        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            450: {
+                items: 2,
+            },
+            900: {
+                items: 3,
+            }
+        }
+    })
 
 
 });

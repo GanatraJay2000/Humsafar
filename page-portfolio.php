@@ -70,10 +70,19 @@
         }
     }
 
+
+
     @media (min-width:2040px) {
         .lightbox-wrapper {
             --repeat: 3;
             --row-height: 450px;
+        }
+    }
+
+    @media (max-width:1040px) {
+        .lightbox-wrapper {
+            --repeat: 2;
+            --row-height: 250px;
         }
     }
 
@@ -82,8 +91,8 @@
         max-width: 70%;
         display: grid;
         grid-gap: 5px;
-        grid-template-columns: repeat(var(--repeat, auto-fill), minmax(250px, 1fr));
-        grid-auto-rows: var(--row-height);
+        grid-template-columns: repeat(var(--repeat, auto-fill), minmax(250px, 1fr)) !important;
+        /* grid-auto-rows: var(--row-height); */
         grid-auto-flow: dense;
     }
 
@@ -146,8 +155,8 @@
         height: calc(100% - 60px);
         -webkit-filter: drop-shadow(0 3px 15px black);
         filter: drop-shadow(0 3px 15px black);
-        cursor: url('/assets/close-button.png'), -webkit-grab;
-        cursor: url('/assets/close-button.png'), grab;
+        -webkit-cursor: url('../assets/close-button.png'), -webkit-no-drop;
+        cursor: url('../assets/close-button.png'), no-drop;
         /* custom cursor to signal close on click */
     }
 
@@ -172,24 +181,6 @@
     }
 
 
-    .horizontal {
-        grid-column-end: span 2;
-    }
-
-    .vertical {
-        grid-row-end: span 2;
-    }
-
-    .big {
-        grid-column-end: span 2;
-        grid-row-end: span 2;
-    }
-
-    .big.right {
-        grid-column-start: -3;
-        grid-column-end: span 2;
-        grid-row-end: span 2;
-    }
 
     .lightbox-wrapper .active div:not(.show) img {
         -webkit-filter: blur(3px);
@@ -243,7 +234,31 @@
         margin-right: 20%;
     }
 
+    @media screen and (min-width:1124px) {
+        .horizontal {
+            grid-column-end: span 2;
+        }
+
+        .vertical {
+            grid-row-end: span 2;
+        }
+
+        .big {
+            grid-column-end: span 2;
+            grid-row-end: span 2;
+        }
+
+        .big.right {
+            grid-column-start: -3;
+            grid-column-end: span 2;
+            grid-row-end: span 2;
+        }
+    }
+
     @media screen and (max-width : 700px) {
+        main.lightbox-wrapper {
+            max-width: 100% !important;
+        }
 
         .heading h1::before,
         .heading h1::after {

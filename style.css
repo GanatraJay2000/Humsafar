@@ -7,6 +7,7 @@ Version:1.0
     --primary-color: rgb(255, 227, 117);
     --bg-color: #012e29;
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --midnight: #104f55;
     --Anton: "Anton", sans-serif;
     --Baloo: "Baloo", sans-serif;
     --Convergence: "Convergence", cursive;
@@ -16,6 +17,7 @@ Version:1.0
     --Livvic: "Livvic", sans-serif;
     --Livvic_I: "Livvic_I", sans-serif;
     --Montserrat: "Montserrat", sans-serif;
+    --Playfair-Display: "Playfair Display", sans-serif;
     --Raleway: "Raleway", sans-serif;
     --Roboto_Slab: "Roboto_Slab", sans-serif;
     --Rubik: "Rubik", sans-serif;
@@ -37,93 +39,6 @@ html {
     margin: 0;
 }
 
-/* 
-#load-screen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden !important;
-    background-image: url("./back.png");
-    background-color: var(--bg-color);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    transition: opacity 1s ease-out;
-    opacity: 1;
-}
-
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    border-top: 5px solid var(--primary-color);
-    border-bottom: 5px solid var(--primary-color);
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0px;
-        opacity: 1
-    }
-}
-
-@keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0;
-        opacity: 1
-    }
-} */
 
 body {
     font-family: Arial, sans-serif;
@@ -256,7 +171,6 @@ article.post:last-of-type {
     background-size: cover;
     background-position: right bottom;
     padding: 20px 40px;
-    font-size: 18px;
     align-items: center;
 }
 
@@ -274,7 +188,7 @@ article.post:last-of-type {
     color: var(--primary-color) !important;
     background: transparent;
     font-family: "Times New Roman", serif;
-    font-size: 19px;
+    font-size: 16px;
     padding: 0 15px;
     letter-spacing: 1.4px;
     text-decoration: none;
@@ -319,6 +233,8 @@ article.post:last-of-type {
 .site-nav li ul {
     display: none;
     padding-top: 10px;
+    padding-bottom: 10px;
+    background: #0f030388;
     position: absolute;
     border-radius: 4px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -327,7 +243,6 @@ article.post:last-of-type {
 .site-nav li ul li {
     padding: 5px 0;
     display: none;
-    background: #0f030388;
     text-align: center;
 }
 
@@ -361,22 +276,26 @@ article.post:last-of-type {
     border-top: 1px solid #f2fffc;
     position: relative;
     padding: 20px;
+    padding-top: 0px;
     display: none;
     max-height: 0;
     transition: max-height 500ms ease-in !important;
 }
 
 .my-responsive-nav ul {
+    padding-top: 0;
     margin: 0;
 }
-
-
 
 .my-responsive-nav ul li {
     list-style: none;
     padding: 10px !important;
     display: block;
     position: relative;
+}
+
+.my-responsive-nav ul li:first-child {
+    padding-top: 0;
 }
 
 .my-responsive-nav ul li::after {
@@ -896,6 +815,12 @@ nav.item.nav-links {
     padding-bottom: 0 !important;
 }
 
+.my-responsive-nav nav {
+    padding-top: 0px !important;
+    padding-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
 nav.item.nav-links li {
     padding-bottom: 0 !important;
 }
@@ -909,6 +834,7 @@ nav.item.nav-links label {
     display: none;
     margin-left: 0 !important;
     padding-left: 10px;
+    background-color: #fff;
 }
 
 .ent-responsive-nav ul li {
@@ -1074,6 +1000,7 @@ nav.item.nav-links label {
 
 .book-artist-modal .modal-body button {
     padding: 3px 30px;
+    margin-top: 10px;
 }
 
 .book-artist-modal .modal-body .form-group {

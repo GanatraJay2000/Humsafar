@@ -61,6 +61,59 @@
         color: #3d3d3d;
     }
 
+    .heading {
+        padding-top: 10px;
+        margin: auto;
+        margin-bottom: 0;
+        text-align: center;
+        color: #2f2e2e;
+        font-size: 45px;
+        //background-color:rgba(0,0,0,0.5);
+        width: 70%;
+    }
+
+    .heading p {
+        margin: 0;
+    }
+
+    h1 {
+        font-family: sans-serif;
+        margin: auto;
+        text-align: center;
+        font-size: 40px;
+        max-width: 600px;
+        position: relative;
+        color: #b28f5e;
+
+    }
+
+    h1:before {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 3px;
+        background: #000;
+        position: absolute;
+        left: 0;
+        margin-left: 20%;
+        top: 30%;
+        z-index: -2;
+        background-color: #b28f5e;
+    }
+
+    h1:after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 3px;
+        background: #000;
+        position: absolute;
+        right: 0;
+        margin-right: 20%;
+        top: 30%;
+        z-index: -2;
+        background-color: #b28f5e;
+    }
 
     .container {
         margin: 10px auto;
@@ -103,8 +156,8 @@
     }
 
     /* Full-width input fields */
-    .blog-part input[type=text],
-    .blog-part input[type=password] {
+    input[type=text],
+    input[type=password] {
         width: 100%;
         padding: 15px;
         margin: 5px 0 22px 0;
@@ -113,8 +166,8 @@
         border-bottom: 1px solid black;
     }
 
-    .blog-part input[type=text]:focus,
-    .blog-part input[type=password]:focus {
+    input[type=text]:focus,
+    input[type=password]:focus {
         outline: none;
         border-bottom: 1px solid #bba45b;
     }
@@ -133,11 +186,11 @@
         opacity: 0.9;
     }
 
-    .signupbtn {
+    .blog-part .signupbtn {
         margin-bottom: 20px;
     }
 
-    .firstbtn {
+    .blog-part .firstbtn {
         background-color: #fcf7ff;
         border: 1px solid;
         color: #bba45b;
@@ -181,7 +234,8 @@
 
 
     /* Modal Content/Box */
-    .modal-content {
+    .my-modal-content {
+        border: 0 !important;
         background-color: #ffffff;
         margin: 2% auto 15% auto;
         /* 5% from the top, 15% from the bottom and centered */
@@ -191,34 +245,39 @@
         text-align: center;
     }
 
-    .modal-content .head- s {
+    .my-modal-content .head- s {
         font-family: sans-serif;
         text-align: center;
         font-size: 35px;
         color: #2f2e2e;
     }
 
-    .modal-content .head-s h1 {
+    .my-modal-content .head-s h1 {
         color: #2f2e2e;
         margin: 5px;
     }
 
-    .modal-content .p-text p {
+    .my-modal-content .p-text p {
         text-align: center;
         font-size: 20px;
         margin: 0 color: #2f2e2e;
     }
 
-    .modal-content .p-text a {
+    .my-modal-content .p-text a {
         text-decoration: none;
         color: #bba45b;
     }
 
-    .modal-content a {
+    .my-modal-content a {
         color: #2f2e2e;
     }
 
-    .modal-content .other-signup p {
+    .my-modal-content .other-signup .links {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .my-modal-content .other-signup p {
 
         font-size: 16px;
         margin: 0;
@@ -230,29 +289,29 @@
         margin: 10px 0 20px;
     }
 
-    .modal-content .other-signup span {
+    .my-modal-content .other-signup span {
         background-color: white;
         padding: 0 10px;
     }
 
-    .modal-content .other-signup .fb {
+    /* .my-modal-content .other-signup .fb {
         float: right;
         margin: 10px 35% 0 0;
     }
 
-    .modal-content .other-signup .ggl {
+    .my-modal-content .other-signup .ggl {
         float: left;
         margin: 10px 0 0 35%;
-    }
+    } */
 
     /* The Close Button (x) */
     .close {
         position: absolute;
-        right: 18px;
+        right: 15px;
         top: 5px;
-        font-size: 60px;
-        color: #000000;
         z-index: 10;
+        font-size: 40px;
+        color: #000000;
     }
 
     .close:hover,
@@ -301,7 +360,7 @@
     }
 
     /* Modal Content */
-    .modal-content2 {
+    .my-modal-content2 {
         background-color: #fefefe;
         margin: auto;
         padding: 20px;
@@ -309,7 +368,7 @@
         text-align: center;
     }
 
-    .modal-content2 img {
+    .my-modal-content2 img {
         margin: 20px 10px;
     }
 
@@ -350,7 +409,7 @@
 
     /* Change styles for  small screens */
     @media screen and (max-width: 900px) {
-        .modal-content {
+        .my-modal-content {
             margin-top: 0;
         }
     }
@@ -393,7 +452,7 @@
             margin: 8px;
         }
 
-        .blog-part hr {
+        hr {
             width: 100%;
         }
 
@@ -402,9 +461,13 @@
         }
 
 
-        .modal-content {
+        .my-modal-content {
             width: 90%;
             margin-top: 0;
+        }
+
+        .my-modal-content2 {
+            width: 300px;
         }
 
         .login {
@@ -412,7 +475,7 @@
             height: 36px;
         }
 
-        .firstbtn {
+        .blog-part .firstbtn {
             background-color: #bba45b;
             border: 1px solid #bba45b;
             color: white;
@@ -440,7 +503,7 @@
                 <div id="id01" class="modal">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
                         title="Close Modal">&times;</span>
-                    <form id="form1" class="modal-content" action="/action_page.php">
+                    <form id="form1" class="my-modal-content" action="/action_page.php">
                         <div class="signup-container">
                             <div class="head-s">
                                 <h1><b>SIGN UP</b></h1>
@@ -461,13 +524,15 @@
                             </div>
                             <div class="other-signup">
                                 <p><span>or sign up with</span></p>
-                                <div class="ggl"><a href="#"><img
-                                            src="https://image.flaticon.com/icons/svg/2702/2702602.svg" alt="google"
-                                            width="40" height="40"></a>
-                                </div>
-                                <div class="fb"><a href="#"><img
-                                            src="https://image.flaticon.com/icons/svg/1384/1384053.svg" alt="facebook"
-                                            width="40" height="40"></a>
+                                <div class="links">
+                                    <div class="ggl"><a href="#"><img
+                                                src="https://image.flaticon.com/icons/svg/2702/2702602.svg" alt="google"
+                                                width="40" height="40"></a>
+                                    </div>
+                                    <div class="fb"><a href="#"><img
+                                                src="https://image.flaticon.com/icons/svg/1384/1384053.svg"
+                                                alt="facebook" width="40" height="40"></a>
+                                    </div>
                                 </div>
                                 <br>
                                 <br>
@@ -476,7 +541,7 @@
                         </div>
                     </form>
 
-                    <form id="form2" class="modal-content" action="/action_page.php">
+                    <form id="form2" class="my-modal-content" action="/action_page.php">
                         <div class="signup-container">
                             <div class="head-s">
                                 <h1><b>LOG IN</b></h1>
@@ -498,13 +563,15 @@
                             </div>
                             <div class="other-signup">
                                 <p><span>or log in with</span></p>
-                                <div class="ggl"><a href="#"><img
-                                            src="https://image.flaticon.com/icons/svg/2702/2702602.svg" alt="google"
-                                            width="40" height="40"></a>
-                                </div>
-                                <div class="fb"><a href="#"><img
-                                            src="https://image.flaticon.com/icons/svg/1384/1384053.svg" alt="facebook"
-                                            width="40" height="40"></a>
+                                <div class="links">
+                                    <div class="ggl"><a href="#"><img
+                                                src="https://image.flaticon.com/icons/svg/2702/2702602.svg" alt="google"
+                                                width="40" height="40"></a>
+                                    </div>
+                                    <div class="fb"><a href="#"><img
+                                                src="https://image.flaticon.com/icons/svg/1384/1384053.svg"
+                                                alt="facebook" width="40" height="40"></a>
+                                    </div>
                                 </div>
                                 <br>
                                 <br>
@@ -513,7 +580,7 @@
                         </div>
                     </form>
 
-                    <form id="form3" class="modal-content" action="/action_page.php">
+                    <form id="form3" class="my-modal-content" action="/action_page.php">
                         <div class="signup-container">
                             <div class="head-s">
                                 <h1>RESET PASSWORD</h1>
@@ -572,7 +639,7 @@
             <div id="myModal" class="modal2">
 
                 <!-- Modal content -->
-                <div class="modal-content2">
+                <div class="my-modal-content2">
                     <span class="close2">&times;</span>
 
                     <div id="content1">
@@ -628,7 +695,7 @@
             <div id="myModal2" class="modal2">
 
                 <!-- Modal content -->
-                <div class="modal-content2">
+                <div class="my-modal-content2">
                     <span class="close2">&times;</span>
 
                     <div id="content1-2">
@@ -687,6 +754,7 @@
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.style.display = "none";
+        $('body').css('overflow', 'auto');
     }
 
     // When the user clicks anywhere outside of the modal, close it
@@ -715,6 +783,7 @@
     // When the user clicks on <span> (x), close the modal
     span2.onclick = function () {
         modal2.style.display = "none";
+        $('body').css('overflow', 'auto');
     }
 
     // When the user clicks anywhere outside of the modal, close it
@@ -748,6 +817,7 @@
         $('#content2').css('display', 'none');
         $('#content1').css('display', 'block');
         e.preventDefault();
+        $('body').css('overflow', 'hidden');
     });
 </script>
 
@@ -762,6 +832,7 @@
         $('#content2-2').css('display', 'none');
         $('#content1-2').css('display', 'block');
         e.preventDefault();
+        $('body').css('overflow', 'hidden');
     });
 </script>
 
@@ -806,5 +877,4 @@
         $('body').css('overflow', 'auto');
     });
 </script>
-
 <?php get_footer(); ?>
