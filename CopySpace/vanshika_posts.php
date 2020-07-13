@@ -6,6 +6,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Post</title>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Manuale" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>	
+
+	
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
@@ -27,7 +35,7 @@
         text-decoration: none !important;
         z-index: 999;
         color: rgba(255, 255, 255, .5) !important;
-        font-size: 5rem;
+        font-size: 7rem;
         font-family: monospace;
         -webkit-transition: all .2s;
         transition: all .2s;
@@ -243,11 +251,11 @@
 		.date {
 			font-family: 'FuturaLig', sans-serif;
 			color: #3d3d3d;
-			font-size: 12px;
+			font-size: 15px;
 		}
 
 		.date p {
-			margin: 1% 0;
+			margin: 1%;
 		}
 
 		.date a {
@@ -256,7 +264,7 @@
 		}
 
 		.name {
-			font-size: 28px;
+			font-size: 32px;
 		}
 
 		.name p {
@@ -399,7 +407,7 @@
 			/* Full width */
 			height: 100%;
 			/* Full height */
-			overflow: inherit;
+			overflow: auto;
 			/* Enable scroll if needed */
 			background-color: #ffffff;
 			padding-top: 20px;
@@ -415,12 +423,14 @@
 			/* Could be more or less, depending on screen size */
 			float: center;
 			text-align: center;
+			border: 0px solid;
+			height:100%;
 		}
 
 		.modal-content .head-s {
-			font-family: sans-serif;
+			//font-family: sans-serif;
 			text-align: center;
-			font-size: 35px;
+			font-size: 32px;
 			color: #2f2e2e;
 		}
 
@@ -431,7 +441,7 @@
 
 		.modal-content .p-text p {
 			text-align: center;
-			font-size: 20px;
+			font-size: 18px;
 			margin: 0 color: #2f2e2e;
 		}
 
@@ -469,12 +479,12 @@
 
 		.modal-content .other-signup .fb {
 			float: right;
-			margin: 10px 35% 0 0;
+			margin: 10px 25% 0 2%;
 		}
 
 		.modal-content .other-signup .ggl {
 			float: left;
-			margin: 10px 0 0 35%;
+			margin: 10px 2% 0 25%;
 		}
 
 		/* The Close Button (x) */
@@ -540,9 +550,9 @@
 			width: 400px;
 			text-align: center;
 		}
-
+		
 		.modal-content2 img {
-			margin: 20px 10px;
+			margin: 20px;
 		}
 
 		.copy-link {
@@ -566,10 +576,6 @@
 		}
 
 		#content2 {
-			display: none;
-		}
-
-		#content2-2 {
 			display: none;
 		}
 
@@ -600,17 +606,21 @@
 			.image img {
 				object-fit: fill;
 			}
-
+			
 			.name p {
 				margin: 8px;
+				text-align:center;
+				font-size:25px;
 			}
 
 			.text p {
 				margin: 8px;
+				font-size:17px;
 			}
 
 			.date p {
 				margin: 8px;
+				font-size: 12px;
 			}
 
 			hr {
@@ -626,8 +636,29 @@
 				width: 90%;
 				margin-top: 0;
 			}
+			
+			.modal-content label{
+			  font-size: 13px;
+			}
+			
+			.modal-content .head-s {
+			  font-size:20px;
+			}
+			
+			.modal-content .p-text p{
+			  font-size:14px;
+			}
+			
+			.modal-content .other-signup{
+			  font-size:13px;
+			}
+			
 			.modal-content2 {
-				width: 300px;
+				width: 90%;
+			}
+			
+			.modal-content2 h3{
+			  font-size:20px;
 			}
 
 			.login {
@@ -699,9 +730,6 @@
 												alt="facebook" width="40" height="40"></a>
 									</div>
 									</div>
-									<br>
-									<br>
-									<br>
 								</div>
 							</div>
 						</form>
@@ -736,9 +764,6 @@
 												src="https://image.flaticon.com/icons/svg/1384/1384053.svg"
 												alt="facebook" width="40" height="40"></a>
 									</div>
-									<br>
-									<br>
-									<br>
 								</div>
 							</div>
 						</form>
@@ -760,9 +785,7 @@
 									<button type="submit" class="signupbtn">Reset Password</button>
 								</div>
 
-								<br>
-								<br>
-								<br>
+								
 							</div>
 					</div>
 					</form>
@@ -789,6 +812,7 @@
 
 						<div id="content1">
 							<h3>Share Post</h3>
+							<br>
 							<a href="#"><img src="https://image.flaticon.com/icons/svg/179/179319.svg" width="40"
 									height="40" /></a>
 							<a href="#"><img src="https://image.flaticon.com/icons/svg/179/179342.svg" width="40"
@@ -817,9 +841,9 @@
 			</div>
 
 			<div class="image">
-				<a href="#"><img id="my-img1"
+				<img id="my-img1"
 						src="https://static.wixstatic.com/media/98d8c3_2568e6c7c84e41cc804ccaf554873fab~mv2.jpg/v1/fill/w_960,h_641,al_c,q_90/98d8c3_2568e6c7c84e41cc804ccaf554873fab~mv2.webp"
-						alt="deepak-nikita" /></a>
+						alt="deepak-nikita" />
 			</div>
 
 			
@@ -841,8 +865,8 @@
 
 	</div>
 
-<a href="#" class="lightboxNav prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-<a href="#" class="lightboxNav next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+<a href="#" class="lightboxNav prev">&lt;</a>
+<a href="#" class="lightboxNav next">&gt;</a>
 
 <main class="lightbox-wrapper">
     <div class="">
