@@ -15,50 +15,14 @@
 
 <style>
 body{
+	overflow-x:hidden;
 
   font-family: "Times New Roman", Times, serif;
 
 }
 
-.zz.active{
- filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-	}
-	
-	.yy.active{
- filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-	}
-	
-		.xx.active{
- filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-	}
-	
-		.ww.active{
- filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-	}
-	
-			.mm.active{
- filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-	}
+
+
 hr{
 width:60px;
 background-color:black;
@@ -68,9 +32,8 @@ height:1px;}
 
 
 .thumb{
-  margin-top: 10px;
-  margin-bottom: 10px;
-   
+  margin:0px;
+   padding:0px;
 
 
 }
@@ -111,207 +74,28 @@ background-color:black;
 
 }
 .card-img-top{
-height:150px;
+height:200px;
 width:auto;}
 
 
-
-.kebab {
-  position:fixed;
-  cursor: pointer;
-  display: none;
-  box-sizing: border-box;
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  border-radius: 50%;
-  padding:11px 23px;
-  top: 12px;
-  margin-left:110px;
-  margin-top:550px;
+#cc{
+justify-content:center;
 }
-.kebab figure {
-  width: 6px;
-  height: 6px;
-  border-radius: 5px;
-  background: white;
-  margin: 3px 0;
-}
-
-.middle {
-
-  
-  position: relative;
-  box-shadow: 0 0.1px 0.1px 0 rgba(0, 0, 0, 0.16), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.12);
-
-}
-
-.middle.active {
-  transform: scale(4.5);
-	background-color:black;
-}
-
-.cross {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%) scale(0);
-  margin-top: -1px;
-  font-family: "Nunito", sans-serif;
-  color: white;
-  
-  font-size: 22px;
-  user-select: none;
-}
-
-.cross.active {
-  transform: translate(-50%, -50%) scale(1);
-
-}
-
-.circle{
- height: 40px;
-  width: 40px;
-  background-color: black;
-  border-radius: 50%;
-  padding:10px 13px;
-
-  
-  }
-
-
-
-.dropdown {
-  position: absolute;
-  right:3rem;
-  top: -45px;
-  transition: all 0.25s ease-out;
-  transform: scale(0);
-
-  border:0px;
-}
-.dropdown li {
-  display: block;
-  width: 100%;
-  background-color:transparent
-}
-.dropdown li a {
-  width: 100%;
-  padding: 4px 10px;
-  display: inline-block;
-  white-space: pre;
-  box-sizing: border-box;
-}
-.dropdown li a:hover {
-  background: transparent;
-}
-.dropdown:hover ul {
-  transform: scale(1);
-}
-
-.dropdown.active {
-  transform: scale(1);
-  transition: all 0.25s cubic-bezier(0.5, 1.8, 0.9, 0.8);
-}
-
-.fa{
-color:white;
-}
-
 
 
 
 @media only screen and (max-width: 765px) {
 .thumb{
- padding:0px;
- width:40%;
- margin-left:30px;
-
-}
-}
-@media only screen and (max-width: 900px)
-{
-.kebab {
-  position:fixed;
-  cursor: pointer;
-  display: inline-block;
-  box-sizing: border-box;
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  border-radius: 50%;
-  padding:11px 23px;
-  top: 12px;
-  margin-left:110px;
-  margin-top:510px;
-}
-
-.dropdown {
-
-  right:3rem;
-  top: -45px;
-
-}
-
-}
-@media only screen and (max-width: 1200px) and (min-width:765px)
-{
-.kebab {
-  position:fixed;
-  cursor: pointer;
-  display: inline-block;
-  box-sizing: border-box;
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  border-radius: 50%;
-  padding:11px 23px;
-  top: 12px;
- margin-left:300px;
-  margin-top:800px;
-}
-
-.dropdown {
-
-  right:3rem;
-  top: -45px;
-
-}
-
+width:40%;
 }
 
 
-
-
-@media only screen and (max-width: 1500px) and (min-width: 900px)
-{
-
-.kebab {
-  position:fixed;
-  cursor: pointer;
-  display: inline-block;
-  box-sizing: border-box;
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  border-radius: 50%;
-  padding:11px 23px;
-  top: 12px;
-  margin-left:400px;
-  margin-top:1100px;
 }
 
-.dropdown {
-
-  right:3rem;
-  top: -45px;
-
-}
-}
 
 </style>
 <body>
-<div class="ww">
+
 <div class="container animate__animated animate__pulse" width="100%">
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -321,15 +105,15 @@ color:white;
 </div>
 </div>
 </br>
-</div>
-<div class="xx">
+
+
 <h1 class="animate__animated animate__flipInX"><center>Featured Artists</center></h1>
-<hr></hr></br></div>
+<hr></hr></br>
 <center>
-<div class="mm">
+
 <div class="container">
-	<div class="row">
-		<div class="row">
+	<div class="row" id="cc">
+		
             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6 thumb animate__heartBeat">
                 <a class="thumbnail" href="#">
                     <img class="img-thumbnail"
@@ -390,8 +174,7 @@ color:white;
                          alt="Another alt text">
                 </a>
             </div>
-        </div></div></div></div></div>
-<div class="yy">
+        </div></div></div>
 <center>
 <button> VIEW ALL ARTISTS </button></center>
 
@@ -410,19 +193,18 @@ color:white;
  </div>
  
 </br></br>
-</div>
-<div class="zz">
-<h1 class="animate__animated animate__flipInX"><center>Meet Our Team</center></h1>
+
+<h1 class="animate__animated animate__flipInX"><center>Meet The Team</center></h1>
 <hr></hr></br>
 
 <div class="container">
 
 	<div class="row">
 	
-		<div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+		
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 			
-<div class="card animate__animated animate__zoomIn" style="width: 350px;">
+<div class="card animate__animated animate__zoomIn">
   <img class="card-img-top" src="armaan.png">
   <div class="card-body">
     <h4 class="card-title">ARMAAN SHARMA</h4><h6>CREATIVE DIRECTOR<hr></hr></br></h6>
@@ -430,7 +212,7 @@ color:white;
 
   </div></div></div>
   <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-  <div class="card animate__animated animate__zoomIn" style="width: 350px;">
+  <div class="card animate__animated animate__zoomIn" >
   <img class="card-img-top" src="ritika.png">
   <div class="card-body">
      <h4 class="card-title">RITIKA KAUL</h4><h6>ARTIST MANAGER<hr></hr></br></h6>
@@ -438,28 +220,17 @@ color:white;
 
   </div>
 </div></div>
- <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-  <div class="card animate__animated animate__zoomIn" style="width: 350px">
+ <div class="col-lg-4 col-md-12 col-sm-6 col-xs-6">
+  <div class="card animate__animated animate__zoomIn" >
   <img class="card-img-top" src="chetan.png">
   <div class="card-body">
       <h4 class="card-title">CHETAN MEWARA</h4><h6>HOSPITALITY & LOGISTICS HEAD<hr></hr></br></h6>
     <p class="card-text">We know what is the importance of Hospitality & Logistics in any wedding. Our Hospitality & Logistics Head Chetan Mewara keeps his keen observation in finding the right kind of management and hospitality to look after the guests into any type of Wedding.</p>
 
   </div>
-</div></div></div></div></div></div>
+</div></div></div></div>
 
- <div class="kebab">
-    <figure></figure>
-    <figure class="middle"></figure>
-    <p class="cross">x</p>
-    <figure></figure>
-    <ul class="dropdown">
-      <li><a href="http://www.g.com"><div class="circle"><i class="fa fa-phone fa-1x"></i></div></a></li>
-      <li><a href="http://www.g.com"><div class="circle"><i class="fa fa-envelope-o fa-1x"></i></div></a></li>
-      <li><a href="http://www.g.com"><div class="circle"><i class="fa fa-facebook-official fa-1x"></i></div></a></li>
- 
-    </ul>
-  </div>
+
 
 
 
@@ -470,32 +241,6 @@ color:white;
   
 
 
-<script>
-
-   
-var kebab = document.querySelector('.kebab'),
-    middle = document.querySelector('.middle'),
-    cross = document.querySelector('.cross'),
-    dropdown = document.querySelector('.dropdown');
-	    zz = document.querySelector('.zz');
-		yy = document.querySelector('.yy');
-		
-		ww = document.querySelector('.ww');
-		xx = document.querySelector('.xx');
-		mm = document.querySelector('.mm');
-
-kebab.addEventListener('click', function() {
-  middle.classList.toggle('active');
-  cross.classList.toggle('active');
-  dropdown.classList.toggle('active');
-zz.classList.toggle('active');
-yy.classList.toggle('active');
-
-ww.classList.toggle('active');
-xx.classList.toggle('active');
-mm.classList.toggle('active');
-});
-</script>
 
 </body>
 </html>
