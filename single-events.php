@@ -13,10 +13,9 @@ get_post();
 
 
 	
-<article class="post">
+<article class="text-left">
     <h2><?php the_title(); ?></h2>
-	 <h6><?php echo $date; ?></h6>
-			<!-- <img width="400px" src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>" /> -->
+     <h6><?php echo $date; ?></h6>     
 	<?php foreach ( $thumbnail_image as $image ) {?>
         <img src="<?php echo $image['url'] ?>" alt="">
     <?php } ?>
@@ -27,6 +26,7 @@ get_post();
         <img src="<?php echo $image['url'] ?>" alt="">
     <?php } ?>
 
+    <?php if(is_single()) comments_template(); ?>
 </article>
 <?php
 }

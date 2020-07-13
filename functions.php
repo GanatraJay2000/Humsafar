@@ -53,6 +53,7 @@ function add_custom_post() {
 
     $args = array(
     'labels' => $labels,
+    'has_archive' => true,
     'public' => true,
     'publicly_queryable' => true,
     'show_ui' => true,
@@ -63,7 +64,7 @@ function add_custom_post() {
     'capability_type' => 'post',
     'hierarchical' => true,
     'menu_position' => 5,
-    'supports' => array('title','editor','thumbnail','excerpt',),
+    'supports' => array('title','editor','thumbnail','excerpt','comments'),
     'menu_icon' => 'dashicons-calendar'
     );
 
@@ -134,3 +135,63 @@ function add_custom_post() {
     register_post_type( 'destinations' , $args );
 }
 add_action( 'init', 'add_custom_post' );
+
+
+if ( ! function_exists( 'rwmb_meta' ) ) {
+    function rwmb_meta( $key, $args = '', $post_id = null ) {
+        return false;
+    }
+}
+function custom_fields( $meta_boxes ) {
+	$prefix = '';
+
+	$meta_boxes[] = array(
+		'id' => 'untitled',
+		'title' => esc_html__( 'Custom Fields', 'metabox-online-generator' ),
+		'post_types' => array('post', 'page' , 'events'),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => 'false',
+		'fields' => array(
+			array(
+				'id' => $prefix . 'gallery',
+				'type' => 'image_advanced',
+				'name' => esc_html__( 'Gallery', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'gallery of images', 'metabox-online-generator' ),
+				'max_file_uploads' => '20',
+			),
+			array(
+				'id' => $prefix . 'location',
+				'type' => 'text',
+				'name' => esc_html__( 'Location', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'location of event', 'metabox-online-generator' ),
+				'placeholder' => esc_html__( 'Enter Location of Event', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'event_date',
+				'type' => 'date',
+				'name' => esc_html__( 'Event Date', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'Date of Event to be held', 'metabox-online-generator' ),
+				'js_options' => array(),
+				'attributes' => array(),
+			),
+			array(
+				'id' => $prefix . 'event_type',
+				'type' => 'text',
+				'name' => esc_html__( 'Event Type', 'metabox-online-generator' ),
+				'placeholder' => esc_html__( 'Type of Event  - Wedding / Concert', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'thumbnail_image',
+				'type' => 'image_advanced',
+				'name' => esc_html__( 'Thumbnail Image', 'metabox-online-generator' ),
+				'max_file_uploads' => '1',
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'custom_fields' );
+
+
