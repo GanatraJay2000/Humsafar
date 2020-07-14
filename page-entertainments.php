@@ -1,23 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Entertainments Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <?php get_header('new'); ?>
-
-<?php
-
-while(have_posts())
-{
-    the_post();?>
-<article class="post">
-    <p><?php the_content(); ?></p>
-    <div>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta deleniti autem facere nihil ducimus
-        itaque laudantium optio eius, illum doloremque distinctio voluptatem quia laborum molestiae nesciunt totam illo
-        ea neque atque earum id aliquam ex. Sint veniam ipsam earum perferendis animi suscipit illum adipisci dolor
-        similique. Eos debitis tempora esse distinctio, nemo iusto sequi odio inventore praesentium odit facilis rem
-        minus reiciendis maxime totam repudiandae. Nulla distinctio nemo alias commodi fugit, rem ipsam assumenda
-        perferendis, similique perspiciatis vitae incidunt laboriosam, nobis quisquam molestiae atque libero rerum
-        beatae qui? Nam minus veritatis esse modi corrupti optio sed quos deserunt autem.
-    </div>
-</article>
-<?php
+<style>
+body{
+	overflow-x:hidden;
+  font-family: "Times New Roman", Times, serif;
+  background-color: white !important;
 }
+
+
+
+hr.ent-hr{
+width:60px;
+background-color:black;
+height:1px;
+margin: 17px auto;}
+
+
+
+
+
+p.card-text{
+margin-right:5px;
+margin-left:5px;
+font-size:19px;
+}
+
+p.ent-p{
+font-size:19px;
+
+}
+
+.ent-btn {
+color:black;
+background-color:white;
+border:1px solid black;
+padding:2px 20px 2px 20px;
+transition: transform .2s;
+font-size:20px;
+margin:10px 0 30px 0;
+}
+
+.card{
+border:0px;
+}
+
+img {opacity: 0.9}
+img:hover {opacity: 1}
+
+.ent-btn:hover {
+
+color:white;
+background-color:black;
+ -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+
+}
+.card-img-top{
+width:250px;
+margin:auto;
+}
+
+
+
+@media only screen and (max-width: 765px) {
+.thumb{
+width:40%;
+}
+
+
+}
+
+
+</style>
+<body>
+
+
+<center>    
+<div class="container">
+	<div class="row" id="cc">
+<?php
+ $artists = new WP_Query(array(                
+    'post_type' => 'artists',
+    'meta_key' => 'order_on_home_page',
+    'orderby' => 'meta_value_num',
+    'order' => 'ASC',   
+    'meta_query' => array(
+        array(
+            'key' => 'on_home_page',
+            'compare' => '==',
+            'value' => 'Yes',   
+          ),),));
+
+while($artists->have_posts())
+{
+$artists->the_post();
+$thumbnail_image = rwmb_meta('image_on_home_page', array( 'size' => 'medium' ) );
 ?>
+
+  <?php foreach ( $thumbnail_image as $image ) { ?>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6 thumb ">        
+      <a class="thumbnail" href="<?php the_permalink(); ?>">
+        <img src="<?php echo $image['url'] ?>" alt="">
+      </a>
+    </div>
+  <?php } ?>    
+
+<?php } ?>
+
+  </div>  
+  </div>  
+
+<a href="<?php echo site_url('/entertainments/artists'); ?>">
+<button class="ent-btn"> VIEW ALL ARTISTS </button>
+</a>
+</center>
+
+
+<div class="container" width="100%">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h1 class=""><center>Get To Know About Us</center></h1>
+<hr class="ent-hr">
+<p class="ent-p">Humsafar Entertainments is a Mumbai based Artist Management Company
+ that specializes in managing artists including songwriters & DJs. HE has
+ established as one of the reputated company from over 7 Years within artist 
+ management in India. With over a 100 of talented artists in it's team, HE is providing an extra shine to your exciting events.
+ </div>
+ </div>
+ </div>
+ 
+
+<center>
+<h1 class=""><center>Meet The Team</center></h1>
+<hr class="ent-hr">
+
+<div class="container">
+
+	<div class="row">
+	
+		
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+			
+<div class="card animate__animated animate__zoomIn">
+  <img class="card-img-top" src="../assets/armaan.png">
+  <div class="card-body">
+    <h4 class="card-title">ARMAAN SHARMA</h4><h6>CREATIVE DIRECTOR<hr class="ent-hr"></h6>
+    <p class="card-text">Our Founder & Director at Humsafar.Co has founded the company in 2010 after his amazing skills in Event Management & Wedding Planning. He has designed over 200 Weddings in Luxury & Destination Theme though out his Wedding Career.</p>
+
+  </div></div></div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+  <div class="card animate__animated animate__zoomIn" >
+  <img class="card-img-top" src="../assets/ritika.png">
+  <div class="card-body">
+     <h4 class="card-title">RITIKA KAUL</h4><h6>ARTIST MANAGER<hr class="ent-hr"></h6>
+    <p class="card-text">Managing an artist is a job not less an being an artist itself. Ritika Kaul our experienced and talented Artist Manager knows the importance of properly handling the schedule of Artist (of any field) to make your event a grand success.</p>
+
+  </div>
+</div></div>
+ <div class="col-lg-4 col-md-12 col-sm-6 col-xs-6">
+  <div class="card animate__animated animate__zoomIn" >
+  <img class="card-img-top" src="../assets/chetan.png">
+  <div class="card-body">
+      <h4 class="card-title">CHETAN MEWARA</h4><h6>HOSPITALITY & LOGISTICS HEAD<hr class="ent-hr"></h6>
+    <p class="card-text">We know what is the importance of Hospitality & Logistics in any wedding. Our Hospitality & Logistics Head Chetan Mewara keeps his keen observation in finding the right kind of management and hospitality to look after the guests into any type of Wedding.</p>
+
+  </div>
+</div></div></div></div>
+  </center>
+
+
 <?php get_footer('new'); ?>
+
+
+
+<!--
+  
+<div class="container " width="100%">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <img src="../assets/p03kbhkd.jpg" alt="Arijit Singh" width="100%">
+ 
+</div>
+</div>
+</div>
+
+
+
+<h1 class=""><center>Featured Artists</center></h1>
+<hr class="ent-hr">
+<!-- <center>
+
+<div class="container">
+	<div class="row" id="cc">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6 thumb ">
+                <a class="thumbnail" href="#">
+                    <img class="img-thumbnail"
+                         src="../assets/1.png"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 thumb ">
+                <a class="thumbnail" href="#">
+                    <img class="img-thumbnail"
+                         src="../assets/2.png"
+                         alt="Another alt text">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 thumb ">
+                <a class="thumbnail" href="#">
+                    <img class="img-thumbnail"
+                         src="../assets/3.png"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 thumb ">
+                <a class="thumbnail" href="#">
+                    <img class="img-thumbnail"
+                         src="../assets/4.png"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 thumb ">
+                <a class="thumbnail" href="#">
+                    <img class="img-thumbnail"
+                         src="../assets/5.png"
+                         alt="Another alt text">
+                </a>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 thumb ">
+                <a class="thumbnail" href="#">
+                    <img class="img-thumbnail"
+                         src="../assets/6.png"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 thumb ">
+                <a class="thumbnail" href="#">
+                    <img class="img-thumbnail"
+                         src="../assets/7.png"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 thumb ">
+                <a class="thumbnail" href="#">
+                    <img class="img-thumbnail"
+                         src="../assets/8.png"
+                         alt="Another alt text">
+                </a>
+            </div>
+        </div>
+      </div>
+</center> -->

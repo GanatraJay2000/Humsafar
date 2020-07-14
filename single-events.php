@@ -143,8 +143,8 @@
             height: calc(100% - 60px);
             -webkit-filter: drop-shadow(0 3px 15px black);
             filter: drop-shadow(0 3px 15px black);
-            -webkit-cursor: url('../assets/close-button.png'), -webkit-no-drop;
-            cursor: url('../assets/close-button.png'), no-drop;
+            -webkit-cursor: url('/humsafar/assets/close-button.png'), -webkit-no-drop;
+            cursor: url('/humsafar/assets/close-button.png'), no-drop;
             /* custom cursor to signal close on click */
         }
 
@@ -320,6 +320,9 @@
             .my-container {
                 width: 100%;
             }
+            .title{                
+                font-size:48px;
+            }
         }
 
 
@@ -354,7 +357,9 @@
             hr {
                 width: 100%;
             }
-
+            .title{                
+                font-size:36px;
+            }
 
 
             .post-part .firstbtn {
@@ -372,18 +377,20 @@
     <div class="post-part mx-lg-5 mx-0">
 
         <div class="my-container">
-            <p><a href="#">Go back to all posts</a></p>
+            <p><a href="<?php echo site_url('/weddings/clients'); ?>">Go back to all posts</a></p>
             <?php
             while(have_posts())
             {
                 the_post();
+                $location = rwmb_meta('location');
                 $event_date = rwmb_meta('event_date');                
                 $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
-                $gallery = rwmb_meta('gallery', array( 'size' => 'large' ) ); ?>
+                $gallery = rwmb_meta('gallery', array( 'size' => 'large' ) ); 
+                
+                $eventDate = new DateTime($event_date);                
+                ?>
 
-            <div class="date">
-                <p><?php echo $event_date; ?></p>
-            </div>
+            
             <div class="name">
                 <p class="title"><?php the_title(); ?></p>
             </div>
@@ -403,7 +410,7 @@
             </div>
 
             <div class="date">
-                <p>275 views &ensp; &ensp; <a href="#">Write comment</a></p>
+                <p><?php echo $location; ?> &nbsp;&nbsp;<?php echo $eventDate->format('M').' '.$eventDate->format('dS').', '.$eventDate->format('Y'); ?></p>             
             </div>
         </div>
     </div>

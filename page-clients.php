@@ -611,6 +611,9 @@
 <?php
 $events = new WP_Query(array(
     'post_type'=>'events',
+    'meta_key' => 'event_date',
+    'orderby' => 'meta_value_num',
+    'order' => 'DESC',
 ));
 while($events->have_posts())
 {
@@ -618,39 +621,27 @@ while($events->have_posts())
     $event_date = rwmb_meta('event_date');
     $event_type = rwmb_meta('event_type');
     $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'medium' ) );
+
+    $eventDate = new DateTime($event_date);          
     
-//   
 if($event_type === 'Wedding'){
     ?>
-<article class="post">    
-        <p><?php the_title(); ?></p>            
-    <p><?php echo wp_trim_words(get_the_content(), 25); ?></p><br>
-     <?php foreach ( $thumbnail_image as $image ) {?>
-     <img src="<?php echo $image['url'] ?>" alt="">
-<?php } ?>
 
-    
-</article>
-<?php
-}
-}
-?>
+
 
 <div class="container">
 <div class="image">
-            <a href="#"><img id="my-img1"
-                    src="https://static.wixstatic.com/media/98d8c3_2568e6c7c84e41cc804ccaf554873fab~mv2.jpg/v1/fill/w_960,h_641,al_c,q_90/98d8c3_2568e6c7c84e41cc804ccaf554873fab~mv2.webp"
-                    alt="deepak-nikita" /></a>
+            <?php foreach ( $thumbnail_image as $image ) {?>
+            <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['url'] ?>" alt=""></a>
+        <?php } ?>
         </div>
 
-        <div class="date">
-            <p>Jul 29, 2018</p>
-        </div>
+
         <div class="name">
-            <p><a href="#">Deepak & Nikita</a></p>
+            <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
         </div>
         <div class="text">
-            <p><a href="#">Deepak & Nikita are an adorable couple. They shied away from the usual spotlight (and sometimes the camera) that is always on the bride & ...</a></p>
+            <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
             <br>
             <hr style="height:1px;border-width:0;background-color:#cccccc">
         </div>
@@ -686,7 +677,7 @@ if($event_type === 'Wedding'){
         </div>
 
         <div class="date">
-            <p>275 views &ensp; &ensp; <a href="#">Write comment</a></p>
+            <p><?php echo $eventDate->format('M').' '.$eventDate->format('dS').', '.$eventDate->format('Y'); ?></p>
         </div>
 
     </div>
@@ -694,122 +685,10 @@ if($event_type === 'Wedding'){
             <pre>    </pre>
     </div> 
 
-    <div class="container">
-
-        <div class="image">
-            <a href="#"><img id="my-img1"
-                    src="https://static.wixstatic.com/media/98d8c3_2568e6c7c84e41cc804ccaf554873fab~mv2.jpg/v1/fill/w_960,h_641,al_c,q_90/98d8c3_2568e6c7c84e41cc804ccaf554873fab~mv2.webp"
-                    alt="deepak-nikita" /></a>
-        </div>
-
-        <div class="date">
-            <p>Jul 29, 2018</p>
-        </div>
-        <div class="name">
-            <p><a href="#">Deepak & Nikita</a></p>
-        </div>
-        <div class="text">
-            <p><a href="#">Deepak & Nikita are an adorable couple. They shied away from the usual spotlight (and sometimes the camera) that is always on the bride & ...</a></p>
-            <br>
-            <hr style="height:1px;border-width:0;background-color:#cccccc">
-        </div>
-        <div class="kebab">
-            <img id="myBtn" src="https://image.flaticon.com/icons/svg/126/126469.svg" width="15" height="15" />
-
-            <div id="myModal" class="modal2">
-
-                <!-- Modal content -->
-                <div class="my-modal-content2">
-                    <span class="close2">&times;</span>
-
-                    <div id="content1">
-                        <h3>Share Post</h3>
-                        <a href="#"><img src="https://image.flaticon.com/icons/svg/179/179319.svg" width="40"
-                                height="40" /></a>
-                        <a href="#"><img src="https://image.flaticon.com/icons/svg/179/179342.svg" width="40"
-                                height="40" /></a>
-                        <a href="#"><img src="https://image.flaticon.com/icons/svg/179/179330.svg" width="40"
-                                height="40" /></a>
-                        <a id="link" href="#"><img src="https://image.flaticon.com/icons/svg/181/181531.svg" width="40"
-                                height="40" /></a>
-                    </div>
-                    <div id="content2">
-                        <h3>Share Link</h3>
-                        <div class="copy-link">
-                            <p id="p1">add the link1 here</p>
-                        </div>
-                        <button onclick="copyToClipboard('#p1')">copy link</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="date">
-            <p>275 views &ensp; &ensp; <a href="#">Write comment</a></p>
-        </div>
-    </div>
-
-    <div class="container">
-
-        <div class="image">
-            <a href="#"><img id="my-img1"
-                    src="https://static.wixstatic.com/media/98d8c3_9dd3dfa2d7484c92bbf6980d1b7473f2~mv2.jpg/v1/fill/w_1110,h_740,al_c,q_90,usm_0.66_1.00_0.01/98d8c3_9dd3dfa2d7484c92bbf6980d1b7473f2~mv2.webp"
-                    alt="prem-varsha" /></a>
-        </div>
-
-        <div class="date">
-            <p>Jul 29, 2018</p>
-        </div>
-        <div class="name">
-            <p><a href="#">Prem & Varsha</a></p>
-        </div>
-        <div class="text">
-            <p><a href="#">A Grand venue with a decor that's larger than life, beautifully complemented by musical
-                    evenings of an absolutely in-love bride and groom...</a></p>
-            <br>
-            <hr style="height:1px;border-width:0;background-color:#cccccc">
-        </div>
-        <div class="kebab">
-            <img id="myBtn2" src="https://image.flaticon.com/icons/svg/126/126469.svg" width="15" height="15" />
-
-            <div id="myModal2" class="modal2">
-
-                <!-- Modal content -->
-                <div class="my-modal-content2">
-                    <span class="close2">&times;</span>
-
-                    <div id="content1-2">
-                        <h3>Share Post</h3>
-                        <a href="#"><img src="https://image.flaticon.com/icons/svg/179/179319.svg" width="40"
-                                height="40" /></a>
-                        <a href="#"><img src="https://image.flaticon.com/icons/svg/179/179342.svg" width="40"
-                                height="40" /></a>
-                        <a href="#"><img src="https://image.flaticon.com/icons/svg/179/179330.svg" width="40"
-                                height="40" /></a>
-                        <a id="link-2" href="#"><img src="https://image.flaticon.com/icons/svg/181/181531.svg"
-                                width="40" height="40" /></a>
-                    </div>
-                    <div id="content2-2">
-                        <h3>Share Link</h3>
-                        <div class="copy-link">
-                            <p id="p2">add the link2 here</p>
-                        </div>
-                        <button onclick="copyToClipboard('#p2')">copy link</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="date">
-            <p>208 views &ensp; &ensp; <a href="#">Write comment</a></p>
-        </div>
-
-
-    </div>
-
-    <div id="for-mobile" class="heading">
-        <p>Find The Latest Updates Here</p>
-        <h1><span>*</span></h1>
-    </div>
+    <?php
+}
+}
+?>
     <br>
     <br>
     <br>
