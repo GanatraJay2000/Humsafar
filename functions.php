@@ -137,6 +137,78 @@ function add_custom_post() {
 add_action( 'init', 'add_custom_post' );
 
 
+
+
+
+
+
+
+function create_custom_taxonomy() {
+	
+	//add new taxonomy hierarchical
+	$labels = array(
+		'name' => 'Types',
+		'singular_name' => 'Type',
+		'search_items' => 'Search Types',
+		'all_items' => 'All Types',
+		'parent_item' => 'Parent Type',
+		'parent_item_colon' => 'Parent Type:',
+		'edit_item' => 'Edit Type',
+		'update_item' => 'Update Type',
+		'add_new_item' => 'Add New Work Type',
+		'new_item_name' => 'New Type Name',
+		'menu_name' => 'Types'
+	);
+	
+	$args = array(
+		'hierarchical' => true,
+		'labels' => $labels,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'artist_type' )
+	);
+	
+	register_taxonomy('artist_type', array('artists'), $args);
+
+	
+}
+
+add_action( 'init' , 'create_custom_taxonomy' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if ( ! function_exists( 'rwmb_meta' ) ) {
     function rwmb_meta( $key, $args = '', $post_id = null ) {
         return false;

@@ -9,10 +9,17 @@
     $gallery = rwmb_meta('artist_gallery', array( 'size' => 'large' ) );      
     echo the_title();
     echo the_content();          
-    echo rwmb_meta('category').'<br>';
+    // echo rwmb_meta('category').'<br>';
+    $terms_list = wp_get_post_terms( $post->ID, 'artist_type');
+    foreach($terms_list as $key=>$term){
+        if($key > 0) {echo ', '; }
+        // echo $term->name.' ';
+        echo '<a href="'.get_term_link($term).'" alt="">'.$term->name.'</a>';
+    }
     echo rwmb_meta('facebook').'<br>';
     echo rwmb_meta('youtube').'<br>';
     echo rwmb_meta('instagram').'<br>';    
+
 }
 ?> 
 
