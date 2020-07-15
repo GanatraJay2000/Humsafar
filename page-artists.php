@@ -116,9 +116,7 @@ width:40%;
  <?php
 
 $terms = get_terms( 'artist_type');
-// $value='singers';
-// $terms = get_term_by('name',$value,'artist_type');
-// print_r($terms);
+
     foreach($terms as $key=>$term){
         
         $term_link = get_term_link($term); 
