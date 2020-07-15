@@ -185,7 +185,7 @@ body{
               <div class="text">
                 <?php the_title(); ?>
                 <p>
-                  <?php $tax->name ?>
+                  <?php //echo $tax->name ?>  
                 </p>
               </div>
             </div>

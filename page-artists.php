@@ -125,6 +125,7 @@ $terms = get_terms( 'artist_type');
         $term_id = $term->term_id;        
         $term_name = $term->name;        
 ?>
+<?php echo $term_name ?>
     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 thumbee ">
     <div class="term_title">
     <?php echo $term_name ?>
