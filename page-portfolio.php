@@ -155,8 +155,8 @@
         height: calc(100% - 60px);
         -webkit-filter: drop-shadow(0 3px 15px black);
         filter: drop-shadow(0 3px 15px black);
-        -webkit-cursor: url('../assets/close-button.png'), -webkit-no-drop;
-        cursor: url('../assets/close-button.png'), no-drop;
+        -webkit-cursor: url('<?php echo get_template_directory_uri().'/assets_inside/close-button.png'?>'), -webkit-no-drop;
+        cursor: url('<?php echo get_template_directory_uri().'/assets_inside/close-button.png'?>'), no-drop;
         /* custom cursor to signal close on click */
     }
 
