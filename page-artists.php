@@ -1,24 +1,6 @@
 <?php get_header('new'); ?>
+<link rel="stylesheet" href="ent_styles.css">
 <style>
-body{
-	overflow-x:hidden;
-  background-color:white;
-  font-family: "Times New Roman", Times, serif;
-
-}
-
-a{
-  text-decoration:none !important;
-  padding:0;
-}
-
-hr{
-width:60px;
-background-color:black;
-height:1px;
-margin:10px auto;}
-
-
 
 
 .thumbee{
@@ -28,6 +10,9 @@ margin:10px auto;}
 }
 .thumbee .term_title{
   position:absolute;
+  font-family: Josefin, serif;
+    pointer-events: none;
+  font-weight:600;
   color:white;
   font-size:32px;
   font-weight:500;
@@ -48,42 +33,6 @@ margin:10px auto;}
     max-width: 100%;
     height: auto;
 }
-
-p{
-margin-right:5px;
-margin-left:5px;
-
-}
-
-#buttonee{
-
-color:black;
-background-color:white;
-border:1px solid black;
-padding:1px 20px 6px 20px;
-transition: transform .2s;
-font-size:20px;
-}
-
-.card{
-border:0px;
-}
-
-#ddee:hover {opacity: 0.88}
-
-#buttonee:hover {
-
-color:white;
-background-color:black;
- -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
-
-}
-.card-img-top{
-height:200px;
-width:auto;}
-
 
 #ccee{
 justify-content:center;
