@@ -49,9 +49,9 @@ margin-left:5px;
 color:black;
 background-color:white;
 border:1px solid black;
-padding:6px 20px 6px 20px;
+padding:2px 10px 2px 10px;
 transition: transform .2s;
-font-size:20px;
+font-size:16px;
 }
 
 .card{
@@ -85,15 +85,14 @@ justify-content:center;
 width:40%;
 }
 
-
 }
 
 
 </style>
 <body>
 
-<div class="container animate__animated animate__pulse" width="100%">
-<div class="row">
+<div class="container animate__animated animate__pulse m-0 p-0" width="100%">
+<div class="row m-0 p-0">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <img src="../assets/p03kbhkd.jpg" alt="Arijit Singh" width="100%" id="ddee">
  
@@ -107,8 +106,8 @@ width:40%;
 <hr></hr></br>
 <center>
 
-<div class="container">
-	<div class="row" id="ccee">
+<div class="container m-0 p-0">
+	<div class="row m-0 p-0" id="ccee">
 
  <?php
  $artists = new WP_Query(array(                

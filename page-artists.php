@@ -44,7 +44,6 @@ margin:10px auto;}
  border:0px;
  padding: .25rem;
     background-color: #fff;
-
     border-radius: .25rem;
     max-width: 100%;
     height: auto;
@@ -61,7 +60,7 @@ margin-left:5px;
 color:black;
 background-color:white;
 border:1px solid black;
-padding:6px 20px 6px 20px;
+padding:1px 20px 6px 20px;
 transition: transform .2s;
 font-size:20px;
 }
@@ -94,9 +93,21 @@ justify-content:center;
 
 @media only screen and (max-width: 765px) {
 .thumbee{
-width:40%;
+width:49%;
 }
 
+.content.wrapper{
+  padding:0 !important;
+  margin:0 !important;
+}
+
+#ccee.row{
+  padding:0 !important;
+  margin:0 !important;
+}
+.term_title{
+  font-size:16px !important;
+}
 
 }
 
