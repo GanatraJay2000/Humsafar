@@ -95,7 +95,8 @@ function add_custom_post() {
     'rewrite' => array('slug','pages'),
     'capability_type' => 'post',
     'hierarchical' => true,
-    'menu_position' => 5,
+	'menu_position' => 5,
+	'has_archive' => true,
     'supports' => array('title','editor','thumbnail','excerpt',),
     'menu_icon'=>'dashicons-groups',
     );
