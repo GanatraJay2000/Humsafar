@@ -166,10 +166,10 @@ function create_custom_taxonomy() {
 		'show_ui' => true,
 		'show_admin_column' => true,
 		'query_var' => true,
-		'rewrite' => array( 'slug' => 'all-artists' )
+		'rewrite' => array( 'slug' => 'artist_type' )
 	);
 	
-	register_taxonomy('all-artists', array('artists'), $args);
+	register_taxonomy('artist_type', array('artists'), $args);
 
 	
 }
