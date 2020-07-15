@@ -53,8 +53,14 @@ height:1px;}
 
 
 }
-
-
+.close{
+color:white;
+position:fixed;
+  cursor: pointer;
+	background-color:transparent;
+   top:30px;
+  right:30px;
+  font-size:40px;}
 
 #buttonaa{
 
@@ -66,6 +72,10 @@ transition: transform .2s;
 font-size:19px;
 }
 
+.modal-backdrop
+{
+    opacity:0.97 !important;
+}
 
 
 
@@ -101,7 +111,7 @@ padding:2px 10px 2px 10px;
 transition: transform .2s;
 font-size:19px;
 }
-#ssaa{
+#ccaa{
 display:none;}
 
 }
@@ -111,7 +121,7 @@ display:none;}
 width:30%;
 }
 
-#ssaa{
+#ccaa{
 display:none;}
 }
 
@@ -123,19 +133,19 @@ height:auto;}}
 </style>
 <body>
 
-<div class="container animate__animated animate__pulse">
+<div class="container">
 <div class="row" >
 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-top:auto; margin-bottom:auto; margin-left:0px;" >
   <center> <img src="badshah1.png" id="ddaa" style="padding:2px;"
 	alt="Badhshah" width="100%"></center>
 </div>
 <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12" style="margin-top:auto; margin-bottom:auto; margin-left:0px;"  >
-     <h1 class="animate__animated animate__flipInX"><center>Badshah</center></h1>
+     <h1><center>Badshah</center></h1>
 	 <h5><center>Singer | Performer</center></h5>
 	 
 <hr></hr>
  <h5 style="color:#9999A8;"><center>Know the Artist</center></h5>
-<p class="animate__animated animate__flipInX" style="text-align: justify;">Aditya Prateek Singh Sisodia, better known by his stage name Badshah, is an Indian rapper and music composer known for his Hindi, Haryanvi, and Punjabi songs. He started his career in 2006 alongside Yo Yo Honey Singh in his Group Band Mafia Mundeer and gained spontaneous popularity among youth. He split from Honey in 2012.</p>
+<p style="text-align: justify;">Aditya Prateek Singh Sisodia, better known by his stage name Badshah, is an Indian rapper and music composer known for his Hindi, Haryanvi, and Punjabi songs. He started his career in 2006 alongside Yo Yo Honey Singh in his Group Band Mafia Mundeer and gained spontaneous popularity among youth. He split from Honey in 2012.</p>
  </br>
 <center>
 
@@ -146,25 +156,27 @@ height:auto;}}
 <center>
 <div class="row" id="ccaa">
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa animate__heartBeat">
-                <a  href="#">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa">
+                
                     <img class="img-thumbnailaa" id="ssaa"
                          src="badshah2.png" 
-                         alt="Another alt text">
-                </a>
-            </div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa animate__heartBeat">
-                <a  href="#">
+                         alt="Another alt text" data-toggle="modal" data-target="#myModal1"></div>
+   
+  
+           
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa">
+              
                     <img class="img-thumbnailaa" id="ssaa"
                          src="badshah3.png"
-                         alt="Another alt text">
-                </a>
+                         alt="Another alt text" data-toggle="modal" data-target="#myModal2">
+           
             </div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa animate__heartBeat">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa">
                 <a  href="#">
                     <img class="img-thumbnailaa" id="ssaa"
                          src="badshah4.png"
-                         alt="Another alt text">
+                         alt="Another alt text" data-toggle="modal" data-target="#myModal3">
                 </a>
             </div>
 			
@@ -172,8 +184,49 @@ height:auto;}}
 </div>
 </br>
 
+           			<div id="myModal1" class="modal">
+  <div class="modal-dialog">
 
+     
+        <div class="close"><span aria-hidden="true">&times;</span>
+        </div>
+            <img src="badshah2.png"  width="100%"class="img-responsive animate__animated animate__fadeIn"> 
+  </div>
+  </div>
+  
+             			<div id="myModal2" class="modal">
+  <div class="modal-dialog">
 
+     
+        <div class="close"><span aria-hidden="true">&times;</span>
+        </div>
+            <img src="badshah3.png"  width="100%"class="img-responsive animate__animated animate__fadeIn"> 
+  </div>
+  </div>
+  
+             			<div id="myModal3" class="modal">
+  <div class="modal-dialog">
+
+     
+        <div class="close"><span aria-hidden="true">&times;</span>
+        </div>
+            <img src="badshah4.png"  width="100%"class="img-responsive animate__animated animate__fadeIn ">
+  </div>
+  </div>
+<script>
+function centerModal() {
+    $(this).css('display', 'block');
+    var $dialog = $(this).find(".modal-dialog");
+    var offset = ($(window).height() - $dialog.height()) / 2;
+    // Center modal vertically in window
+    $dialog.css("margin-top", offset);
+}
+
+$('.modal').on('show.bs.modal', centerModal);
+$(window).on("resize", function () {
+    $('.modal:visible').each(centerModal);
+});
+</script>
 
 
 
