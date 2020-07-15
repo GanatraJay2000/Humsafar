@@ -28,7 +28,7 @@
 
             <div class="ent-nav">
                 <div class="wrapper">
-                    <img class="item" src="/humsafar/assets/entertainment-title.png" alt="">
+                    <img class="item" src="/assets/entertainment-title.png" alt="">
                     <nav class="item nav-links">
                         <?php
 
