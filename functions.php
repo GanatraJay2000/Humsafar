@@ -95,7 +95,8 @@ function add_custom_post() {
     'rewrite' => array('slug','pages'),
     'capability_type' => 'post',
     'hierarchical' => true,
-    'menu_position' => 5,
+	'menu_position' => 5,
+	'has_archive' => true,
     'supports' => array('title','editor','thumbnail','excerpt',),
     'menu_icon'=>'dashicons-groups',
     );
@@ -135,6 +136,78 @@ function add_custom_post() {
     register_post_type( 'destinations' , $args );
 }
 add_action( 'init', 'add_custom_post' );
+
+
+
+
+
+
+
+
+function create_custom_taxonomy() {
+	
+	//add new taxonomy hierarchical
+	$labels = array(
+		'name' => 'Types',
+		'singular_name' => 'Type',
+		'search_items' => 'Search Types',
+		'all_items' => 'All Types',
+		'parent_item' => 'Parent Type',
+		'parent_item_colon' => 'Parent Type:',
+		'edit_item' => 'Edit Type',
+		'update_item' => 'Update Type',
+		'add_new_item' => 'Add New Work Type',
+		'new_item_name' => 'New Type Name',
+		'menu_name' => 'Types'
+	);
+	
+	$args = array(
+		'hierarchical' => true,
+		'labels' => $labels,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'artist_type' )
+	);
+	
+	register_taxonomy('artist_type', array('artists'), $args);
+
+	
+}
+
+add_action( 'init' , 'create_custom_taxonomy' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 if ( ! function_exists( 'rwmb_meta' ) ) {
@@ -209,28 +282,7 @@ function artists_custom_filed( $meta_boxes ) {
 		'context' => 'advanced',
 		'priority' => 'default',
 		'autosave' => 'false',
-		'fields' => array(
-			array(
-				'id' => $prefix . 'category',
-				'name' => esc_html__( 'Category', 'metabox-online-generator' ),
-				'type' => 'select',
-				'desc' => esc_html__( 'category of Artists', 'metabox-online-generator' ),
-				'placeholder' => esc_html__( 'Select an Item', 'metabox-online-generator' ),
-				'options' => array(
-					'Anchors' => esc_html__( 'Anchors', 'metabox-online-generator' ),
-					'Singers' => esc_html__( 'Singers', 'metabox-online-generator' ),
-					'Dancers' => esc_html__( 'Dancers', 'metabox-online-generator' ),
-					'Comedians' => esc_html__( 'Comedians', 'metabox-online-generator' ),
-					'TV Stars' => esc_html__( 'TV Stars', 'metabox-online-generator' ),
-					'Celebrity' => esc_html__( 'Celebrity', 'metabox-online-generator' ),
-					'Magicians' => esc_html__( 'Magicians', 'metabox-online-generator' ),
-					'Folk Dance Groups' => esc_html__( 'Folk Dance Groups', 'metabox-online-generator' ),
-					'Choreographers' => esc_html__( 'Choreographers', 'metabox-online-generator' ),
-					'Foreign Artists' => esc_html__( 'Foreign Artists', 'metabox-online-generator' ),
-					'DJs' => esc_html__( 'DJs', 'metabox-online-generator' ),
-					'Models' => esc_html__( 'Models', 'metabox-online-generator' ),
-				),
-			),
+		'fields' => array(			
 			array(
 				'id' => $prefix . 'on_home_page',
 				'name' => esc_html__( 'On Home Page', 'metabox-online-generator' ),
@@ -243,42 +295,18 @@ function artists_custom_filed( $meta_boxes ) {
 				),
 				'inline' => 'true',
 				'std' => 'No',
-			),
-			array(
-				'id' => $prefix . 'on_articles_page',
-				'name' => esc_html__( 'On Articles Page', 'metabox-online-generator' ),
-				'type' => 'radio',
-				'desc' => esc_html__( 'is the element to be displayed on articles page', 'metabox-online-generator' ),
-				'placeholder' => '',
-				'options' => array(
-					'No' => esc_html__( 'No', 'metabox-online-generator' ),
-					'Yes' => esc_html__( 'Yes', 'metabox-online-generator' ),
-				),
-				'inline' => 'true',
-				'std' => 'No',
-			),
+			),			
 			array(
 				'id' => $prefix . 'order_on_home_page',
 				'type' => 'number',
 				'name' => esc_html__( 'Order on Home Page', 'metabox-online-generator' ),
-			),
-			array(
-				'id' => $prefix . 'order_on_articles_page',
-				'type' => 'number',
-				'name' => esc_html__( 'Order on ArticlesPage', 'metabox-online-generator' ),
-			),
+			),			
 			array(
 				'id' => $prefix . 'image_on_home_page',
 				'type' => 'image_advanced',
 				'name' => esc_html__( 'Image on Home Page', 'metabox-online-generator' ),
 				'max_file_uploads' => '1',
-			),
-			array(
-				'id' => $prefix . 'image_on_articles_page',
-				'type' => 'image_advanced',
-				'name' => esc_html__( 'Image on Articles Page', 'metabox-online-generator' ),
-				'max_file_uploads' => '1',
-			),
+			),			
 			array(
 				'id' => $prefix . 'artist_thumbnail',
 				'type' => 'image_advanced',
