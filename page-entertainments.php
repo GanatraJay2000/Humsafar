@@ -120,6 +120,7 @@ width:40%;
 }
 
   </style>
+  <center>
 <div class="container animate__animated animate__pulse m-0 p-0" width="100%">
 <div class="row m-0 p-0">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -128,7 +129,7 @@ width:40%;
 </div>
 </div>
 </div>
-</br>
+</center>
 
 
 <h1 class=""><center>Featured Artists</center></h1>
