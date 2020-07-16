@@ -1,6 +1,11 @@
 <?php get_header('new'); ?>
 <body>
 <style>
+  html,body{
+width:100vw !important;
+  max-width: 100% !important;
+  overflow-x:hidden;
+  }
   body{
 	overflow-x:hidden;
   background-color:white;
@@ -99,13 +104,16 @@ justify-content:center;
 
 @media only screen and (max-width: 765px) {
 .thumbee{
-width:40%;
+width:49%;
 }
 
 
 .content.wrapper{
   padding:0 !important;
-  margin:0 !important;
+  margin: 0 !important;
+  width:100vw !important;
+  max-width: 100% !important;
+
 }
 
 #ccee.row{
@@ -115,8 +123,8 @@ width:40%;
 .term_title{
   font-size:16px !important;
 }
-.thumbee-title{
-  font-size:16px;
+.thumbee_title{
+  font-size:16px !important;  
 }
 }
 
@@ -187,7 +195,7 @@ $thumbnail_image = rwmb_meta('image_on_home_page', array( 'size' => 'medium' ) )
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <h1 class=""><center>Get To Know About Us</center></h1>
 <hr></br>
-<p class="">Humsafar Entertainments is a Mumbai based Artist Management Company
+<p class="card-body">Humsafar Entertainments is a Mumbai based Artist Management Company
  that specializes in managing artists including songwriters & DJs. HE has
  established as one of the reputated company from over 7 Years within artist 
  management in India. With over a 100 of talented artists in it's team, HE is providing an extra shine to your exciting events.
