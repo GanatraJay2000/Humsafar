@@ -57,7 +57,8 @@ margin:10px auto;}
 p{
 margin-right:5px;
 margin-left:5px;
-
+font-size:1.3em;
+font-family: "Playfair Display", serif;
 }
 
 #buttonee{
