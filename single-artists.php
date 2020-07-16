@@ -224,13 +224,13 @@ a{
         <h5 style="color:#9999A8;">
           <center>Know the Artist</center>
         </h5>
-        <p style="text-align: justify;"><?php the_content(); ?></p>
+        <center><p style="text-align: justify;"><?php the_content(); ?></p></center>
         </br>
         <center>
 
-          <button data-toggle="modal" data-target="#myModal" id="buttonaa">BOOK ARTIST</button>
+          <button class="m-1" data-toggle="modal" data-target="#myModal" id="buttonaa">BOOK ARTIST</button>
            
-                        <button id="buttonaa">ALL ARTISTS</button></center> </br>
+                        <button class="m-1" id="buttonaa">ALL ARTISTS</button></center> </br>
         <center>
             
        
