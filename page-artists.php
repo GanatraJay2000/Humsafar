@@ -66,7 +66,7 @@ width:49%;
 
 
 
-<h1 class=""><center>All Artists</center></h1>
+<h1 style="font-family:'Playfair Display', serif;"><center>All Artists</center></h1>
 <hr></hr></br>
 <center>
 
