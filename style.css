@@ -72,6 +72,7 @@ div.wrapper.content {
     text-align: center;
     color: #2f2e2e;
     font-size: 45px;
+    font-family: "Playfair Display", serif;
 }
 
 .heading p {
@@ -86,7 +87,6 @@ div.wrapper.content {
     max-width: 600px;
     position: relative;
     color: #b28f5e;
-
 }
 
 .heading h1::before,
@@ -127,6 +127,13 @@ div.wrapper.content {
     .heading h1::after {
         width: 60px;
     }
+    .heading h1 {    
+    font-size: 30px;    
+}
+.heading {   
+    font-size: 25px;    
+}
+
 }
 
 

@@ -620,7 +620,7 @@ while($events->have_posts())
     $events->the_post();         
     $event_date = rwmb_meta('event_date');
     $event_type = rwmb_meta('event_type');
-    $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'medium' ) );
+    $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
 
     $eventDate = new DateTime($event_date);          
     

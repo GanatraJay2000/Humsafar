@@ -343,3 +343,78 @@ function artists_custom_filed( $meta_boxes ) {
 }
 add_filter( 'rwmb_meta_boxes', 'artists_custom_filed' );
 
+function destination_custom_fields( $meta_boxes ) {
+	$prefix = '';
+
+	$meta_boxes[] = array(
+		'id' => 'untitled',
+		'title' => esc_html__( 'Destinations', 'metabox-online-generator' ),
+		'post_types' => array('destinations' ),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => 'false',
+		'fields' => array(
+			array(
+				'id' => $prefix . 'order',
+				'type' => 'number',
+				'name' => esc_html__( 'Order', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'destination_type',
+				'name' => esc_html__( 'Destination Type', 'metabox-online-generator' ),
+				'type' => 'select',
+				'placeholder' => esc_html__( 'Select an Item', 'metabox-online-generator' ),
+				'options' => array(
+					'Modern' => esc_html__( 'Modern', 'metabox-online-generator' ),
+					'Traditional' => esc_html__( 'Traditional', 'metabox-online-generator' ),
+				),
+			),
+			array(
+				'id' => $prefix . 'image_on_destination_page',
+				'type' => 'image_advanced',
+				'name' => esc_html__( 'Image on Destination Page', 'metabox-online-generator' ),
+				'max_file_uploads' => '1',
+			),
+			array(
+				'id' => $prefix . 'text_on_destination_page',
+				'type' => 'text',
+				'name' => esc_html__( 'Text on Destination Page', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'thumbnail_image',
+				'type' => 'image_advanced',
+				'name' => esc_html__( 'Thumbnail Image', 'metabox-online-generator' ),
+				'max_file_uploads' => '1',
+			),
+			array(
+				'id' => $prefix . 'text_on_thumbnail_one',
+				'type' => 'text',
+				'name' => esc_html__( 'Text on Thumbnail One', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'text_on_thumbnail_two',
+				'type' => 'text',
+				'name' => esc_html__( 'Text on Thumbnail Two', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'feature_title',
+				'type' => 'text',
+				'name' => esc_html__( 'Feature Title', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'quote',
+				'type' => 'text',
+				'name' => esc_html__( 'Quote', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'gallery',
+				'type' => 'image_advanced',
+				'name' => esc_html__( 'Gallery', 'metabox-online-generator' ),
+				'max_file_uploads' => '3',
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'destination_custom_fields' );
