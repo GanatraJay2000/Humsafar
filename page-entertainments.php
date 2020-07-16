@@ -26,10 +26,11 @@ margin:10px auto;}
   margin:0px;
    padding:0px;
   position:relative;
+   padding: .25rem;
 
 }
-.thumbee .term_title{
-  position:absolute;
+.thumbee .thumbee_title{  
+  position:absolute;  
   font-family: Josefin, serif;
     pointer-events: none;
   font-weight:600;
@@ -47,7 +48,6 @@ margin:10px auto;}
 .img-thumbnailee
 {
  border:0px;
- padding: .25rem;
     background-color: #fff;
     border-radius: .25rem;
     max-width: 100%;
@@ -156,10 +156,9 @@ while($artists->have_posts())
 $artists->the_post();
 $thumbnail_image = rwmb_meta('image_on_home_page', array( 'size' => 'medium' ) );
 ?>
-
   <?php foreach ( $thumbnail_image as $image ) { ?>
     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 thumbee ">
-      <div class="thumbee-title">
+      <div class="thumbee_title">
         <?php the_title(); ?>
       </div>
         <a class="thumbnail" href="<?php the_permalink(); ?>">
