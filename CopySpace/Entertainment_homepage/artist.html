@@ -1,241 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Entertainments Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <style>
-body{
-	overflow-x:hidden;
+  body {
+    overflow-x: hidden;
 
-  font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
 
-}
-
-
-
-
-hr{
-width:60px;
-background-color:black;
-height:1px;}
+  }
 
 
 
 
-.thumbaa{
-  margin:0px;
-   padding:0px;
-   
+  hr {
+    width: 60px;
+    background-color: black;
+    height: 1px;
+  }
 
 
 
-}
-.img-thumbnailaa
-{
-  border:0px;
- padding: 2px;
- margin-top:5px;
+
+  .thumbaa {
+    margin: 0px;
+    padding: 0px;
+
+
+
+
+  }
+
+  .img-thumbnailaa {
+    border: 0px;
+    padding: 2px;
+    margin-top: 5px;
     background-color: #fff;
 
-    border-radius:0;
+    border-radius: 0;
     max-width: 100%;
     height: auto;
 
 
-}
-.close{
-color:white;
-position:fixed;
-  cursor: pointer;
-	background-color:transparent;
-   top:30px;
-  right:30px;
-  font-size:40px;}
+  }
 
-#buttonaa{
+  .close {
+    color: white;
+    position: fixed;
+    cursor: pointer;
+    background-color: transparent;
+    top: 30px;
+    right: 30px;
+    font-size: 40px;
+  }
 
-color:black;
-background-color:white;
-border:1px solid black;
-padding:2px 20px 2px 20px;
-transition: transform .2s;
-font-size:19px;
-}
+  #buttonaa {
 
-.modal-backdrop
-{
-    opacity:0.97 !important;
-}
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 2px 20px 2px 20px;
+    transition: transform .2s;
+    font-size: 19px;
+  }
 
-
-
-#ddaa:hover {opacity: 0.6}
-#ssaa:hover {opacity: 0.6}
-
-#buttonaa:hover {
-
-color:white;
-background-color:black;
- -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
-
-}
-
-#ccaa{
-justify-content:center;
-margin:0;
-}
+  .modal-backdrop {
+    opacity: 0.97 !important;
+  }
 
 
-#iaa{
-padding:10px;}
 
-@media only screen and (max-width: 350px) {
-#buttonaa{
+  #ddaa:hover {
+    opacity: 0.6
+  }
 
-color:black;
-background-color:white;
-border:1px solid black;
-padding:2px 10px 2px 10px;
-transition: transform .2s;
-font-size:19px;
-}
-#ccaa{
-display:none;}
+  #ssaa:hover {
+    opacity: 0.6
+  }
 
-}
+  #buttonaa:hover {
 
-@media only screen and (max-width: 765px) {
-.thumbaa{
-width:30%;
-}
+    color: white;
+    background-color: black;
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
 
-#ccaa{
-display:none;}
-}
+  }
 
-@media only screen and (max-width: 800px) and (min-width: 700px){
-#ddaa{
-width:60%;
-height:auto;}}
+  #ccaa {
+    justify-content: center;
+    margin: 0;
+  }
 
+
+  #iaa {
+    padding: 10px;
+  }
+
+  @media only screen and (max-width: 350px) {
+    #buttonaa {
+
+      color: black;
+      background-color: white;
+      border: 1px solid black;
+      padding: 2px 10px 2px 10px;
+      transition: transform .2s;
+      font-size: 19px;
+    }
+
+    #ccaa {
+      display: none;
+    }
+
+  }
+
+  @media only screen and (max-width: 765px) {
+    .thumbaa {
+      width: 30%;
+    }
+
+    #ccaa {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 800px) and (min-width: 700px) {
+    #ddaa {
+      width: 60%;
+      height: auto;
+    }
+  }
 </style>
+
 <body>
 
-<div class="container">
-<div class="row" >
-<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-top:auto; margin-bottom:auto; margin-left:0px;" >
-  <center> <img src="badshah1.png" id="ddaa" style="padding:2px;"
-	alt="Badhshah" width="100%"></center>
-</div>
-<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12" style="margin-top:auto; margin-bottom:auto; margin-left:0px;"  >
-     <h1><center>Badshah</center></h1>
-	 <h5><center>Singer | Performer</center></h5>
-	 
-<hr></hr>
- <h5 style="color:#9999A8;"><center>Know the Artist</center></h5>
-<p style="text-align: justify;">Aditya Prateek Singh Sisodia, better known by his stage name Badshah, is an Indian rapper and music composer known for his Hindi, Haryanvi, and Punjabi songs. He started his career in 2006 alongside Yo Yo Honey Singh in his Group Band Mafia Mundeer and gained spontaneous popularity among youth. He split from Honey in 2012.</p>
- </br>
-<center>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-top:auto; margin-bottom:auto; margin-left:0px;">
+        <center> <img src="badshah1.png" id="ddaa" style="padding:2px;" alt="Badhshah" width="100%"></center>
+      </div>
+      <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12" style="margin-top:auto; margin-bottom:auto; margin-left:0px;">
+        <h1>
+          <center>Badshah</center>
+        </h1>
+        <h5>
+          <center>Singer | Performer</center>
+        </h5>
 
-<button id="buttonaa">BOOK ARTIST</button> <button id="buttonaa">ALL ARTISTS</button></center> </br>
-<center><i class="fa fa-facebook fa-2x" id="iaa"></i> <i class="fa fa-youtube-play fa-2x" id="iaa"></i><i class="fa fa-instagram fa-2x" id="iaa"></i></center>
-</div>
-</div>
-<center>
-<div class="row" id="ccaa">
+        <hr>
+        </hr>
+        <h5 style="color:#9999A8;">
+          <center>Know the Artist</center>
+        </h5>
+        <p style="text-align: justify;">Aditya Prateek Singh Sisodia, better known by his stage name Badshah, is an
+          Indian rapper and music composer known for his Hindi, Haryanvi, and Punjabi songs. He started his career in
+          2006 alongside Yo Yo Honey Singh in his Group Band Mafia Mundeer and gained spontaneous popularity among
+          youth. He split from Honey in 2012.</p>
+        </br>
+        <center>
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa">
-                
-                    <img class="img-thumbnailaa" id="ssaa"
-                         src="badshah2.png" 
-                         alt="Another alt text" data-toggle="modal" data-target="#myModal1"></div>
-   
-  
-           
+          <button id="buttonaa">BOOK ARTIST</button> <button id="buttonaa">ALL ARTISTS</button></center> </br>
+        <center><i class="fa fa-facebook fa-2x" id="iaa"></i> <i class="fa fa-youtube-play fa-2x" id="iaa"></i><i
+            class="fa fa-instagram fa-2x" id="iaa"></i></center>
+      </div>
+    </div>
+    <center>
+      <div class="row" id="ccaa">
 
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa">
-              
-                    <img class="img-thumbnailaa" id="ssaa"
-                         src="badshah3.png"
-                         alt="Another alt text" data-toggle="modal" data-target="#myModal2">
-           
-            </div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa">
-             
-                    <img class="img-thumbnailaa" id="ssaa"
-                         src="badshah4.png"
-                         alt="Another alt text" data-toggle="modal" data-target="#myModal3">
-             
-            </div>
-			
-			</div>
-</div>
-</br>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa">
 
-           			<div id="myModal1" class="modal">
-  <div class="modal-dialog">
+          <img class="img-thumbnailaa" id="ssaa" src="badshah2.png" alt="Another alt text" data-toggle="modal"
+            data-target="#myModal1"></div>
 
-     
-        <div class="close"><span aria-hidden="true">&times;</span>
+
+
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa">
+
+          <img class="img-thumbnailaa" id="ssaa" src="badshah3.png" alt="Another alt text" data-toggle="modal"
+            data-target="#myModal2">
+
         </div>
-            <img src="badshah2.png"  width="100%"class="img-responsive animate__animated animate__fadeIn"> 
-  </div>
-  </div>
-  
-             			<div id="myModal2" class="modal">
-  <div class="modal-dialog">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumbaa">
 
-     
-        <div class="close"><span aria-hidden="true">&times;</span>
+          <img class="img-thumbnailaa" id="ssaa" src="badshah4.png" alt="Another alt text" data-toggle="modal"
+            data-target="#myModal3">
+
         </div>
-            <img src="badshah3.png"  width="100%"class="img-responsive animate__animated animate__fadeIn"> 
+
+      </div>
   </div>
+  </br>
+
+  <div id="myModal1" class="modal">
+    <div class="modal-dialog">
+
+
+      <div class="close"><span aria-hidden="true">&times;</span>
+      </div>
+      <img src="badshah2.png" width="100%" class="img-responsive animate__animated animate__fadeIn">
+    </div>
   </div>
-  
-             			<div id="myModal3" class="modal">
-  <div class="modal-dialog">
 
-     
-        <div class="close"><span aria-hidden="true">&times;</span>
-        </div>
-            <img src="badshah4.png"  width="100%"class="img-responsive animate__animated animate__fadeIn ">
+  <div id="myModal2" class="modal">
+    <div class="modal-dialog">
+
+
+      <div class="close"><span aria-hidden="true">&times;</span>
+      </div>
+      <img src="badshah3.png" width="100%" class="img-responsive animate__animated animate__fadeIn">
+    </div>
   </div>
+
+  <div id="myModal3" class="modal">
+    <div class="modal-dialog">
+
+
+      <div class="close"><span aria-hidden="true">&times;</span>
+      </div>
+      <img src="badshah4.png" width="100%" class="img-responsive animate__animated animate__fadeIn ">
+    </div>
   </div>
-<script>
-function centerModal() {
-    $(this).css('display', 'block');
-    var $dialog = $(this).find(".modal-dialog");
-    var offset = ($(window).height() - $dialog.height()) / 2;
-    // Center modal vertically in window
-    $dialog.css("margin-top", offset);
-}
+  <script>
+    function centerModal() {
+      $(this).css('display', 'block');
+      var $dialog = $(this).find(".modal-dialog");
+      var offset = ($(window).height() - $dialog.height()) / 2;
+      // Center modal vertically in window
+      $dialog.css("margin-top", offset);
+    }
 
-$('.modal').on('show.bs.modal', centerModal);
-$(window).on("resize", function () {
-    $('.modal:visible').each(centerModal);
-});
-</script>
-
-
+    $('.modal').on('show.bs.modal', centerModal);
+    $(window).on("resize", function () {
+      $('.modal:visible').each(centerModal);
+    });
+  </script>
 
 
 
-  
-  
+
+
+
+
 
 
 
 </body>
+
 </html>

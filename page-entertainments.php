@@ -24,6 +24,11 @@ background-color:black;
 height:1px;
 margin:10px auto;}
 
+.content.wrapper{
+  padding-top:0 !important;
+
+}
+
 
 
 
@@ -100,6 +105,18 @@ width:auto;}
 justify-content:center;
 }
 
+.hero-slide{
+  margin:0 !important;
+  padding:0 !important;
+  width:100vw !important;
+  max-width:100% !important;
+}
+.hero-slide img{
+  margin:0 !important;
+  padding:0 !important;
+  width:100vw !important;
+  max-width:100% !important;
+}
 
 
 @media only screen and (max-width: 765px) {
@@ -126,19 +143,26 @@ width:49%;
 .thumbee_title{
   font-size:16px !important;  
 }
+
+p{
+margin-right:2px;
+margin-left:2px;
+font-size:1em;
+}
 }
 
   </style>
   <center>
 <div class="container animate__animated animate__pulse m-0 p-0" width="100%">
 <div class="row m-0 p-0">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <img src="../assets/p03kbhkd.jpg" alt="Arijit Singh" width="100%" id="ddee">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-slide">
+      <img src="../assets/p03kbhkd.jpg" alt="Arijit Singh" style="width:100vw;" id="ddee">
  
 </div>
 </div>
 </div>
 </center>
+
 
 
 <h1 class="mt-4"><center>Featured Artists</center></h1>

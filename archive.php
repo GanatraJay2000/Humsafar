@@ -104,28 +104,28 @@ body{
 		font-family: 'FuturaLig', sans-serif;
     }
 
-    ul.title {
+        .second-container ul.title {
         padding: 0;
         margin: 0;
         text-align: center;
     }
 
-    ul.title li {
+     .second-container   ul.title li {
         display: inline-block;
         margin: 0;
     }
 	
-	ul.title li a{
+    .second-container	ul.title li a{
 	  color: #999997;
 	}
 
-    ul.title li::after {
+    .second-container    ul.title li::after {
         content: '|';
         margin: 0px 10px;
 
     }
 
-    ul.title li:last-of-type::after {
+      .second-container  ul.title li:last-of-type::after {
         content: '';
         margin: 0;
     }

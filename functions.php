@@ -321,7 +321,7 @@ function artists_custom_filed( $meta_boxes ) {
 				'max_file_uploads' => '10',
 			),
 			array(
-				'id' => $prefix . 'facebook_copy_5',
+				'id' => $prefix . 'facebook',
 				'type' => 'url',
 				'name' => esc_html__( 'Facebook', 'metabox-online-generator' ),
 			),

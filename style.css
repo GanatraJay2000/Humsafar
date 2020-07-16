@@ -881,8 +881,13 @@ nav.item.nav-links label {
     width: 60%;
 }
 
-
-
+.modal-backdrop {
+    opacity: 0.8 !important;
+}
+button.close {
+    color: white !important;
+    margin-top: 10px !important;
+}
 
 .ent-footer {
     margin-top: 30px;

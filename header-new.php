@@ -95,11 +95,12 @@
         </div>
     </header>
     <!-- Site Header -->
-    <div id="myModal" class="modal fade book-artist-modal" role="dialog">
-        <div class="modal-dialog">
+    <div data-dismiss="modal">
+    <div id="myModal" class="modal fade book-artist-modal" role="dialog" >
+        <div class="modal-dialog" >
             <div class="modal-content">
                 <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close mt-5 text-white" data-dismiss="modal">&times;</button>
 
                     <div class="mt-3 text-center">
                         <h1>Book Artist
@@ -148,6 +149,7 @@
                                 <button type="submit" class="btn btn-dark" style="border-radius:0">Submit</button>
                             </div>
                         </form>
+                    </div>
                     </div>
                 </div>
             </div>
