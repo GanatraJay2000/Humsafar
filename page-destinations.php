@@ -237,22 +237,23 @@ foreach ( $image_on_destination_page as $image ) {?>
 		),
 	),
 ));
-
+$i=0; 
 while( $destinations->have_posts() ){ 
 $destinations->the_post(); 
 $image_on_destination_page = rwmb_meta('image_on_destination_page', array( 'size' => 'large' ) );
 ?>
+<a href="<?php the_permalink(); ?>">
 <div class="grid-flex">
-<?php $i=0; foreach ( $image_on_destination_page as $image ) {?>
+<?php 
+foreach ( $image_on_destination_page as $image ) {?>
 <div class="col col-image" style="background-image: url(<?php echo $image['url'] ?>);">
 </div>						
 <?php } ?> 
-<div class="col col-text 
-<?php if($i%2 == 1) echo "col-left" ?>
+<div class="col col-text<?php if($i%2 == 1) {echo " col-left";} ?>
 ">
 <div class="Aligner-item">
 <div class="sideheading">
-<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+<?php the_title(); ?>
 </div>
 <p class="mypara">
 &ldquo;<?php echo rwmb_meta('text_on_destination_page'); ?>&rdquo;
@@ -260,6 +261,7 @@ $image_on_destination_page = rwmb_meta('image_on_destination_page', array( 'size
 </div>
 </div>
 </div>
+</a>
 <?php $i++; } ?>
 </section>
 
