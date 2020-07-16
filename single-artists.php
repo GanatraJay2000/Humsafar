@@ -230,7 +230,7 @@ a{
 
           <button class="m-1" data-toggle="modal" data-target="#myModal" id="buttonaa">BOOK ARTIST</button>
            
-                        <button class="m-1" id="buttonaa">ALL ARTISTS</button></center> </br>
+                        <a class="" href="<?php echo site_url('/entertainments/artists'); ?>"><button class="m-1" id="buttonaa">ALL ARTISTS</button></a></center> </br>
         <center>
             
        
