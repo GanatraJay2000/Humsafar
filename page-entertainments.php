@@ -132,7 +132,7 @@ width:40%;
 </center>
 
 
-<h1 class=""><center>Featured Artists</center></h1>
+<h1 class="mt-4"><center>Featured Artists</center></h1>
 <hr></hr></br>
 <center>
 
