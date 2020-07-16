@@ -794,7 +794,7 @@ article.page h2 {
     padding-bottom: 0;
     position: absolute;
     border-radius: 4px;
-
+    z-index:10;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
