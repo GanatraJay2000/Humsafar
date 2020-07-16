@@ -18,6 +18,7 @@ wp_enqueue_style( 'owl-css', get_template_directory_uri() . '/library/owl.carous
 wp_enqueue_style( 'owl-css', get_template_directory_uri() . '/library/owl.default.theme.min.css', null, '1.0' );
 wp_enqueue_style( 'fa', get_template_directory_uri() . '/library/font_awesome.css', null, '1.0' );
 wp_enqueue_style( 'fonts', get_template_directory_uri() . '/library/fonts.css', null, '1.0' );
+wp_enqueue_style( 'fonts', get_template_directory_uri() . '/ent_styles.css', null, '1.0' );
 wp_enqueue_style( 'style', get_stylesheet_uri( ), array('fonts'));
 
 }

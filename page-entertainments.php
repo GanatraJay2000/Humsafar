@@ -1,7 +1,125 @@
 <?php get_header('new'); ?>
-<link rel="stylesheet" href="ent_styles.css">
 <body>
+<style>
+  body{
+	overflow-x:hidden;
+  background-color:white;
+  font-family: "Times New Roman", Times, serif;
 
+}
+
+a{
+  text-decoration:none !important;
+  padding:0;
+}
+
+hr{
+width:60px;
+background-color:black;
+height:1px;
+margin:10px auto;}
+
+
+
+
+.thumbee{
+  margin:0px;
+   padding:0px;
+  position:relative;
+
+}
+.thumbee .term_title{
+  position:absolute;
+  font-family: Josefin, serif;
+    pointer-events: none;
+  font-weight:600;
+  color:white;
+  font-size:32px;
+  font-weight:500;
+  bottom:20%;
+  z-index:1;
+  margin: 0 auto;
+  width:100%;  
+}
+.thumbee .term_title i{
+  font-size:10px;
+}
+.img-thumbnailee
+{
+ border:0px;
+ padding: .25rem;
+    background-color: #fff;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+p{
+margin-right:5px;
+margin-left:5px;
+
+}
+
+#buttonee{
+
+color:black;
+background-color:white;
+border:1px solid black;
+padding:2px 10px 2px 10px;
+transition: transform .2s;
+font-size:20px;
+}
+
+.card{
+border:0px;
+}
+
+#ddee:hover {opacity: 0.88}
+
+#buttonee:hover {
+
+color:white;
+background-color:black;
+ -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+
+}
+.card-img-top{
+height:200px;
+width:auto;}
+
+
+#ccee{
+justify-content:center;
+}
+
+
+
+@media only screen and (max-width: 765px) {
+.thumbee{
+width:40%;
+}
+
+
+.content.wrapper{
+  padding:0 !important;
+  margin:0 !important;
+}
+
+#ccee.row{
+  padding:0 !important;
+  margin:0 !important;
+}
+.term_title{
+  font-size:16px !important;
+}
+.thumbee-title{
+  font-size:16px;
+}
+}
+
+  </style>
 <div class="container animate__animated animate__pulse m-0 p-0" width="100%">
 <div class="row m-0 p-0">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

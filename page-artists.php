@@ -1,5 +1,5 @@
 <?php get_header('new'); ?>
-<link rel="stylesheet" href="ent_styles.css">
+<!-- <link rel="stylesheet" href="ent_styles.css"> -->
 <style>
 
 
