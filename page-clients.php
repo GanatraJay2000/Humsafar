@@ -47,8 +47,8 @@
     }
 
     .text {
-        font-family: 'FuturaLig', sans-serif;
-        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
         color: #3d3d3d;
     }
 
