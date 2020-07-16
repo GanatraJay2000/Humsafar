@@ -253,6 +253,10 @@
             grid-column-end: span 2;
             grid-row-end: span 2;
         }
+        .full{
+                grid-column-start:1;
+                grid-column-end:-1;
+            }
     }
 
     @media screen and (max-width : 700px) {
@@ -296,10 +300,19 @@
 
 <a href="#" class="lightboxNav prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
 <a href="#" class="lightboxNav next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-
-<main class="lightbox-wrapper">
-    <div class="">
-
+<?php while(have_posts()){
+    the_post();
+    $portfolio = rwmb_meta('portfolio', array( 'size' => 'large' ) ); 
+    ?>
+    <main class="lightbox-wrapper">
+        <?php foreach($portfolio as $image){ ?>
+            <div class="<?php echo $image['description'] ?>">
+            <img src="<?php echo $image['url'] ?>" alt="">
+            </div>
+        <?php } ?>        
+    </main>
+<!-- <main class="lightbox-wrapper"> -->
+    <!-- <div class="">
         <img src="https://static.wixstatic.com/media/98d8c3_16c0634fb5bb4e10b5e4a73b188ec701~mv2_d_1247_1666_s_2.jpg/v1/crop/x_0,y_127,w_1247,h_1412/fill/w_555,h_629,al_c,q_80,usm_0.66_1.00_0.01/98d8c3_16c0634fb5bb4e10b5e4a73b188ec701~mv2_d_1247_1666_s_2.webp"
             data-footer=alt="">
     </div>
@@ -369,8 +382,9 @@
     <div class="vertical">
         <img src="https://static.wixstatic.com/media/98d8c3_f3d46d278dcb455a9e7143da9f7c3eb1~mv2.jpg/v1/crop/x_69,y_0,w_885,h_683/fill/w_885,h_683,al_c,q_85/98d8c3_f3d46d278dcb455a9e7143da9f7c3eb1~mv2.webp"
             alt="">
-    </div>
-</main>
+    </div> -->
+<!-- </main> -->
+<?php } ?>
 
 <script>
     const divs = document.querySelectorAll('main.lightbox-wrapper div');

@@ -418,3 +418,26 @@ function destination_custom_fields( $meta_boxes ) {
 	return $meta_boxes;
 }
 add_filter( 'rwmb_meta_boxes', 'destination_custom_fields' );
+
+function portfolio_custom_field( $meta_boxes ) {
+	$prefix = '';
+
+	$meta_boxes[] = array(
+		'id' => 'untitled',
+		'title' => esc_html__( 'Portfolio', 'metabox-online-generator' ),
+		'post_types' => array('page' ),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => 'false',
+		'fields' => array(
+			array(
+				'id' => $prefix . 'portfolio',
+				'type' => 'image_advanced',
+				'name' => esc_html__( 'Portfolio', 'metabox-online-generator' ),
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'portfolio_custom_field' );
