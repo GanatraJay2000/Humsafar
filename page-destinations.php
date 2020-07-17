@@ -23,6 +23,7 @@ a:hover{
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap:wrap;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
@@ -116,15 +117,22 @@ letter-spacing:.75px;
 @media (max-width: 1080px) {
 	.Aligner-item {
     width: 100% !important;
+    height:fit-content;
 }
 }
 @media (max-width: 780px) {
     .grid-flex {
-        height: 40em;
+        min-height: 40em;        
         display: -webkit-flex;
         -webkit-flex-direction: column;
-        flex-direction: column;
+        flex-direction: column !important;
     }
+    .grid-flex *{
+        text-align:center;
+    }
+    .sideheading.sideheading{
+	font-size:28px;
+}
 
     .col {
         order: vertical;
@@ -266,10 +274,10 @@ foreach ( $image_on_destination_page as $image ) {?>
 </section>
 
 <div class="grid-flex mt-5">
-	<div class="col-5 sideheading lastheading">
+	<div class="col-lg-5 col-12 sideheading lastheading text-lg-left text-center mb-3">
 		<i> You will never wish to forget an unforgettable memory of your wedding.</i>
 	</div>
-	<div class="col-7">
+	<div class="col-lg-7 col-12 text-center mt-lg-2">
 	<p class="lastpara">
 		Enjoying the benefit of located in India our clients engage us for perfect Indian and Traditional wedding plans along with international levels of service delivered at the destination of their choice. Working with local suppliers as well as importing those elements which cannot be reliably sourced locally is one of many things we are good at. Delivering a large destination wedding is a logistic challenge, not least because of the challenge of ensuring a flawless guest experience. We’ve built a highly experienced team of more than 50 Members, as well as a network of local partners in the most popular destinations and so are superbly well equipped to deliver the most complex multi-day destination weddings.
 	</p>
