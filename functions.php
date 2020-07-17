@@ -134,6 +134,39 @@ function add_custom_post() {
       );
 
     register_post_type( 'destinations' , $args );
+	
+	
+	$labels = array(
+        'name' => _x('Functions', 'post type general name'),
+        'singular_name' => _x('Function', 'post type singular name'),
+        'add_new' => _x('Add New', 'Functions'),
+        'add_new_item' => __('Add New Function'),
+        'edit_item' => __('Edit Function'),
+        'new_item' => __('New Function'),
+        'view_item' => __('View Function'),
+        'search_items' => __('Search Function'),
+        'not_found' =>  __('Nothing found'),
+        'not_found_in_trash' => __('Nothing found in Trash'),
+        'parent_item_colon' => ''
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus' => false,
+        'query_var' => true,
+        'rewrite' => array('slug','pages'),
+        'capability_type' => 'post',
+        'hierarchical' => true,
+        'menu_position' => 5,
+        'supports' => array('title','editor','thumbnail','excerpt',),
+        'menu_icon' => 'dashicons-buddicons-tracking',
+      );
+
+    register_post_type( 'functions' , $args );
 }
 add_action( 'init', 'add_custom_post' );
 
@@ -440,3 +473,48 @@ function portfolio_custom_field( $meta_boxes ) {
 	return $meta_boxes;
 }
 add_filter( 'rwmb_meta_boxes', 'portfolio_custom_field' );
+
+function functions_custom_fields( $meta_boxes ) {
+	$prefix = '';
+
+	$meta_boxes[] = array(
+		'id' => 'untitled',
+		'title' => esc_html__( 'Functions Custom Fields', 'metabox-online-generator' ),
+		'post_types' => array('functions' ),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => 'false',
+		'fields' => array(
+				array(
+				'id' => $prefix . 'order',
+				'type' => 'number',
+				'name' => esc_html__( 'Order', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'quote',
+				'type' => 'text',
+				'name' => esc_html__( 'Quote', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'type',
+				'name' => esc_html__( 'Type', 'metabox-online-generator' ),
+				'type' => 'radio',
+				'placeholder' => '',
+				'options' => array(
+					'Indian' => esc_html__( 'Indian', 'metabox-online-generator' ),
+					'Western' => esc_html__( 'Western', 'metabox-online-generator' ),
+				),
+				'inline' => 'true',
+			),
+			array(
+				'id' => $prefix . 'functions_thumbnail',
+				'type' => 'image_advanced',
+				'name' => esc_html__( 'Thumbnail', 'metabox-online-generator' ),
+				'max_file_uploads' => '1',
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'functions_custom_fields' );
