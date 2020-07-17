@@ -16,11 +16,11 @@
             </ul>
             <div class="item">
                 <div class="text-lg-center">
-                    <span><i class="fab fa-facebook" aria-hidden="true"></i></span>
-                    <span><i class="fab fa-instagram" aria-hidden="true"></i></span>
-                    <span><i class="fab fa-twitter" aria-hidden="true"></i></span>
-                    <span><i class="fab fa-linkedin" aria-hidden="true"></i></span>
-                    <span><i class="fab fa-youtube" aria-hidden="true"></i></span>
+                    <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_facebook"]'); ?>"><span><i style="" class="fab fa-facebook" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_instagram"]'); ?>"><span><i style="" class="fab fa-instagram" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_twitter"]'); ?>"><span><i style="" class="fab fa-twitter" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_linkedin"]'); ?>"><span><i style="" class="fab fa-linkedin" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="event_youtube"]'); ?>"><span><i style="" class="fab fa-youtube" aria-hidden="true"></i></span></a>
                 </div>
             </div>
             <div class="rights item"><?php bloginfo( 'name' ) ?>.co @ <?php echo date('Y'); ?> &nbsp;&nbsp;

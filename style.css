@@ -4,7 +4,7 @@ Author:Team
 Version:1.0
 */
 :root {
-    --primary-color: rgb(255, 227, 117);
+    --primary-color: #ffe375;
     --bg-color: #012e29;
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     --midnight: #104f55;
@@ -405,6 +405,9 @@ article.post:last-of-type {
     padding: 0;
     margin: 0;
 }
+.site-footer p{
+    text-align:left;
+}
 
 .site-footer .wrapper {
     display: grid;
@@ -425,7 +428,7 @@ article.post:last-of-type {
 .site-footer .rights {
     padding: 10px;
     font-family: "Times New Roman", serif;
-    color: rgb(236, 235, 226);
+    color: #ecebe2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -509,7 +512,7 @@ article.post:last-of-type {
 .site-footer .social-links i {
     padding: 0 4px;
     font-size: 1.5em;
-    color: rgb(255, 242, 191);
+    color: #fff2bf;
 }
 
 .site-footer .social-links i:hover {
@@ -978,7 +981,26 @@ button.close {
 .desktop-nav-element {
     display: block;
 }
+.modal.show {
+    display: block;
+    padding-right: 17px;    
+}
 
+.modal.show .modal-dialog {    
+    min-height: 100%;    
+    display: flex;    
+    align-items: center;
+}
+  .close {
+    color: white;
+    position: fixed;
+    cursor: pointer;
+    background-color: transparent;
+    top: 30px;
+    right: 30px;
+    font-size: 40px;
+    z-index:1000000;    
+  }
 
 .book-artist-modal,
 .book-artist-modal .modal-dialog {
@@ -1070,6 +1092,9 @@ button.close {
         display: none;
     }
 
+.modal.show {
+    overflow: scroll;
+}
 
 
 }

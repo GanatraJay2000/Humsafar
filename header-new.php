@@ -48,10 +48,10 @@
             <div class="ent-nav-right">
                 <div class="desktop-nav-element">
                     <div class="social-icons">
-                        <span><i style="" class="fab fa-facebook" aria-hidden="true"></i></span>
-                        <span><i style="" class="fab fa-instagram" aria-hidden="true"></i></span>
-                        <span><i style="" class="fab fa-twitter" aria-hidden="true"></i></span>
-                        <span><i style="" class="fab fa-youtube" aria-hidden="true"></i></span>
+                         <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_facebook"]'); ?>"><span><i style="" class="fab fa-facebook" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_instagram"]'); ?>"><span><i style="" class="fab fa-instagram" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_twitter"]'); ?>"><span><i style="" class="fab fa-twitter" aria-hidden="true"></i></span></a>                
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="event_youtube"]'); ?>"><span><i style="" class="fab fa-youtube" aria-hidden="true"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -81,15 +81,10 @@
 
             <div class="pb-2">
                 <div class="social-icons ml-2">
-                    <a style="font-size:24px"><span><i style="" class="fab fa-facebook"
-                                aria-hidden="true"></i></span></a>
-                    <a style="font-size:24px"><span><i style="" class="fab fa-instagram"
-                                aria-hidden="true"></i></span></a>
-                    <a style="font-size:24px"><span><i style="" class="fab fa-twitter"
-                                aria-hidden="true"></i></span></a>
-                    <a style="font-size:24px"><span><i style="" class="fab fa-youtube"
-                                aria-hidden="true"></i></span></a>
-                </div>
+                    <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_facebook"]'); ?>"><span><i style="" class="fab fa-facebook" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_instagram"]'); ?>"><span><i style="" class="fab fa-instagram" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_twitter"]'); ?>"><span><i style="" class="fab fa-twitter" aria-hidden="true"></i></span></a>                
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="event_youtube"]'); ?>"><span><i style="" class="fab fa-youtube" aria-hidden="true"></i></span></a>
                 <a>
             </div></a>
         </div>

@@ -52,11 +52,16 @@
                 <h2>Connects</h2>
             </div>
             <div>
-                <span><i style="" class="fab fa-facebook" aria-hidden="true"></i></span>
-                <span><i style="" class="fab fa-instagram" aria-hidden="true"></i></span>
-                <span><i style="" class="fab fa-twitter" aria-hidden="true"></i></span>
-                <span><i style="" class="fab fa-linkedin" aria-hidden="true"></i></span>
-                <span><i style="" class="fab fa-youtube" aria-hidden="true"></i></span>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_facebook"]'); ?>"><span><i style="" class="fab fa-facebook" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_instagram"]'); ?>"><span><i style="" class="fab fa-instagram" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_twitter"]'); ?>"><span><i style="" class="fab fa-twitter" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_linkedin"]'); ?>"><span><i style="" class="fab fa-linkedin" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="event_youtube"]'); ?>"><span><i style="" class="fab fa-youtube" aria-hidden="true"></i></span></a>
+            </div>
+            <div class="mt-3">
+            <a href="<?php echo do_shortcode('[sc name="weddings_wedmegood"]'); ?>" target="_blank" >       
+            <?php require 'wedmegoodlogo.php'; ?>
+            </a> 
             </div>
         </div>
         <div class="reach-us text-lg-center" data-aos="fade-left" data-aos-delay="200">

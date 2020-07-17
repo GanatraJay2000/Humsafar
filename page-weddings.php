@@ -317,47 +317,46 @@
     <button class="inquire">Inquire</button>
     <div class="heading"><i>Find our Recent post here!</i></div>
     <hr class="title">
-    <a href="#" class="post">
-        <img class="image"
-            src="https://images.unsplash.com/flagged/photo-1566150217714-ebfea356f885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-            alt="hahaha">
+
+
+    <?php
+$events = new WP_Query(array(
+    'post_type'=>'events',
+    'meta_key' => 'event_date',
+    'orderby' => 'meta_value_num',
+    'order' => 'DESC',
+));
+while($events->have_posts())
+{
+    $events->the_post();         
+    $event_date = rwmb_meta('event_date');
+    $location = rwmb_meta('location');
+    $event_type = rwmb_meta('event_type');
+    $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
+
+    $eventDate = new DateTime($event_date);          
+    
+if($event_type === 'Wedding'){
+    ?>
+ <a href="#" class="post">
+        <?php foreach ( $thumbnail_image as $image ) {?>
+           <img class="image" src="<?php echo $image['url'] ?>" alt="">
+        <?php } ?>
         <div class="content">
-            <small>Jul 29, 2019</small>
-            <div class="heading">Deepak & Nikita</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut ab minus delectus omnis harum
-                quia suscipit totam.</div>
+            <small><?php echo $eventDate->format('M').' '.$eventDate->format('dS').', '.$eventDate->format('Y'); ?></small>
+            <div class="heading"><?php the_title(); ?></div>
+            <div><?php echo wp_trim_words(get_the_content(), 18); ?></div>
             <div class="post-footer">
-                <div>282 views &nbsp;&nbsp; Write a Comment</div>
-                <div>
-                    <button class="heart">
-                        <i class="heart text-danger far fa-heart" aria-hidden="true"></i>
-                    </button>
-                    5
-                </div>
+                <p class="m-0 p-0 mr-2"><?php echo $location; ?></p>
+                <div>282 views</div>                
             </div>
         </div>
     </a>
-    <a href="#" class="post">
-        <img class="image"
-            src="https://images.unsplash.com/photo-1519307212971-dd9561667ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-            alt="hahaha">
-        <div class="content">
-            <small>Jun 24, 2019</small>
-            <div class="heading">Prem & Varsha</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut ab minus delectus omnis harum
-                quia suscipit totam.</div>
-            <div class="post-footer">
-                <div>211 views &nbsp;&nbsp; Write a Comment</div>
-                <div>
-                    <button class="heart">
-                        <i class="heart text-danger far fa-heart" aria-hidden="true"></i>
-                    </button>
-                    3
-                </div>
-            </div>
-        </div>
-</div>
-</a>
+<?php
+}
+}
+?>
+   
 <div class="heading"><i>Testimonials</i></div>
 <hr class="title">
 <div class="owl-carousel testimonials owl-theme ">

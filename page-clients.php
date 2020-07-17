@@ -668,7 +668,7 @@ if($event_type === 'Wedding'){
                     <div id="content2">
                         <h3>Share Link</h3>
                         <div class="copy-link">
-                            <p id="p1">add the link1 here</p>
+                            <p id="p1"><?php the_permalink(); ?></p>
                         </div>
                         <button onclick="copyToClipboard('#p1')">copy link</button>
                     </div>
