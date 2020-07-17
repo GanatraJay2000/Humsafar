@@ -5,11 +5,11 @@
 
 
 	<style>
-.grid-flex a{
+section a{
 	text-decoration:none !important;
 	color:#333 !important;
 }
-a:hover{
+section a:hover{
 	color:#b28f5e !important;
 }
 
