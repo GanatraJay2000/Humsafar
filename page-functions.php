@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <style>
+
     .content.wrapper{
         padding:0 !important;
         margin:10px;
     }
 .functions h3{
-    font-family: Playfair Display, serif;
-    font-family: Livvic, serif;
+    font-family: Playfair Display, serif;    
     /* font-family: "EB Garamond", serif; */
     font-size:39px;
     /* font-style: italic; */
@@ -18,10 +18,11 @@
 }
 
 .function-card .layout .image{    
-    position:relative;
-    min-height:300px !important;
+    position:relative;    
     max-height:300px !important;
     overflow:hidden;
+    margin: 0 auto !important;
+    padding: 0 !important;
 }
 .function-card .layout .image .quote{   
     position: absolute;
@@ -51,8 +52,7 @@
     
 }
 .function-card .layout .text .title{
-    font-family: "EB Garamond", serif;
-    font-family: "EB Garamond", serif;
+    font-family: "EB Garamond", serif;    
 }
 
 .function-card .layout .text .content{    
@@ -64,30 +64,40 @@
     text-decoration:none !important;   
     position:relative; 
 }
+
 .list-group-item-action.active{
     color: #b28f5e !important;
 }
-.list-group-item-action.active::after{
+.list-group-item-action::after{
     display:block;
     content:'';
     position:absolute;
-    left:17.5%;
+    left:50%;
     bottom:15px;
     border-radius:10px;
     background-color:#b28f5e;
     height:2px;
+    width:0%;
+    transition: all ease 0.3s;
+ }
+.list-group-item-action:hover::after{
+    left:17.5%;    
     width:65%;
  }
-
+@media screen and (max-width: 783px){
+    .function-card {
+    margin: 0 0px;
+}
+    *{
+        text-align:center;
+    }
+}
 </style>
-<div class="functions mb-5">
-<div class="heading my-4">
-    <p><?php the_title(); ?></p>
-    <h1><span>*</span></h1>
-</div>
+<div class="functions my-5">
 
 
-    <div class="list-group d-flex flex-row mb-5" id="list-tab" role="tablist">
+
+    <div class="list-group d-flex flex-wrap flex-row mb-5" id="list-tab" role="tablist">
       <a class="list-group-item-action active" id="list-home-list" data-toggle="list" href="#indian" role="tab" aria-controls="home"><center><h3 class="mb-4">Indian Functions</h3></center></a>
       <a class=" list-group-item-action" id="list-profile-list" data-toggle="list" href="#western" role="tab" aria-controls="profile"><center><h3 class="mb-4">Western Functions</h3></center></a>     
     </div>
@@ -124,7 +134,7 @@ while($functions->have_posts())
         ?>">
             <div class="image col-lg-6 col-12 pl-0">           
             <?php foreach ( $thumbnail_image as $image ) {?>
-           <img class="col-12 pl-0" src="<?php echo $image['url'] ?>" alt="">
+           <img class="col-12 px-0" src="<?php echo $image['url'] ?>" alt="">
         <?php } ?>
             <div class="quote"><?php echo $quote ?></div>
             </div>
@@ -173,7 +183,7 @@ while($functions->have_posts())
         ?>">
             <div class="image col-lg-6 col-12 pl-0">           
             <?php foreach ( $thumbnail_image as $image ) {?>
-           <img class="col-12 pl-0" src="<?php echo $image['url'] ?>" alt="">
+           <img class="col-12 px-0" src="<?php echo $image['url'] ?>" alt="">
         <?php } ?>
             <div class="quote"><?php echo $quote ?></div>
             </div>
