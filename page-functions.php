@@ -19,6 +19,7 @@
 
 .function-card .layout .image{    
     position:relative;
+    min-height:300px !important;
     max-height:300px !important;
     overflow:hidden;
 }
@@ -26,7 +27,7 @@
     position: absolute;
     bottom:0px;
     left:0px;
-    max-width:80%;
+    max-width:90%;
     background-color:#000000bb;
     color:#fff;
     padding:2px 20px; 
@@ -45,7 +46,7 @@
 }
 .function-card .layout .text{
     display:flex;
-    padding-top:15px;
+    margin-bottom:15px;
     flex-direction:column;
     
 }
