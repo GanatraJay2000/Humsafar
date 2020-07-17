@@ -88,7 +88,7 @@
     .function-card {
     margin: 0 0px;
 }
-    *{
+    .function-card *{
         text-align:center;
     }
 }
