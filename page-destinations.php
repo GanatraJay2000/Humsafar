@@ -5,7 +5,7 @@
 
 
 	<style>
-a{
+.grid-flex a{
 	text-decoration:none !important;
 	color:#333 !important;
 }
