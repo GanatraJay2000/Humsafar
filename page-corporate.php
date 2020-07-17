@@ -1,8 +1,5 @@
 <?php get_header('new'); ?>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
-    @import url('https://db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold');
 
     * {
       margin: 0;
