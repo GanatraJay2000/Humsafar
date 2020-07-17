@@ -88,7 +88,7 @@
     .function-card {
     margin: 0 0px;
 }
-   .functions-card *{
+    *{
         text-align:center;
     }
 }
@@ -98,8 +98,8 @@
 
 
     <div class="list-group d-flex flex-wrap flex-row mb-5" id="list-tab" role="tablist">
-      <a class="list-group-item-action active" id="list-home-list" data-toggle="list" href="#indian" role="tab" aria-controls="home"><center><h3 class="mb-4">Indian Functions</h3></center></a>
-      <a class=" list-group-item-action" id="list-profile-list" data-toggle="list" href="#western" role="tab" aria-controls="profile"><center><h3 class="mb-4">Western Functions</h3></center></a>     
+      <a class="list-group-item-action col-lg-6 col-12 active" id="list-home-list" data-toggle="list" href="#indian" role="tab" aria-controls="home"><center><h3 class="mb-4">Indian Functions</h3></center></a>
+      <a class=" list-group-item-action col-lg-6 col-12" id="list-profile-list" data-toggle="list" href="#western" role="tab" aria-controls="profile"><center><h3 class="mb-4">Western Functions</h3></center></a>     
     </div>
   
     <div class="tab-content" id="nav-tabContent">
