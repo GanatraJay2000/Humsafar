@@ -1,5 +1,4 @@
 <?php get_header('new'); ?>
-<body>
 
 <style>
 body{
@@ -79,10 +78,10 @@ padding:20px;
 			<p>+918305377774  |  www.humsafar.co  |  </br>weddings@humsafar.co    </br>                            humsafarweddings@gmail.com</p>
 			
 			<div class="sm">
-			<i class="fa fa-facebook fa-1x fachange" aria-hidden="true"></i>
-			<i class="fa fa-instagram fa-1x fachange" aria-hidden="true"></i>
-			<i class="fa fa-twitter fa-1x fachange" aria-hidden="true"></i>
-			<i class="fa fa-linkedin fa-1x fachange" aria-hidden="true"></i>
+			<i class="fab fa-facebook fa-1x fachange" aria-hidden="true"></i>
+			<i class="fab fa-instagram fa-1x fachange" aria-hidden="true"></i>
+			<i class="fab fa-twitter fa-1x fachange" aria-hidden="true"></i>
+			<i class="fab fa-linkedin fa-1x fachange" aria-hidden="true"></i>
 			</div>
   </div>
   

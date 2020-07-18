@@ -518,3 +518,34 @@ function functions_custom_fields( $meta_boxes ) {
 	return $meta_boxes;
 }
 add_filter( 'rwmb_meta_boxes', 'functions_custom_fields' );
+
+
+function slides( $meta_boxes ) {
+	$prefix = '';
+
+	$meta_boxes[] = array(
+		'id' => 'untitled',
+		'title' => esc_html__( 'Slides', 'metabox-online-generator' ),
+		'post_types' => array('page' ),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => 'false',
+		'fields' => array(
+			array(
+				'id' => $prefix . 'slide_1',
+				'type' => 'image_advanced',
+				'name' => esc_html__( 'Slide 1', 'metabox-online-generator' ),
+				'max_file_uploads' => '10',
+			),
+			array(
+				'id' => $prefix . 'slide_2',
+				'type' => 'image_advanced',
+				'name' => esc_html__( 'Slide 2', 'metabox-online-generator' ),
+				'max_file_uploads' => '10',
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'slides' );

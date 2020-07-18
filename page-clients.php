@@ -496,8 +496,8 @@
     <div class="container">
         <div class="login">
 
-            <button class="firstbtn" onclick="document.getElementById('id01').style.display='block'"
-                style="width:auto;">Log In / Sign Up</button>
+            <a href="<?php echo wp_registration_url(); ?>" class="px-3 py-2 text-dark" style="cursor:pointer">Sign Up</a>                
+            <a href="<?php echo wp_login_url(); ?>" class="mr-2 px-3 py-2 text-dark" style="cursor:pointer">Log In</a>                
 
 
             <div class="signup-part">
