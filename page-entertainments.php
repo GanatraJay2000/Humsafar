@@ -165,7 +165,7 @@ font-size:1em;
 
 
 
-<h1 id="#ent_featured_artists" class="mt-4"><center>Featured Artists</center></h1>
+<h1 id="ent_featured_artists" class="mt-4"><center>Featured Artists</center></h1>
 <hr></hr></br>
 <center>
 
@@ -207,7 +207,7 @@ $thumbnail_image = rwmb_meta('image_on_home_page', array( 'size' => 'medium' ) )
 <?php } ?>          
       </div>
     </div>
-<center id="#ent_all_artists">
+<center id="ent_about">
   <a class="" href="<?php echo site_url('/entertainments/artists'); ?>">
 <button class="mt-lg-5 mt-2" id="buttonee"> VIEW ALL ARTISTS </button>
   </a>
