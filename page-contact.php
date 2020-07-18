@@ -47,7 +47,7 @@ position: relative;
 .wpcf7-form-control {
 	border:1.5px solid #555;
 	border-radius:5px;
-	padding:1em 2em !important;
+	padding:3px 15px !important;
 }
 
 @media only screen and (max-width: 765px) {
