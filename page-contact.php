@@ -44,6 +44,12 @@ position: relative;
   bottom: 0;
 }
 
+.wpcf7-form-control {
+	border:1.5px solid #333;
+	border-radius:5px;
+	padding:1em 2em;
+}
+
 @media only screen and (max-width: 765px) {
 #details{
 margin-left:auto;
