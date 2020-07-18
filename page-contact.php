@@ -45,9 +45,12 @@ position: relative;
 }
 
 .wpcf7-form-control {
-	border:1.5px solid #555;
-	border-radius:5px;
+	border:1px solid #555;
+	border-radius:2px;
 	padding:3px 15px !important;
+}
+.wpcf7-form-control:last-of-type {
+	padding-bottom:0 !important;
 }
 
 @media only screen and (max-width: 765px) {
