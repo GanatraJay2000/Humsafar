@@ -358,7 +358,7 @@ if($event_type === 'Wedding'){
 }
 ?>
    
-<div class="heading"><i>Testimonials</i></div>
+<div id="wed_testimonials" class="heading"><i>Testimonials</i></div>
 <hr class="title">
 <div class="owl-carousel testimonials owl-theme ">
     <div class="testimonial-card">
