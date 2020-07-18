@@ -229,7 +229,7 @@ $thumbnail_image = rwmb_meta('image_on_home_page', array( 'size' => 'medium' ) )
  
 </br></br>
 
-<h1 class=""><center>Meet The Team</center></h1>
+<center id="ent_team"><h1 class="">Meet The Team</h1></center>
 <center>
 <div class="container">
 
