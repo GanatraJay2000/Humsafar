@@ -78,7 +78,7 @@ padding:20px;
 
 
 <h1><center>Contact Us</center></h1>
-<hr></hr></br>
+<hr style="margin:0 auto !important"></hr></br>
 
 <div class="container">
 
