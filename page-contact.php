@@ -13,7 +13,9 @@ body{
 hr{
 width:60px;
 background-color:black;
-height:1px;}
+
+margin:0 auto;
+}
 
 #details{
 margin-left:0;
@@ -30,7 +32,7 @@ margin-left:5px;
 .fachange{
 color:white;
 background-color:black;
-padding:6px;
+padding:7px;
 border-radius:50%;
 margin:2px;}
 
@@ -42,6 +44,18 @@ position: relative;
   bottom: 0;
 }
 
+/* .wpcf7-form-control {
+	border:1px solid #555;
+	border-radius:2px;
+	padding:3px 15px !important;
+}
+.wpcf7-form-control:last-of-type {
+	padding-bottom:0 !important;
+}
+
+.wpcf7-submit{
+
+} */
 @media only screen and (max-width: 765px) {
 #details{
 margin-left:auto;
@@ -64,7 +78,7 @@ padding:20px;
 
 
 <h1><center>Contact Us</center></h1>
-<hr></hr></br>
+<hr style="height:1px;"></hr></br>
 
 <div class="container">
 
@@ -74,8 +88,8 @@ padding:20px;
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">
 			
 			<h4>Phone & Email </h4>
-			<hr id="details" style="height:0.1px;"></hr>
-			<p>+918305377774  |  www.humsafar.co  |  </br>weddings@humsafar.co    </br>                            humsafarweddings@gmail.com</p>
+				<hr id="details"></hr>
+		<p><br>+918305377774  |  www.humsafar.co  |  </br>weddings@humsafar.co    </br>                            humsafarweddings@gmail.com</p>
 			
 			<div class="sm">
 			<i class="fab fa-facebook fa-1x fachange" aria-hidden="true"></i>
@@ -86,9 +100,9 @@ padding:20px;
   </div>
   
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">
-<h4>Say Hello </h4>
-			<hr id="details" style="height:0.1px;"></hr>
-			<?php echo do_shortcode( '[contact-form-7 id="113" title="Form]' ); ?>
+	  <center><h4>Say Hello </h4>
+	<hr></hr>
+<?php echo do_shortcode( '[contact-form-7 id="113" title="Form]' ); ?></center>
 </div></div></br>
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -100,12 +114,5 @@ width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" a
 </div>
 </div>
 
+
 <?php get_footer('new'); ?>
-
-
-
-  
-  
-
-
-
