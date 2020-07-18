@@ -13,7 +13,8 @@ body{
 hr{
 width:60px;
 background-color:black;
-height:1px;}
+height:1px;
+margin:0 auto;}
 
 #details{
 margin-left:0;
@@ -88,7 +89,7 @@ padding:20px;
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">
 <h4>Say Hello </h4>
 			<hr id="details" style="height:0.1px;"></hr>
-			<?php echo do_shortcode( '[contact-form-7 id="113" title="Form]' ); ?>
+			<center><?php echo do_shortcode( '[contact-form-7 id="113" title="Form]' ); ?></center>
 </div></div></br>
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
