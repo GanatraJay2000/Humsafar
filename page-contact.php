@@ -14,7 +14,7 @@ hr{
 width:60px;
 background-color:black;
 height:1px;
-/* margin:0 auto; */
+margin:0 auto;
 }
 
 #details{
