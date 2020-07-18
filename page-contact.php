@@ -44,7 +44,7 @@ position: relative;
   bottom: 0;
 }
 
-.wpcf7-form-control {
+/* .wpcf7-form-control {
 	border:1px solid #555;
 	border-radius:2px;
 	padding:3px 15px !important;
@@ -53,6 +53,9 @@ position: relative;
 	padding-bottom:0 !important;
 }
 
+.wpcf7-submit{
+
+} */
 @media only screen and (max-width: 765px) {
 #details{
 margin-left:auto;
