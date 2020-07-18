@@ -28,7 +28,7 @@
 
             <div class="ent-nav">
                 <div class="wrapper">
-                    <img class="item" src="<?php echo get_template_directory_uri().'/assets_inside/entertainment-title.png' ?>" alt="">
+                    <a href="<?php echo site_url('/entertainments'); ?>"><img class="item" src="<?php echo get_template_directory_uri().'/assets_inside/entertainment-title.png' ?>" alt=""></a>
                     <nav class="item nav-links">
                         <?php
 

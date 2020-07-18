@@ -43,6 +43,9 @@ align:left;
 position: relative;
   bottom: 0;
 }
+.wpcf-form{
+	margin:0 !important;
+}
 
 /* .wpcf7-form-control {
 	border:1px solid #555;
@@ -88,7 +91,7 @@ padding:20px;
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">
 			
 			<h4>Phone & Email </h4>
-			<hr id="details" style="height:0.1px;"></hr>
+			<hr id="details" style="margin:0 !important;height:0.1px;"></hr>
 			<p>+918305377774  |  www.humsafar.co  |  </br>weddings@humsafar.co    </br>                            humsafarweddings@gmail.com</p>
 			
 			<div class="sm">
