@@ -78,7 +78,7 @@ padding:20px;
 
 
 <h1><center>Contact Us</center></h1>
-<hr style="margin:0 auto !important"></hr></br>
+<hr ></hr></br>
 
 <div class="container">
 
@@ -101,7 +101,7 @@ padding:20px;
   
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">
 <center><h4>Say Hello </h4>
-<hr id="details" style="height:0.1px;"></hr>
+<hr id="details" style="margin:0 !important;height:0.1px;"></hr>
 <?php echo do_shortcode( '[contact-form-7 id="113" title="Form]' ); ?></center>
 </div></div></br>
 <div class="row">
