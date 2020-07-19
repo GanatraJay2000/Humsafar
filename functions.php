@@ -585,3 +585,8 @@ function ps_redirect_after_logout(){
          wp_redirect(  site_url('/weddings/clients') );
          exit();
 }
+
+add_filter('login_headerurl', 'ourHeaderUrl');
+function ourHeaderUrl(){
+	 return esc_url(site_url( '/'));
+}
