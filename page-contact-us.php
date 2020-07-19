@@ -2,17 +2,61 @@
 <style>
 body{
 	overflow-x:hidden;
-
+background-color: #fff;
   font-family: "Times New Roman", Times, serif;
 
 }
 
+.heading {
+        padding-top: 10px;
+        margin-bottom: 0;
+        text-align: center;
+        color: #2f2e2e;
+        font-size: 45px;
+    }
 
+    .heading p {
+        margin: 0;
+    }
+
+    .heading h1 {
+        font-family: sans-serif;
+        margin: auto;
+        text-align: center;
+        font-size: 40px;
+        max-width: 600px;
+        position: relative;
+        color: #b28f5e;
+
+    }
+
+    .heading h1::before,
+    .heading h1::after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 3px;
+        background: #000;
+        position: absolute;
+        top: 30%;
+        z-index: -2;
+        background-color: #b28f5e;
+    }
+
+    .heading h1::before {
+        left: 0;
+        margin-left: 20%;
+    }
+
+    .heading h1:after {
+        right: 0;
+        margin-right: 20%;
+    }
 
 hr{
 width:60px;
-background-color:black;
-
+background-color:#B28F5E;
+height:1.5px;
 margin:0 auto;
 }
 
@@ -43,18 +87,75 @@ position: relative;
   bottom: 0;
 }
 
-/* .wpcf7-form-control {
-	border:1px solid #555;
-	border-radius:2px;
-	padding:3px 15px !important;
+
+
+.wpcf7{
+	width:100%;
+	height:auto;
+	
+	
 }
-.wpcf7-form-control:last-of-type {
-	padding-bottom:0 !important;
+.wpcf7-form{
+margin:15;
+
 }
 
-.wpcf7-submit{
+span.wpcf7-not-valid-tip {
+    display: none;
+}
 
-} */
+
+
+#contactmessege{
+	height:150;
+
+
+}
+div.wpcf7 .ajax-loader {
+
+margin-top:30px;
+}
+
+input[type=submit]{
+	background-color:#B28F5E;
+	color:white;
+	padding:15 40;
+	font-size:22;
+	border:0px;
+	margin-top:-40;
+		 position: absolute;
+margin-left:-50;
+	
+
+	
+	
+}
+#contactname,#contactemail,#contactmessege{
+	width:100%;
+	border:2px solid #B28F5E;
+	font-size:14;
+	padding:4;
+
+	
+	
+}
+
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+color: #B28F5E;
+
+
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #B28F5E;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #B28F5E; 
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: #B28F5E;
+}
 @media only screen and (max-width: 765px) {
 #details{
 margin-left:auto;
@@ -70,14 +171,22 @@ padding:20px;
 }
 
 }
+   @media screen and (max-width : 500px) {
 
+        .heading h1::before,
+        .heading h1::after {
+            width: 60px;
+        }
+    }
 
 </style>
 
 
 
-<h1><center>Contact Us</center></h1>
-<hr style="height:1px;"></hr></br>
+  <div class="heading">
+            <p>Contact Us</p>
+            <h1><span>*</span></h1>
+        </div>
 
 <div class="container">
 
@@ -101,12 +210,12 @@ padding:20px;
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">
 	  <center><h4>Say Hello </h4>
 	<hr></hr>
-<?php echo do_shortcode( '[contact-form-7 id="113" title="Form]' ); ?></center>
+<?php echo do_shortcode( '[contact-form-7 id="319" title="Contact"]' ); ?></center>
 </div></div></br>
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-<iframe style="border:1px solid slate-grey" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.52844877083!2d72.82631631485215!3d19.128331987057827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA3JzQyLjAiTiA3MsKwNDknNDIuNiJF!5e0!3m2!1sen!2sin!4v1595094090879!5m2!1sen!2sin" 
+<iframe style="border:1px solid slate-grey" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.47986879284244!2d81.3227863!3d21.2049507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x59dd171d40678beb!2sHumsafar%20Weddings%20%7C%20Best%20Wedding%20Planner%20and%20Destination%20Wedding%20Planner%20in%20budget!5e0!3m2!1sen!2sin!4v1595118914250!5m2!1sen!2sin"  
 width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 </div>
