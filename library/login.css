@@ -20,9 +20,9 @@ body.login {
 }
 
 .login h1 a {
-  color:dodgerblue;
+  color:#012e29;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 500;
   background-image: none;
   width: auto;
   height: auto;
