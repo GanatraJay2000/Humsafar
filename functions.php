@@ -579,3 +579,9 @@ function noSubsAdminBar(){
 		show_admin_bar( false );
 	}
 }
+
+add_action('wp_logout','ps_redirect_after_logout');
+function ps_redirect_after_logout(){
+         wp_redirect(  site_url('/weddings/clients') );
+         exit();
+}
