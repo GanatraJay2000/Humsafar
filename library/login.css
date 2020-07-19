@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 /* Customize Login Screen */
 body.login .button-primary {
   background-color: #f84f30;
@@ -20,6 +22,8 @@ body.login {
 }
 
 .login h1 a {
+    font-family: "Great Vibes", cursive; 
+        letter-spacing: 3px;
   color:#012e29;
   font-size: 30px;
   font-weight: 500;
