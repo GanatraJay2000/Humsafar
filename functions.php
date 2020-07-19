@@ -595,3 +595,8 @@ add_action('login_enqueue_scripts', 'ourLoginCss');
 function ourLoginCss(){
 	 wp_enqueue_style( 'login-css', get_template_directory_uri() . '/library/login.css', null, '1.0' );
 }
+add_action('login_headertitle', 'ourLoginTitle');
+function ourLoginTitle(){
+	 return get_bloginfo('name');
+}
+
