@@ -1,5 +1,20 @@
 <?php get_header(); ?>
 <style>
+.wpcf7 input[type=submit] {
+    background-color: #B28F5E;
+    /* color: white; */
+    /* padding: 15px 40px; */
+    font-size: 22;
+    border: 0px;
+    margin-top: -40;
+    position: absolute;
+    /* margin-left: auto; */
+    width: 30%;
+    /* margin: 0 auto; */
+    margin-left: -10% !important;
+}   
+
+
 body{
 	overflow-x:hidden;
 background-color: #fff;
@@ -57,7 +72,7 @@ hr{
 width:60px;
 background-color:#B28F5E;
 height:1.5px;
-margin:0 auto;
+margin:15px auto;
 }
 
 #details{
