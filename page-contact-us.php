@@ -3,6 +3,9 @@
     .wpcf7 input{
         padding: 3px 10px;
     }
+    .wpcf7 textarea{
+        padding: 3px 10px;
+    }
 .wpcf7 input[type=submit] {
     background-color: #B28F5E;
     /* color: white; */
