@@ -83,6 +83,7 @@ margin:15px auto;
 
 #details{
 margin-left:0;
+padding: 0 ;
 text-align:left;}
 
 
