@@ -130,7 +130,7 @@ margin-left:-50;
 	
 	
 }
-#contactname,#contactemail,#contactmessege{
+#contactname,#contactemail,#contactsubject,#contactmessege{
 	width:100%;
 	border:2px solid #B28F5E;
 	font-size:14;
