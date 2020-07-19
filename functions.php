@@ -566,9 +566,9 @@ add_filter( 'rwmb_meta_boxes', 'slides' );
 // Redirect Subscribers out of admin
 add_action('admin_init', 'redirectSubsToFrontend');
 function redirectSubsToFrontEnd(){
-	$currentUser = wo_get_current_user();
+	$currentUser = wp_get_current_user();
 	if(count($currentUser->roles) == 1 AND $currentUser->roles[0] == 'subscriber'){
-		wp_redirect( site_url('/weddings/clients'));
+		wp_redirect( site_url('/'));
 		exit;
 	}
 }
