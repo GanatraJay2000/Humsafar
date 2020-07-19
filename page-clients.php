@@ -496,11 +496,11 @@
     <div class="container">
         <div class="login">
 <?php if(is_user_logged_in(  )){?>
- <a href="<?php echo wp_logout_url(); ?>" class="btn btn-sm btn-outline-danger px-3 py-2 text-dark" style="cursor:pointer">Logout</a>    
+ <a href="<?php echo wp_logout_url(); ?>" class=" px-3 py-2 text-dark" style="cursor:pointer">Logout</a>    
 <?php } 
 else{?>
- <a href="<?php echo wp_registration_url(); ?>" class="px-3 py-2 btn btn-sm btn-outline-success text-dark" style="cursor:pointer">Sign Up</a>                
-            <a href="<?php echo wp_login_url(); ?>" class="mr-2 px-3 py-2 btn btn-sm btn-outline-primary text-dark" style="cursor:pointer">Log In</a>    
+ <a href="<?php echo wp_registration_url(); ?>" class="px-3 py-2 text-dark" style="cursor:pointer">Sign Up</a>                
+            <a href="<?php echo wp_login_url(); ?>" class="mr-2 px-3 py-2  text-dark" style="cursor:pointer">Log In</a>    
 <?php }
 
 ?>
