@@ -18,7 +18,10 @@ body.login .button-primary:focus {
 }
 
 body.login {
-  background-color: #174d39;
+  background: url("../back.png");
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
   color: #ffe375;
   font-family: 'Playfair Display' , serif;
 }
