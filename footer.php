@@ -5,7 +5,7 @@
 $i=0; 
 while( $logos->have_posts() ){ 
 $logos->the_post(); 
-$post_id = 5;
+$post_id = 52;
 $slide_2 = rwmb_meta('slide_2', array( 'size' => 'large' ) , $post_id);
 }
 

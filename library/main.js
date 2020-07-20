@@ -1,12 +1,6 @@
 jQuery(document).ready(function ($) {
 
-    // var myVar;
-    // myVar = setTimeout(showPage, 800);
 
-    // function showPage() {
-    //     document.getElementById("load-screen").style.display = "none";
-    //     document.body.style.overflow = "visible";
-    // }
     $('.carousel').owlCarousel({
         // animateIn: 'animate__slideInLeft',
         // animateOut: 'animate__slideOutRight',
@@ -68,40 +62,9 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    // $(function () {
-    //     $(document).scroll(function () {
-    //         var $nav = $(".ent-header");
-    //         $nav.toggleClass('scrolled', $(this).scrollTop() > (1.5 * $nav.height()));
-    //     });
-    // });
 
 
 
-    // $('.testimonials').owlCarousel({
-    //     animateIn: 'animate__slideInLeft',
-    //     animateOut: 'animate__slideOutRight',
-    //     autoplay: true,
-    //     margin: 10,
-    //     loop: true,
-    //     autoplaySpeed: 300,
-    //     responsive: {
-    //         // breakpoint from 0 up
-    //         0: {
-    //             items: 1,
-    //         },
-    //         // breakpoint from 480 up
-    //         600: {
-    //             items: 2,
-    //         },
-    //         // breakpoint from 768 up
-    //         768: {
-    //             items: 3,
-    //         },
-    //         1000: {
-    //             items: 3,
-    //         }
-    //     }
-    // });
     $('.testimonials').owlCarousel({
         loop: true,
         // animateIn: 'animate__fadeIn',
@@ -125,7 +88,36 @@ jQuery(document).ready(function ($) {
                 items: 3,
             }
         }
-    })
-
+    });
+    var banners = $('.banners');
+    banners.owlCarousel({
+        loop: true,
+        animateIn: 'animate__fadeIn',
+        animateOut: 'animate__fadeOut',
+        margin: 10,
+        stagePadding: 0,
+        autoplay: true,
+        autoplayTimeout: 12000,
+        responsiveClass: true,
+        dots: true,
+        nav: true,
+        navText: [$('.banner-prev'), $('.banner-next')],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            450: {
+                items: 1,
+            },
+            900: {
+                items: 1,
+            }
+        }
+    });
+    banners.on('changed.owl.carousel', function (event) {
+        var item = event.item.index - 2;     // Position of the current item
+        $('.content').removeClass('animate__animated animate__fadeInLeft');
+        $('.owl-item').not('.cloned').eq(item).find('.content').addClass('animate__animated animate__fadeInLeft');
+    });
 
 });

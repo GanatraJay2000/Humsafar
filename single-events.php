@@ -432,64 +432,33 @@
     </main>
 </div>
 
-<?php //if(is_single()) comments_template(); ?>
+
+<!-- <?php //if(is_single()) comments_template(); ?> -->
+
+<!-- <div id="graphcomment"></div>
+<script type="text/javascript">
+
+  /* - - - CONFIGURATION VARIABLES - - - */
+
+  // make sure the id is yours
+  window.gc_params = {
+    graphcomment_id: 'Humsafar',
+
+    // if your website has a fixed header, indicate it's height in pixels
+    fixed_header_height: 0,
+  };
+
+  /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+  
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+
+</script> -->
             <?php } ?>
 
    
-    <script>
-        const divs = document.querySelectorAll('main.lightbox-wrapper div');
-        const body = document.body;
-        const prev = document.querySelector('.lightboxNav.prev');
-        const next = document.querySelector('.lightboxNav.next');
-
-        function checkPrev() {
-            if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
-                prev.style.display = 'none';
-                // body.classList.toggle('overflow');
-
-            } else {
-                prev.style.display = 'flex';
-            }
-        }
-
-        function checkNext() {
-            if (document.querySelector('.lightbox-wrapper div:last-child').classList.contains('show')) {
-                next.style.display = 'none';
-                // body.classList.toggle('overflow');
-            } else {
-                next.style.display = 'flex';
-            }
-        }
-
-        Array.prototype.slice.call(divs).forEach(function (el) {
-            el.addEventListener('click', function () {
-                this.classList.toggle('show');
-                // body.classList.toggle('overflow');
-                body.classList.toggle('active');
-                checkNext();
-                checkPrev();
-            });
-        });
-
-        prev.addEventListener('click', function () {
-            const show = document.querySelector('.show');
-            const event = document.createEvent('HTMLEvents');
-            event.initEvent('click', true, false);
-
-            show.previousElementSibling.dispatchEvent(event);
-            show.classList.remove('show');
-            body.classList.toggle('active');
-            checkNext();
-        });
-
-        next.addEventListener('click', function () {
-            const show = document.querySelector('.show');
-            const event = document.createEvent('HTMLEvents');
-            event.initEvent('click', true, false);
-
-            show.nextElementSibling.dispatchEvent(event);
-            show.classList.remove('show');
-            body.classList.toggle('active');
-            checkPrev();
-        });
-    </script>
+   

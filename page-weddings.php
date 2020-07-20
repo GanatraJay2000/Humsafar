@@ -192,6 +192,94 @@
     .testimonial-card-content .detail p::after {
         content: '"';
     }
+.content.wrapper{
+    padding-top:5px !important;
+}
+.banner-carousel{
+    --max-width: 90%;
+    --height: 500px;
+    width:100vw;
+    margin:0 auto;
+    max-width:var(--max-width);
+    position:relative;    
+}
+.banner-next{
+    font-size:32px;
+    font-weight:200;
+    position:absolute !important;
+    top:50% !important;
+    right:-50px !important;
+}
+.banner-prev{
+    font-size:32px;
+    font-weight:200;
+    position:absolute !important;
+    top:50% !important;
+    left:-50px !important;
+}
+.banners{
+
+    /* border:2px solid red; */
+    height:var(--height);    
+    margin:0 !important;
+    margin-bottom:100px;
+    /* overflow:hidden; */
+}
+.banner{
+    position:relative;
+}
+.banners img{
+    width:100vw;
+    max-width:100%;
+    height:var(--height);
+}
+.banner .static-content{
+    z-index:2;
+    position:absolute;
+    background-color:transparent;
+    height:30%;    
+    width:50%;
+    top:5%;
+    left:25%;
+    text-align:center;
+    font-family:"Playfair Display", serif;
+}
+
+
+.banner .content{
+    padding:20px;
+    z-index:2;
+    position:absolute;
+    background-color:#c3d2dcea;
+    background-color:#eaeaeada;
+    height:100%;
+    width:35%;
+    top:0;
+    right:0;
+    font-family:"Playfair Display", serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+
+    .banners .button {
+        margin: 4px 0px;
+        border: 0;
+        padding: 5px 25px;
+        font-size: 20px;
+        color: white;
+        background-color: #333;
+        text-decoration: none !important;
+        transition:all ease 400ms;
+    }
+        .banners .button:hover {
+            padding:5px 50px;
+            background-color:var(--primary-color);
+            color:var(--bg-color);
+        }
 
     .owl-nav {
         position: absolute;
@@ -286,10 +374,59 @@
         .testimonial-card-content .detail {
             padding: 15px;
         }
+        .banners {
+            padding: 5px;
+        }
+
+        .banner-card-content .detail {
+            padding: 15px;
+        }
     }
 </style>
 
-<div class="home-page">
+<div class="banner-carousel">
+    <div class="owl-carousel banners owl-theme ">
+        <div class="banner">        
+            <img src="https://images.unsplash.com/flagged/photo-1566150217714-ebfea356f885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Post-1">
+
+            <div class="static-content">
+                <h2><i>Say I-Do at the Top of the World !</i></h2>
+                <h6 class="my-4">Explore the most awesome destinations in the world</h6>
+                <a class="button" href="<?php echo site_url('/weddings/destinations'); ?>">Explore Destinations</a>
+            </div>
+        </div>
+        <div class="banner">        
+            <img src="https://images.unsplash.com/photo-1460364157752-926555421a7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Post-1">
+            <div class="content" style="background-color:#c3d2dcea !important;">
+                <h3>We will Plan Every Detail of Your Wedding</h3>
+                <p class="mb-5">We are your Humsafar in making your memories of your Dream & destination Wedding SPECIAL. Check our exclusive services,</p>
+                <a class="button" href="<?php echo site_url('/weddings/services'); ?>">Check Out Services</a>
+            </div>
+        </div>
+        <div class="banner">        
+            <img src="https://images.unsplash.com/photo-1519307212971-dd9561667ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60">
+            <div class="content" style="background-color:#dd3002ea !important;color:white;">
+                <h3>Plan Your Perfect Wedding & Surprise Everyone.</h3>
+                <p>They say there are 16 Adornments without which an Indian bride is incomplete. Check out these amazing functions of adornments.</p>
+                <a class="button" href="<?php echo site_url('/weddings/functions'); ?>">Explore Functions</a>
+            </div>
+        </div>
+        <div class="banner">        
+            <img src="https://images.unsplash.com/photo-1507874915569-4a58ec33669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Post-1">
+
+            <div class="content" style="background-color:#fec9c0ea !important;">
+                <h3>You Will Never Forget the Incredible Memory.</h3>
+                <p>Find our latest work of making their dream come true of having a beautiful wedding they always dreamt of.</p>
+                <a class="button" href="<?php echo site_url('/weddings/events'); ?>">See Weddings</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+    <div class="banner-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+</div>
+
+<div class="home-page">   
     <div class="heading">
         <p><i>We Plan Your Unforgettable Moments</i></p>
     </div>

@@ -220,7 +220,7 @@ article.post:last-of-type {
 }
 
 .site-nav .nav-brand img {
-    width: 140px;
+    width: 100px;
     transition: ease 200ms transform;
 }
 

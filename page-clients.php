@@ -410,6 +410,10 @@
 
     /* Change styles for  small screens */
     @media screen and (max-width: 900px) {
+        .content.wrapper{
+            margin:0 !important;
+            padding:0 !important;
+        }
         .my-modal-content {
             margin-top: 0;
         }
@@ -430,6 +434,8 @@
 
         .container {
             width: 100%;
+            padding:0;
+            margin:0;
         }
 
         .image {
@@ -471,10 +477,10 @@
             width: 300px;
         }
 
-        .login {
+        /* .login {
             background-color: #bba45b;
             height: 36px;
-        }
+        } */
 
         .blog-part .firstbtn {
             background-color: #bba45b;
@@ -496,123 +502,17 @@
     <div class="container">
         <div class="login">
 <?php if(is_user_logged_in(  )){?>
- <a href="<?php echo wp_logout_url(); ?>" class=" px-3 py-2 text-dark" style="cursor:pointer">Logout</a>    
+ <a href="<?php echo wp_logout_url(); ?>" class="float-right text-dark" style="cursor:pointer">Logout</a>    
 <?php } 
 else{?>
- <a href="<?php echo wp_registration_url(); ?>" class="px-3 py-2 text-dark" style="cursor:pointer">Sign Up</a>                
-            <a href="<?php echo wp_login_url(); ?>" class="mr-2 px-3 py-2  text-dark" style="cursor:pointer">Log In</a>    
+ <a href="<?php echo wp_registration_url(); ?>" class="float-right  py-2 text-dark" style="cursor:pointer">Sign Up</a>                
+            <a href="<?php echo wp_login_url(); ?>" class="float-right px-3 py-2  text-dark" style="cursor:pointer">Log In</a>    
 <?php }
 
 ?>
                        
 
 
-            <div class="signup-part">
-                <div id="id01" class="modal">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                        title="Close Modal">&times;</span>
-                    <form id="form1" class="my-modal-content" action="/action_page.php">
-                        <div class="signup-container">
-                            <div class="head-s">
-                                <h1><b>SIGN UP</b></h1>
-                            </div>
-                            <div id="login" class="p-text">
-                                <p>Already a member? <a href="#">Log In</a></p>
-                            </div>
-                            <br>
-                            <label for="email">Email</label>
-                            <input type="text" name="email" required>
-
-                            <label for="psw">Password</label>
-                            <input type="password" name="psw" required>
-
-
-                            <div class="clearfix">
-                                <button type="submit" class="signupbtn">Sign Up</button>
-                            </div>
-                            <div class="other-signup">
-                                <p><span>or sign up with</span></p>
-                                <div class="links">
-                                    <div class="ggl"><a href="#"><img
-                                                src="https://image.flaticon.com/icons/svg/2702/2702602.svg" alt="google"
-                                                width="40" height="40"></a>
-                                    </div>
-                                    <div class="fb"><a href="#"><img
-                                                src="https://image.flaticon.com/icons/svg/1384/1384053.svg"
-                                                alt="facebook" width="40" height="40"></a>
-                                    </div>
-                                </div>
-                                <br>
-                                <br>
-                                <br>
-                            </div>
-                        </div>
-                    </form>
-
-                    <form id="form2" class="my-modal-content" action="/action_page.php">
-                        <div class="signup-container">
-                            <div class="head-s">
-                                <h1><b>LOG IN</b></h1>
-                            </div>
-                            <div id="signup" class="p-text">
-                                <p>New to this site? <a href="#">Sign Up</a></p>
-                            </div>
-                            <br>
-                            <label for="email">Email</label>
-                            <input type="text" name="email" required>
-
-                            <label for="psw">Password</label>
-                            <input type="password" name="psw" required>
-
-                            <label class="fgtpsd"><a href="#">Forgot Password?</a></label>
-
-                            <div class="clearfix">
-                                <button type="submit" class="signupbtn" style="margin-top:30px;">Log in</button>
-                            </div>
-                            <div class="other-signup">
-                                <p><span>or log in with</span></p>
-                                <div class="links">
-                                    <div class="ggl"><a href="#"><img
-                                                src="https://image.flaticon.com/icons/svg/2702/2702602.svg" alt="google"
-                                                width="40" height="40"></a>
-                                    </div>
-                                    <div class="fb"><a href="#"><img
-                                                src="https://image.flaticon.com/icons/svg/1384/1384053.svg"
-                                                alt="facebook" width="40" height="40"></a>
-                                    </div>
-                                </div>
-                                <br>
-                                <br>
-                                <br>
-                            </div>
-                        </div>
-                    </form>
-
-                    <form id="form3" class="my-modal-content" action="/action_page.php">
-                        <div class="signup-container">
-                            <div class="head-s">
-                                <h1>RESET PASSWORD</h1>
-                            </div>
-                            <div class="p-text">
-                                <p>please enter your email address</p>
-                            </div>
-                            <br>
-                            <label for="email">Email</label>
-                            <input type="text" name="email" required>
-
-
-                            <div class="clearfix">
-                                <button type="submit" class="signupbtn">Reset Password</button>
-                            </div>
-
-                            <br>
-                            <br>
-                            <br>
-                        </div>
-                </div>
-                </form>
-            </div>
-        </div>
 
 </div>
 <?php
@@ -701,36 +601,12 @@ if($event_type === 'Wedding'){
     <br>
 
 </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close2")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-        $('body').css('overflow', 'auto');
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
-
+<!-- 
 <script>
     // Get the modal
     var modal2 = document.getElementById("myModal2");
@@ -758,89 +634,8 @@ if($event_type === 'Wedding'){
             modal2.style.display = "none";
         }
     }
-</script>
+</script> -->
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script>
-    function copyToClipboard(element) {
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($(element).text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        alert("link copied");
-    }
-
-    $('#link').click(function (e) {
-        $('#content1').css('display', 'none');
-        $('#content2').css('display', 'block');
-        e.preventDefault();
-    });
-
-    $('#myBtn').click(function (e) {
-        $('#content2').css('display', 'none');
-        $('#content1').css('display', 'block');
-        e.preventDefault();
-        $('body').css('overflow', 'hidden');
-    });
-</script>
-
-<script>
-    $('#link-2').click(function (e) {
-        $('#content1-2').css('display', 'none');
-        $('#content2-2').css('display', 'block');
-        e.preventDefault();
-    });
-
-    $('#myBtn2').click(function (e) {
-        $('#content2-2').css('display', 'none');
-        $('#content1-2').css('display', 'block');
-        e.preventDefault();
-        $('body').css('overflow', 'hidden');
-    });
-</script>
-
-
-<script>
-    $('#login a').click(function (e) {
-        $('#form1').css('display', 'none');
-        $('#form3').css('display', 'none');
-        $('#form2').css('display', 'block');
-        e.preventDefault();
-    });
-
-    $('#signup a').click(function (e) {
-        $('#form2').css('display', 'none');
-        $('#form3').css('display', 'none');
-        $('#form1').css('display', 'block');
-        e.preventDefault();
-    });
-
-    $('.fgtpsd a').click(function (e) {
-        $('#form2').css('display', 'none');
-        $('#form3').css('display', 'block');
-        e.preventDefault();
-    });
-
-    $('.firstbtn').click(function (e) {
-        $('#form3').css('display', 'none');
-        $('#form2').css('display', 'none');
-        $('#form1').css('display', 'block');
-        e.preventDefault();
-        $('body').css('overflow', 'hidden');
-    });
-
-    $("#myModal").on("show", function () {
-        $("body").addClass("modal-open");
-    }).on("hidden", function () {
-        $("body").removeClass("modal-open")
-    });
-
-    $('.close').click(function (e) {
-        e.preventDefault();
-        $('body').css('overflow', 'auto');
-    });
-</script>
 <?php get_footer(); ?>

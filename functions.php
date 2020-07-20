@@ -170,6 +170,11 @@ function add_custom_post() {
 }
 add_action( 'init', 'add_custom_post' );
 
+function comment_support_for_my_custom_post_type() {
+     add_post_type_support( 'events', 'comments' );
+}
+add_action( 'init', 'comment_support_for_my_custom_post_type' );
+
 
 
 
