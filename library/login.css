@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 /* Customize Login Screen */
 body.login .button-primary {
   background-color: #f84f30;
@@ -18,17 +18,83 @@ body.login .button-primary:focus {
 }
 
 body.login {
-  background-color: #faedc1;
+  background-color: #174d39;
+  color: #ffe375;
+  font-family: 'Playfair Display' , serif;
 }
 
 .login h1 a {
-    font-family: "Great Vibes", cursive; 
-        letter-spacing: 3px;
-  color:#012e29;
-  font-size: 40px;
+  font-family: "Great Vibes", cursive; 
+  letter-spacing: 0px;
+  color:#ffe375;
+  font-size: 50px;
   font-weight: 500;
   background-image: none;
   width: auto;
   height: auto;
   text-indent: 0;
 }
+.login h1 a:hover{
+	font-size: 52px;
+	margin: 0 auto 22px;
+	color: #ffe375;
+}
+
+.login #login_error, .login .message, .login .success {
+    border-left: 4px solid #b28f5e;
+	color: #444;
+	background-color: #fff;
+	box-shadow: 0 0 0 0 ;
+}
+
+.login form{
+	background: #fff;
+	color: #444;
+	border: 3px solod #b28f5e;
+}
+
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+    border: 0;
+    border-bottom: 1px solid #b28f5e;
+    background-color: #fff;
+    color: #32373c;
+}
+
+input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus {
+    border-color: #b28f5e;
+    border: 0;
+    box-shadow: 0 0 0 1px #b28f5e;
+}
+
+body.login .button-primary {
+    background-color: #217053;
+}
+
+.wp-core-ui .button-primary {
+    background: #217053;
+    color: #fff;
+    border: 0;
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+    background: #b28f5e;
+    border: 0;
+    color: #fff;
+}
+
+.login #backtoblog a, .login #nav a {
+    color: #ffe375;
+}
+
+a {
+    color: #ffe375;
+}
+
+.login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover {
+    color: #d8e3e7;
+}
+
+a:active, a:hover {
+    color: #d8e3e7;
+}
+
