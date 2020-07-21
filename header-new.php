@@ -151,7 +151,7 @@
         </div>
     </div>
     <?php
-if(!is_page(57)) { ?><div class="content wrapper"><?php } ?>
+if(!is_page(7)) { ?><div class="content wrapper"><?php } ?>
     
 
 
