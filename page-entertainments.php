@@ -98,7 +98,9 @@ background-color:black;
 }
 .card-img-top{
 height:200px;
-width:auto;}
+width:200px;
+margin:5px auto;
+}
 
 
 #ccee{
@@ -152,16 +154,16 @@ font-size:1em;
 }
 
   </style>
-  <center>
-<div class="container animate__animated animate__pulse m-0 p-0" width="100%">
+  
+<div class="m-0 p-0" width="100%">
 <div class="row m-0 p-0">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-slide">
-      <img src="../assets/p03kbhkd.jpg" alt="Arijit Singh" style="width:100vw;" id="ddee">
+      <img src="../assets/p03kbhkd.jpg" alt="Arijit Singh" style="width:100vw;">
  
 </div>
 </div>
 </div>
-</center>
+<div class="content wrapper">
 
 
 

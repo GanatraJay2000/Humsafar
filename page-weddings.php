@@ -202,7 +202,7 @@
     margin:0 auto;
     max-width:var(--max-width);    
     margin-bottom:100px;   
-     
+     z-index:0;
 }
 
 .banner-next{    

@@ -241,10 +241,11 @@ article.post:last-of-type {
     display: none;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: #0f030388;
+    background: #0f0303cc;
     position: absolute;
     border-radius: 4px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 3;
 }
 
 .site-nav li ul li {
