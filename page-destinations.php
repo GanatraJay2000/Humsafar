@@ -166,6 +166,164 @@ letter-spacing:.75px;
 }
 }
 
+
+
+
+ * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrapper {
+            padding: 0;
+            margin: 0;
+        }
+
+        .complex-element {
+            margin: 50px auto;
+            width: 1000px;
+        }
+
+        .dest {
+            position: relative;
+            display: flex;
+        }
+
+        .dest_1 {
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+
+        .dest_2 {
+            flex-direction: row-reverse;
+            margin-bottom: 50px;
+        }
+
+        .dest img {
+            /* width: 665px; */
+            height: 513px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dest .details {
+            padding: 30px;
+            /* padding-top: 10px; */
+        }
+
+        .dest .details .infotext {
+            color: #777;
+            /* font-size: 16px;
+            letter-spacing: 0.6px; */
+
+        }
+
+        .dest .details .title {
+            padding-top: 30px;
+            position: relative;
+            text-align: center;
+            color: #555;
+            font-size: 32px;
+            font-weight: 400;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dest .details .title::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+        }
+
+        .dest .mssg {
+            background-color: #333;
+            color: white;
+            position: absolute;
+            height: 160px;
+            width: 560px;
+            z-index: 1;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+            font-size: 24px;
+
+        }
+
+        .dest_1 .mssg {
+            right: 0;
+            bottom: -80px;
+        }
+
+        .dest_2 .mssg {
+            left: 0;
+            bottom: 10px;
+        }
+        
+
+        @media screen and (max-width:1200px) {
+            .complex-element{
+                width:100% !important;
+            }       
+            .dest {
+                display: block;
+                margin-bottom: 100px;
+            }
+
+            .dest .mssg {
+                display: block;
+                position: relative !important;
+                margin: 20px 0 !important;
+                width: 100%;
+                z-index: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;                
+            }
+
+            .dest img {
+                width: 100%;
+                height: 500px;
+            }
+
+            .dest .title {
+                font-size: 44px !important;
+                margin: 0 60px;
+            }
+
+            .dest .infotext {
+                display: none !important;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+                        .dest img {
+                width: 100%;
+                height: 300px;
+            }
+            .dest .title {
+                font-size: 20px !important;
+                margin: 0 auto;
+            }
+            .dest .mssg {
+                padding:0;
+                margin:0 auto;
+                text-center;
+                font-size:20px;
+            }
+        }
+
+
+
+
+
+
+
 	</style>
 </head>
 <body>
@@ -178,6 +336,51 @@ letter-spacing:.75px;
             ONE GLAMOUR ELEGANCE.
         </h2>
     </div>
+
+
+
+
+<div class="complex-element">
+        <div class="dest dest_1">
+            <img src="<?php echo get_template_directory_uri() . '/assets_inside/paris.webp' ?>" alt="Paris">
+            <div class="details">
+                <p class="infotext">A Spring wedding under the Eiffel Tower, with the Fragrance of Fresh Flowers in
+                    the air, and colors galore all around, as Reality transcends the boundaries of your Dream
+                    wedding.
+                </p>
+                <h1 class="title">BESPOKE LUX & PERFECT PLAN</h1>
+            </div>
+            <div class="mssg">WE TAKE YOUR DREAM WEDDING TO IT’S “DESTINATION”, FROM PARIS TO MAURITIUS, FROM DUBAI
+                TO GREECE.</div>
+        </div>
+        <div class="dest dest_2">
+            <img src="<?php echo get_template_directory_uri() . '/assets_inside/somehotel.webp' ?>" alt="">
+
+            <div class="details">
+                <p class="infotext">With our setup in India we have a huge clientele within India. We also deliver
+                    weddings all over the world including some major locations like Paris, Dubai, Greece & Italy. We
+                    work with an international clientele, travelling across the world to the finest hotels, resorts
+                    and islands for our luxury weddings.
+                </p>
+                <h1 class="title">DEDICATED TO DESTINATIONS</h1>
+            </div>
+            <div class="mssg">WE WANT TO MAKE UNFORGETTABLE MEMORIES AND ENJOY EVERY LAST MINUTE OF YOUR EVENT.
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--Griglia alternata testo e immagine, resposive con flexbox.-->
     <div class="mybox">
     <section class="heading mt-5">
