@@ -198,37 +198,40 @@
 .banner-carousel{
     --max-width: 90%;
     --height: 500px;
-    width:100vw;
+    width:100%;    
     margin:0 auto;
-    max-width:var(--max-width);
-    position:relative;    
+    max-width:var(--max-width);    
+    margin-bottom:100px;   
+     
 }
-.banner-next{
+
+.banner-next{    
     font-size:32px;
     font-weight:200;
     position:absolute !important;
-    top:50% !important;
-    right:-50px !important;
+    top:47% !important;
+    right:-40px !important;
 }
 .banner-prev{
     font-size:32px;
     font-weight:200;
     position:absolute !important;
-    top:50% !important;
-    left:-50px !important;
+    top:47% !important;
+    left:-40px !important;    
 }
 .banners{
 
     /* border:2px solid red; */
     height:var(--height);    
     margin:0 !important;
-    margin-bottom:100px;
+    
     /* overflow:hidden; */
 }
 .banner{
     position:relative;
 }
 .banners img{
+    border-radius:3px;
     width:100vw;
     max-width:100%;
     height:var(--height);
@@ -253,6 +256,7 @@
     background-color:#c3d2dcea;
     background-color:#eaeaeada;
     height:100%;
+    animation-duration:2s;
     width:35%;
     top:0;
     right:0;
@@ -281,13 +285,21 @@
             color:var(--bg-color);
         }
 
+    .banner-carousel .owl-nav {
+        position: absolute;
+        top: 0;        
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        height:100%;                
+        z-index:-1;
+    }
     .owl-nav {
         position: absolute;
-        top: 0;
-        left: calc(50% - 50px);
+        top: 0;        
         text-align: center;
-        width: 100px;
-        margin: 0;
+        width: 100%;
+        margin: 0;                               
     }
 
     .owl-nav .owl-prev .owl-nav-prev,
@@ -295,7 +307,7 @@
         color: #666 !important;
         background: transparent !important;
         font-size: 1.4rem !important;
-        padding: 10px;
+        padding: 10px;        
     }
 
     .owl-theme .owl-nav [class*='owl-']:hover {
@@ -421,9 +433,10 @@
             </div>
         </div>
     </div>
-
+<div class="owl-navigation">
     <div class="banner-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
     <div class="banner-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+    </div>
 </div>
 
 <div class="home-page">   
