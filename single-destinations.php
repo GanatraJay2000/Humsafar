@@ -48,7 +48,7 @@
 
         .banner_destination div.right {
             right: 0;
-            bottom: 10%;
+            bottom: 5%;
         }
 
         .title {
