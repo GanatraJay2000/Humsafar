@@ -129,7 +129,10 @@
                 max-width: 100%;
                 padding: 10px 10px;
                 text-align: center;
-
+                font-size:16px;
+            }
+            .banner_destination img{
+                min-height:0;
             }
 
             .complex-structure {
