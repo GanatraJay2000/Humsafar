@@ -117,8 +117,7 @@
 
     .image-container .image_block{
       height:100%;
-      width:100%;      
-      background-color:teal;
+      width:100%;            
       position:relative;
     }
         .image-container .image_block .image{
