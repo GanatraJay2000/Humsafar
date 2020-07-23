@@ -112,7 +112,7 @@
     .image-container {
       width: 65%;
       height: 100%;  
-      background-color:yellow;    
+      background-color:#77777777;    
     }
 
     .image-container .image_block{
