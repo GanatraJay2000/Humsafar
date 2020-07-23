@@ -60,7 +60,7 @@ background-color: #fff;
 .caldera-grid .form-group {
 
 padding:10px;
-	text-align:center;
+	text-align:left;
 	
 }
 
@@ -89,7 +89,7 @@ padding:0 !important;
 
 
 .caldera-grid .form-control{
-	text-align:center;
+	/* text-align:center; */
 	height:30px !important;
   	font-size:17px !important;
     box-shadow: none !important;

@@ -560,6 +560,40 @@ add_filter( 'rwmb_meta_boxes', 'slides' );
 
 
 
+function slideshow( $meta_boxes ) {
+    $prefix = '';
+
+    $meta_boxes[] = [
+        'title'      => esc_html__( 'Slideshow / Same Content', 'online-generator' ),
+        'id'         => 'slideshow',
+        'post_types' => ['post', 'page'],
+        'context'    => 'normal',
+        'priority'   => 'high',
+         'fields'     => [
+            [
+                'type'    => 'text_list',
+                'id'      => $prefix . 'list',
+                'name'    => esc_html__( 'Text List', 'online-generator' ),
+                'clone'   => true,
+                'options' => [
+                    'Title'   => '',
+                    'Content' => '',
+                ],
+            ],
+            [
+                'type'             => 'image_advanced',
+                'id'               => $prefix . 'slide_images',
+                'name'             => esc_html__( 'Slideshow Images', 'online-generator' ),
+                'max_file_uploads' => 10,
+                'max_status'       => false,
+            ],
+        ],
+    ];
+
+    return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'slideshow' );
+
 
 
 
