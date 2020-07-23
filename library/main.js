@@ -148,5 +148,31 @@ jQuery(document).ready(function ($) {
             }
         }
     });
+    var image_container = $('.image-container');
+    image_container.owlCarousel({
+        loop: true,
+        animateIn: 'animate__fadeIn',
+        animateOut: 'animate__fadeOut',
+        margin: 10,
+        stagePadding: 0,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        responsiveClass: true,
+        autoplayHoverPause: true,
+        dots: true,
+        nav: true,
+        navText: [$('.banner-prev'), $('.banner-next')],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            450: {
+                items: 1,
+            },
+            900: {
+                items: 1,
+            }
+        }
+    });
 
 });

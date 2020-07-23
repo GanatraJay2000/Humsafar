@@ -111,70 +111,51 @@
 
     .image-container {
       width: 65%;
-      height: 100%;
-      /* //background-color: yellow; */
+      height: 100%;  
+      background-color:yellow;    
     }
 
-    .image-container figure {
-      margin: 0;
-      background: #101010;
+    .image-container .image_block{
+      height:100%;
+      width:100%;      
+      background-color:teal;
+      position:relative;
+    }
+        .image-container .image_block .image{
+          position:absolute;
+          top:0;
+          left:0;
+          height:100%;
+          width:100%;
+        }
+        .image-container .image_block .image img{          
+          height:100%;
+          width:100%;
+        }
+    .image-container .image_text{
+      position:absolute;  
+      top:45%;    
+      width:60%;
+      font-size:35px;  
+      font-weight:700;
+      font-family:sans-serif;
+      color:white;
+      padding:10px 0;    
+      background-color:#333339cd;
     }
 
-    .image-container div#captioned-gallery {
-      width: 100%;
-      overflow: hidden;
+    .image-container.image1 .image_text{
+      left:0;
+    }
+    .image-container.image2 .image_text{
+      right:0;
     }
 
-    .image-container figure.slider {
-      position: relative;
-      width: 500%;
-      font-size: 0;
-    }
-
-    .image-container figure#slider1 {
-      animation: 12s slidy1 infinite;
-    }
-
-    .image-container figure#slider1:hover {
-      animation-play-state: paused;
-    }
-
-    .image-container figure#slider2 {
-      animation: 15s slidy2 infinite;
-    }
-
-    .image-container figure.slider figure {
-      width: 20%;
-      height: auto;
-      display: inline-block;
-      position: inherit;
-    }
-
-    .image-container figure.slider img {
-      width: 100%;
-      height: 28.5vw;
-    }
-
-    .image-container figure.slider figure figcaption {
-      position: absolute;
-      top: 40%;
-      background: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      width: 80%;
-      font-size: 28px;
-      padding: .6rem;
-      font-family: "LuloCleanW01-OneBold", sans-serif;
-    }
-
-    .image-container figure#slider2 figure figcaption {
-      right: 0;
-    }
-
-    #image1 {
+    .image1 {
       float: left;
     }
 
-    #image2 {
+    .image2 {
       float: right;
     }
 
@@ -329,40 +310,27 @@
       <p>Corporate Events</p>
       <hr style="margin:5px auto;width:60px;height:2px;border-width:0;background-color:#292929">
     </div>
+    <?php $logos = new WP_Query(array(
+    'post_type'=>'page',    
+));
+$i=0; 
+$post_id = 225;
+$slideshow = rwmb_meta('slide_images', array( 'size' => 'large' ) , $post_id);
+$slideshow = array_values($slideshow);
+$list_values = rwmb_meta('list', array() , $post_id);
+?>
 
     <div class="corp-container">
-      <div id="image1" class="image-container">
-
-        <div id="captioned-gallery">
-          <figure id="slider1" class="slider">
-            <figure>
-              <img src="https://humsafar.mcubeinfosys.com/wp-content/uploads/2020/07/paris-gallery-3-1024x683.jpg" alt>
-              <figcaption>Image Caption 1</figcaption>
-            </figure>
-            <figure>
-              <img src="https://humsafar.mcubeinfosys.com/assets/p03kbhkd.jpg" alt>
-              <figcaption>Image Caption 2</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://humsafar.mcubeinfosys.com/wp-content/uploads/2020/07/photo-1522143296900-b2c450f80fa7-1024x683.jpg"
-                alt>
-              <figcaption>Image Caption 3</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://humsafar.mcubeinfosys.com/wp-content/uploads/2020/07/98d8c3_b8c4e38230de42a0934cec0f94800607_mv2.jpg"
-                alt>
-              <figcaption>Image Caption 4</figcaption>
-            </figure>
-            <figure>
-              <img src="https://humsafar.mcubeinfosys.com/wp-content/uploads/2020/07/paris-gallery-3-1024x683.jpg" alt>
-              <figcaption>Image Caption 1</figcaption>
-            </figure>
-          </figure>
-        </div>
-
-      </div>
+      <div class="image-container image1 owl-carousel owl-theme">
+      <?php foreach ( $slideshow as $key=>$image ) { if($key == 3){break;} ?>         
+        <div class="image_block">
+          <img src="<?php echo $image['url'] ?>"  class="image"  alt="">
+          <div class="image_text">
+            <?php echo $list_values[$key][0]; // Name    ?>
+          </div>
+        </div>              
+      <?php } ?>                   
+      </div>          
       <div id="text1" class="text-container">
         <p>Your corporate event is an important time to boost morale and get your business associates,
           partners, shareholders and contributors excited about your mission and where your company is
@@ -379,36 +347,16 @@
     </div>
 
     <div class="corp-container">
-      <div id="image2" class="image-container">
-        <div id="captioned-gallery">
-          <figure id="slider2" class="slider">
-            <figure>
-              <img src="https://humsafar.mcubeinfosys.com/wp-content/uploads/2020/07/paris-gallery-1-1024x576.jpg" alt>
-              <figcaption>Image Caption 1</figcaption>
-            </figure>
-            <figure>
-              <img src="https://humsafar.mcubeinfosys.com/wp-content/uploads/2020/07/Jaybhanusahli.jpg" alt>
-              <figcaption>Image Caption 2</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://humsafar.mcubeinfosys.com/wp-content/uploads/2020/07/98d8c3_6d19ecc5f1094b598808b1e848410b42_mv2-1.jpg"
-                alt>
-              <figcaption>Image Caption 3</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://humsafar.mcubeinfosys.com/wp-content/uploads/2020/07/photo-1490006017569-465ccb897ba1-1024x683.jpg"
-                alt>
-              <figcaption>Image Caption 4</figcaption>
-            </figure>
-            <figure>
-              <img src="https://humsafar.mcubeinfosys.com/wp-content/uploads/2020/07/paris-gallery-1-1024x576.jpg" alt>
-              <figcaption>Image Caption 1</figcaption>
-            </figure>
-          </figure>
-        </div>
-      </div>
+      <div class="image-container image2 owl-carousel owl-theme">
+      <?php foreach ( $slideshow as $key=>$image ) { if($key >= 3){ ?>            
+        <div class="image_block">
+          <img src="<?php echo $image['url'] ?>"  class="image"  alt="">
+          <div class="image_text">
+            <?php echo $list_values[$key][0]; // Name    ?>
+          </div>
+        </div>              
+      <?php } } ?>
+    </div>           
       <div id="text2" class="text-container">
         <p>Humsafar Entertainments is your corporate planning specialists who is possessed with all of
           the talent and connections needed to coordinate an unforgettable event of any size or scope while

@@ -521,7 +521,6 @@ if($event_type === 'Wedding'){
     'post_type'=>'page',    
 ));
 $i=0; 
-$slideshow->the_post(); 
 $post_id = 5;
 $list_values = rwmb_meta('list', array() , $post_id);
 $slide_images = rwmb_meta('slide_images', array( 'size' => 'large' ) , $post_id);
