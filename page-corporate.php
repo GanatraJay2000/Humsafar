@@ -242,7 +242,7 @@
 ));
 $i=0; 
 $post_id = 108;
-$post_id = 225;
+// $post_id = 225;
 $slideshow = rwmb_meta('slide_images', array( 'size' => 'large' ) , $post_id);
 $slideshow = array_values($slideshow);
 $list_values = rwmb_meta('list', array() , $post_id);
