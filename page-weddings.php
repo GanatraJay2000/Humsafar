@@ -389,10 +389,54 @@
         }
         .banners {
             padding: 5px;
+            height:300px;
+        }
+        .banners *{
+            margin: 0 auto;
+            width:100%;
+        }
+        .banners img{
+            height:300px;
+        }
+        .banner .static-content{
+            font-size:10px;
+            width:auto;
+            left:0 !important;
+        }
+        .banner .static-content h2{
+            display:none;
+        }
+        .banner .static-content h6{
+            font-size:15px;
+        }
+        }.banner .static-content .button{
+            font-size:15px;
+            white-space: nowrap;
+            margin: 4px auto;
         }
 
-        .banner-card-content .detail {
-            padding: 15px;
+        .banner .content {
+            padding: 3px;
+            width:80%;
+            left:0%;
+            height:fit-content;
+            top:10px;            
+        }
+        .banner .content p{
+            display:none;
+        }
+
+        .banner .content h3{
+            font-size:16px;
+        }
+
+        .banner .content .button{
+            font-size:16px;
+            padding: 2px 5px ;
+            width:fit-content;
+        }
+        .owl-navigation{
+            display:none;
         }
     }
 </style>

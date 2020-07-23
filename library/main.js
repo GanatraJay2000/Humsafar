@@ -100,17 +100,19 @@ jQuery(document).ready(function ($) {
         autoplayTimeout: 12000,
         responsiveClass: true,
         dots: true,
-        nav: true,
-        navText: [$('.banner-prev'), $('.banner-next')],
+
         responsive: {
             0: {
                 items: 1,
             },
             450: {
                 items: 1,
+                nav: false,
             },
             900: {
                 items: 1,
+                nav: true,
+                navText: [$('.banner-prev'), $('.banner-next')],
             }
         }
     });
@@ -134,8 +136,6 @@ jQuery(document).ready(function ($) {
         autoplayTimeout: 6000,
         responsiveClass: true,
         dots: true,
-        nav: true,
-        navText: [$('.banner-prev'), $('.banner-next')],
         responsive: {
             0: {
                 items: 1,
