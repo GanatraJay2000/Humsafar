@@ -981,7 +981,7 @@ color: #ff0044 !important;
 }
   .close {
     color: tomato;
-    position: fixed;
+    position: absolute;
     cursor: pointer;
     background-color: transparent;
     top: 30px;
@@ -1102,4 +1102,15 @@ color: #ff0044 !important;
         margin: 5px 5px 10px 5px;
         font-size: 12px;
     }
+}
+
+
+
+@media screen and (max-width:500px){
+    .modal.show .modal-dialog {
+    min-height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
 }
