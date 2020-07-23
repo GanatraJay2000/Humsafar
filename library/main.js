@@ -114,10 +114,39 @@ jQuery(document).ready(function ($) {
             }
         }
     });
+
     banners.on('changed.owl.carousel', function (event) {
         var item = event.item.index - 2;     // Position of the current item
         $('.content').removeClass('animate__animated animate__fadeInLeft');
         $('.owl-item').not('.cloned').eq(item).find('.content').addClass('animate__animated animate__fadeInLeft');
+    });
+
+
+
+    var ent_banners = $('.ent_banners');
+    ent_banners.owlCarousel({
+        loop: true,
+        animateIn: 'animate__fadeIn',
+        animateOut: 'animate__fadeOut',
+        margin: 10,
+        stagePadding: 0,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        responsiveClass: true,
+        dots: true,
+        nav: true,
+        navText: [$('.banner-prev'), $('.banner-next')],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            450: {
+                items: 1,
+            },
+            900: {
+                items: 1,
+            }
+        }
     });
 
 });
