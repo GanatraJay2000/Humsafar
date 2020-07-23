@@ -409,7 +409,7 @@
         .banner .static-content h6{
             font-size:15px;
         }
-        }.banner .static-content .button{
+        .banner .static-content .button{
             font-size:15px;
             white-space: nowrap;
             margin: 4px auto;
