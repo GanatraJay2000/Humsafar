@@ -166,7 +166,7 @@ $slide_1 = rwmb_meta('slide_1', array( 'size' => 'large' ) , $post_id);
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-slide">
     <div class="owl-carousel ent_banners owl-theme ">
  <?php foreach ( $slide_1 as $image ) {?>    
-        <img src="<?php echo $image['url'] ?>" alt=""  style="width:100vw;height:70vh">                   
+        <img src="<?php echo $image['url'] ?>" alt=""  style="width:100vw;height:100vh">                   
 <?php } ?> 
 </div>
 </div>
