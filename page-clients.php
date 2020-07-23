@@ -118,7 +118,7 @@
     .container {
         margin: 10px auto;
         padding: 10px;
-        width: 75%;
+        width: 100%;
         //background-color:#bababa;
     }
 
@@ -246,7 +246,7 @@
         text-align: center;
     }
 
-    .my-modal-content .head- s {
+    .my-modal-content .head-s {
         font-family: sans-serif;
         text-align: center;
         font-size: 35px;
@@ -501,15 +501,14 @@
     </div>
     <div class="container">
         <div class="login">
-<?php if(is_user_logged_in(  )){?>
+<!-- <?php //if(is_user_logged_in(  )){?>
  <a href="<?php echo wp_logout_url(); ?>" class="float-right text-dark" style="cursor:pointer">Logout</a>    
-<?php } 
-else{?>
+<?php //}  else{?>
  <a href="<?php echo wp_registration_url(); ?>" class="float-right  py-2 text-dark" style="cursor:pointer">Sign Up</a>                
             <a href="<?php echo wp_login_url(); ?>" class="float-right px-3 py-2  text-dark" style="cursor:pointer">Log In</a>    
-<?php }
+<?php //}
 
-?>
+?> -->
                        
 
 
@@ -528,7 +527,7 @@ while($events->have_posts())
     $event_date = rwmb_meta('event_date');
     $event_type = rwmb_meta('event_type');
     $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
-
+    $location = rwmb_meta('location');
     $eventDate = new DateTime($event_date);          
     
 if($event_type === 'Wedding'){
@@ -550,41 +549,16 @@ if($event_type === 'Wedding'){
         <div class="text">
             <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
             <br>
-            <hr style="height:1px;border-width:0;background-color:#cccccc">
         </div>
-        <div class="kebab">
-            <img id="myBtn" src="https://image.flaticon.com/icons/svg/126/126469.svg" width="15" height="15" />
-
-            <div id="myModal" class="modal2">
-
-                <!-- Modal content -->
-                <div class="my-modal-content2">
-                    <span class="close2">&times;</span>
-
-                    <div id="content1">
-                        <h3>Share Post</h3>
-                        <a href="#"><img src="https://image.flaticon.com/icons/svg/179/179319.svg" width="40"
-                                height="40" /></a>
-                        <a href="#"><img src="https://image.flaticon.com/icons/svg/179/179342.svg" width="40"
-                                height="40" /></a>
-                        <a href="#"><img src="https://image.flaticon.com/icons/svg/179/179330.svg" width="40"
-                                height="40" /></a>
-                        <a id="link" href="#"><img src="https://image.flaticon.com/icons/svg/181/181531.svg" width="40"
-                                height="40" /></a>
-                    </div>
-                    <div id="content2">
-                        <h3>Share Link</h3>
-                        <div class="copy-link">
-                            <p id="p1"><?php the_permalink(); ?></p>
-                        </div>
-                        <button onclick="copyToClipboard('#p1')">copy link</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="date">
+        <hr style="height:1px;border-width:0;background-color:#cccccc; margin:1px;">
+        
+                <div class="d-flex justify-content-between">
+        <div class="date col-2">
             <p><?php echo $eventDate->format('M').' '.$eventDate->format('dS').', '.$eventDate->format('Y'); ?></p>
+        </div>
+        <div class="m-1 col-1">
+            <?php echo $location; ?>
+        </div>
         </div>
 
     </div>

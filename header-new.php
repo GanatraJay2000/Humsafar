@@ -114,7 +114,7 @@
                         <h1>Book Artist
                             <hr>
                         </h1>
-                        <form action="" method="">
+                        <!-- <form action="" method="">
                             <div class="d-flex flex-wrap text-left px-lg-5 mx-lg-5">
                                 <div class="form-group col-lg-6 col-12">
                                     <div class="form-group">Name<input type="text" required class="form-control"
@@ -156,7 +156,8 @@
                             <div>
                                 <button type="submit" class="btn btn-dark" style="border-radius:0">Submit</button>
                             </div>
-                        </form>
+                        </form> -->
+                        <?php echo do_shortcode( '[caldera_form id="CF5f178516e74f3"]' ); ?>
                     </div>
                     </div>
                 </div>
