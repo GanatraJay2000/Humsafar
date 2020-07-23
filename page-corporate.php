@@ -4,86 +4,6 @@
     * {
       margin: 0;
       padding: 0;
-    }
-
-    @keyframes slidy1 {
-      0% {
-        left: 0%;
-      }
-
-      20% {
-        left: 0%;
-      }
-
-      25% {
-        left: -100%;
-      }
-
-      45% {
-        left: -100%;
-      }
-
-      50% {
-        left: -200%;
-      }
-
-      70% {
-        left: -200%;
-      }
-
-      75% {
-        left: -300%;
-      }
-
-      95% {
-        left: -300%;
-      }
-
-      100% {
-        left: -400%;
-      }
-    }
-
-    @keyframes slidy2 {
-      0% {
-        left: -400%;
-      }
-
-      20% {
-        left: -400%;
-      }
-
-      25% {
-        left: -300%;
-      }
-
-      45% {
-        left: -300%;
-      }
-
-      50% {
-        left: -200%;
-      }
-
-      70% {
-        left: -200%;
-      }
-
-      75% {
-        left: -100%;
-      }
-
-      95% {
-        left: -100%;
-      }
-
-      100% {
-        left: 0%;
-      }
-    }
-
-
-    * {
       box-sizing: border-box;
     }
 
@@ -174,8 +94,7 @@
 
     #text2 {
       float: left;
-      margin-top: 40px;
-      height: 90%;
+      margin-top: 40px;      
     }
 
     .text-container p {
@@ -202,7 +121,9 @@
     }
 
     @media screen and (max-width : 1200px) {
-
+.content.wrapper{
+  padding:0 !important;
+}
       .corp-container {
         width: 100%;
         height: 100%;
@@ -217,19 +138,12 @@
       }
 
       .text-container {
-        width: 100%;
-        height: 100%;
+        width: 100%;        
         margin: auto;
         padding: 0px;
+        height:auto;
       }
 
-      .image-container figure.slider img {
-        height: 40vw;
-      }
-
-      .image-container figure.slider figure figcaption {
-        font-size: 20px;
-      }
 
       #image1,
       #image2,
@@ -271,6 +185,19 @@
 
     @media screen and (max-width : 420px) {
 
+      p{
+        padding: 0 !important;
+      }
+      img.image{
+        width:100%;
+      }
+      .image_text{
+        padding:0 !important;
+        top:auto !important;
+        bottom:0 !important;
+        height:fit-content;
+        font-size:16px !important;
+      }
       .center-part {
         font-size: 18px;
         /* height: 100%; */
@@ -287,11 +214,12 @@
 
       .corp-container {
         width: 100%;
+        height:auto !important;
+        /* padding: 0 !important; */
       }
 
-      .image-container figure.slider img {
-        width: 100%;
-        height: 42vw;
+      .image-container{
+        width: 100%;        
       }
 
     }
@@ -314,6 +242,7 @@
 ));
 $i=0; 
 $post_id = 108;
+$post_id = 225;
 $slideshow = rwmb_meta('slide_images', array( 'size' => 'large' ) , $post_id);
 $slideshow = array_values($slideshow);
 $list_values = rwmb_meta('list', array() , $post_id);
