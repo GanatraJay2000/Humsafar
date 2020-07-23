@@ -158,7 +158,7 @@ font-size:1em;
     'post_type'=>'page',    
 ));
 $i=0; 
-$post_id = 57;
+$post_id = 7;
 $slide_1 = rwmb_meta('slide_1', array( 'size' => 'large' ) , $post_id);
 ?>
 <div class="m-0 p-0" width="100%">
