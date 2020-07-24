@@ -397,7 +397,7 @@
             width:100%;
         }
         .banners img{
-            height:300px;
+            height:230px;
         }
         .banner .static-content{
             font-size:10px;
