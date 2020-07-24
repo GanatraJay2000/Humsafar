@@ -118,14 +118,14 @@
         <div class="flex-container">
 
             <div>
-                <img id="my-img1" src="https://image.flaticon.com/icons/svg/2149/2149124.svg" alt="venue"
+                <img id="my-img1" src="https://image.flaticon.com/icons/svg/3069/3069499.svg" alt="venue"
                     onmouseover='hover1()' onmouseout='unhover1()' />
                 <div>
                     <p><i>Venue</i></p>
                 </div>
             </div>
             <div>
-                <img id="my-img2" src="https://image.flaticon.com/icons/svg/3132/3132686.svg" alt="decoration"
+                <img id="my-img2" src="https://image.flaticon.com/icons/svg/3034/3034055.svg" alt="decoration"
                     onmouseover='hover2()' onmouseout='unhover2()' />
                 <div>
                     <p><i>Decoration</i></p>
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div>
-                <img id="my-img4" src="https://image.flaticon.com/icons/svg/3129/3129839.svg" alt="entertainment"
+                <img id="my-img4" src="https://image.flaticon.com/icons/svg/3004/3004552.svg" alt="entertainment"
                     onmouseover='hover4()' onmouseout='unhover4()' />
                 <div>
                     <p><i>Entertainments</i></p>
@@ -167,7 +167,7 @@
                 </div>
             </div>
             <div>
-                <img id="my-img8" src="https://image.flaticon.com/icons/svg/1987/1987581.svg" alt="makeup"
+                <img id="my-img8" src="https://image.flaticon.com/icons/svg/1024/1024490.svg" alt="makeup"
                     onmouseover='hover8()' onmouseout='unhover8()' />
                 <div>
                     <p><i>Make Up Artist</i></p>
@@ -266,21 +266,21 @@
         /* *********************** */
 
         function hover1() {
-            document.getElementById("my-img1").src = "https://image.flaticon.com/icons/svg/2149/2149414.svg";
+            document.getElementById("my-img1").src = "https://image.flaticon.com/icons/svg/3069/3069469.svg";
         }
 
         function unhover1() {
-            document.getElementById("my-img1").src = "https://image.flaticon.com/icons/svg/2149/2149124.svg";
+            document.getElementById("my-img1").src = "https://image.flaticon.com/icons/svg/3069/3069499.svg";
         }
 
         /* *********************** */
 
         function hover2() {
-            document.getElementById("my-img2").src = "https://image.flaticon.com/icons/svg/3132/3132735.svg";
+            document.getElementById("my-img2").src = "https://image.flaticon.com/icons/svg/3034/3034068.svg";
         }
 
         function unhover2() {
-            document.getElementById("my-img2").src = "https://image.flaticon.com/icons/svg/3132/3132686.svg";
+            document.getElementById("my-img2").src = "https://image.flaticon.com/icons/svg/3034/3034055.svg";
         }
 
         /* *********************** */
@@ -296,11 +296,11 @@
         /* *********************** */
 
         function hover4() {
-            document.getElementById("my-img4").src = "https://image.flaticon.com/icons/svg/3129/3129863.svg";
+            document.getElementById("my-img4").src = "https://image.flaticon.com/icons/svg/3004/3004587.svg";
         }
 
         function unhover4() {
-            document.getElementById("my-img4").src = "https://image.flaticon.com/icons/svg/3129/3129839.svg";
+            document.getElementById("my-img4").src = "https://image.flaticon.com/icons/svg/3004/3004552.svg";
         }
 
         /* *********************** */
@@ -336,11 +336,11 @@
         /* *********************** */
 
         function hover8() {
-            document.getElementById("my-img8").src = "https://image.flaticon.com/icons/svg/1987/1987718.svg";
+            document.getElementById("my-img8").src = "https://image.flaticon.com/icons/svg/1024/1024541.svg";
         }
 
         function unhover8() {
-            document.getElementById("my-img8").src = "https://image.flaticon.com/icons/svg/1987/1987581.svg";
+            document.getElementById("my-img8").src = "https://image.flaticon.com/icons/svg/1024/1024490.svg";
         }
 
         /* *********************** */

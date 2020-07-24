@@ -120,14 +120,14 @@
     .front-page-view .content .entertainment.items .link .title {
         margin-top: 5px;
         font-family: "Roboto Slab", serif;
-        font-weight: 200;
+        font-weight: 700 !important;
         font-size: 18px;
         text-transform: uppercase;
         letter-spacing: 3px;
     }
 
     .front-page-view .content .entertainment.items .link .title div {
-        font-weight: 300;
+        font-weight: 500;
         letter-spacing: 3px;
         font-size: 30px;
     }
@@ -274,10 +274,10 @@
     <footer class="connects">
         <div>+91 83053 77774 &nbsp;<a href="mailto:weddings@humsafar.co">weddings@humsafar.co</a></div>
         <div class="text-lg-center">
-            <span><i class="fab fa-facebook" aria-hidden="true"></i></span>
-            <span><i class="fab fa-instagram" aria-hidden="true"></i></span>
-            <span><i class="fab fa-twitter" aria-hidden="true"></i></span>
-            <span><i class="fab fa-linkedin" aria-hidden="true"></i></span>
-            <span><i class="fab fa-youtube" aria-hidden="true"></i></span>
+           <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_facebook"]'); ?>"><span><i style="" class="fab fa-facebook" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_instagram"]'); ?>"><span><i style="" class="fab fa-instagram" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_twitter"]'); ?>"><span><i style="" class="fab fa-twitter" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_linkedin"]'); ?>"><span><i style="" class="fab fa-linkedin" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="event_youtube"]'); ?>"><span><i style="" class="fab fa-youtube" aria-hidden="true"></i></span></a>
         </div>
     </footer>

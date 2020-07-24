@@ -60,13 +60,14 @@
         margin: 0;
     }
 
-    button.inquire {
+    .inquire {
         margin: 4px 0px;
         border: 0;
         padding: 3px 45px;
         font-size: 20px;
         color: white;
         background-color: #cc9d5c;
+        text-decoration: none !important;
     }
 
     .post {
@@ -516,7 +517,7 @@ $slide_1 = array_values($slide_1);
             <li>Bhilai</li>
         </ul>
     </div>
-    <button class="inquire">Inquire</button>
+    <a href="<?php echo site_url('/weddings/contact-us') ?>" class="inquire text-white">Inquire</a>
     <div class="heading"><i>Find our Recent post here!</i></div>
     <hr class="title">
 
