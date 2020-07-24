@@ -202,7 +202,7 @@
     width:100%;    
     margin:0 auto;
     max-width:var(--max-width);    
-    margin-bottom:100px;   
+    margin-bottom:20px;   
      z-index:0;
 }
 
@@ -542,7 +542,7 @@ while($events->have_posts())
     
 if($event_type === 'Wedding'){
     ?>
- <a href="#" class="post">
+ <a href="<?php the_permalink(  ) ?>" class="post">
         <?php foreach ( $thumbnail_image as $image ) {?>
            <img class="image" src="<?php echo $image['url'] ?>" alt="">
         <?php } ?>
