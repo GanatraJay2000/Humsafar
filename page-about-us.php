@@ -105,6 +105,11 @@
         .flex-container .image {
             text-align: center;
         }
+		
+		.flex-container .image img{
+            width:100%;
+        }
+		
     }
 
     @media screen and (max-width : 700px) {
@@ -113,14 +118,31 @@
         .heading h1::after {
             width: 100px;
         }
+		
+		.flex-container>div {
+			font-size: 12px;
+        }
+		
     }
 
     @media screen and (max-width : 500px) {
 
-        .heading h1::before,
+        .heading{
+		    font-size:30px;
+		}
+		
+		.heading p{
+		    margin:0;
+		}
+		
+		.heading h1::before,
         .heading h1::after {
             width: 60px;
         }
+		
+		.flex-container .image div p {
+            font-size: 25px;
+       }
     }
 </style>
 
