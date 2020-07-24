@@ -36,7 +36,11 @@
         background-color: #282828;
         background-size: 16px 16px; */
         /* background-image: url("./hotel-wallpaper-black.png"); */
-        background-image: url("./assets/5-dots.png");
+        background-image: url("./assets/background.jpg");
+        /* background-image: url("https://images.unsplash.com/photo-1448067686092-1f4f2070baae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"); */
+        /* background-position:left center; */
+        background-repeat:no-repeat;
+        background-size:cover;
         background-attachment: fixed;
         /* background-image: url("./webb-dark.png"); */
         color: #aaa;
