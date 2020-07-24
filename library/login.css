@@ -19,9 +19,10 @@ body.login .button-primary:focus {
 
 body.login {
   background: url("../back.png");
-      background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right bottom;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  background-position: right bottom;
   color: #ffe375;
   font-family: 'Playfair Display' , serif;
 }
@@ -59,8 +60,9 @@ body.login {
 input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
     border: 0;
     border-bottom: 1px solid #b28f5e;
-    background-color: #f8f6ed !important;
+    background-color: #fff !important;
     color: #32373c;
+	border-radius: 0;
 }
 
 input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus {
@@ -99,5 +101,9 @@ a {
 
 a:active, a:hover {
     color: #d8e3e7;
+}
+
+.wp-core-ui .button, .wp-core-ui .button-secondary {
+    color: #217053;
 }
 
