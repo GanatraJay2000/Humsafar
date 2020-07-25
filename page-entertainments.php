@@ -30,7 +30,10 @@ margin:10px auto;}
 }
 
 
-
+.ent-banners .image{
+  width:100vw;
+  height:100vh
+}
 
 .thumbee{
   margin:0px;
@@ -132,7 +135,6 @@ width:49%;
   margin: 0 !important;
   width:100vw !important;
   max-width: 100% !important;
-
 }
 
 #ccee.row{
@@ -153,13 +155,29 @@ font-size:1em;
 }
 }
 
+@media screen and (max-width: 600px){
+  .ent-banners .image{
+  width:100vw;
+  height:300px;
+}
+}
+
   </style>
-  
+  <?php $logos = new WP_Query(array(
+    'post_type'=>'page',    
+));
+$i=0; 
+$post_id = 7;
+$slide_1 = rwmb_meta('slide_1', array( 'size' => 'large' ) , $post_id);
+?>
 <div class="m-0 p-0" width="100%">
 <div class="row m-0 p-0">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-slide">
-      <img src="../assets/p03kbhkd.jpg" alt="Arijit Singh" style="width:100vw;">
- 
+    <div class="owl-carousel ent_banners owl-theme ">
+ <?php foreach ( $slide_1 as $image ) {?>    
+        <img src="<?php echo $image['url'] ?>" alt="" class="image" style="">                   
+<?php } ?> 
+</div>
 </div>
 </div>
 </div>
@@ -265,7 +283,7 @@ $thumbnail_image = rwmb_meta('image_on_home_page', array( 'size' => 'medium' ) )
 
   </div>
 </div></div></div></center>
-
+</div>
 
 
 <?php get_footer('new'); ?>

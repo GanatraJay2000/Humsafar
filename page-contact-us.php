@@ -179,6 +179,7 @@ color: #B28F5E;
 color: #B28F5E;
 }
 @media only screen and (max-width: 765px) {
+    
 #details{
 margin-left:auto;
 text-align:center;
@@ -219,14 +220,21 @@ padding:20px;
 			
 			<h4>Phone & Email </h4>
 				<hr id="details"></hr>
-		<p><br>+918305377774  |  www.humsafar.co  |  </br>weddings@humsafar.co    </br>                            humsafarweddings@gmail.com</p>
+		<p><br>+918305377774  |  www.humsafar.co </br>weddings@humsafar.co    </br>humsafarweddings@gmail.com</p>
 			
 			<div class="sm">
-			<i class="fab fa-facebook fa-1x fachange" aria-hidden="true"></i>
-			<i class="fab fa-instagram fa-1x fachange" aria-hidden="true"></i>
-			<i class="fab fa-twitter fa-1x fachange" aria-hidden="true"></i>
-			<i class="fab fa-linkedin fa-1x fachange" aria-hidden="true"></i>
-			</div>
+            <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_facebook"]'); ?>"><span><i style="" class="fab fa-facebook fa-1x fachange" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_instagram"]'); ?>"><span><i style="" class="fab fa-instagram fa-1x fachange" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_twitter"]'); ?>"><span><i style="" class="fab fa-twitter fa-1x fachange" aria-hidden="true"></i></span></a>
+                <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_linkedin"]'); ?>"><span><i style="" class="fab fa-linkedin fa-1x fachange" aria-hidden="true"></i></span></a>                
+            </div>
+            
+            <div class="mt-4">
+                Want an estimate of the budget for the event ? <a href="<?php echo site_url('/weddings/request-a-quote'); ?>" class="ml-3 btn-sm btn btn-secondary bg-secondary text-white">Click Here</a>
+            </div>
+            <div class="mt-4">
+                Not a Customer ? &nbsp;&nbsp;Interested in a Partnership ?<a href="#" class="ml-3 btn-sm btn btn-outline-secondary bg-white text-secondary">Click Here</a>
+            </div>
   </div>
   
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">

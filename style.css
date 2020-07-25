@@ -869,34 +869,21 @@ nav.item.nav-links label {
 }
 
 .ent-responsive-nav a:hover {
-    color: #999;
-    letter-spacing: 2px;
+    color: #000;    
+    font-weight:600;
 }
 
 .ent-responsive-nav label {
     width: calc(100vw - 20px) !important;
 }
 
-.ent-responsive-nav label::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -5px;
-    height: 1px;
-    width: 0%;
-    transition: 350ms width ease;
-    background-color: #333;
-}
-
-.ent-responsive-nav label:hover::after {
-    width: 60%;
-}
-
 .modal-backdrop {
     opacity: 0.8 !important;
 }
 button.close {
-    color: white !important;
+color: #ff0044 !important;
+    text-shadow: none;
+    font-weight: 600;
     margin-top: 10px !important;
 }
 
@@ -993,8 +980,8 @@ button.close {
     align-items: center;
 }
   .close {
-    color: white;
-    position: fixed;
+    color: tomato;
+    position: absolute;
     cursor: pointer;
     background-color: transparent;
     top: 30px;
@@ -1107,9 +1094,23 @@ button.close {
         text-align: center;
     }
 
-
+  .close {
+    top: -10px;
+    right: -20px;
+  }
     .ent-footer .wrapper .item {
         margin: 5px 5px 10px 5px;
         font-size: 12px;
     }
+}
+
+
+
+@media screen and (max-width:500px){
+    .modal.show .modal-dialog {
+    min-height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
 }

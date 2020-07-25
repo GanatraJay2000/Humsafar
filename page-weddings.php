@@ -60,13 +60,14 @@
         margin: 0;
     }
 
-    button.inquire {
+    .inquire {
         margin: 4px 0px;
         border: 0;
         padding: 3px 45px;
         font-size: 20px;
         color: white;
         background-color: #cc9d5c;
+        text-decoration: none !important;
     }
 
     .post {
@@ -201,7 +202,7 @@
     width:100%;    
     margin:0 auto;
     max-width:var(--max-width);    
-    margin-bottom:100px;   
+    margin-bottom:20px;   
      z-index:0;
 }
 
@@ -250,6 +251,7 @@
 
 
 .banner .content{
+    border-radius:0 3px 3px 0;
     padding:20px;
     z-index:2;
     position:absolute;
@@ -388,27 +390,78 @@
         }
         .banners {
             padding: 5px;
+            height:300px;
+        }
+        .banners *{
+            margin: 0 auto;
+            width:100%;
+        }
+        .banners img{
+            height:230px;
+        }
+        .banner .static-content{
+            font-size:10px;
+            width:auto;
+            left:0 !important;
+        }
+        .banner .static-content h2{
+            display:none;
+        }
+        .banner .static-content h6{
+            font-size:15px;
+        }
+        .banner .static-content .button{
+            font-size:15px;
+            white-space: nowrap;
+            margin: 4px auto;
         }
 
-        .banner-card-content .detail {
-            padding: 15px;
+        .banner .content {
+            padding: 3px;
+            width:80%;
+            left:0%;
+            height:fit-content;
+            top:10px;            
+        }
+        .banner .content p{
+            display:none;
+        }
+
+        .banner .content h3{
+            font-size:16px;
+        }
+
+        .banner .content .button{
+            font-size:16px;
+            padding: 2px 5px ;
+            width:fit-content;
+        }
+        .owl-navigation{
+            display:none;
         }
     }
 </style>
-
+<?php $logos = new WP_Query(array(
+    'post_type'=>'page',    
+));
+$i=0; 
+$post_id = 5;
+$slide_1 = rwmb_meta('slide_1', array( 'size' => 'large' ) , $post_id);
+$slide_1 = array_values($slide_1);
+?>
 <div class="banner-carousel">
     <div class="owl-carousel banners owl-theme ">
         <div class="banner">        
-            <img src="https://images.unsplash.com/flagged/photo-1566150217714-ebfea356f885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Post-1">
+            <img src="<?php echo $slide_1[0]['url'] ?>" alt="Post-1">
 
             <div class="static-content">
-                <h2><i>Say I-Do at the Top of the World !</i></h2>
+                <h2><i>Say I-Do at the Top of the World!</i></h2>
                 <h6 class="my-4">Explore the most awesome destinations in the world</h6>
                 <a class="button" href="<?php echo site_url('/weddings/destinations'); ?>">Explore Destinations</a>
             </div>
         </div>
         <div class="banner">        
-            <img src="https://images.unsplash.com/photo-1460364157752-926555421a7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Post-1">
+           <img src="<?php echo $slide_1[1]['url'] ?>" alt="Post-1">
             <div class="content" style="background-color:#c3d2dcea !important;">
                 <h3>We will Plan Every Detail of Your Wedding</h3>
                 <p class="mb-5">We are your Humsafar in making your memories of your Dream & destination Wedding SPECIAL. Check our exclusive services,</p>
@@ -416,7 +469,7 @@
             </div>
         </div>
         <div class="banner">        
-            <img src="https://images.unsplash.com/photo-1519307212971-dd9561667ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60">
+           <img src="<?php echo $slide_1[2]['url'] ?>" alt="Post-1">
             <div class="content" style="background-color:#dd3002ea !important;color:white;">
                 <h3>Plan Your Perfect Wedding & Surprise Everyone.</h3>
                 <p>They say there are 16 Adornments without which an Indian bride is incomplete. Check out these amazing functions of adornments.</p>
@@ -424,7 +477,7 @@
             </div>
         </div>
         <div class="banner">        
-            <img src="https://images.unsplash.com/photo-1507874915569-4a58ec33669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Post-1">
+            <img src="<?php echo $slide_1[3]['url'] ?>" alt="Post-1">
 
             <div class="content" style="background-color:#fec9c0ea !important;">
                 <h3>You Will Never Forget the Incredible Memory.</h3>
@@ -464,7 +517,7 @@
             <li>Bhilai</li>
         </ul>
     </div>
-    <button class="inquire">Inquire</button>
+    <a href="<?php echo site_url('/weddings/contact-us') ?>" class="inquire text-white">Inquire</a>
     <div class="heading"><i>Find our Recent post here!</i></div>
     <hr class="title">
 
@@ -489,7 +542,7 @@ while($events->have_posts())
     
 if($event_type === 'Wedding'){
     ?>
- <a href="#" class="post">
+ <a href="<?php the_permalink(  ) ?>" class="post">
         <?php foreach ( $thumbnail_image as $image ) {?>
            <img class="image" src="<?php echo $image['url'] ?>" alt="">
         <?php } ?>
@@ -507,50 +560,32 @@ if($event_type === 'Wedding'){
 }
 }
 ?>
+
+
+<?php $slideshow = new WP_Query(array(
+    'post_type'=>'page',    
+));
+$i=0; 
+$post_id = 5;
+$list_values = rwmb_meta('list', array() , $post_id);
+$slide_images = rwmb_meta('slide_images', array( 'size' => 'large' ) , $post_id);
+$slide_images = array_values($slide_images);
+?>
    
 <div id="wed_testimonials" class="heading"><i>Testimonials</i></div>
 <hr class="title">
 <div class="owl-carousel testimonials owl-theme ">
-    <div class="testimonial-card">
+<?php foreach ( $list_values as $key=>$value ) { ?>
+<div class="testimonial-card">
         <div class="testimonial-card-content">
-            <img src="https://images.unsplash.com/flagged/photo-1566150217714-ebfea356f885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                alt="Post-1">
+            <img src="<?php echo $slide_images[$key]['url'] ?>)"alt="">  
             <div class="detail">
-                <h6>Prem & Varsha</h6>
-                <p>Thanks for your hardwwork.</p>
+                <h6><?php echo $value[0]; // Name    ?></h6>
+                <p><?php echo $value[1]; // Content ?></p>
             </div>
         </div>
     </div>
-    <div class="testimonial-card">
-        <div class="testimonial-card-content">
-            <img src="https://images.unsplash.com/photo-1460364157752-926555421a7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-                alt="Post-3">
-            <div class="detail">
-                <h6>Prem & Varsha</h6>
-                <p>Thanks for your hardwwork.</p>
-            </div>
-        </div>
-    </div>
-    <div class="testimonial-card">
-        <div class="testimonial-card-content">
-            <img src="https://images.unsplash.com/photo-1519307212971-dd9561667ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-                alt="Post-2">
-            <div class="detail">
-                <h6>Prem & Varsha</h6>
-                <p>Thanks for your hardwwork.</p>
-            </div>
-        </div>
-    </div>
-    <div class="testimonial-card">
-        <div class="testimonial-card-content">
-            <img src="https://images.unsplash.com/photo-1507874915569-4a58ec33669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-                alt="Post-5">
-            <div class="detail">
-                <h6>Prem & Varsha</h6>
-                <p>Thanks for your hardwwork.</p>
-            </div>
-        </div>
-    </div>
+     <?php } ?>
 </div>
 
 

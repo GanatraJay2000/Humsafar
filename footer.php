@@ -3,12 +3,8 @@
     'post_type'=>'page',    
 ));
 $i=0; 
-while( $logos->have_posts() ){ 
-$logos->the_post(); 
 $post_id = 5;
 $slide_2 = rwmb_meta('slide_2', array( 'size' => 'large' ) , $post_id);
-}
-
 ?>
 <div class="text-center">
     <div class="carousel owl-carousel owl-theme text-dark">
@@ -18,7 +14,7 @@ $slide_2 = rwmb_meta('slide_2', array( 'size' => 'large' ) , $post_id);
 <?php 
 foreach ( $slide_2 as $image ) {?>
     <div class="block">
-        <img src="<?php echo $image['url'] ?>)"alt="">                
+        <img src="<?php echo $image['url'] ?>" alt="">                
     </div>
 <?php } ?> 
     </div>
