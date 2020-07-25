@@ -1,26 +1,12 @@
 <?php get_header(); ?>
 <style>
-    .wpcf7 input{
-        padding: 3px 10px;
-    }
-    .wpcf7 textarea{
-        padding: 3px 10px;
-    }
-.wpcf7 input[type=submit] {
-    background-color: #B28F5E;
-    /* color: white; */
-    /* padding: 15px 40px; */
-    font-size: 22;
-    border: 0px;
-    margin-top: -40;
-    position: absolute;
-    /* margin-left: auto; */
-    width: 30%;
-    /* margin: 0 auto; */
-    margin-left: -10% !important;
-}   
 
-
+.frm_button_submit{
+    background-color:#e1b258 !important;
+    color:white !important;    
+border:0 !important;
+}	
+   
 body{
 	overflow-x:hidden;
 background-color: #fff;
@@ -232,15 +218,16 @@ padding:20px;
             <div class="mt-4">
                 Want an estimate of the budget for the event ? <a href="<?php echo site_url('/weddings/request-a-quote'); ?>" class="ml-3 btn-sm btn btn-secondary bg-secondary text-white">Click Here</a>
             </div>
-            <div class="mt-4">
-                Not a Customer ? &nbsp;&nbsp;Interested in a Partnership ?<a href="#" class="ml-3 btn-sm btn btn-outline-secondary bg-white text-secondary">Click Here</a>
+            <div class="my-4">
+                Not a Customer ? &nbsp;&nbsp;Interested in a Partnership ?<a href="<?php echo site_url('/partners'); ?>" class="ml-3 btn-sm btn btn-outline-secondary bg-white text-secondary">Click Here</a>
             </div>
   </div>
   
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">
 	  <center><h4>Say Hello </h4>
 	<hr></hr>
-<?php echo do_shortcode( '[contact-form-7 id="319" title="Contact"]' ); ?></center>
+<?php //echo do_shortcode( '[contact-form-7 id="319" title="Contact"]' ); ?></center>
+<?php echo do_shortcode( '[formidable id=1]' ); ?></center>
 </div></div></br>
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

@@ -96,13 +96,15 @@ padding:20px;
 			<i class="fab fa-twitter fa-1x fachange" aria-hidden="true"></i>
 			<i class="fab fa-linkedin fa-1x fachange" aria-hidden="true"></i>
 			</div>
+			<div class="my-4">
+                Not a Customer ? &nbsp;&nbsp;Interested in a Partnership ?<a href="<?php echo site_url('/partners'); ?>" class="ml-3 btn-sm btn btn-secondary bg-secondary text-white">Click Here</a>
+            </div>
   </div>
   
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">
 	  <center><h4>Say Hello </h4>
 	<hr></hr>
-<?php echo do_shortcode( '[contact-form-7 id="113" title="Form]' ); ?></center>
-</div></div></br>
+	<?php echo do_shortcode( '[formidable id=4]' ); ?></div></div></br>
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 

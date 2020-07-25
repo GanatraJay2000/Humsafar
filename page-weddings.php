@@ -390,7 +390,7 @@
         }
         .banners {
             padding: 5px;
-            height:300px;
+            height:230px;
         }
         .banners *{
             margin: 0 auto;
@@ -496,6 +496,7 @@ $slide_1 = array_values($slide_1);
     <div class="heading">
         <p><i>We Plan Your Unforgettable Moments</i></p>
     </div>
+    <?php echo do_shortcode('[newsletter]'); ?>
     <hr class="title">
     <h5 class="sub-title">EXCLUSIVE DESTINATION WEDDING PLANNERS & EVENT DESIGNERS</h5>
     <p>Humsafar Wedding is all about curating precisely those special moments of your life that get etched in the brain

@@ -1,4 +1,44 @@
 </div>
+<style>
+div.newsletter p{
+    margin:0 !important; 
+    margin-bottom:5px !important;
+}
+.site-footer .caldera-grid{
+width:100% !important;
+margin:0 !important;
+background-color:transparent !important ;
+    
+}
+.site-footer .caldera-grid .form-group label {
+display:none !important;
+}
+.site-footer .caldera-grid .form-control{
+	
+	height:35px !important;
+  	font-size:17px !important;
+    box-shadow: none !important;
+    background: white !important;
+	border:1px solid black !important;
+}
+.site-footer .caldera-grid .form-group, .cf-color-picker .form-group {
+    margin-bottom: 0px !important;
+}
+.site-footer .caldera-grid .btn.btn-default{
+	 background-color:transparent !important;
+	font-size:13px !important;
+    color:#FFE375 !important;
+	border:1px solid #FFE375 !important;
+    padding:3px 10px !important;
+    margin-top:0 !important;
+    width:fit-content;
+	
+}
+
+.tnp-subscription input[type=text], .tnp-subscription input[type=email], .tnp-subscription input[type=submit], .tnp-subscription select {
+    height:fit-content !important;
+}
+</style>
 <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
 ));
@@ -40,10 +80,19 @@ foreach ( $slide_2 as $image ) {?>
                 <h2>Join Mailing List</h2>
             </div>
             <p>Stay Updated with our latest</p>
-            <form action="add_to_mail_list.php" method="POST" class="form-element d-flex align-items-center">
-                <input type="email" maxlength="100" name="email" required class="input-element" placeholder="Email">
-                <button type="submit" class="btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-            </form>
+            <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                Newsletter
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">                
+                    <div class="modal-content">                         
+                    <div class="modal-body bg-secondary">
+                    <?php echo do_shortcode( '[newsletter]' ); ?>
+                    </div>     
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <div class="social-links text-lg-center">
             <div>
