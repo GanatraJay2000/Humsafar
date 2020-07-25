@@ -232,7 +232,7 @@ padding:20px;
             <div class="mt-4">
                 Want an estimate of the budget for the event ? <a href="<?php echo site_url('/weddings/request-a-quote'); ?>" class="ml-3 btn-sm btn btn-secondary bg-secondary text-white">Click Here</a>
             </div>
-            <div class="mt-4">
+            <div class="my-4">
                 Not a Customer ? &nbsp;&nbsp;Interested in a Partnership ?<a href="<?php echo site_url('/partners'); ?>" class="ml-3 btn-sm btn btn-outline-secondary bg-white text-secondary">Click Here</a>
             </div>
   </div>
