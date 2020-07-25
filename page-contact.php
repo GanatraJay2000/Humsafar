@@ -96,6 +96,9 @@ padding:20px;
 			<i class="fab fa-twitter fa-1x fachange" aria-hidden="true"></i>
 			<i class="fab fa-linkedin fa-1x fachange" aria-hidden="true"></i>
 			</div>
+			<div class="my-4">
+                Not a Customer ? &nbsp;&nbsp;Interested in a Partnership ?<a href="<?php echo site_url('/partners'); ?>" class="ml-3 btn-sm btn btn-secondary bg-secondary text-white">Click Here</a>
+            </div>
   </div>
   
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">
