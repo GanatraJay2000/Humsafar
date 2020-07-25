@@ -80,12 +80,19 @@ foreach ( $slide_2 as $image ) {?>
                 <h2>Join Mailing List</h2>
             </div>
             <p>Stay Updated with our latest</p>
-            <!-- <form action="add_to_mail_list.php" method="POST" class="form-element d-flex align-items-center">
-                <input type="email" maxlength="100" name="email" required class="input-element" placeholder="Email">
-                <button type="submit" class="btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-            </form> -->
-            <!-- <?php //echo do_shortcode( '[caldera_form id="CF5f1b9632f19a4"]' ); ?> -->
-            <?php echo do_shortcode( '[newsletter]' ); ?>
+            <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                Newsletter
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">                
+                    <div class="modal-content">                         
+                    <div class="modal-body bg-secondary">
+                    <?php echo do_shortcode( '[newsletter]' ); ?>
+                    </div>     
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <div class="social-links text-lg-center">
             <div>
