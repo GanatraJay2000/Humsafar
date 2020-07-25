@@ -220,7 +220,8 @@ display:block;
 		
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			
-	<?php echo do_shortcode( '[caldera_form id="CF5f1b5b815dc39"]' ); ?>
+	<!-- <?php //echo do_shortcode( '[caldera_form id="CF5f1b5b815dc39"]' ); ?> -->
+	<?php echo do_shortcode( '[contact-form-7 id="280" title="Partner"]' ); ?>
 	
 
 			

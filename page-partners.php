@@ -70,148 +70,14 @@ background-color: #fff;
 		margin:auto;
 			align:center;
 	}
-
-.caldera-grid .form-group {
-display:flex;
-width:100%;
-
+.frm_forms{
+    width:60% !important;
+    margin: 0 auto;
 }
-
-
-.caldera-grid .form-group label {
-	width:100%;
-		font-size:15px;
-	font-family: basic,sans-serif;
-font-weight:normal;
-	
-	
-}
-
-
-.caldera-grid .form-group >div{
-
-width:100%;
-	
-}
-
-
-
-
-.caldera-grid .form-control{
-	width:100%;
-	height:30px !important;
-  	font-size:17px !important;
-    box-shadow: none !important;
-	border:none !important;
-    background: transparent !important;
-	border:1px solid #B28F5E !important;
-
-
-
-}
-.caldera-grid .btn {
-    background-color:#B28F5E !important;
-	font-size:20px !important;
-    color:white !important;
-	
-	
-}
-
-.caldera-grid input[type=submit]{
-	font-size:20px !important;
-	transition: transform .2s;
-	width:100%;
-	margin-top:100px !important;
-	
-}
-.caldera-grid input[type=submit]:hover{
-	transform: scale(1.1);
-	
-}
-
-
-.caldera-grid .form-control.cf2-file
-{
-	border:0px !important;
-}
-
-.caldera-grid ul.cf2-list-files .cf2-file-listed .cf2-file-control{
-	font-size:10px;
-margin-bottom:30px;
-
-}
-.caldera-grid .form-control.cf2-file .btn{
-background-color:transparent !important;
-	border:2px solid #B28F5E !important;
-	color:#B28F5E !important;
-	font-size:13px !important;
-	height:100px;
-
-	
-	
-
-
-
-
-}
-
-   @media screen and (max-width : 900px) {
-
-
-	.caldera-grid .form-group {
-display:block;
-	
-}
-   }
-
-
-
-   @media screen and (max-width : 500px) {
-
-        .heading h1::before,
-        .heading h1::after {
-            width: 60px;
-        }
-		
-			.caldera-grid{
-		width:100%;
-		
-	}
-	
-	.caldera-grid .form-group {
-display:block;
-	
-}
-   }
-   
-     @media screen and (max-width : 350px){
-		    .heading h1::before,
-        .heading h1::after {
-            width: 60px;
-        }
-		
-			.caldera-grid{
-		width:100%;
-		
-	}
-	
-	.caldera-grid .form-group {
-display:block;
-	
-}
-
-.caldera-grid .form-control{
-
-
-  	font-size:12px !important;
-    
-
-
-
-}
-   
-	 }
-	
+.frm_button_submit{
+    background-color:var(--primary-color) !important;
+    color:#000 !important;
+}	
 
 
 </style>
@@ -230,7 +96,9 @@ display:block;
 		
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			
-	<?php echo do_shortcode( '[caldera_form id="CF5f1b5b815dc39"]' ); ?>
+	
+	<?php echo do_shortcode( '[formidable id=2]' ); ?>
+	
 	
 
 			
@@ -239,4 +107,6 @@ display:block;
 </div>
 
 <?php get_footer(); ?>
+
+
 

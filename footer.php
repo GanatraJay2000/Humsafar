@@ -80,7 +80,8 @@ foreach ( $slide_2 as $image ) {?>
                 <input type="email" maxlength="100" name="email" required class="input-element" placeholder="Email">
                 <button type="submit" class="btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
             </form> -->
-            <?php echo do_shortcode( '[caldera_form id="CF5f1b9632f19a4"]' ); ?>
+            <!-- <?php //echo do_shortcode( '[caldera_form id="CF5f1b9632f19a4"]' ); ?> -->
+            <?php echo do_shortcode( '[contact-form-7 id="273" title="Mailing List"]' ); ?>
         </div>
         <div class="social-links text-lg-center">
             <div>
