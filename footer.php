@@ -1,4 +1,38 @@
 </div>
+<style>
+div.newsletter p{
+    margin:0 !important; 
+    margin-bottom:5px !important;
+}
+.caldera-grid{
+width:100%;
+margin:0;
+background-color:transparent;
+    
+}
+.caldera-grid .form-group label {
+display:none;
+}
+.caldera-grid .form-control{
+	
+	height:35px !important;
+  	font-size:17px !important;
+    box-shadow: none !important;
+    background: white !important;
+	border:1px solid black !important;
+}
+.caldera-grid .form-group, .cf-color-picker .form-group {
+    margin-bottom: 0px !important;
+}
+#fld_3918970_1{
+	 background-color:transparent !important;
+	font-size:13px !important;
+    color:#FFE375 !important;
+	border:1px solid #FFE375 !important;
+	padding:3px 10px !important;
+	
+}
+</style>
 <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
 ));
@@ -40,10 +74,11 @@ foreach ( $slide_2 as $image ) {?>
                 <h2>Join Mailing List</h2>
             </div>
             <p>Stay Updated with our latest</p>
-            <form action="add_to_mail_list.php" method="POST" class="form-element d-flex align-items-center">
+            <!-- <form action="add_to_mail_list.php" method="POST" class="form-element d-flex align-items-center">
                 <input type="email" maxlength="100" name="email" required class="input-element" placeholder="Email">
                 <button type="submit" class="btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-            </form>
+            </form> -->
+            <?php echo do_shortcode( '[caldera_form id="CF5f1b9632f19a4"]' ); ?>
         </div>
         <div class="social-links text-lg-center">
             <div>
