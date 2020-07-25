@@ -4,16 +4,16 @@ div.newsletter p{
     margin:0 !important; 
     margin-bottom:5px !important;
 }
-.caldera-grid{
-width:100%;
-margin:0;
-background-color:transparent;
+.site-footer .caldera-grid{
+width:100% !important;
+margin:0 !important;
+background-color:transparent !important ;
     
 }
-.caldera-grid .form-group label {
-display:none;
+.site-footer .caldera-grid .form-group label {
+display:none !important;
 }
-.caldera-grid .form-control{
+.site-footer .caldera-grid .form-control{
 	
 	height:35px !important;
   	font-size:17px !important;
@@ -21,15 +21,17 @@ display:none;
     background: white !important;
 	border:1px solid black !important;
 }
-.caldera-grid .form-group, .cf-color-picker .form-group {
+.site-footer .caldera-grid .form-group, .cf-color-picker .form-group {
     margin-bottom: 0px !important;
 }
-.caldera-grid .btn.btn-default{
+.site-footer .caldera-grid .btn.btn-default{
 	 background-color:transparent !important;
 	font-size:13px !important;
     color:#FFE375 !important;
 	border:1px solid #FFE375 !important;
-	padding:3px 10px !important;
+    padding:3px 10px !important;
+    margin-top:0 !important;
+    width:fit-content;
 	
 }
 </style>
