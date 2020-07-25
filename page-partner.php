@@ -58,12 +58,13 @@ background-color: #fff;
 	.caldera-grid{
 		width:70%;
 		margin:auto;
+			align:center;
 	}
 
 .caldera-grid .form-group {
 display:flex;
 width:100%;
-	
+
 }
 
 
@@ -87,7 +88,7 @@ width:100%;
 
 
 .caldera-grid .form-control{
-
+	width:100%;
 	height:30px !important;
   	font-size:17px !important;
     box-shadow: none !important;
@@ -110,11 +111,12 @@ width:100%;
 	font-size:20px !important;
 	transition: transform .2s;
 	width:100%;
-	
+	margin-top:100px !important;
 	
 }
 .caldera-grid input[type=submit]:hover{
 	transform: scale(1.1);
+	
 }
 
 
@@ -130,9 +132,11 @@ margin-bottom:30px;
 }
 .caldera-grid .form-control.cf2-file .btn{
 background-color:transparent !important;
-	
-	color:#B28F5E !important
-	
+	border:2px solid #B28F5E !important;
+	color:#B28F5E !important;
+	font-size:13px !important;
+	height:100px;
+
 	
 	
 
@@ -141,7 +145,14 @@ background-color:transparent !important;
 
 }
 
+   @media screen and (max-width : 900px) {
 
+
+	.caldera-grid .form-group {
+display:block;
+	
+}
+   }
 
 
 
@@ -162,6 +173,34 @@ display:block;
 	
 }
    }
+   
+     @media screen and (max-width : 350px){
+		    .heading h1::before,
+        .heading h1::after {
+            width: 60px;
+        }
+		
+			.caldera-grid{
+		width:100%;
+		
+	}
+	
+	.caldera-grid .form-group {
+display:block;
+	
+}
+
+.caldera-grid .form-control{
+
+
+  	font-size:12px !important;
+    
+
+
+
+}
+   
+	 }
 	
 
 
