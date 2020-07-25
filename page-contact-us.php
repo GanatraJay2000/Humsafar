@@ -1,26 +1,12 @@
 <?php get_header(); ?>
 <style>
-    .wpcf7 input{
-        padding: 3px 10px;
-    }
-    .wpcf7 textarea{
-        padding: 3px 10px;
-    }
-.wpcf7 input[type=submit] {
-    background-color: #B28F5E;
-    /* color: white; */
-    /* padding: 15px 40px; */
-    font-size: 22;
-    border: 0px;
-    margin-top: -40;
-    position: absolute;
-    /* margin-left: auto; */
-    width: 30%;
-    /* margin: 0 auto; */
-    margin-left: -10% !important;
-}   
 
-
+.frm_button_submit{
+    background-color:#e1b258 !important;
+    color:white !important;    
+border:0 !important;
+}	
+   
 body{
 	overflow-x:hidden;
 background-color: #fff;
@@ -240,7 +226,8 @@ padding:20px;
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">
 	  <center><h4>Say Hello </h4>
 	<hr></hr>
-<?php echo do_shortcode( '[contact-form-7 id="319" title="Contact"]' ); ?></center>
+<?php //echo do_shortcode( '[contact-form-7 id="319" title="Contact"]' ); ?></center>
+<?php echo do_shortcode( '[formidable id=1]' ); ?></center>
 </div></div></br>
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

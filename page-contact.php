@@ -104,8 +104,7 @@ padding:20px;
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="details">
 	  <center><h4>Say Hello </h4>
 	<hr></hr>
-<?php echo do_shortcode( '[contact-form-7 id="113" title="Form]' ); ?></center>
-</div></div></br>
+	<?php echo do_shortcode( '[formidable id=4]' ); ?></div></div></br>
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 

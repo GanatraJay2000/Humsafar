@@ -75,12 +75,17 @@ background-color: #fff;
     margin: 0 auto;
 }
 .frm_button_submit{
-    background-color:#b28f5e !important;
+    background-color:#e1b258 !important;
     color:white !important;    
 border:0 !important;
 
-}	
 
+}	
+@media screen and (max-width:600px){
+    .frm_forms{
+        width:100% !important;
+    }
+}
 
 </style>
 

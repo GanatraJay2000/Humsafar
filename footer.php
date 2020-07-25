@@ -34,6 +34,10 @@ display:none !important;
     width:fit-content;
 	
 }
+
+.tnp-subscription input[type=text], .tnp-subscription input[type=email], .tnp-subscription input[type=submit], .tnp-subscription select {
+    height:fit-content !important;
+}
 </style>
 <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
