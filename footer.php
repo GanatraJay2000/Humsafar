@@ -24,7 +24,7 @@ display:none;
 .caldera-grid .form-group, .cf-color-picker .form-group {
     margin-bottom: 0px !important;
 }
-#fld_3918970_1{
+.caldera-grid .btn.btn-default{
 	 background-color:transparent !important;
 	font-size:13px !important;
     color:#FFE375 !important;
