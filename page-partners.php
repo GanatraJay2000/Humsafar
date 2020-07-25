@@ -75,8 +75,10 @@ background-color: #fff;
     margin: 0 auto;
 }
 .frm_button_submit{
-    background-color:var(--primary-color) !important;
-    color:#000 !important;
+    background-color:#d7a650 !important;
+    color:white !important;    
+border:0 !important;
+
 }	
 
 
