@@ -92,9 +92,31 @@
 
     @media screen and (max-width : 700px) {
 
+        .heading{
+		  font-size:30px;
+		  margin-bottom:0;
+		}
+		
         .heading h1::before,
         .heading h1::after {
             width: 100px;
+        }
+		
+		.flex-container{
+		  padding:2px;
+		}
+		
+		.flex-container>div{
+		  margin: 0;
+          margin-top: 30px;
+		  width: 150px;
+		  font-size: 15px;
+		}
+		
+		.flex-container>div>img {
+          background-color: white;
+          width: 65px;
+          height: 65px;
         }
     }
 
