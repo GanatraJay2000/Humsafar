@@ -390,7 +390,7 @@
         }
         .banners {
             padding: 5px;
-            height:300px;
+            height:230px;
         }
         .banners *{
             margin: 0 auto;
