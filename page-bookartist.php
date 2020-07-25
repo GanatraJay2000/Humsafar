@@ -16,45 +16,26 @@ background-color:black;
 margin:0 auto;
 }
 
-.caldera-grid{
-		width:60%;
+	.frm_form_fields {
+		width:100%;
+		margin:auto;
 	}
 
-.caldera-grid .form-group {
-
-padding:10px;
-	text-align:left;
-	
-}
 
 
-.caldera-grid .form-group label {
-  width:100%;
-		font-size:15px;
-	font-family: basic,sans-serif;
-font-weight:normal;
-	
-	
-}
-.caldera-grid .form-group >div{
-width:100%;
 
-	
-}
-.caldera-grid select {
- text-align-last: center;
-	font-size:1px !important;
-padding:0 !important;
-	
+.frm_form_field.frm_left_container .frm_primary_label{
+font-size:14px !important;
+
 }
 
 
 
 
-.caldera-grid .form-control{
-	text-align:center;
-	height:30px !important;
-  	font-size:17px !important;
+.with_frm_style input[type=text],.with_frm_style input[type=email], .with_frm_style input[type=number],.with_frm_style select,.with_frm_style input[type=tel]{
+	/* text-align:center; */
+
+  	font-size:13px !important;
     box-shadow: none !important;
 	border:none !important;
     background: transparent !important;
@@ -62,27 +43,26 @@ padding:0 !important;
 
 
 
+
 }
-.caldera-grid .btn {
+
+.frm_style_formidable-style.with_frm_style .frm_submit{
+	text-align:Center !important;
+}
+.frm_style_formidable-style.with_frm_style .frm_submit button {
     background-color:black !important;
 	font-size:18px !important;
     color:white !important;
-	align:center;
-}
-.cfdatepicker th, td{
-	font-size:12px;
 	
+	border:none !important;
+	transition: transform .2s;
 }
 
-div#fld_4617457_1-wrap.form-group{
-text-align:Center;}
 
-   @media screen and (max-width : 500px) {
+.frm_style_formidable-style.with_frm_style .frm_submit button:hover {
+	transform: scale(1.1);
+}
 
-      .caldera-grid{
-		width:100%;
-	}
-    }
 
 </style>
 
@@ -97,7 +77,7 @@ text-align:Center;}
 	
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">	
        <center>    
-<?php echo do_shortcode( '[caldera_form id="CF5f178516e74f3"]' ); ?></center>
+<?php echo do_shortcode( '[formidable id=4]' ); ?></center>
 
 
 
