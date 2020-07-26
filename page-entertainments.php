@@ -65,8 +65,8 @@ margin:10px auto;}
  filter:grayscale(0.85);
     background-color: #fff;
     border-radius: .25rem;
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
 }
 
 p{
