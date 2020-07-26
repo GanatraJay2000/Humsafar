@@ -121,7 +121,7 @@ justify-content:center;
   padding:0 !important;
   width:100vw !important;
   max-width:100% !important;
-  height:400px;
+  height:500px;
 }
 
 
