@@ -78,8 +78,7 @@ width:49%;
 
 $terms = get_terms( 'artist_type');
 
-    foreach($terms as $key=>$term){
-        echo $term->name;
+    foreach($terms as $key=>$term){        ;
         $term_link = get_term_link($term); 
         $term_id = $term->term_id;        
         $term_name = $term->name;        
