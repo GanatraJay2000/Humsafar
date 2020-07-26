@@ -90,12 +90,12 @@ padding:20px;
 				<hr id="details"></hr>
 		<p><br>+918305377774  |  www.humsafar.co  |  </br>weddings@humsafar.co    </br>                            humsafarweddings@gmail.com</p>
 			
-			<div class="sm">
-			<i class="fab fa-facebook fa-1x fachange" aria-hidden="true"></i>
-			<i class="fab fa-instagram fa-1x fachange" aria-hidden="true"></i>
-			<i class="fab fa-twitter fa-1x fachange" aria-hidden="true"></i>
-			<i class="fab fa-linkedin fa-1x fachange" aria-hidden="true"></i>
-			</div>
+		<div class="sm">
+            <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_facebook"]'); ?>"><span><i style="" class="fab fa-facebook fa-1x fachange" aria-hidden="true"></i></span></a>
+            <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_instagram"]'); ?>"><span><i style="" class="fab fa-instagram fa-1x fachange" aria-hidden="true"></i></span></a>
+            <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_twitter"]'); ?>"><span><i style="" class="fab fa-twitter fa-1x fachange" aria-hidden="true"></i></span></a>
+            <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_linkedin"]'); ?>"><span><i style="" class="fab fa-linkedin fa-1x fachange" aria-hidden="true"></i></span></a>                
+            </div>
 			<div class="my-4">
                 Not a Customer ? &nbsp;&nbsp;Interested in a Partnership ?<a href="<?php echo site_url('/partners'); ?>" class="ml-3 btn-sm btn btn-secondary bg-secondary text-white">Click Here</a>
             </div>
