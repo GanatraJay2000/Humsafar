@@ -64,8 +64,8 @@ margin:10px auto;}
  border:0px;
     background-color: #fff;
     border-radius: .25rem;
-    width: 223px;
-    height: 225px;
+    width: 240px;
+    height: 240px;
 }
 
 p{
