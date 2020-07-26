@@ -19,6 +19,7 @@
   bottom:10%;
   z-index:1;
   margin: 0 auto;
+  text-shadow: 0px 0px 10px #000000;
   width:100%;  
 }
 .thumbee .term_title i{
