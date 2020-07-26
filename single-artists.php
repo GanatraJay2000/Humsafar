@@ -10,7 +10,7 @@ background-color:white;
 
 a{
     text-decoration:none !important;
-}
+ }/*
 .modal.show {
     display: block;
     padding-right: 17px;
@@ -21,7 +21,7 @@ a{
     height: 100%;
     display: flex;    
     align-items: center;
-}
+} */
 .img-responsive{
     max-height:500px;
 }
@@ -56,16 +56,6 @@ a{
 
   }
 
-  .close {
-    color: white;
-    position: fixed;
-    cursor: pointer;
-    background-color: transparent;
-    top: 30px;
-    right: 30px;
-    font-size: 40px;
-    z-index:1000000;    
-  }
 
   #buttonaa {
 
