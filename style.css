@@ -1046,10 +1046,6 @@ color: #ff0044 !important;
   .desktop-nav-element {
     display: none;
   }
-
-  /* .modal.show {
-    overflow: scroll;
-  } */
 }
 
 @media screen and (max-width: 500px) {
@@ -1068,11 +1064,3 @@ color: #ff0044 !important;
     font-size: 12px;
   }
 }
-/* 
-@media screen and (max-width: 500px) {
-  .modal.show .modal-dialog {
-    min-height: 100%;
-    display: flex;
-    align-items: flex-start;
-  }
-} */
