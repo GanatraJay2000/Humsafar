@@ -11,23 +11,7 @@
         html {
             margin: 0 !important;
         }
-/* #myModal{
-    min-height:20vh;
-}
-.modal {
-    position: absolute;
-    top: -21;
-    left: 0;
-    z-index: 1050;
-    display: none;
-    width: 100%;
-    height: 150%;
-    overflow: hidden;
-    outline: 0;
-} */
-/* #myModal{
-    padding-right:0 !important;
-} */
+
     </style>
 </head>
 
@@ -131,7 +115,7 @@
         </button>
       </div>
       <div class="modal-body">
-      <?php echo do_shortcode( '[formidable id=1]' ); ?>
+      <?php echo do_shortcode( '[formidable id=4]' ); ?>
       </div>      
     </div>
   </div>
