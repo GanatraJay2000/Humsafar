@@ -100,8 +100,8 @@ foreach ( $slide_2 as $image ) {?>
                     <div class="modal-content">       
                         <div class="modal-header bg-secondary">
                         <h5 class="modal-title">Subscribe to Newsletter</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span class="text-white" aria-hidden="true">&times;</span>
         </button>
                         </div>                  
                     <div class="modal-body bg-secondary">
