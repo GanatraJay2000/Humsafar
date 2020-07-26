@@ -62,7 +62,7 @@ margin:10px auto;}
 .img-thumbnailee
 {
  border:0px;
- filter:grayscale(0.85);
+ /* filter:grayscale(0.85); */
     background-color: #fff;
     border-radius: .25rem;
     width: 240px;
