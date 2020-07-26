@@ -41,11 +41,11 @@ display:none !important;
 .modal{
     height:auto !important;
 }
-@media screen and (max-width:600px){
+/* @media screen and (max-width:600px){
 .modal .close{
     right:5px;
 }
-}
+} */
 
 </style>
 <?php $logos = new WP_Query(array(
@@ -93,7 +93,7 @@ foreach ( $slide_2 as $image ) {?>
                 Newsletter
             </button>
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
             <span aria-hidden="true">&times;</span>
         </button>
                 <div class="modal-dialog" role="document">                
