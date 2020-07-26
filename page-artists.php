@@ -16,7 +16,7 @@
   color:white;
   font-size:32px;
   font-weight:500;
-  bottom:20%;
+  bottom:10%;
   z-index:1;
   margin: 0 auto;
   width:100%;  
