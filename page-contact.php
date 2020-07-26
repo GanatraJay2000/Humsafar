@@ -70,7 +70,11 @@ padding:20px;
 }
 
 }
-
+.frm_button_submit{
+    background-color:#579af6 !important;
+    color:white !important;    
+border:0 !important;
+}
 
 </style>
 

@@ -11,6 +11,11 @@
         html {
             margin: 0 !important;
         }
+        .frm_button_submit{
+    background-color:#22222288 !important;
+    color:white !important;    
+border:0 !important;
+}
 
     </style>
 </head>
