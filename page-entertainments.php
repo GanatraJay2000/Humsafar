@@ -37,6 +37,7 @@ margin:10px auto;}
 
 .thumbee{
   margin:0px;
+  margin-top:40px;
    padding:0px;
   position:relative;
    padding: .25rem;
