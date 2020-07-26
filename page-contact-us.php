@@ -227,7 +227,7 @@ padding:20px;
 	  <center><h4>Say Hello </h4>
 	<hr></hr>
 <?php //echo do_shortcode( '[contact-form-7 id="319" title="Contact"]' ); ?></center>
-<?php echo do_shortcode( '[formidable id=1]' ); ?></center>
+<?php echo do_shortcode( '[formidable id=5]' ); ?></center>
 </div></div></br>
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
