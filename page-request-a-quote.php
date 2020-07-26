@@ -195,7 +195,7 @@ background-color:grey !important;
 		
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			
-	<center><?php echo do_shortcode( '[caldera_form id="CF5f1727fabd5da"]' ); ?></center>
+	<center><?php echo do_shortcode( '[formidable id=3]' ); ?></center>
 	
 
 			
