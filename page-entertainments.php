@@ -48,12 +48,13 @@ margin:10px auto;}
     pointer-events: none;
   font-weight:600;
   color:white;
-  font-size:32px;
+  font-size:20px;
   font-weight:500;
-  bottom:20%;
+  bottom:10%;
   z-index:1;
   margin: 0 auto;
   width:100%;  
+  text-shadow: 0px 0px 10px #000000;
 }
 .thumbee .term_title i{
   font-size:10px;
@@ -63,8 +64,8 @@ margin:10px auto;}
  border:0px;
     background-color: #fff;
     border-radius: .25rem;
-    max-width: 100%;
-    height: auto;
+    width: 223px;
+    height: 225px;
 }
 
 p{
@@ -125,6 +126,14 @@ justify-content:center;
 }
 
 
+@media only screen and (max-width: 1124px) {
+
+  .img-thumbnailee
+{
+    width: 200px;
+    height: 200px;
+}
+}
 @media only screen and (max-width: 765px) {
 .thumbee{
 width:49%;
@@ -154,6 +163,9 @@ margin-right:2px;
 margin-left:2px;
 font-size:1em;
 }
+
+
+
 }
 
 @media screen and (max-width: 600px){
@@ -163,6 +175,11 @@ font-size:1em;
 }
 .hero-slide img{
   height:300px !important;
+}
+.img-thumbnailee
+{
+    width: 150px;
+    height: 150px;
 }
 }
 
