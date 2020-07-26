@@ -68,6 +68,7 @@ margin:10px auto;}
     border-radius: .25rem;
     width: 240px;
     height: 240px;
+    object-fit:cover;
 }
 
 p{
