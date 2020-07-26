@@ -129,7 +129,9 @@ justify-content:center;
 
 
 @media only screen and (max-width: 1124px) {
-
+  .thumbee{
+  margin-top:20px;
+}
   .img-thumbnailee
 {
     width: 200px;
@@ -140,7 +142,9 @@ justify-content:center;
 .thumbee{
 width:49%;
 }
-
+.thumbee{
+  margin-top:10px;
+}
 
 .content.wrapper{
   padding:0 !important;
@@ -182,6 +186,9 @@ font-size:1em;
 {
     width: 150px;
     height: 150px;
+}
+.thumbee{
+  margin-top:0px;
 }
 }
 
