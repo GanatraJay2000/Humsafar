@@ -517,7 +517,7 @@ $slide_1 = array_values($slide_1);
             <li>Bhilai</li>
         </ul>
     </div>
-    <a href="<?php echo site_url('/weddings/contact-us') ?>" class="inquire text-white">Inquire</a>
+    <a href="<?php echo site_url('/weddings/contact-us') ?>" class="inquire text-white">Contact Us</a>
     <div class="heading"><i>Find our Recent post here!</i></div>
     <hr class="title">
 

@@ -38,6 +38,15 @@ display:none !important;
 .tnp-subscription input[type=text], .tnp-subscription input[type=email], .tnp-subscription input[type=submit], .tnp-subscription select {
     height:fit-content !important;
 }
+.modal{
+    height:auto !important;
+}
+@media screen and (max-width:600px){
+.modal .close{
+    right:5px;
+}
+}
+
 </style>
 <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
@@ -84,6 +93,9 @@ foreach ( $slide_2 as $image ) {?>
                 Newsletter
             </button>
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
                 <div class="modal-dialog" role="document">                
                     <div class="modal-content">                         
                     <div class="modal-body bg-secondary">
