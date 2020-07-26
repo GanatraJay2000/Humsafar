@@ -157,7 +157,7 @@
                                 <button type="submit" class="btn btn-dark" style="border-radius:0">Submit</button>
                             </div>
                         </form> -->
-                        <?php echo do_shortcode( '[caldera_form id="CF5f178516e74f3"]' ); ?>
+                        <?php echo do_shortcode( '[formidable id=4]' ); ?>
                     </div>
                     </div>
                 </div>
