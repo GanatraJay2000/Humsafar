@@ -159,7 +159,10 @@ font-size:1em;
 @media screen and (max-width: 600px){
   .ent-banners .image{
   width:100vw;
-  height:300px;
+  height:300px !important;
+}
+.hero-slide img{
+  height:300px !important;
 }
 }
 
