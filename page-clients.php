@@ -1,9 +1,5 @@
 <?php get_header(); ?>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
-    @import url('https://db.onlinewebfonts.com/c/7fdb09ff5a96f39768f311d5471d68a9?family=FuturaLig');
-
     body {
         background-color: #fcf7ff;
         margin: 0;
@@ -553,10 +549,10 @@ if($event_type === 'Wedding'){
         <hr style="height:1px;border-width:0;background-color:#cccccc; margin:1px;">
         
                 <div class="d-flex justify-content-between">
-        <div class="date col-2">
+        <div class="date col-lg-2 col-md-2 col-6">
             <p><?php echo $eventDate->format('M').' '.$eventDate->format('dS').', '.$eventDate->format('Y'); ?></p>
         </div>
-        <div class="m-1 col-1">
+        <div class="m-1 col-lg-1 col-md-1 col-5">
             <?php echo $location; ?>
         </div>
         </div>
