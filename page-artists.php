@@ -79,7 +79,7 @@ width:49%;
 $terms = get_terms( 'artist_type');
 
     foreach($terms as $key=>$term){
-        
+        echo $term->name;
         $term_link = get_term_link($term); 
         $term_id = $term->term_id;        
         $term_name = $term->name;        
@@ -91,7 +91,11 @@ $terms = get_terms( 'artist_type');
     <div>
    <small> <i class="fa fa-arrow-right" aria-hidden="true"></i></small>    </div>
     </div>
+    <?php if($term_link != false || $term_link != null){ ?>
         <a class="thumbnail" href="<?php echo $term_link; ?>">
+    <?php }else{ ?>
+        <a class="thumbnail">
+    <?php } ?>
            <img class="img-thumbnailee" id="ddee" src="<?php echo z_taxonomy_image_url($term_id); ?>" />
         </a>
     </div>
