@@ -179,6 +179,7 @@ padding:20px;
 
 }
 
+
 }
    @media screen and (max-width : 500px) {
 
@@ -206,7 +207,17 @@ padding:20px;
 			
 			<h4>Phone & Email </h4>
 				<hr id="details"></hr>
-		<p><br>+918305377774  |  www.humsafar.co </br>weddings@humsafar.co    </br>humsafarweddings@gmail.com</p>
+		<p>
+        <br>
+        <?php echo do_shortcode('[sc name="mobile_no_wed"]'); ?>  |  
+        <a target="_blank" class="text-dark" href="https://<?php echo do_shortcode('[sc name=`website_link`]'); ?>">
+        <?php echo do_shortcode('[sc name=`website_link`]'); ?>
+        </a> 
+        </br>        <a class="text-dark" href="mailto:<?php echo do_shortcode('[sc name=`mail_link_1_wed`]'); ?>">
+        <?php echo do_shortcode('[sc name=`mail_link_1_wed`]'); ?>
+        </a>     </br><a  class="text-dark" href="mailto:<?php echo do_shortcode('[sc name=`mail_link_2_wed`]'); ?>">
+        <?php echo do_shortcode('[sc name=`mail_link_2_wed`]'); ?>
+        </a></p>
 			
 			<div class="sm">
             <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_facebook"]'); ?>"><span><i style="" class="fab fa-facebook fa-1x fachange" aria-hidden="true"></i></span></a>

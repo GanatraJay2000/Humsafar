@@ -92,7 +92,15 @@ border:0 !important;
 			
 			<h4>Phone & Email </h4>
 				<hr id="details"></hr>
-		<p><br>+918305377774  |  www.humsafar.co  |  </br>weddings@humsafar.co    </br>                            humsafarweddings@gmail.com</p>
+		<p><?php echo do_shortcode('[sc name="mobile_no_ent"]'); ?>  |  
+        <a target="_blank" class="text-dark" href="https://<?php echo do_shortcode('[sc name=`website_link`]'); ?>">
+        <?php echo do_shortcode('[sc name=`website_link`]'); ?>
+        </a> 
+        </br>        <a class="text-dark" href="mailto:<?php echo do_shortcode('[sc name=`mail_link_1_wed`]'); ?>">
+        <?php echo do_shortcode('[sc name=`mail_link_1_ent`]'); ?>
+        </a>     </br><a  class="text-dark" href="mailto:<?php echo do_shortcode('[sc name=`mail_link_2_wed`]'); ?>">
+        <?php echo do_shortcode('[sc name=`mail_link_2_ent`]'); ?>
+        </a></p>
 			
 		<div class="sm">
             <a target="_blank" href="<?php echo do_shortcode('[sc name="ent_facebook"]'); ?>"><span><i style="" class="fab fa-facebook fa-1x fachange" aria-hidden="true"></i></span></a>
