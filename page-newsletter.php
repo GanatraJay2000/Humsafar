@@ -9,18 +9,24 @@ else{
 }
 
 ?>
-
+<style>
+.newsletter-page{
+    background-color:red;
+    }
+</style>
 <?php
 
 while(have_posts())
 {
     the_post();?>
+    <div class="newsletter-page">
     <center>
 <article class="post">
 <h1><?php the_title(); ?></h1>
 <p><?php the_content(); ?></p>
 </article>
 </center>
+</div>
 <?php
 }
 ?>
