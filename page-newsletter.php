@@ -24,7 +24,7 @@ else{
     }
     .tnp-field input{
         border-radius:5px;
-        border:1px solid var(--midnight);
+        border:1px solid var(--midnight) !important;
         font-family:"Playfair Display", "Times New Roman", serif;    
     }
     .tnp-submit{
