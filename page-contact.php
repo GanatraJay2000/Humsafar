@@ -101,7 +101,8 @@ border:0 !important;
         </a>     </br><a  class="text-dark" href="mailto:<?php echo do_shortcode('[sc name=`mail_link_2_wed`]'); ?>">
         <?php echo do_shortcode('[sc name=`mail_link_2_ent`]'); ?>
         </a>
-        <a href="mailto:<?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?>"><?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?></a>
+        <br />
+        <a  class="text-dark" href="mailto:<?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?>"><?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?></a>
         </p>
 			
 		<div class="sm">
