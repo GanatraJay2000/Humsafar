@@ -11,7 +11,7 @@
             </div>
             <ul class="item">
                 <li><a target="_blank" href="https://<?php echo do_shortcode('[sc name="website_link"]'); ?>"><?php echo do_shortcode('[sc name="website_link"]'); ?></a></li>
-                <li><a href="mailto:<?php echo do_shortcode('[sc name="mail_link_1_wed"]'); ?>"><?php echo do_shortcode('[sc name="mail_link_1_ent"]'); ?></a></li>
+                <li><a href="mailto:<?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?>"><?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?></a></li>
                 <li><?php echo do_shortcode('[sc name="mobile_no_ent"]'); ?></li>
             </ul>
             <div class="item">

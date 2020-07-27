@@ -133,7 +133,7 @@ foreach ( $slide_2 as $image ) {?>
             <h2>Reach Us</h2>
             <div>
                 <div><a target="_blank" href="https://<?php echo do_shortcode('[sc name="website_link"]'); ?>"><?php echo do_shortcode('[sc name="website_link"]'); ?></a></div>
-                <div><a href="mailto:<?php echo do_shortcode('[sc name="mail_link_1_wed"]'); ?>"><?php echo do_shortcode('[sc name="mail_link_1_wed"]'); ?></a></div>
+                <div><a href="mailto:<?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?>"><?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?></a></div>
                 <div><?php echo do_shortcode('[sc name="mobile_no_wed"]'); ?></div>
             </div>
         </div>
