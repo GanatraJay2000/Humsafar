@@ -19,6 +19,8 @@ while(have_posts())
 <article class="post">
 <h1><?php the_title(); ?></h1>
 <p><?php the_content(); ?></p>
+<br>
+<a href="javascript:window.history.back();"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back</a>
 </article>
 </center>
 <?php
