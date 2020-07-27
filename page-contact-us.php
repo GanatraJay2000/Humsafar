@@ -217,7 +217,10 @@ padding:20px;
         <?php echo do_shortcode('[sc name=`mail_link_1_wed`]'); ?>
         </a>     </br><a  class="text-dark" href="mailto:<?php echo do_shortcode('[sc name=`mail_link_2_wed`]'); ?>">
         <?php echo do_shortcode('[sc name=`mail_link_2_wed`]'); ?>
-        </a></p>
+        </a>
+        <a href="mailto:<?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?>"><?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?></a>
+        
+        </p>
 			
 			<div class="sm">
             <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_facebook"]'); ?>"><span><i style="" class="fab fa-facebook fa-1x fachange" aria-hidden="true"></i></span></a>
