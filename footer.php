@@ -132,9 +132,9 @@ foreach ( $slide_2 as $image ) {?>
         <div class="reach-us text-lg-center" data-aos="fade-left" data-aos-delay="200">
             <h2>Reach Us</h2>
             <div>
-                <div><a target="_blank" href="https://<?php echo do_shortcode('[sc name="website_link"]'); ?>"><?php echo do_shortcode('[sc name="mail_link_1_ent"]'); ?></a></div>
-                <div><a href="mailto:weddings@humsafar.co">weddings@humsafar.co</a></div>
-                <div>+91 83053 77774</div>
+                <div><a target="_blank" href="https://<?php echo do_shortcode('[sc name="website_link"]'); ?>"><?php echo do_shortcode('[sc name="website_link"]'); ?></a></div>
+                <div><a href="mailto:<?php echo do_shortcode('[sc name="mail_link_1_wed"]'); ?>"><?php echo do_shortcode('[sc name="mail_link_1_wed"]'); ?></a></div>
+                <div><?php echo do_shortcode('[sc name="mobile_no_wed"]'); ?></div>
             </div>
         </div>
     </div>

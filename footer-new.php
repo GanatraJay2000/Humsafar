@@ -10,9 +10,9 @@
                 Jp Road, Opposite Gurudwara, Four Bunglows, Andheri West Mumbai, Maharashtra 400053
             </div>
             <ul class="item">
-                <li><a href="http://www.humsafar.co">www.humsafar.co</a> </li>
-                <li><a href="mailto:info@humsafar.co">info@humsafar.co</a></li>
-                <li> +91 83053 77774</li>
+                <li><a target="_blank" href="https://<?php echo do_shortcode('[sc name="website_link"]'); ?>"><?php echo do_shortcode('[sc name="website_link"]'); ?></a></li>
+                <li><a href="mailto:<?php echo do_shortcode('[sc name="mail_link_1_wed"]'); ?>"><?php echo do_shortcode('[sc name="mail_link_1_ent"]'); ?></a></li>
+                <li><?php echo do_shortcode('[sc name="mobile_no_ent"]'); ?></li>
             </ul>
             <div class="item">
                 <div class="text-lg-center">
