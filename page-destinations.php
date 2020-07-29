@@ -399,7 +399,7 @@ letter-spacing:.75px;
 </div>
 </a>
 
-<a href="<?php echo site_url('/weddings/destinations/india') ?>">
+<a href="<?php echo site_url('/weddings/destinations/out-of-india') ?>">
 <div class="grid-flex">
 <div class="col col-image" style="background-image: url('https://www.iata.org/contentassets/4b8ec35d55dd4596a1ee21a75aaab835/paris-330x200.jpg?w=330&h=200&mode=crop&scale=both&v=20190829085556');">
 </div>						
