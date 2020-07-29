@@ -7,11 +7,11 @@
     }
 
     .blog-part {
-        font-family: 'playfair display', serif;
+        font-family: "Myriad Pro",sans-serif !important;
     }
 
     .date {
-        font-family: 'FuturaLig', sans-serif;
+        font-family: "Myriad Pro",sans-serif !important;
         color: #3d3d3d;
         font-size: 12px;
     }
@@ -43,7 +43,7 @@
     }
 
     .text {
-        font-family: 'Raleway', sans-serif;
+        font-family: "Myriad Pro",sans-serif !important;
         font-size: 18px;
         color: #3d3d3d;
     }
@@ -73,7 +73,7 @@
     }
 
     h1 {
-        font-family: sans-serif;
+        font-family: "Myriad Pro",sans-serif !important;
         margin: auto;
         text-align: center;
         font-size: 40px;
@@ -172,7 +172,7 @@
     /* Set a style for all buttons */
     .blog-part button {
         background-color: #bba45b;
-        font-family: 'playfair display', serif;
+        font-family: "Myriad Pro",sans-serif !important;
         color: white;
         font-size: 16px;
         padding: 5px;

@@ -14,18 +14,18 @@ else{
     background-color:red;
     } */
     .newsletter-page h1{
-        font-family:"Playfair Display", "Times New Roman", serif;
+        font-family: "Myriad Pro", "Playfair Display", "Times New Roman", serif;
     }
     .tnp-field label{
         text-align:left;
-        font-family:"Playfair Display", "Times New Roman", serif;
+        font-family: "Myriad Pro", "Playfair Display", "Times New Roman", serif;
         font-size:16px;
         font-weight:400;
     }
     .tnp-field input{
         border-radius:5px;
         border:1px solid var(--midnight) !important;
-        font-family:"Playfair Display", "Times New Roman", serif;    
+        font-family: "Myriad Pro", "Playfair Display", "Times New Roman", serif;    
     }
     .tnp-submit{
         background-color:var(--midnight);

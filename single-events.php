@@ -16,7 +16,7 @@
             z-index: 999;
             color: rgba(255, 255, 255, .5) !important;
             font-size: 5rem;
-            font-family: monospace;
+            font-family: "Myriad Pro",  monospace;
             -webkit-transition: all .2s;
             transition: all .2s;
         }
@@ -230,11 +230,11 @@
         }
 
         .post-part {
-            font-family: 'playfair display', serif;
+            font-family: "Myriad Pro",  'playfair display', serif;
         }
 
         .date {
-            font-family: 'FuturaLig', sans-serif;
+            font-family: "Myriad Pro",  'FuturaLig', sans-serif;
             color: #3d3d3d;
             font-size: 12px;
         }
@@ -266,7 +266,7 @@
         }
 
         .text {
-            font-family: 'Raleway', sans-serif;
+            font-family: "Myriad Pro",  'Raleway', sans-serif;
             font-size: 18px;
             color: #3d3d3d;
         }

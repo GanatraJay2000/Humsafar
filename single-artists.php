@@ -4,7 +4,7 @@
   body {
     overflow-x: hidden;
 background-color:white;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Myriad Pro",  "Times New Roman", Times, serif;
 
   }
 
@@ -100,7 +100,7 @@ a{
         margin: 0px 0 15px 0px;
         font-size: 14px;
         /* margin-bottom: 15px; */
-		font-family: 'FuturaLig', sans-serif;
+		font-family: "Myriad Pro",  'FuturaLig', sans-serif;
     }
 
         .second-container ul.title {

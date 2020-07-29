@@ -2,8 +2,7 @@
 <style>
 body{
 	overflow-x:hidden;
-
-  font-family: "Times New Roman", Times, serif;
+	font-family: "Myriad Pro",sans-serif !important;
 
 }
 

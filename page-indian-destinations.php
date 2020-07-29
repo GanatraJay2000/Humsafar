@@ -70,11 +70,11 @@ padding: 50px 50px 50px 50px;
 .myheading{
 text-align:center;
 font-size:22px;
-font-family: playfair display,serif ;
+font-family: "Myriad Pro",  playfair display,serif ;
 }
 
 .playfair {
-font-family: Playbill;
+font-family: "Myriad Pro",  Playbill;
 } 
 .mypara{
 font-size:14px;
@@ -84,23 +84,23 @@ font-style:italic
 
 .title {
 font-size: 45px;
-font-family: playfair display,serif;
+font-family: "Myriad Pro",  playfair display,serif;
 }
 .sideheading{
 padding-top:5px;
 font-size: 25px;
-font-family: playfair display,serif;
+font-family: "Myriad Pro",  playfair display,serif;
 }
 .sideheading2{
 text-align:center;
 font-size: 12px;
-font-family: playfair display,serif;
+font-family: "Myriad Pro",  playfair display,serif;
 color:dimgrey;
 }
 .sideheading3{
 text-align:center;
 font-size:20px;
-font-family: playfair display,serif;
+font-family: "Myriad Pro",  playfair display,serif;
 color:darkslategrey;
 }
 .sideheading.sideheading{
@@ -108,7 +108,7 @@ font-size:38px;
 }
 
 .lastpara{
-font-family:"Playfair Display", serif;
+font-family: "Myriad Pro", "Playfair Display", serif;
 font-size:16px;
 letter-spacing:.75px;
 }
@@ -225,7 +225,7 @@ font-size:22px;
         color: #555;
         font-size: 32px;
         font-weight: 400;
-        font-family: 'Playfair Display', serif;
+        font-family: "Myriad Pro",  'Playfair Display', serif;
     }
 
     .dest .details .title::after {

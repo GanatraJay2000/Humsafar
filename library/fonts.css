@@ -1,69 +1,74 @@
 @font-face {
-    font-family: Anton;
-    src: url('./fonts/Anton/Anton-Regular.ttf');
+  font-family: Anton;
+  src: url("./fonts/Anton/Anton-Regular.ttf");
 }
 
 @font-face {
-    font-family: Convergence;
-    src: url('./fonts/Convergence/Convergence-Regular.ttf');
+  font-family: Convergence;
+  src: url("./fonts/Convergence/Convergence-Regular.ttf");
 }
 
 @font-face {
-    font-family: Lexend;
-    src: url('./fonts/Lexend_Deca/LexendDeca-Regular.ttf');
+  font-family: Lexend;
+  src: url("./fonts/Lexend_Deca/LexendDeca-Regular.ttf");
 }
 
 @font-face {
-    font-family: Josefin;
-    src: url('./fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
+  font-family: Josefin;
+  src: url("./fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
 }
 
 @font-face {
-    font-family: Josefin_I;
-    src: url('./fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf');
+  font-family: Josefin_I;
+  src: url("./fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf");
 }
 
 @font-face {
-    font-family: Livvic;
-    src: url('./fonts/Livvic/Livvic-Regular.ttf');
+  font-family: Livvic;
+  src: url("./fonts/Livvic/Livvic-Regular.ttf");
 }
 
 @font-face {
-    font-family: Livvic_I;
-    src: url('./fonts/Livvic/Livvic-LightItalic.ttf');
+  font-family: Livvic_I;
+  src: url("./fonts/Livvic/Livvic-LightItalic.ttf");
 }
 
 @font-face {
-    font-family: Montserrat;
-    src: url('./fonts/Montserrat/Montserrat-Regular.ttf');
+  font-family: Montserrat;
+  src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
 }
 
 @font-face {
-    font-family: "Playfair Display";
-    src: url('./fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+  font-family: "Myriad Pro";
+  src: url("./fonts/Myriad_Pro/MYRIADPRO-REGULAR.OTF");
 }
 
 @font-face {
-    font-family: 'Playfair Display Italics';
-    src: url('./fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+  font-family: "Playfair Display";
+  src: url("./fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
 }
 
 @font-face {
-    font-family: Roboto_Slab;
-    src: url('./fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf');
+  font-family: "Playfair Display Italics";
+  src: url("./fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf");
 }
 
 @font-face {
-    font-family: Baloo;
-    src: url('./fonts/Baloo_Thambi_2/BalooThambi2-Regular.ttf');
+  font-family: Roboto_Slab;
+  src: url("./fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
 }
 
 @font-face {
-    font-family: Raleway;
-    src: url('./fonts/Raleway/Raleway-Regular.ttf');
+  font-family: Baloo;
+  src: url("./fonts/Baloo_Thambi_2/BalooThambi2-Regular.ttf");
 }
 
 @font-face {
-    font-family: Rubik;
-    src: url('./fonts/Rubik/Rubik-Regular.ttf');
+  font-family: Raleway;
+  src: url("./fonts/Raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./fonts/Rubik/Rubik-Regular.ttf");
 }

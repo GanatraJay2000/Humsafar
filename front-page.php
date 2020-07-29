@@ -110,7 +110,8 @@
     .front-page-view .content .wedding.items .link .title {
         color: rgb(255, 227, 117);
         font-weight: 100;
-        font-family: "EB Garamond", serif;
+        font-family: "Myriad Pro",sans-serif !important;
+        /* font-family: "EB Garamond", serif; */
         /* font-family: "Fondamento", cursive;
         font-family: "EB Garamond", serif;  font-style: italic;
         font-family: "Great Vibes", cursive; /* letter-spacing: 3px;
@@ -123,7 +124,7 @@
 
     .front-page-view .content .entertainment.items .link .title {
         margin-top: 5px;
-        font-family: "Roboto Slab", serif;
+        font-family: "Myriad Pro",sans-serif !important;
         font-weight: 700 !important;
         font-size: 18px;
         text-transform: uppercase;
@@ -138,7 +139,7 @@
 
     .permalink a {
         padding: 3px 30px;
-        font-family: "EB Garamond", serif;
+        font-family: "Myriad Pro",sans-serif !important;
         font-size: 17px;
         cursor: pointer;
         border: 2px solid transparent;

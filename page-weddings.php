@@ -8,7 +8,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        font-family: "Playfair Display", sans-serif !important;
+        font-family: "Myriad Pro",  "Playfair Display", sans-serif !important;
         margin: 0px 120px;
         margin-top: -30px;
     }
@@ -114,7 +114,7 @@
     }
 
     .post .content small {
-        font-family: sans-serif;
+        font-family: "Myriad Pro",  sans-serif;
         color: #555;
         margin-bottom: 20px;
     }
@@ -246,7 +246,7 @@
     top:5%;
     left:25%;
     text-align:center;
-    font-family:"Playfair Display", serif;
+    font-family: "Myriad Pro", "Playfair Display", serif;
 }
 
 
@@ -262,7 +262,7 @@
     width:35%;
     top:0;
     right:0;
-    font-family:"Playfair Display", serif;
+    font-family: "Myriad Pro", "Playfair Display", serif;
     display:flex;
     justify-content:center;
     align-items:center;

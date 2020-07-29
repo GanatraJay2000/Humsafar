@@ -9,7 +9,7 @@ width:100vw !important;
   body{
 	overflow-x:hidden;
   background-color:white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Myriad Pro",  "Times New Roman", Times, serif;
 
 }
 
@@ -45,7 +45,7 @@ margin:10px auto;}
 }
 .thumbee .thumbee_title{  
   position:absolute;  
-  font-family: Josefin, serif;
+  font-family: "Myriad Pro",  Josefin, serif;
     pointer-events: none;
   font-weight:600;
   color:white;
@@ -75,7 +75,7 @@ p{
 margin-right:5px;
 margin-left:5px;
 font-size:1.3em;
-font-family: "Playfair Display", serif;
+font-family: "Myriad Pro",  "Playfair Display", serif;
 }
 
 #buttonee{

@@ -70,11 +70,11 @@ section a:hover{
 .myheading{
     text-align:center;
     font-size:22px;
-    font-family: playfair display,serif ;
+    font-family: "Myriad Pro",sans-serif !important;
 }
 
 .playfair {
-    font-family: Playbill;
+    font-family: "Myriad Pro",sans-serif !important;
 } 
 .mypara{
     font-size:14px;
@@ -84,23 +84,23 @@ section a:hover{
 
 .title {
     font-size: 45px;
-    font-family: playfair display,serif;
+    font-family: "Myriad Pro",sans-serif !important;
 }
 .sideheading{
 	padding-top:5px;
     font-size: 25px;
-    font-family: playfair display,serif;
+    font-family: "Myriad Pro",sans-serif !important;
 }
 .sideheading2{
     text-align:center;
     font-size: 12px;
-    font-family: playfair display,serif;
+    font-family: "Myriad Pro",sans-serif !important;
     color:dimgrey;
 }
 .sideheading3{
     text-align:center;
     font-size:20px;
-    font-family: playfair display,serif;
+    font-family: "Myriad Pro",sans-serif !important;
     color:darkslategrey;
 }
 .sideheading.sideheading{
@@ -108,7 +108,7 @@ section a:hover{
 }
 
 .lastpara{
-font-family:"Playfair Display", serif;
+    font-family: "Myriad Pro",sans-serif !important;
 font-size:16px;
 letter-spacing:.75px;
 }
@@ -225,7 +225,7 @@ letter-spacing:.75px;
             color: #555;
             font-size: 32px;
             font-weight: 400;
-            font-family: 'Playfair Display', serif;
+            font-family: "Myriad Pro",sans-serif !important;
         }
 
         .dest .details .title::after {

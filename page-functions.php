@@ -6,8 +6,8 @@
         margin:10px;
     }
 .functions h3{
-    font-family: Playfair Display, serif;    
-    /* font-family: "EB Garamond", serif; */
+    font-family: "Myriad Pro",  "Myriad Pro",  Playfair Display, serif;    
+    /* font-family: "Myriad Pro",  "Myriad Pro",  "EB Garamond", serif; */
     font-size:39px;
     /* font-style: italic; */
     letter-spacing:2px;
@@ -33,7 +33,7 @@
     color:#fff;
     padding:2px 20px; 
     font-size:20px;
-        font-family:Playfair Display, serif;
+        font-family: "Myriad Pro",  "Myriad Pro", Playfair Display, serif;
     margin-bottom:10px;
 }
 .function-card .layout{
@@ -52,12 +52,12 @@
     
 }
 .function-card .layout .text .title{
-    font-family: "EB Garamond", serif;    
+    font-family: "Myriad Pro",  "Myriad Pro",  "EB Garamond", serif;    
 }
 
 .function-card .layout .text .content{    
     font-size:16px;
-    font-family: "EB Garamond", serif;
+    font-family: "Myriad Pro",  "Myriad Pro",  "EB Garamond", serif;
 }
 .list-group-item-action{   
     color:#333 !important; 

@@ -8,7 +8,7 @@
     }
 
     .corp-part {
-      font-family: serif;
+      font-family: "Myriad Pro",sans-serif !important;
       text-align: center;
       position: relative;
     }
@@ -57,7 +57,7 @@
       width:60%;
       font-size:35px;  
       font-weight:700;
-      font-family:sans-serif;
+      font-family: "Myriad Pro",sans-serif !important;
       color:white;
       padding:10px 0;    
       background-color:#333339cd;
@@ -83,7 +83,7 @@
       height: 100%;
       /* //background-color: yellow; */
       text-align: justify;
-      font-family: verdana, geneva, sans-serif;
+      font-family: "Myriad Pro",sans-serif !important;
       line-height: 22px;
       font-size: 14px;
     }
@@ -111,7 +111,7 @@
       font-size: 28px;
       background-color: #000;
       text-align: center;
-      font-family: 'playfair display', serif;
+      font-family: "Myriad Pro",sans-serif !important;
       z-index: 4;
     }
 

@@ -10,7 +10,7 @@
 
     .service-part {
         text-align: center;
-        font-family: 'playfair display', serif;
+        font-family: "Myriad Pro",  'playfair display', serif;
     }
 
     .heading {
@@ -26,7 +26,7 @@
     }
 
     .heading h1 {
-        font-family: sans-serif;
+        font-family: "Myriad Pro",  sans-serif;
         margin: auto;
         text-align: center;
         font-size: 40px;

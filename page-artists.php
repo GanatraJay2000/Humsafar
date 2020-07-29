@@ -10,7 +10,7 @@
 }
 .thumbee .term_title{
   position:absolute;
-  font-family: Josefin, serif;
+  font-family: "Myriad Pro",sans-serif !important;
     pointer-events: none;
   font-weight:600;
   color:white;
@@ -67,7 +67,7 @@ width:49%;
 
 
 
-<h1 style="font-family:'Playfair Display', serif;"><center>All Artists</center></h1>
+<h1 style="font-family: 'Myriad Pro',sans-serif !important;"><center>All Artists</center></h1>
 <hr></hr></br>
 <center>
 

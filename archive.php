@@ -1,7 +1,6 @@
 <?php get_header('new'); ?>
 	<style>
 
-/* @import url('https://db.onlinewebfonts.com/c/7fdb09ff5a96f39768f311d5471d68a9?family=FuturaLig'); */
 	
 *{
 margin: 0;
@@ -12,7 +11,7 @@ body{
 }
 
 .singer-part{
-  font-family: serif;
+  font-family: "Myriad Pro",sans-serif !important;
   text-align:center;
 }
 
@@ -79,7 +78,7 @@ body{
 }
 
 .text p{
-  font-family: 'FuturaLig', sans-serif;
+  font-family: "Myriad Pro",sans-serif !important;
   margin-top: 5px;
 }
 
@@ -101,7 +100,7 @@ body{
         margin: 10px 0;
         font-size: 20px;
         margin-bottom: 15px;
-		font-family: 'FuturaLig', sans-serif;
+        font-family: "Myriad Pro",sans-serif !important;
     }
 
         .second-container ul.title {

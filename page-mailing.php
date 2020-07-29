@@ -5,7 +5,7 @@
 body{
 	overflow-x:hidden;
 background-color: #fff;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Myriad Pro",  "Times New Roman", Times, serif;
 
 }
 
@@ -22,7 +22,7 @@ background-color: #fff;
     }
 
     .heading h1 {
-        font-family: sans-serif;
+        font-family: "Myriad Pro",  sans-serif;
         margin: auto;
         text-align: center;
         font-size: 40px;

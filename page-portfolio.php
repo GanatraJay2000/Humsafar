@@ -7,7 +7,7 @@
     }
 
     body {
-        font-family: 'Playfair Display', serif;
+        font-family: "Myriad Pro",  'Playfair Display', serif;
 
         background-color: #fcf7ff;
     }
@@ -28,7 +28,7 @@
         z-index: 999;
         color: rgba(255, 255, 255, .5) !important;
         font-size: 5rem;
-        font-family: monospace;
+        font-family: "Myriad Pro",  monospace;
         -webkit-transition: all .2s;
         transition: all .2s;
     }
@@ -201,7 +201,7 @@
     }
 
     .heading h1 {
-        font-family: sans-serif;
+        font-family: "Myriad Pro",  sans-serif;
         margin: auto;
         text-align: center;
         font-size: 40px;

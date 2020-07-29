@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
 
     .heading {
         padding-top: 10px;
@@ -13,7 +11,7 @@
     }
 
     h1 {
-        font-family: sans-serif;
+        font-family: "Myriad Pro",sans-serif !important;
         margin: auto;
         text-align: center;
         font-size: 40px;
@@ -48,15 +46,14 @@
 
     .about-part {
         text-align: left;
-        font-family: 'playfair display', serif;
+        font-family: "Myriad Pro",sans-serif !important;
     }
 
     .flex-container {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        //background-color: DodgerBlue;
+        justify-content: space-evenly;        
     }
 
     .flex-container>div {
@@ -164,30 +161,14 @@
             </div>
         </div>
         <div>
-            <p>As the name suggests we are your ultimate Humsafars in planning the new journey of your life you
-                could have dreamt of. We at Humsafar Weddings make sure to consider preciseness for every little
-                piece of requirement & expectation to the celebration that will be always a memorable highlight in
-                your & everybody's long lives.</p>
+        <p>HUMSAFAR WEDDINGS is your one stop destination for all your wedding related tasks. We are your ULTIMATE humsafars in turning your dreams into reality.</p>
+        <p>With over 7 years of experience in the field of wedding planning, HUMSAFAR has successfully planned over 500 weddings. We work hard to satisfy our clients and to fulfill all their desires.</p>
+        <p>Our team has over 50 young and passionate individuals, who put in all their heart and hard work to make your wedding the most memorable moment for you and your entire guest list. </p>
+ <p>Our team has over 50 young and passionate individuals, who put in all their heart and hard work to make your wedding the most memorable moment for you and your entire guest list. 
+Humsafar Weddings is gaining its reputation across the country for wedding management. We excel at providing our couples with the best and most beautiful DESTINATION WEDDINGS. We are specialized in planning and managing weddings in the most exotic locations of the country including Udaipur, Agra, Jaipur, Kerala and substantially more. Our services extend to the global market as well. We plan weddings in the dreamiest locations which include: Greece, Mauritius, Thailand, Italy and appreciably more. </p>
+<p>We got you all covered from choosing your wedding locations, beautiful wedding attires, wedding themes, wedding feast, grand entries to taking care of your guests.</p>
 
-            <p>NEVER TIRE, With over 7 years of experience, Humsafar Weddings has successfully managed, styled &
-                plan more than 500 weddings with incredible themes, all-time priority Satisfied Clients and Happiest
-                & Smiling Guests. Our team has over 50 young & passionate members who believe in delivering
-                outstanding work performance with their ever new ideas as they are precisely experienced in their
-                respective fields. Our experienced Stylists and Planners are trained & groomed to study the needs
-                that match the best outcome.</p>
 
-            <p>Humsafar Weddings gains its reputation day by day across the country for our wedding management. As
-                our priority is always to deliver beyond expectations, we are growing rapidly in Management &
-                planning your most special days. Another highlight at Humsafar's wedding is our Luxurious
-                Destination Wedding management. We are specialized in planning a perfect destination wedding at
-                places like Udaipur, Jaipur, Agra, Lucknow, Kerala, Mumbai, etc.</p>
-
-            <p>Global extensions in our services for Luxurious and Dream Destination Weddings include Greece,
-                Mauritius, Dubai, Singapore, Malaysia, Thailand, Bahrain, Italy, Rome, etc. Our wedding planner
-                experts are especially focused on planning a wedding like never before. Our services include a wide
-                array of Wedding Themes, Decorations, Planning, Dress Design, Photography, Fireworks,
-                Transportation, Hospitality, etc. We always provide end-to-end service with guaranteed satisfaction
-                as we know "Client satisfaction is the main and only asset of any service."</p>
         </div>
 
 

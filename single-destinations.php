@@ -14,7 +14,7 @@
         .banner_heading h1 {
             font-size: 72px;
             font-weight: 900px;
-            font-family: "Playfair Display", "Times New Roman", serif;
+            font-family: "Myriad Pro",  "Playfair Display", "Times New Roman", serif;
         }
 
         .banner_destination {
@@ -35,7 +35,7 @@
             background-color: #ffffffda;
             padding: 30px 20px;
             font-size: 20px;
-            font-family: "Playfair Display", "Times New Roman", serif;
+            font-family: "Myriad Pro",  "Playfair Display", "Times New Roman", serif;
             letter-spacing: 1px;
             line-height: 1.6em;
             max-width: 60%;
@@ -56,7 +56,7 @@
             font-size: 32px;
             font-weight: 500;
             text-align: center;
-            font-family: "Playfair Display", "Times New Roman", serif;
+            font-family: "Myriad Pro",  "Playfair Display", "Times New Roman", serif;
         }
 
         .complex-structure {
@@ -88,7 +88,7 @@
             grid-row-end: 2;
             color: #333333;
             font-size: 30px;
-            font-family: "Playfair Display", "Times New Roman", serif;
+            font-family: "Myriad Pro",  "Playfair Display", "Times New Roman", serif;
             margin: 0px auto 30px auto;
             text-align: center;
         }
