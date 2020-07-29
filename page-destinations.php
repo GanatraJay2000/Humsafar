@@ -88,7 +88,7 @@ section a:hover{
 }
 .sideheading{
 	padding-top:5px;
-    font-size: 25px;
+    font-size: 22px;
     font-family: "Myriad Pro",sans-serif !important;
 }
 .sideheading2{
@@ -391,7 +391,7 @@ letter-spacing:.75px;
 </div>						
 <div class="col col-text col-left">
 <div class="Aligner-item">
-<div class="sideheading">Traditional Destinations</div>
+<div class="sideheading" style="white-space: nowrap;">Traditional Destinations</div>
 
 <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio velit voluptas omnis rerum accusamus architecto officia inventore non commodi?</p>
 </div>
