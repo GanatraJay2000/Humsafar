@@ -123,7 +123,7 @@
 			margin: 30px auto;
 			padding: 20px; 10px;
 			width: 65%;
-			border: 0.5px solid #d9d9d9;
+			border: 0.5px solid #c4c4c4;
 			border-radius: 5px;
 			//background-color:#bababa;
 		}
