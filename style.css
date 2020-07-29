@@ -846,16 +846,19 @@ nav.item.nav-links label {
 .ent-responsive-nav label {
   width: calc(100vw - 20px) !important;
 }
-/* 
-.modal-backdrop {
-    opacity: 0.8 !important;
+
+.tnp-subscription input[type="text"],
+.tnp-subscription input[type="email"],
+.tnp-subscription input[type="submit"],
+.tnp-subscription select {
+  height: fit-content !important;
 }
-button.close {
-color: #ff0044 !important;
-    text-shadow: none;
-    font-weight: 600;
-    margin-top: 10px !important;
-} */
+.modal {
+  height: auto !important;
+}
+.modal-backdrop {
+  z-index: 0;
+}
 
 .ent-footer {
   margin-top: 30px;
@@ -938,87 +941,6 @@ color: #ff0044 !important;
 .desktop-nav-element {
   display: block;
 }
-/* .modal.show {
-  display: block;
-  padding-right: 17px;
-}
-
-.modal.show .modal-dialog {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-}
-.close {
-  color: tomato;
-  position: absolute;
-  cursor: pointer;
-  background-color: transparent;
-  top: 30px;
-  right: 30px;
-  font-size: 40px;
-  z-index: 1000000;
-}
-
-.book-artist-modal,
-.book-artist-modal .modal-dialog {
-  padding: 0 !important;
-  margin: 0 !important;
-  width: 100vw;
-}
-
-.book-artist-modal {
-  padding: 0;
-  margin: 0;
-  pointer-events: none;
-}
-
-.book-artist-modal .modal-dialog {
-  display: flex;
-  justify-content: center;
-  width: 100vw !important;
-  padding: 0 !important;
-  max-width: 100vw;
-}
-
-.book-artist-modal .modal-content {
-  width: 700px !important;
-}
-
-.book-artist-modal .modal-body {
-  display: block;
-  padding: 10px;
-}
-
-.book-artist-modal .modal-body button {
-  padding: 3px 30px;
-  margin-top: 10px;
-}
-
-.book-artist-modal .modal-body .form-group {
-  padding-bottom: 15px;
-}
-
-.book-artist-modal .modal-body .form-control {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  border-radius: 0;
-  height: 30px;
-  border-bottom: 1px solid #33333377;
-}
-
-.book-artist-modal .modal-body .form-control:focus {
-  border-bottom: 1.6px solid #a768cc !important;
-  box-shadow: none !important;
-  outline: 0;
-}
-
-/* #cca968 
-
-.book-artist-modal .modal-body .form-group .form-group:focus-within {
-  color: #a768cc;
-}
-*/
 @media screen and (max-width: 1100px) {
   .ent-nav .wrapper img.item {
     width: 250px;

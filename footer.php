@@ -4,36 +4,6 @@ div.newsletter p{
     margin:0 !important; 
     margin-bottom:5px !important;
 }
-.site-footer .caldera-grid{
-width:100% !important;
-margin:0 !important;
-background-color:transparent !important ;
-    
-}
-.site-footer .caldera-grid .form-group label {
-display:none !important;
-}
-.site-footer .caldera-grid .form-control{
-	
-	height:35px !important;
-  	font-size:17px !important;
-    box-shadow: none !important;
-    background: white !important;
-	border:1px solid black !important;
-}
-.site-footer .caldera-grid .form-group, .cf-color-picker .form-group {
-    margin-bottom: 0px !important;
-}
-.site-footer .caldera-grid .btn.btn-default{
-	 background-color:transparent !important;
-	font-size:13px !important;
-    color:#FFE375 !important;
-	border:1px solid #FFE375 !important;
-    padding:3px 10px !important;
-    margin-top:0 !important;
-    width:fit-content;
-	
-}
 
 .tnp-subscription input[type=text], .tnp-subscription input[type=email], .tnp-subscription input[type=submit], .tnp-subscription select {
     height:fit-content !important;
@@ -41,11 +11,7 @@ display:none !important;
 .modal{
     height:auto !important;
 }
-/* @media screen and (max-width:600px){
-.modal .close{
-    right:5px;
-}
-} */
+
 
 </style>
 <?php $logos = new WP_Query(array(
@@ -93,23 +59,20 @@ foreach ( $slide_2 as $image ) {?>
                 Newsletter
             </button>
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
-            <span aria-hidden="true">&times;</span>
-        </button>
                 <div class="modal-dialog" role="document">                
                     <div class="modal-content">       
                         <div class="modal-header bg-secondary">
                         <h5 class="modal-title">Subscribe to Newsletter</h5>
-        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-          <span class="text-white" aria-hidden="true">&times;</span>
-        </button>
-                        </div>                  
+                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span class="text-white" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>                  
                     <div class="modal-body bg-secondary">
                     <?php echo do_shortcode( '[newsletter]' ); ?>
                     </div>     
-                    </div>
                 </div>
             </div>
+        </div>
             
         </div>
         <div class="social-links text-lg-center">
@@ -134,7 +97,7 @@ foreach ( $slide_2 as $image ) {?>
             <div>
                 <div><a target="_blank" href="https://<?php echo do_shortcode('[sc name="website_link"]'); ?>"><?php echo do_shortcode('[sc name="website_link"]'); ?></a></div>
                 <div><a href="mailto:<?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?>"><?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?></a></div>
-                <div><?php echo do_shortcode('[sc name="mobile_no_wed"]'); ?></div>
+                <div><a><?php echo do_shortcode('[sc name="mobile_no_wed"]'); ?></a></div>
             </div>
         </div>
     </div>
