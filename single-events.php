@@ -458,7 +458,10 @@
   })();
 
 </script> -->
-            <?php } ?>
+            <?php }
+            get_footer();
+            
+            ?>
 
    
    
