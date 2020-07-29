@@ -429,8 +429,8 @@
             
         <?php } ?>        
     </main>
-    <?php }?>
 </div>
+<?php }?>
 <script>
 	
 
@@ -475,11 +475,7 @@ next.addEventListener('click', function() {
 });
 	
 	
-	</script>
-
-
-    
-            
+	</script> 
             <?php
             get_footer();
             
