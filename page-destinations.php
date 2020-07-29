@@ -383,99 +383,24 @@ letter-spacing:.75px;
 
     <!--Griglia alternata testo e immagine, resposive con flexbox.-->
     <div class="mybox">
-    <section class="heading mt-5">
-            MODERN LUXURY LOCATIONS</p>
-			<h1><span>*</span></h1>
-</section>
 <section>	
-<?php $destinations = new WP_Query(array(
-    'post_type'=>'destinations',
-    'meta_key' => 'order',
-    'orderby' => 'meta_value_num',
-	'order' => 'ASC',
-	'meta_query' => array(
-        array(
-            'key' => 'destination_type',
-            'compare' => '==',
-            'value' => 'Modern',   
-		),
-	),
-));
-$i=0; 
-while( $destinations->have_posts() ){ 
-$destinations->the_post(); 
-$image_on_destination_page = rwmb_meta('image_on_destination_page', array( 'size' => 'large' ) );
-?>
-<a href="<?php the_permalink(); ?>">
+
+<a href="<?php echo site_url('/weddings/destinations/india') ?>">
 <div class="grid-flex">
-<?php 
-foreach ( $image_on_destination_page as $image ) {?>
 <div class="col col-image" style="background-image: url(<?php echo $image['url'] ?>);">
 </div>						
-<?php } ?> 
-<div class="col col-text<?php if($i%2 == 1) {echo " col-left";} ?>
-">
+<div class="col col-text col-left">
 <div class="Aligner-item">
-<div class="sideheading">
-<?php the_title(); ?>
-</div>
-<p class="mypara">
-&ldquo;<?php echo rwmb_meta('text_on_destination_page'); ?>&rdquo;
-</p>
+<div class="sideheading">Traditional Destinations</div>
+
+<p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio velit voluptas omnis rerum accusamus architecto officia inventore non commodi?</p>
 </div>
 </div>
 </div>
 </a>
-<?php $i++; } ?>
-</section>
+</section> 
 
                 
-				    <section class="heading mt-5">
-						TRADITIONAL LUXURY LOCATIONS</p>
-							<h1><span>*</span></h1>
-					</section>
-<section>
-	<?php $destinations = new WP_Query(array(
-    'post_type'=>'destinations',
-    'meta_key' => 'order',
-    'orderby' => 'meta_value_num',
-	'order' => 'ASC',
-	'meta_query' => array(
-        array(
-            'key' => 'destination_type',
-            'compare' => '==',
-            'value' => 'Traditional',   
-		),
-	),
-));
-$i=0; 
-while( $destinations->have_posts() ){ 
-$destinations->the_post(); 
-$image_on_destination_page = rwmb_meta('image_on_destination_page', array( 'size' => 'large' ) );
-?>
-<a href="<?php the_permalink(); ?>">
-<div class="grid-flex">
-<?php 
-foreach ( $image_on_destination_page as $image ) {?>
-<div class="col col-image" style="background-image: url(<?php echo $image['url'] ?>);">
-</div>						
-<?php } ?> 
-<div class="col col-text<?php if($i%2 == 1) {echo " col-left";} ?>
-">
-<div class="Aligner-item">
-<div class="sideheading">
-<?php the_title(); ?>
-</div>
-<p class="mypara">
-&ldquo;<?php echo rwmb_meta('text_on_destination_page'); ?>&rdquo;
-</p>
-</div>
-</div>
-</div>
-</a>
-<?php $i++; } ?>
-</section>
-
 <div class="grid-flex mt-5">
 	<div class="col-lg-5 col-12 sideheading lastheading text-lg-left text-center mb-3">
 		<i> You will never wish to forget an unforgettable memory of your wedding.</i>
