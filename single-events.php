@@ -113,6 +113,7 @@
             object-position: center;
             -webkit-transition: all .5s;
             transition: all .5s;
+            /* cursor:context-menu !important; */
         }
 
 
@@ -281,21 +282,21 @@
 
         .my-my-container {
             margin: 10px 10px;
-            padding: 10px;            
-            //background-color:#bababa;
+            padding: 10px;                    
         }
 
         .image {
             margin: 20px auto;
-            //background-color: red;
             height: 400px;
             overflow: hidden;
+            cursor:context-menu !important;
         }
 
         .image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            cursor:context-menu !important;
         }
 
         .kebab {
@@ -416,13 +417,11 @@
     </div>
 
 
-    <a href="#" class="lightboxNav prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-    <a href="#" class="lightboxNav next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+    <!-- <a href="#" class="lightboxNav prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+    <a href="#" class="lightboxNav next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a> -->
 <div class="mx-lg-5 mx-0">
     <main class="lightbox-wrapper">
-        <!-- <div class="">
-            <img src="<?php echo $thumbnail[107]['url'] ?>" alt="">
-                </div> -->
+       
         <?php foreach($gallery as $image){ ?>
             <div class="<?php echo $image['description'] ?>">
             <img src="<?php echo $image['url'] ?>" alt="">
@@ -430,35 +429,58 @@
             
         <?php } ?>        
     </main>
+    <?php }?>
 </div>
+<script>
+	
+
+const divs = document.querySelectorAll('div');
+const body = document.body;
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+checkPrev = () => document.querySelector('div:first-child').classList.contains('show') ? prev.style.display = 'none' : prev.style.display = 'flex';
+
+checkNext = () => document.querySelector('div:last-child').classList.contains('show') ? next.style.display = 'none' : next.style.display = 'flex';
+			
+Array.prototype.slice.call(divs).forEach(function (el) {
+			el.addEventListener('click', function () {
+				this.classList.toggle('show');
+				body.classList.toggle('active');
+				checkNext();
+				checkPrev();
+			});
+});
+
+prev.addEventListener('click', function() {
+			const show = document.querySelector('.show');
+			const event = document.createEvent('HTMLEvents');
+			event.initEvent('click', true, false);
+
+			show.previousElementSibling.dispatchEvent(event);
+			show.classList.remove('show');
+			body.classList.toggle('active');
+			checkNext();
+});
+
+next.addEventListener('click', function() {
+			const show = document.querySelector('.show');
+			const event = document.createEvent('HTMLEvents');
+			event.initEvent('click', true, false);
+
+			show.nextElementSibling.dispatchEvent(event);
+			show.classList.remove('show');
+			body.classList.toggle('active');
+			checkPrev();
+});
+	
+	
+	</script>
 
 
-<!-- <?php //if(is_single()) comments_template(); ?> -->
-
-<!-- <div id="graphcomment"></div>
-<script type="text/javascript">
-
-  /* - - - CONFIGURATION VARIABLES - - - */
-
-  // make sure the id is yours
-  window.gc_params = {
-    graphcomment_id: 'Humsafar',
-
-    // if your website has a fixed header, indicate it's height in pixels
-    fixed_header_height: 0,
-  };
-
-  /* - - - DON'T EDIT BELOW THIS LINE - - - */
-
-  
-  (function() {
-    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
-    gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
-  })();
-
-</script> -->
-            <?php }
+    
+            
+            <?php
             get_footer();
             
             ?>
