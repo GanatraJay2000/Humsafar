@@ -216,10 +216,10 @@ padding:20px;
         </a> 
         </br>        <a class="text-dark" href="mailto:<?php echo do_shortcode('[sc name=`mail_link_1_wed`]'); ?>">
         <?php echo do_shortcode('[sc name=`mail_link_1_wed`]'); ?>
-        </a>     </br><a  class="text-dark" href="mailto:<?php echo do_shortcode('[sc name=`mail_link_2_wed`]'); ?>">
+        <!-- </a>     </br><a  class="text-dark" href="mailto:<?php echo do_shortcode('[sc name=`mail_link_2_wed`]'); ?>">
         <?php echo do_shortcode('[sc name=`mail_link_2_wed`]'); ?>
         </a><br />
-        <a  class="text-dark" href="mailto:<?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?>"><?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?></a>
+        <a  class="text-dark" href="mailto:<?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?>"><?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?></a> -->
         
         </p>
 			
@@ -246,20 +246,20 @@ padding:20px;
 </div></div></br>
 <div class="row">
 
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"  >
-<h4>Delhi Office</h4>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  >
+<h4>Head Office ( Delhi )</h4>
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.47986879284244!2d81.3227863!3d21.2049507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x59dd171d40678beb!2sHumsafar%20Weddings%20%7C%20Best%20Wedding%20Planner%20and%20Destination%20Wedding%20Planner%20in%20budget!5e0!3m2!1sen!2sin!4v1595118914250!5m2!1sen!2sin"  
 width="100%" height="300" frameborder="0" class="iframe_maps" style="" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
 <h4>Mumbai Office</h4>
 <iframe style="border:1px solid slate-grey" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.47986879284244!2d81.3227863!3d21.2049507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x59dd171d40678beb!2sHumsafar%20Weddings%20%7C%20Best%20Wedding%20Planner%20and%20Destination%20Wedding%20Planner%20in%20budget!5e0!3m2!1sen!2sin!4v1595118914250!5m2!1sen!2sin"  
 width="100%" height="300" frameborder="0" class="iframe_maps" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
-<h4>Head Office</h4>
+<h4>Raipur Office</h4>
 <iframe style="border:1px solid slate-grey" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.47986879284244!2d81.3227863!3d21.2049507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x59dd171d40678beb!2sHumsafar%20Weddings%20%7C%20Best%20Wedding%20Planner%20and%20Destination%20Wedding%20Planner%20in%20budget!5e0!3m2!1sen!2sin!4v1595118914250!5m2!1sen!2sin"  
 width="100%" height="300" frameborder="0" class="iframe_maps" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
