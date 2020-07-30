@@ -13,11 +13,6 @@ section a:hover{
 	color:#b28f5e !important;
 }
 
-
-		.col-text {
-    height: 15em;
- !important}
-
 .grid-flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -122,7 +117,7 @@ letter-spacing:.75px;
 }
 @media (max-width: 780px) {
     .grid-flex {
-        min-height: 40em;        
+        /* min-height: 20em;         */
         display: -webkit-flex;
         -webkit-flex-direction: column;
         flex-direction: column !important;
@@ -386,29 +381,26 @@ letter-spacing:.75px;
 <section>	
 
 <a href="<?php echo site_url('/weddings/destinations/india') ?>">
-<div class="grid-flex">
-<div class="col col-image" style="background-image: url('https://static.toiimg.com/photo/41522309.cms);">
+<div class="d-flex flex-wrap">
+<div class="col-md-6 col-12 p-0 m-0" style="max-height:200px"><img style="width:100%;height:100%;" src='https://static.toiimg.com/photo/41522309.cms'>
 </div>						
-<div class="col col-text">
-<div class="Aligner-item">
+<div class="col-md-6 col-12 px-lg-5 px-0 text-lg-left text-center pt-2">
 <div class="sideheading" style="white-space: nowrap;">Traditional Destinations</div>
 
 <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio velit voluptas omnis rerum accusamus architecto officia inventore non commodi?</p>
 </div>
 </div>
-</div>
 </a>
 
 <a href="<?php echo site_url('/weddings/destinations/out-of-india') ?>">
-<div class="grid-flex">
-<div class="col col-image" style="background-image: url('https://www.iata.org/contentassets/4b8ec35d55dd4596a1ee21a75aaab835/paris-330x200.jpg?w=330&h=200&mode=crop&scale=both&v=20190829085556');">
+<div class="d-flex flex-wrap">
+<div class="col-md-6 col-12 p-0 m-0"style="max-height:200px"><img style="width:100%;height:100%;" src='https://www.iata.org/contentassets/4b8ec35d55dd4596a1ee21a75aaab835/paris-330x200.jpg?w=330&h=200&mode=crop&scale=both&v=20190829085556'>
 </div>						
-<div class="col col-text col-left">
-<div class="Aligner-item">
+<div class="col-md-6 col-12 px-lg-5 px-0 text-lg-left text-center pt-2 col-left">
+
 <div class="sideheading" style="white-space: nowrap;">Modern Destinations</div>
 
 <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio velit voluptas omnis rerum accusamus architecto officia inventore non commodi?</p>
-</div>
 </div>
 </div>
 </a>
@@ -420,7 +412,7 @@ letter-spacing:.75px;
 		<i> You will never wish to forget an unforgettable memory of your wedding.</i>
 	</div>
 	<div class="col-lg-7 col-12 text-center mt-lg-2">
-	<p class="lastpara">
+	<p class="lastpara text-justify">
 		Enjoying the benefit of located in India our clients engage us for perfect Indian and Traditional wedding plans along with international levels of service delivered at the destination of their choice. Working with local suppliers as well as importing those elements which cannot be reliably sourced locally is one of many things we are good at. Delivering a large destination wedding is a logistic challenge, not least because of the challenge of ensuring a flawless guest experience. We’ve built a highly experienced team of more than 50 Members, as well as a network of local partners in the most popular destinations and so are superbly well equipped to deliver the most complex multi-day destination weddings.
 	</p>
 </div>                            
