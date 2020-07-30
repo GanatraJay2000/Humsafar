@@ -31,10 +31,14 @@
             </nav>
 
             <div class="item nav-brand">
-                <a class="d-flex" href="<?php echo site_url('weddings'); ?>">
+                <a  href="<?php echo site_url('weddings'); ?>">
+                <div class="d-flex justify-content-evenly align-items-center">
+                <div class="brand-logo" >
                     <img src="<?php echo get_template_directory_uri() . '/icon.png' ?>" alt="">
-                    <div class="brand-title">
+                    </div>
+                    <div class="brand-title ml-2" >
                         <img src="<?php echo get_template_directory_uri() . '/title.png' ?>" alt="">
+                    </div>
                     </div>
                 </a>
             </div>

@@ -598,8 +598,8 @@ article.page h2 {
 
   .nav-brand .brand-title {
     display: block;
-    width: 200px !important;
-    transform: scale(1.6) !important;
+    /* width: 200px !important; */
+    /* transform: scale(1.6) !important; */
     text-align: center;
   }
 
@@ -627,7 +627,7 @@ article.page h2 {
   .nav-brand .brand-title {
     display: block;
     /* width: 170px !important; */
-    transform: scale(1.6);
+    /* transform: scale(1.6); */
     text-align: center;
   }
 
@@ -658,14 +658,17 @@ article.page h2 {
   }
 
   .site-nav .nav-brand img {
-    width: 65px;
+    width: 75px;
   }
 
   .nav-brand .brand-title {
     display: block;
-    width: 140px !important;
-    transform: scale(1.6);
+    /* width: 140px !important; */
+    /* transform: scale(1.6); */
     text-align: center;
+  }
+  .nav-brand .brand-title img {
+    width: 120px;
   }
 }
 
