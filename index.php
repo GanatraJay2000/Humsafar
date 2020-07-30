@@ -195,9 +195,7 @@
 	<div class="heading">
         <p>Wedding Planning and Decoration Ideas</p>
         <h1><span>*</span></h1>
-    </div>
-
-    <center><h1>Blog</h1></center>
+    </div>    
 <?php while(have_posts()) {
     the_post(); ?>
 <!-- 
@@ -231,67 +229,6 @@
 		</div>
 
 
-<?php } ?>
-
-		<div class="container">
-			<div class="date">
-				<p>Jul 27, 2020</p>
-			</div>
-			<div class="name">
-				<p><a href="#">Planning a Dream Marrage</a></p>
-			</div>
-
-			<div class="image">
-				<a href="#">
-				<img id="my-img1"
-						src="https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2020/04/0/0/couple-wedding-iStock.jpg?ve=1&tl=1"
-						alt="deepak-nikita" />
-				</a>
-			</div>			
-			<div class="text">
-				<p>Donec  euismod, augue in sagittis tincidunt, neque nisi commodo purus, non sollicitudin elit sapien vel sapien. Ut eget urna nisl. Mauris non nisi purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
-				</p><br>
-				<hr style="height:1px;border-width:0;background-color:#cccccc">
-			</div>
-			
-			<div class="date">
-				<p>275 views &ensp; &ensp; <a href="#">Write comment</a></p>
-			</div>
-		</div>
-		
-		<div class="container">
-
-			
-
-			<div class="date">
-				<p>Jul 29, 2020</p>
-			</div>
-			<div class="name">
-				<p><a href="#">10 Popular Wedding Venues in Rajasthan</a></p>
-			</div>
-
-			<div class="image">
-				<a href="#"><img id="my-img1"
-						src="https://ihplb.b-cdn.net/wp-content/uploads/2011/02/Forts.jpg"
-						alt="deepak-nikita" /></a>
-			</div>
-
-			
-			<div class="text">
-				<p>Donec  euismod, augue in sagittis tincidunt, neque nisi commodo purus, non sollicitudin elit sapien vel sapien. Ut eget urna nisl. Mauris non nisi purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
-				</p><br>
-				<hr style="height:1px;border-width:0;background-color:#cccccc">
-			</div>
-			
-			<div class="date">
-				<p>275 views &ensp; &ensp; <a href="#">Write comment</a></p>
-			</div>
-		</div>
-
-
-		<br>
-		<br>
-		<br>
-
+<?php } ?>		
 	</div>
     <?php get_footer(); ?>
