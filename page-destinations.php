@@ -385,7 +385,7 @@ letter-spacing:.75px;
 <div class="col-md-6 col-12 p-0 m-0" style="max-height:200px"><img style="width:100%;height:100%;" src='https://static.toiimg.com/photo/41522309.cms'>
 </div>						
 <div class="col-md-6 col-12 px-lg-5 px-0 text-lg-left text-center pt-2">
-<div class="sideheading" style="white-space: nowrap;">Traditional Destinations</div>
+<h4 class="">Traditional Destinations</h4>
 
 <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio velit voluptas omnis rerum accusamus architecto officia inventore non commodi?</p>
 </div>
@@ -398,7 +398,7 @@ letter-spacing:.75px;
 </div>						
 <div class="col-md-6 col-12 px-lg-5 px-0 text-lg-left text-center pt-2 col-left">
 
-<div class="sideheading" style="white-space: nowrap;">Modern Destinations</div>
+<h4 class="" >Modern Destinations</h4>
 
 <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio velit voluptas omnis rerum accusamus architecto officia inventore non commodi?</p>
 </div>
