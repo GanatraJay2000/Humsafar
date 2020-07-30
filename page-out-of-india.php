@@ -383,7 +383,7 @@ font-size:22px;
 
 <!--Griglia alternata testo e immagine, resposive con flexbox.-->
 <div class="mybox">
-<section class="heading mt-5">
+<section class="heading my-5">
         MODERN LUXURY LOCATIONS</p>
         <h1><span>*</span></h1>
 </section>
