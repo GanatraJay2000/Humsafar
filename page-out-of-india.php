@@ -428,7 +428,7 @@ foreach ( $image_on_destination_page as $image ) {?>
 </a>
 <?php $i++; } ?>
 </section>
-<center><button style="background-color:#ecc86b !important;color:white;" class="btn mt-5">Back to Destinations</button></center>
+<center><a href="<?php echo site_url('/weddings/destinations'); ?>" style="background-color:#ecc86b !important;color:white;" class="btn mt-5">Back to Destinations</a></center>
 
 </section>
     </div>
