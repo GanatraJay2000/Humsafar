@@ -204,6 +204,12 @@
     $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
     
     ?>
+<!-- 
+
+<article class="post my-5">
+    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+    <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>   
+</article> -->
 
 <div class="container">
 			<div class="date">
@@ -220,9 +226,10 @@
 				
 			</div>			
 			<div class="text">
-				<p>Donec  euismod, augue in sagittis tincidunt, neque nisi commodo purus, non sollicitudin elit sapien vel sapien. Ut eget urna nisl. Mauris non nisi purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
+				<p>
+                <?php echo wp_trim_words(get_the_content(), 35); ?>
 				</p><br>
-				<button class="btn btn-dark">Read More >></button>
+				<a href="<?php the_permalink(); ?>" class="btn btn-dark">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 			</div>
 					
 		</div>
