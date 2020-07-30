@@ -428,18 +428,7 @@ foreach ( $image_on_destination_page as $image ) {?>
 </a>
 <?php $i++; } ?>
 </section>
-
-
-<div class="grid-flex mt-5">
-<div class="col-lg-5 col-12 sideheading lastheading text-lg-left text-center mb-3">
-    <i> You will never wish to forget an unforgettable memory of your wedding.</i>
-</div>
-<div class="col-lg-7 col-12 text-center mt-lg-2">
-<p class="lastpara">
-    Enjoying the benefit of located in India our clients engage us for perfect Indian and Traditional wedding plans along with international levels of service delivered at the destination of their choice. Working with local suppliers as well as importing those elements which cannot be reliably sourced locally is one of many things we are good at. Delivering a large destination wedding is a logistic challenge, not least because of the challenge of ensuring a flawless guest experience. We’ve built a highly experienced team of more than 50 Members, as well as a network of local partners in the most popular destinations and so are superbly well equipped to deliver the most complex multi-day destination weddings.
-</p>
-</div>                            
-</div>
+<center><button style="background-color:var(--primary-color) !important;color:white;" class="btn mt-5">Back to Destinations</button></center>
 
 </section>
     </div>
