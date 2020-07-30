@@ -388,6 +388,7 @@ letter-spacing:.75px;
 <h4 class="">Traditional Destinations</h4>
 
 <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio velit voluptas omnis rerum accusamus architecto officia inventore non commodi?</p>
+<button class="btn btn-dark">Know More</button>
 </div>
 </div>
 </a>
@@ -401,6 +402,7 @@ letter-spacing:.75px;
 <h4 class="" >Modern Destinations</h4>
 
 <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio velit voluptas omnis rerum accusamus architecto officia inventore non commodi?</p>
+<button class="btn btn-dark">Know More</button>
 </div>
 </div>
 </a>
