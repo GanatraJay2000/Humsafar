@@ -30,7 +30,7 @@
             ?>
             </nav>
 
-            <div class="item nav-brand" style="border:2px solid gold;">
+            <div class="nav-brand " style="border:2px solid gold;width:fit-content;margin:0 auto">
                 <a class="" href="<?php echo site_url('weddings'); ?>">
                 <div class="d-flex justify-content-evenly align-items-center">
                 <div class="brand-logo" style="border:2px solid coral;">
