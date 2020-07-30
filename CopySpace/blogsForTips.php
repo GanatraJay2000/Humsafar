@@ -220,9 +220,6 @@
     </div>
 
 		<div class="container">
-
-			
-
 			<div class="date">
 				<p>Jul 27, 2020</p>
 			</div>
@@ -231,12 +228,12 @@
 			</div>
 
 			<div class="image">
-				<a href="#"><img id="my-img1"
+				<a href="#">
+				<img id="my-img1"
 						src="https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2020/04/0/0/couple-wedding-iStock.jpg?ve=1&tl=1"
-						alt="deepak-nikita" /></a>
-			</div>
-
-			
+						alt="deepak-nikita" />
+				</a>
+			</div>			
 			<div class="text">
 				<p>Donec  euismod, augue in sagittis tincidunt, neque nisi commodo purus, non sollicitudin elit sapien vel sapien. Ut eget urna nisl. Mauris non nisi purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
 				</p><br>
