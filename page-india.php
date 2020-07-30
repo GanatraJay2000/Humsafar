@@ -327,7 +327,7 @@ font-size:22px;
 </style>
 </head>
 <body>
-<div class="myheading">
+<!-- <div class="myheading">
     <h1>TIMELESS AND EXCLUSIVE</h1>
 </div>
 <div class="sideheading2">
@@ -336,7 +336,7 @@ font-size:22px;
         ONE GLAMOUR ELEGANCE.
     </h2>
 </div>
-
+ -->
 
 
 <!-- 
