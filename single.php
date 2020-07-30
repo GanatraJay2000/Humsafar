@@ -14,7 +14,7 @@ get_post();
 <article class="post">
     <h1><?php the_title(); ?></h1>	 
 	<?php foreach ( $thumbnail_image as $image ) {?>
-        <img src="<?php echo $image['url'] ?>" alt="">
+        <img style="width:100%;height:400px;" src="<?php echo $image['url'] ?>" alt="">
     <?php } ?>
     <p><?php the_content(); ?></p>
 </article>
