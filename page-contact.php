@@ -95,11 +95,6 @@ border:0 !important;
         <a target="_blank" class="text-dark" href="https://<?php echo do_shortcode('[sc name=`website_link`]'); ?>">
         <?php echo do_shortcode('[sc name=`website_link`]'); ?>
         </a> 
-        </br>        <a class="text-dark" href="mailto:<?php echo do_shortcode('[sc name=`mail_link_1_wed`]'); ?>">
-        <?php echo do_shortcode('[sc name=`mail_link_1_ent`]'); ?>
-        </a>     </br><a  class="text-dark" href="mailto:<?php echo do_shortcode('[sc name=`mail_link_2_wed`]'); ?>">
-        <?php echo do_shortcode('[sc name=`mail_link_2_ent`]'); ?>
-        </a>
         <br />
         <a  class="text-dark" href="mailto:<?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?>"><?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?></a>
         </p>
