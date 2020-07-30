@@ -1,2 +1,3 @@
-<?php wp_head(); ?>
-<?php wp_footer(); ?>
+<?php get_header(); ?>
+hey there
+<?php get_footer(); ?>
