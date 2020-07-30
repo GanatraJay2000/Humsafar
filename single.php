@@ -12,6 +12,7 @@ get_post();
 
 	
 <article class="post">
+<a href="javascript:window.history.back();">Back to all Blogs</a>
 <div class="heading">
         <p><?php the_title(); ?></p>
         <h1><span>*</span></h1>
