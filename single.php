@@ -14,7 +14,7 @@ get_post();
 <article class="post">
     <center><h1><?php the_title(); ?></h1></center>	 
 	<?php foreach ( $thumbnail_image as $image ) {?>
-        <img style="width:100%;height:500px;" src="<?php echo $image['url'] ?>" alt="">
+        <img style="width:100%;height:600px;object-fit:cover;" src="<?php echo $image['url'] ?>" alt="">
     <?php } ?>
     <div class="d-flex my-5">
     
