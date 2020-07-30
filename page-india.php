@@ -339,10 +339,10 @@ font-size:22px;
 
 
 
-
+<!-- 
 <div class="complex-element">
     <div class="dest dest_1">
-        <img src="<?php echo get_template_directory_uri() . '/assets_inside/paris.webp' ?>" alt="Paris">
+        <img src="<?php //echo get_template_directory_uri() . '/assets_inside/paris.webp' ?>" alt="Paris">
         <div class="details">
             <p class="infotext">A Spring wedding under the Eiffel Tower, with the Fragrance of Fresh Flowers in
                 the air, and colors galore all around, as Reality transcends the boundaries of your Dream
@@ -354,7 +354,7 @@ font-size:22px;
             TO GREECE.</div>
     </div>
     <div class="dest dest_2">
-        <img src="<?php echo get_template_directory_uri() . '/assets_inside/somehotel.webp' ?>" alt="">
+        <img src="<?php //echo get_template_directory_uri() . '/assets_inside/somehotel.webp' ?>" alt="">
 
         <div class="details">
             <p class="infotext">With our setup in India we have a huge clientele within India. We also deliver
@@ -367,7 +367,7 @@ font-size:22px;
         <div class="mssg">WE WANT TO MAKE UNFORGETTABLE MEMORIES AND ENJOY EVERY LAST MINUTE OF YOUR EVENT.
         </div>
     </div>
-</div>
+</div> -->
 
 
 
