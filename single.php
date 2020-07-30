@@ -34,13 +34,10 @@ get_post();
     while($blogs->have_posts())
 {
     $blogs->the_post();       
-    ?><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><?php
-}
-    
     ?>
-    <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-    <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quas?</li>
-    <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+     <li class="list-group-item"><a class="text-dark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+    
+    <?php } ?>    
     </ul>
     </div>
     </div>    
