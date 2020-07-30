@@ -200,13 +200,38 @@
     <center><h1>Blog</h1></center>
 <?php while(have_posts()) {
     the_post(); ?>
+<!-- 
+
 <article class="post my-5">
     <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
     <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>   
-</article>
-<?php
-}
-?>
+</article> -->
+
+<div class="container">
+			<div class="date">
+				<p><?php the_time('M j, Y'); ?></p>
+			</div>
+			<div class="name">
+				<p><a href="#"><?php the_title(); ?></a></p>
+			</div>
+
+			<div class="image">
+				<a href="#">
+				<img id="my-img1"
+						src="https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2020/04/0/0/couple-wedding-iStock.jpg?ve=1&tl=1"
+						alt="deepak-nikita" />
+				</a>
+			</div>			
+			<div class="text">
+				<p>Donec  euismod, augue in sagittis tincidunt, neque nisi commodo purus, non sollicitudin elit sapien vel sapien. Ut eget urna nisl. Mauris non nisi purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
+				</p><br>
+				<button class="btn btn-dark">Read More >></button>
+			</div>
+					
+		</div>
+
+
+<?php } ?>
 
 		<div class="container">
 			<div class="date">
