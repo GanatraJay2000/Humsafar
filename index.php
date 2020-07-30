@@ -229,7 +229,7 @@
 				<p>
                 <?php echo wp_trim_words(get_the_content(), 35); ?>
 				</p><br>
-				<a href="<?php the_permalink(); ?>" class="btn btn-dark">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+				<a href="<?php the_permalink(); ?>" class="btn btn-dark text-white-50">Read More <i class="fa fa-chevron-right fa-1x" aria-hidden="true"></i></a>
 			</div>
 					
 		</div>
