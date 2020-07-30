@@ -324,7 +324,7 @@ if($event_type === 'Wedding'){
         <div class="name">
             <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
         </div>
-        <div class="text">
+        <div class="text text-justify">
             <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
             <br>
         </div>

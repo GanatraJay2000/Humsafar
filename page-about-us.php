@@ -160,7 +160,7 @@
                 <p><i>We just love to share a little bit about us.</i></p>
             </div>
         </div>
-        <div>
+        <div class="text-justify">
         <p>HUMSAFAR WEDDINGS is your one stop destination for all your wedding related tasks. We are your ULTIMATE humsafars in turning your dreams into reality.</p>
         <p>With over 7 years of experience in the field of wedding planning, HUMSAFAR has successfully planned over 500 weddings. We work hard to satisfy our clients and to fulfill all their desires.</p> 
         <p>Our team has over 50 young and passionate individuals, who put in all their heart and hard work to make your wedding the most memorable moment for you and your entire guest list. </p>

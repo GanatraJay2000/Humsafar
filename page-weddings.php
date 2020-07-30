@@ -498,7 +498,7 @@ $slide_1 = array_values($slide_1);
     </div>    
     <hr class="title">
     <h5 class="sub-title">EXCLUSIVE DESTINATION WEDDING PLANNERS & EVENT DESIGNERS</h5>
-    <p>Humsafar Wedding is all about curating precisely those special moments of your life that get etched in the brain
+    <p class="text-justify">Humsafar Wedding is all about curating precisely those special moments of your life that get etched in the brain
         as beautiful and adorable memories. Whether it be the memory of Bidding farewell to the oldest Cog of the
         company or the Dream wedding that you always planned in your head, We Humsafars are always with you in every
         moment.</p>

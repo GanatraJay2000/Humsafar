@@ -3,7 +3,7 @@
 
     .content.wrapper{
         padding:0 !important;
-        margin:10px;
+        margin:10px;        
     }
 .functions h3{
     font-family: "Myriad Pro",  "Myriad Pro",  Playfair Display, serif;    
@@ -49,6 +49,7 @@
     display:flex;
     margin-bottom:15px;
     flex-direction:column;
+    text-align:justify;
     
 }
 .function-card .layout .text .title{
@@ -57,6 +58,7 @@
 
 .function-card .layout .text .content{    
     font-size:16px;
+    text-align:justify;
     font-family: "Myriad Pro",  "Myriad Pro",  "EB Garamond", serif;
 }
 .list-group-item-action{   
@@ -91,6 +93,9 @@
     .function-card *{
         text-align:center;
     }
+    .function-card .layout .text .content *{       
+    text-align:justify !important;    
+}
 }
 </style>
 <div class="functions my-5">
@@ -138,9 +143,9 @@ while($functions->have_posts())
         <?php } ?>
             <div class="quote"><?php echo $quote ?></div>
             </div>
-            <div class="text col-lg-6 col-12">
+            <div class="text col-lg-6 col-12 text-justify">
                 <h3 class="title"><?php the_title(); ?></h3>
-            <div class="content">
+            <div class="content text-justify">
               <?php the_content(); ?>
             </div>
         </div>
