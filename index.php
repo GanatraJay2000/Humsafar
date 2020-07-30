@@ -7,9 +7,12 @@
 		body {
 			background-color: #fcf7ff;
 			margin: 0;
-			padding: 0;
+            padding: 0;
+            font-family: "Myriad Pro", sans-serif;
 		}
-		
+		.content.wrapper{
+            padding:0 !important;
+        }
     .heading {
         padding-top: 10px;
         margin-bottom: 0;
@@ -19,7 +22,7 @@
     }
 
     h1 {
-        font-family: sans-serif;
+        font-family: "Myriad Pro",sans-serif;
         margin: auto;
         text-align: center;
         font-size: 40px;
@@ -54,11 +57,11 @@
 
 
 		.post-part {
-			font-family: 'playfair display', serif;
+			font-family: 'Myriad Pro', serif;
 		}
 
 		.date {
-			font-family: 'FuturaLig', sans-serif;
+			font-family: 'Myriad Pro', sans-serif;
 			color: #3d3d3d;
 			font-size: 15px;
 		}
@@ -86,7 +89,7 @@
 		}
 		
 		.text {
-			font-family: 'FuturaLig', sans-serif;
+			font-family: 'Myriad Pro', sans-serif;
 			font-size: 20px;
 			color: #3d3d3d;
 		}
@@ -197,6 +200,7 @@
         <h1><span>*</span></h1>
     </div>    
 <?php while(have_posts()) {
+     $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
     the_post(); ?>
 <!-- 
 
@@ -213,12 +217,11 @@
 				<p><a href="#"><?php the_title(); ?></a></p>
 			</div>
 
-			<div class="image">
-				<a href="#">
-				<img id="my-img1"
-						src="https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2020/04/0/0/couple-wedding-iStock.jpg?ve=1&tl=1"
-						alt="deepak-nikita" />
-				</a>
+			<div class="image">				
+                <?php foreach ( $thumbnail_image as $image ) {?>
+            <a href="<?php the_permalink(); ?>"><img id="my-img1" src="<?php echo $image['url'] ?>" alt=""></a>
+        <?php } ?>
+				
 			</div>			
 			<div class="text">
 				<p>Donec  euismod, augue in sagittis tincidunt, neque nisi commodo purus, non sollicitudin elit sapien vel sapien. Ut eget urna nisl. Mauris non nisi purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
