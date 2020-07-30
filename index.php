@@ -200,14 +200,10 @@
         <h1><span>*</span></h1>
     </div>    
 <?php while(have_posts()) {
-     $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
-    the_post(); ?>
-<!-- 
-
-<article class="post my-5">
-    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-    <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>   
-</article> -->
+    the_post(); 
+    $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
+    
+    ?>
 
 <div class="container">
 			<div class="date">
