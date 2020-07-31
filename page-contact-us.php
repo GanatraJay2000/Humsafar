@@ -250,8 +250,7 @@ width="100%" height="300" frameborder="0" class="iframe_maps" style="" allowfull
 
 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
 <h4>Mumbai Office</h4>
-<iframe style="border:1px solid slate-grey" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.47986879284244!2d81.3227863!3d21.2049507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x59dd171d40678beb!2sHumsafar%20Weddings%20%7C%20Best%20Wedding%20Planner%20and%20Destination%20Wedding%20Planner%20in%20budget!5e0!3m2!1sen!2sin!4v1595118914250!5m2!1sen!2sin"  
-width="100%" height="300" frameborder="0" class="iframe_maps" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.356217069699!2d72.8509356144014!3d19.17963773702848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b701971c370f%3A0x346fa17c4b6f8f5b!2sRohini%20Building!5e0!3m2!1sen!2sin!4v1596183114830!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
