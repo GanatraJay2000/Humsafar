@@ -279,7 +279,7 @@ $thumbnail_image = rwmb_meta('image_on_home_page', array( 'size' => 'medium' ) )
  </div>
  
 </br></br>
-
+<!-- 
 <center id="ent_team"><h1 class="">Meet The Team</h1></center>
 <center>
 <div class="container">
@@ -313,7 +313,7 @@ $thumbnail_image = rwmb_meta('image_on_home_page', array( 'size' => 'medium' ) )
     <p class="card-text">We know what is the importance of Hospitality & Logistics in any wedding. Our Hospitality & Logistics Head Chetan Mewara keeps his keen observation in finding the right kind of management and hospitality to look after the guests into any type of Wedding.</p>
 
   </div>
-</div></div></div></center>
+</div></div></div></center> -->
 </div>
 
 
