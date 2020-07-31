@@ -479,7 +479,7 @@ $slide_1 = array_values($slide_1);
         <div class="banner">        
             <img src="<?php echo $slide_1[3]['url'] ?>" alt="Post-1">
 
-            <div class="content" style="background-color:#fec9c0ea !important;">
+            <div class="content" style="background-color:#e0f3baea !important;">
                 <h3>You Will Never Forget the Incredible Memory.</h3>
                 <p>Find our latest work of making their dream come true of having a beautiful wedding they always dreamt of.</p>
                 <a class="button" href="<?php echo site_url('/weddings/events'); ?>">See Weddings</a>
