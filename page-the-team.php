@@ -31,6 +31,13 @@
                                 <h5>ARMAAN SHARMA</h5><h6>CREATIVE DIRECTOR</h6>
                                 <br />
                                 <p class="">Our Founder & Director at Humsafar.Co has founded the company in 2010 after his amazing skills in Event Management & Wedding Planning. He has designed over 200 Weddings in Luxury & Destination Theme though out his Wedding Career.</p>
+                                <div>
+                                    <center>
+                                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                                        <i class="fab fa-linkedin"  aria-hidden="true"></i>
+                                    </center>
+                                </div>
                             </div>
                         </div>
                     </div>
