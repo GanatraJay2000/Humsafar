@@ -192,6 +192,26 @@
 			}
 
 		}
+
+		.page-numbers{
+			color: #006ec3;
+			border: 2px solid #006ec3;
+			padding: 5px 20px;
+			border-radius: 5px;
+			margin: 0 5px;
+			text-decoration:none !important;
+		}
+		.page-numbers:hover{			
+			color:white;
+			background-color:#006ec377;
+		}
+		.page-numbers.current{
+			color:white;
+			background-color:#006ec3;
+		}
+		.page-numbers.current:hover{			
+					
+		}
 	</style>
 
 	<div class="post-part">
@@ -230,6 +250,17 @@
 		</div>
 
 
-<?php } ?>		
+<?php } 
+?>
+<center>
+<div class="paginations m-5">
+<?php
+echo paginate_links(); 
+?>
+</div>
+				</center>
+<?php
+
+?>		
 	</div>
     <?php get_footer(); ?>
