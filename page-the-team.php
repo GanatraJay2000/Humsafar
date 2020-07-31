@@ -16,7 +16,7 @@
     }
     .social-logo{
         font-size:22px;
-        margin:0px 5px;
+        margin:0px 5px 20px;
     }
     @media screen and (max-width:600px){
         .card-body{
