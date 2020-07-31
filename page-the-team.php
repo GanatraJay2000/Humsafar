@@ -13,6 +13,8 @@
     }
     .card img{
         width:200px;
+        height:200px;
+        border-radius:50%;
     }
     .social-logo{
         font-size:22px;
@@ -35,11 +37,13 @@
                 <div class="col-md-4 d-flex align-items-between flex-column justify-content-between">
                     
                         <div class="card">
-                            <center><img src="https://humsafar.mcubeinfosys.com/assets/armaan.png"></center>
+                            <center><img src="https://demo.plugins360.com/wp-content/uploads/2017/12/demo.png"></center>
                             <div class="card-body">
-                                <h5>ARMAAN SHARMA</h5><h6>CREATIVE DIRECTOR</h6>
+                                <h5>Lorem, ipsum.</h5><h6>Lorem, ipsum.</h6>
                                 <br />
-                                <p class="">Our Founder & Director at Humsafar.Co has founded the company in 2010 after his amazing skills in Event Management & Wedding Planning. He has designed over 200 Weddings in Luxury & Destination Theme though out his Wedding Career.</p>
+                                <p class="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus nemo. Temporibus repudiandae nihil obcaecati minima soluta facere possimus deleniti, quasi optio, molestiae accusantium! Sapiente, quisquam? Ea repudiandae animi beatae?
+                                </p>
                              
                             </div>
                            
@@ -53,11 +57,13 @@
                     </div>
                     <div class="col-md-4 d-flex align-items-between flex-column justify-content-between">
                         <div class="card ">
-                            <center><img src="https://humsafar.mcubeinfosys.com/assets/ritika.png"></center>
+                        <center><img src="https://demo.plugins360.com/wp-content/uploads/2017/12/demo.png"></center>
                             <div class="card-body">
-                                <h5>RITIKA KAUL</h5><h6>ARTIST MANAGER</h6>
+                                <h5>Lorem, ipsum.</h5><h6>Lorem, ipsum.</h6>
                                 <br/>
-                                <p class="">Managing an artist is a job not less an being an artist itself. Ritika Kaul our experienced and talented Artist Manager knows the importance of properly handling the schedule of Artist (of any field) to make your event a grand success.</p>
+                                <p class="">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo adipisci inventore ullam ipsum nobis eveniet necessitatibus, distinctio totam excepturi iste sit rerum quod iure vitae!
+                                </p>
 
                             </div>
                         </div>
@@ -69,11 +75,13 @@
                     </div>
                     <div class="col-md-4 d-flex align-items-between flex-column justify-content-between">
                         <div class="card ">
-                           <center><img src="https://humsafar.mcubeinfosys.com/assets/chetan.png"></center>
+                        <center><img src="https://demo.plugins360.com/wp-content/uploads/2017/12/demo.png"></center>
                             <div class="card-body">
-                                <h5>CHETAN MEWARA</h5><h6>HOSPITALITY & LOGISTICS HEAD</h6>
+                                <h5>Lorem, ipsum.</h5><h6>Lorem ipsum dolor sit.</h6>
                                 <br/>
-                                <p class="">We know what is the importance of Hospitality & Logistics in any wedding. Our Hospitality & Logistics Head Chetan Mewara keeps his keen observation in finding the right kind of management and hospitality to look after the guests into any type of Wedding.</p>
+                                <p class="">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quam aperiam, expedita at quos soluta autem facilis! Dolorum esse aperiam magni nisi illo consequuntur libero aspernatur autem, cumque veritatis facilis sit quia vitae, amet quam.
+                                </p>
                             </div>
                         </div>
                         <div>
