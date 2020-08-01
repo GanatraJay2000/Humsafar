@@ -154,7 +154,7 @@
             <div class="on-desk">
                 <p><i>We just love to share a little bit about us.</i></p>
             </div>
-            <img src="https://images.pexels.com/photos/3699360/pexels-photo-3699360.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            <img src="<?php echo get_template_directory_uri() . '/assets_inside/about_us_page_img.jpg' ?>"
                 alt="Humsafar Weddings" width="450" height="500" />
             <div class="on-mobile">
                 <p><i>We just love to share a little bit about us.</i></p>
