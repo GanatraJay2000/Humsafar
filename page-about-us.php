@@ -69,6 +69,7 @@
     }
     .flex-container .image img{
         width:100%;
+        border-radius:3px;
     }
 
     .flex-container .image div p {
@@ -105,7 +106,7 @@
         }
 
         .flex-container .image {
-            text-align: center;
+            text-align: center;            
         }
         .flex-container .image div p{
             text-align: center;
@@ -114,6 +115,7 @@
 		
 		.flex-container .image img{
             width:100%;
+            
         }
 		
     }
