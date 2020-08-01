@@ -65,13 +65,14 @@
     }
 
     .flex-container .image {
-        overflow: hidden;
-        padding: 10px;
-        text-align: right;
+        overflow: hidden;        
     }
 
     .flex-container .image div p {
-        font-size: 35px;
+        font-size: 27px;
+        line-height:1em;
+        padding:0;
+        font-style:italic;
         color: #2f2e2e;
     }
 
@@ -101,6 +102,10 @@
 
         .flex-container .image {
             text-align: center;
+        }
+        .flex-container .image div p{
+            text-align: center;
+            margin:20px auto;
         }
 		
 		.flex-container .image img{
@@ -141,7 +146,7 @@
             font-size: 25px;
        }
        .flex-container .image img{
-           height:300px !important;
+           min-height:300px !important;
        }
     }
 </style>
@@ -153,14 +158,14 @@
     </div>
     <div class="flex-container">
 
-        <div class="image">
+        <div class="image ">
             <div class="on-desk">
-                <p><i>We just love to share a little bit about us.</i></p>
+                <p>We just love to share a little bit about us.</p>
             </div>
             <img src="<?php echo get_template_directory_uri() . '/assets_inside/about_us_page_img.jpg' ?>"
                 alt="Humsafar Weddings" width="450"  />
             <div class="on-mobile">
-                <p><i>We just love to share a little bit about us.</i></p>
+                <p>We just love to share a little bit about us.</p>
             </div>
         </div>
         <div class="text-justify">
