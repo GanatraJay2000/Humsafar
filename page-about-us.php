@@ -67,6 +67,9 @@
     .flex-container .image {
         overflow: hidden;        
     }
+    .flex-container .image img{
+        width:100%;
+    }
 
     .flex-container .image div p {
         font-size: 27px;
@@ -74,6 +77,7 @@
         padding:0;
         font-style:italic;
         color: #2f2e2e;
+        letter-spacing: .1px;
     }
 
     @media screen and (min-width : 906px) {
@@ -160,12 +164,12 @@
 
         <div class="image ">
             <div class="on-desk">
-                <p>We just love to share a little bit about us.</p>
+                <p>We would love to share a little bit about us.</p>
             </div>
             <img src="<?php echo get_template_directory_uri() . '/assets_inside/about_us_page_img.jpg' ?>"
-                alt="Humsafar Weddings" width="450"  />
+                alt="Humsafar Weddings" />
             <div class="on-mobile">
-                <p>We just love to share a little bit about us.</p>
+                <p>We would love to share a little bit about us.</p>
             </div>
         </div>
         <div class="text-justify">
