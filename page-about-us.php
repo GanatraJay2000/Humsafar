@@ -140,6 +140,9 @@
 		.flex-container .image div p {
             font-size: 25px;
        }
+       .flex-container .image img{
+           height:300px !important;
+       }
     }
 </style>
 
@@ -155,7 +158,7 @@
                 <p><i>We just love to share a little bit about us.</i></p>
             </div>
             <img src="<?php echo get_template_directory_uri() . '/assets_inside/about_us_page_img.jpg' ?>"
-                alt="Humsafar Weddings" width="450" height="500" />
+                alt="Humsafar Weddings" width="450"  />
             <div class="on-mobile">
                 <p><i>We just love to share a little bit about us.</i></p>
             </div>
