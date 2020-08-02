@@ -185,7 +185,7 @@ article.post:last-of-type {
   color: var(--primary-color) !important;
   background: transparent;
   font-family: "Myriad Pro", sans-serif !important;
-  font-size: 16px;
+  font-size: 20px;
   padding: 0 15px;
   letter-spacing: 1.4px;
   text-decoration: none;
