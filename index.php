@@ -189,7 +189,7 @@
 		<?php echo wp_trim_words(get_the_content(), 35); ?>
 		</p>
 
-		<a class="read-more" href="#">-Read More</a>
+		<a class="read-more" href="<?php the_permalink(); ?>">-Read More</a>
 	</div>
 
 <?php
