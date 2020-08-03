@@ -189,6 +189,11 @@
         background-color:#dbc5be;
         color:white;
     }
+    @media screen and (max-width:768px){
+        .how-diff-text{        
+        width:90%;
+    }    
+    }
 </style>
 
 <div class="about-part">
@@ -216,7 +221,7 @@
         <p>We got you all covered from choosing your wedding locations, beautiful wedding attires, wedding themes, wedding feast, grand entries to taking care of your guests.</p>
         </div>
     </div>  
-    <div class=" p-5" style="margin: 50px -64px 0;background-color:#c5d7be44">
+    <div class=" p-5" style="width:100%;background-color:#c5d7be44">
         <div class="card-deck statistics">
             <div class="card">    
             <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/crown.png' ?>" alt="Card image cap"> 
