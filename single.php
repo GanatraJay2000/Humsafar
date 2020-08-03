@@ -12,11 +12,15 @@
     }
     .image{
         position:relative;
-        width:100%;
-        
+        margin-top:5px;
+        /* width:90%;      */
+        /* margin:60px auto 0 !important;    */
+        /* border-radius:5px; */
+        /* box-shadow:0 0 30px 1px #0000003f; */
     }
     .image img{
-        width:100%;
+        /* border-radius:5px; */
+        width:100%;        
         height:600px;
         /* object-fit:cover; */        
     }
@@ -32,8 +36,6 @@
         font-size:46px;
         width:75%;
         text-align:center;
-    }
-    .image-text .enquire{
     }
     .content{
         font-family:"Myriad Pro",sans-serif;
@@ -54,7 +56,6 @@
 position:absolute;
 width:10%;
 left:0;
-
 bottom:-15px;
 height:3.5px;
 content:'';
@@ -73,11 +74,36 @@ background-color:black;
     }
     .latest-blogs img{
         width:100%;
-        height:250px;
+        height:200px;
     }
     .list-group-item{
         border:0;
         margin-bottom:30px;
+    }
+
+    @media screen and (max-width:1100px){
+        .image img{             
+        height:auto;              
+    }
+    .image .image-text{        
+        font-size:6vw; 
+        width:85%;       
+    }
+    }
+    @media screen and (max-width:768px){
+        .image .image-text{        
+        font-size:8vw; 
+        width:95%;       
+    }
+        .content h2{
+        font-size:29px;        
+    }
+    .content h2::after{        
+        width:20%;
+        left:40%;
+        bottom:-15px;
+        height:2.5px;        
+    }
     }
 </style>
 <?php
@@ -98,13 +124,13 @@ while(have_posts())
     <?php the_title(); ?>
     </div>
     </div>
-    <div class="d-flex flex-wrap my-5">
+    <div class="d-flex flex-wrap my-5 mx-md-5 mx-sm-2">
     
-    <div class="col-md-9 col-12 px-5 pb-5 pt-0">
+    <div class="col-md-9 col-12 pr-lg-5 pr-md-3 text-md-left text-center pb-5 pt-0">
     <div class="content"><?php the_content(); ?></div>
     </div>
     <div class="col-md-3 col-12">
-    <h4>Latest Blogs</h4>
+    <h3>Latest Blogs</h3>
     <div class="latest-blogs">
     <?php
     
