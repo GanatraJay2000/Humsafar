@@ -88,7 +88,7 @@
 
     .lightbox-wrapper {
         margin: 10vh auto;
-        max-width: 70%;
+        max-width: 90%;
         display: grid;
         grid-gap: 5px;
         grid-template-columns: repeat(var(--repeat, auto-fill), minmax(250px, 1fr)) !important;
@@ -289,6 +289,10 @@
         .lightbox-wrapper div {
             margin: 10px auto;
         }
+    }
+    .content.wrapper{
+        margin:0 !important;
+        width:100% !important;
     }
 </style>
 
