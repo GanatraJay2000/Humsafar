@@ -177,10 +177,13 @@
         letter-spacing:0.6px;
         word-spacing:6px;
     }
-    .statistics .card, .planning .card{
+    .statistics .card, .planning .card, .how-diff .card{
         border:0;
         /* box-shadow:0 0 10px #00000012; */
         background-color:transparent;        
+    }
+    .how-diff .card{
+        background-color:#dbc5be99;        
     }
     .planning .card-title{
         background-color:#dbc5be;
@@ -244,7 +247,7 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dignissimos aperiam labore consectetur quaerat non magnam voluptas, perferendis ea libero veniam facilis autem impedit dolor. Accusantium quia optio et aliquid?
     </div>
     <div class="card-deck my-5">
-  <div class="card bg-light">
+  <div class="card">
     <img class="card-img-top" style="width:100px;margin:30px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/crown.png' ?>" alt="Card image cap">    
     <div class="card-body  text-center">
       <h5 class="card-title">Fairytale</h5>
@@ -255,14 +258,14 @@ We love weaving your emotions and personality into a wedding.<br><br>
 The fairytale that you’ve always dreamt of, no matter how crazy or simple, has to be designed and put into a viable plan. We make sure everything about your fairytale screams you!</p>      
     </div>
   </div>
-  <div class="card bg-light">
+  <div class="card">
     <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
     <div class="card-body  text-center">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>      
     </div>
   </div>
-  <div class="card bg-light">
+  <div class="card">
     <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
     <div class="card-body  text-center">
       <h5 class="card-title">Card title</h5>
