@@ -205,7 +205,7 @@
             <img src="<?php echo get_template_directory_uri() . '/assets_inside/about_us_page_img.jpg' ?>"
                 alt="Humsafar Weddings" />
             <div class="on-mobile">
-                <p>We would love to share a little bit about us.</p>
+                <p>We would love to share a bit about us.</p>
             </div>
         </div>
         <div class="text-justify">
