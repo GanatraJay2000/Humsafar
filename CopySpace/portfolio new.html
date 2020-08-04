@@ -53,7 +53,7 @@ body {
 .next {right: -25%;}
 .active .prev {left: 0;}
 .active .next {right: 0;}
-.lightbor-wrapper {
+.lightbox-wrapper {
 	margin: 5vh auto;
 	max-width: 95%;
 	display: grid;
@@ -62,7 +62,7 @@ body {
 	grid-auto-rows: 250px;
 	grid-auto-flow: dense;
 }
-.lightbor-wrapper div {
+.lightbox-wrapper div {
 	text-align: center;
 	padding: 1rem 0;
 	color: white;
@@ -79,7 +79,7 @@ body {
 	-webkit-box-pack: center;
 	        justify-content: center;
 }
-.lightbor-wrapper div img {
+.lightbox-wrapper div img {
 	width: 100%;
 	height: 100%;
 	display: block;
@@ -90,7 +90,7 @@ body {
 	-webkit-transition: all .5s;
 	transition: all .5s;
 }
-.lightbor-wrapper div.show::before {
+.lightbox-wrapper div.show::before {
 	content: '';
 	display: block;
 	position: fixed;
@@ -100,7 +100,7 @@ body {
 	top: 0; left: 0;
 	background: rgba(0,0,0,.6);
 }
-main.lightbor-wrapper div.show img {
+main.lightbox-wrapper div.show img {
 	position: fixed;
 	top: 0; left: 0;
 	margin: 30px;
@@ -115,7 +115,7 @@ main.lightbor-wrapper div.show img {
 	cursor: url(close-button.png), -webkit-grab;
 	cursor: url(close-button.png), grab; /* custom cursor to signal close on click */
 }
-main.lightbor-wrapper div:not(.show):hover img {
+main.lightbox-wrapper div:not(.show):hover img {
 	cursor: pointer;
 	tarnsition: 0.5s;
 	filter: brightness(50%);
@@ -186,7 +186,7 @@ main.lightbor-wrapper div:not(.show):hover img {
 				margin: auto;
 			}
 
-           .button {
+           .heading .button {
                 background-color: #fcf7ff;
                 border: 1px solid #b28f5e;
 				color: #b28f5e;
@@ -200,18 +200,18 @@ main.lightbor-wrapper div:not(.show):hover img {
 				transition: 0.5s;
            }
            
-		   .button:hover{
+		   .heading .button:hover{
 		        background-color: #b28f5e;
 				color: #fcf7ff;
 				transition: 0.5s;
 		   }
         		   
 @media screen and (max-width: 600px){
-  .lightbor-wrapper{
+  .lightbox-wrapper{
     display:flex;
 	flex-wrap: wrap;
   }
-  .lightbor-wrapper div{
+  .lightbox-wrapper div{
     margin:10px auto;
   }
 }
@@ -229,9 +229,9 @@ main.lightbor-wrapper div:not(.show):hover img {
 			<button class="button">Let's Talk</button></div>
 	</section>
    	
-  <a href="#" class="prev">&lt;</a>
+    <a href="#" class="prev">&lt;</a>
 	<a href="#" class="next">&gt;</a>
-	<main class="lightbor-wrapper">
+	<main class="lightbox-wrapper">
 		<div><img src="https://static.wixstatic.com/media/98d8c3_16c0634fb5bb4e10b5e4a73b188ec701~mv2_d_1247_1666_s_2.jpg/v1/crop/x_0,y_127,w_1247,h_1412/fill/w_555,h_629,al_c,q_80,usm_0.66_1.00_0.01/98d8c3_16c0634fb5bb4e10b5e4a73b188ec701~mv2_d_1247_1666_s_2.webp" alt=""></div>
 		<div class="vertical"><img src="https://static.wixstatic.com/media/98d8c3_2568e6c7c84e41cc804ccaf554873fab~mv2.jpg/v1/fill/w_960,h_641,al_c,q_90/98d8c3_2568e6c7c84e41cc804ccaf554873fab~mv2.webp" alt=""></div>
 		<div class="horizontal"><img src="https://static.wixstatic.com/media/98d8c3_9dd3dfa2d7484c92bbf6980d1b7473f2~mv2.jpg/v1/fill/w_1110,h_740,al_c,q_90,usm_0.66_1.00_0.01/98d8c3_9dd3dfa2d7484c92bbf6980d1b7473f2~mv2.webp" alt=""></div>
@@ -254,13 +254,28 @@ main.lightbor-wrapper div:not(.show):hover img {
 	
 	<script>
 		
-const divs = document.querySelectorAll('div');
+const divs = document.querySelectorAll('main.lightbox-wrapper div');
 const body = document.body;
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
-checkPrev = () => document.querySelector('div:first-child').classList.contains('show') ? prev.style.display = 'none' : prev.style.display = 'flex';
-checkNext = () => document.querySelector('div:last-child').classList.contains('show') ? next.style.display = 'none' : next.style.display = 'flex';
-			
+function checkPrev() {
+        if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
+            prev.style.display = 'none';
+            // body.classList.toggle('overflow');
+
+        } else {
+            prev.style.display = 'flex';
+        }
+    }
+
+    function checkNext() {
+        if (document.querySelector('.lightbox-wrapper div:last-child').classList.contains('show')) {
+            next.style.display = 'none';
+            // body.classList.toggle('overflow');
+        } else {
+            next.style.display = 'flex';
+        }
+    }			
 Array.prototype.slice.call(divs).forEach(function (el) {
 			el.addEventListener('click', function () {
 				this.classList.toggle('show');
