@@ -183,11 +183,19 @@
         background-color:transparent;        
     }
     .how-diff .card{
-        background-color:#dbc5be99;        
+        background-color:#c5d7be44;             
     }
     .planning .card-title{
-        background-color:#dbc5be;
+        background-color:#fcd2d5;
         color:white;
+    }
+
+    .meet-team .card{
+        border:0;                
+    }
+    .meet-team .card-img-top{
+        width:150px;
+        margin: 20px auto;
     }
     @media screen and (max-width:768px){
         .how-diff-text{        
@@ -221,7 +229,7 @@
         <p>We got you all covered from choosing your wedding locations, beautiful wedding attires, wedding themes, wedding feast, grand entries to taking care of your guests.</p>
         </div>
     </div>  
-    <div class=" p-5" style="width:100%;background-color:#c5d7be44">
+    <div class=" p-5" style="width:100%;background-color:#c5d7be44;background-color:#fcd2d566;">
         <div class="card-deck statistics">
             <div class="card">    
             <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/crown.png' ?>" alt="Card image cap"> 
@@ -307,6 +315,68 @@ The fairytale that you’ve always dreamt of, no matter how crazy or simple, has
     <div class="card-body">
       <h5 class="card-title text-center">Action Phase</h5>
       <p class="card-text">Now, the planning pays off and your vision comes to life. Your joy takes center stage while our team carefully nuances every detail and manages any obstacle. From red wine stains to sick officiants, we take over so you and your family can embrace every moment of your big day.</p>      
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="meet-team">
+    <div class="heading">
+        <p>Meet the team</p>
+        <h1><span>*</span></h1>
+    </div>
+    <div class="card-deck text-center">
+  <div class="card">
+    <!-- <img src="<?php echo get_template_directory_uri() . '/assets_inside/armaan.png'; ?>" class="card-img-top" alt="..."> -->
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAC6CAMAAAAu0KfDAAAAA1BMVEWcnpvbbJEWAAAAOElEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALwZh94AAaYbEC4AAAAASUVORK5CYII=" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Lorem</h5>
+      <h5 class="card-sub-title">lorem ipsum</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci fugiat eligendi nam unde laboriosam sapiente ea quo ullam minus!</p>
+        <a href="#" class="text-dark">
+            <i class="fab fa-facebook fa-2x px-1" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="text-dark">
+            <i class="fab fa-linkedin fa-2x px-1" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="text-dark">
+            <i class="fab fa-instagram fa-2x px-1" aria-hidden="true"></i>
+        </a>
+    </div>
+  </div>
+  <div class="card">
+  <!-- <img src="<?php echo get_template_directory_uri() . '/assets_inside/ritika.png'; ?>" class="card-img-top" alt="..."> -->
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAC6CAMAAAAu0KfDAAAAA1BMVEWcnpvbbJEWAAAAOElEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALwZh94AAaYbEC4AAAAASUVORK5CYII=" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Lorem</h5>
+      <h5 class="card-sub-title">Lorem Ipsum</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nihil. Molestiae nulla incidunt commodi eos?</p>
+      <a href="#" class="text-dark">
+            <i class="fab fa-facebook fa-2x px-1" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="text-dark">
+            <i class="fab fa-linkedin fa-2x px-1" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="text-dark">
+            <i class="fab fa-instagram fa-2x px-1" aria-hidden="true"></i>
+        </a>
+    </div>
+  </div>
+  <div class="card">
+  <!-- <img src="<?php echo get_template_directory_uri() . '/assets_inside/chetan.png'; ?>" class="card-img-top" alt="..."> -->
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAC6CAMAAAAu0KfDAAAAA1BMVEWcnpvbbJEWAAAAOElEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALwZh94AAaYbEC4AAAAASUVORK5CYII=" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Lorem</h5>
+      <h5 class="card-sub-title">Lorem Ipsum</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quisquam cum quae, possimus et, veritatis necessitatibus dolores sapiente excepturi voluptates distinctio iste ipsum inventore quod sint pariatur modi incidunt.</p>
+      <a href="#" class="text-dark">
+            <i class="fab fa-facebook fa-2x px-1" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="text-dark">
+            <i class="fab fa-linkedin fa-2x px-1" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="text-dark">
+            <i class="fab fa-instagram fa-2x px-1" aria-hidden="true"></i>
+        </a>
     </div>
   </div>
 </div>
