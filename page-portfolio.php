@@ -151,6 +151,7 @@
     .right {
         grid-column-start: -2;
     }
+	nn
 	**/
 
     .horizontal {
