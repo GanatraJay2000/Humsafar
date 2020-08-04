@@ -232,19 +232,19 @@
     <div class=" p-5" style="width:100%;background-color:#c5d7be44;background-color:#fcd2d566;">
         <div class="card-deck statistics">
             <div class="card">    
-            <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/crown.png' ?>" alt="Card image cap"> 
+            <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/experience.png' ?>" alt="Card image cap"> 
                 <div class="card-body text-center">      
                 <p class="card-text">4<br>YEARS</p>
                 </div>
             </div>
             <div class="card">    
-            <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/crown.png' ?>" alt="Card image cap"> 
+            <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/wedding.png' ?>" alt="Card image cap"> 
                 <div class="card-body text-center">      
                 <p class="card-text">50+ <br>WEDDINGS</p>
                 </div>
             </div>
             <div class="card">    
-            <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/crown.png' ?>" alt="Card image cap"> 
+            <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/travel.png' ?>" alt="Card image cap"> 
                 <div class="card-body text-center">      
                 <p class="card-text">12<br>DESTINATION WEDDINGS</p>
                 </div>
@@ -272,17 +272,25 @@ The fairytale that you’ve always dreamt of, no matter how crazy or simple, has
     </div>
   </div>
   <div class="card">
-    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+  <img class="card-img-top" style="width:100px;margin:30px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/respect.png' ?>" alt="Card image cap">    
     <div class="card-body  text-center">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>      
+      <h5 class="card-title">Fairtale</h5>
+      <p class="card-text">Constructing the Fairy Tale within a budget.<br><br>
+
+We understand that the hard-earned money being spent on such important days needs to be justified, without compromising on your wedding vision.<br><br>
+
+Working budget backwards ensures we plan and design a wedding suited to your requirements.</p>      
     </div>
   </div>
   <div class="card">
-    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+  <img class="card-img-top" style="width:100px;margin:30px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/wand.png' ?>" alt="Card image cap">  
     <div class="card-body  text-center">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>      
+      <h5 class="card-title">Flairtale</h5>
+      <p class="card-text">Making the dream plan come live into action!<br><br>
+
+The process of planning now comes to life and each and every aspect of making the wedding happen- and happen right- is taken care of by Team B Inc.<br><br>
+
+The priority here is to run the actual show seamlessly with adherence to timelines & the most painful attention to the finest details.</p>      
     </div>
   </div>
 </div>
