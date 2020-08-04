@@ -1,10 +1,6 @@
 <?php get_header() ?>
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
 
     body {
         font-family: "Myriad Pro",  'Playfair Display', serif;
