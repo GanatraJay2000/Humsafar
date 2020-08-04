@@ -63,6 +63,14 @@
         max-width: 500px;
         flex-basis: 45%;
     }
+    @media screen and (min-width: 1440px){
+        .flex-container {
+        justify-content: center;        
+    }
+        .flex-container>div {
+        margin: 1px 30px;       
+    }
+    }
 
     .flex-container .image {
         overflow: hidden;        
@@ -229,7 +237,7 @@
         <p>We got you all covered from choosing your wedding locations, beautiful wedding attires, wedding themes, wedding feast, grand entries to taking care of your guests.</p>
         </div>
     </div>  
-    <div class=" p-5" style="width:100%;background-color:#c5d7be44;background-color:#fcd2d566;">
+    <div class=" p-5" style="width:100%;background-color:#c5d7be44;">
         <div class="card-deck statistics">
             <div class="card">    
             <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/experience.png' ?>" alt="Card image cap"> 
@@ -259,7 +267,7 @@
     <div class="how-diff-text">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dignissimos aperiam labore consectetur quaerat non magnam voluptas, perferendis ea libero veniam facilis autem impedit dolor. Accusantium quia optio et aliquid?
     </div>
-    <div class="card-deck my-5">
+    <div class="card-deck mt-5">
   <div class="card mb-4">
     <img class="card-img-top" style="width:100px;margin:30px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/crown.png' ?>" alt="Card image cap">    
     <div class="card-body  text-center">
