@@ -8,7 +8,7 @@
 
     body {
         font-family: "Myriad Pro",  'Playfair Display', serif;
-
+        font-size: 2rem;
         background-color: #fcf7ff;
     }
 
@@ -59,40 +59,12 @@
     }
 
     .lightbox-wrapper {
-        --repeat: auto-fill;
-        --row-height: 250px;
-    }
-
-    @media (min-width:1040px) {
-        .lightbox-wrapper {
-            --repeat: 3;
-            --row-height: 250px;
-        }
-    }
-
-
-
-    @media (min-width:2040px) {
-        .lightbox-wrapper {
-            --repeat: 3;
-            --row-height: 450px;
-        }
-    }
-
-    @media (max-width:1040px) {
-        .lightbox-wrapper {
-            --repeat: 2;
-            --row-height: 250px;
-        }
-    }
-
-    .lightbox-wrapper {
-        margin: 10vh auto;
+        margin: 5vh auto;
         max-width: 90%;
         display: grid;
         grid-gap: 5px;
-        grid-template-columns: repeat(var(--repeat, auto-fill), minmax(250px, 1fr)) !important;
-        /* grid-auto-rows: var(--row-height); */
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-auto-rows: 250px;
         grid-auto-flow: dense;
     }
 
@@ -105,14 +77,14 @@
         background: rgba(0, 0, 0, .2);
         overflow: hidden;
         padding: 0;
-        margin: 5px;
+        margin: 1px;
         display: -webkit-box;
         display: flex;
         -webkit-box-align: stretch;
         align-items: stretch;
         -webkit-box-pack: center;
         justify-content: center;
-        position: relative;
+        //position: relative;
     }
 
     .lightbox-wrapper div img {
@@ -138,7 +110,7 @@
         height: 100vh;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, .5);
+        background: rgba(0, 0, 0, .6);
     }
 
 
@@ -162,10 +134,10 @@
 
     main.lightbox-wrapper div:not(.show):hover img {
         cursor: pointer;
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
+	    tarnsition: 0.5s;
+	    filter: brightness(50%);
     }
-
+/**
     .left {
         grid-column-start: 1;
     }
@@ -179,7 +151,20 @@
     .right {
         grid-column-start: -2;
     }
+	**/
 
+    .horizontal {
+    	grid-column: span 2;
+    }
+	
+    .vertical {
+    	grid-row: span 2;
+    }
+	
+    .big {
+    	grid-column: span 2;
+    	grid-row: span 2;
+    }    
 
 
     .lightbox-wrapper .active div:not(.show) img {
@@ -232,6 +217,32 @@
     .heading h1:after {
         right: 0;
         margin-right: 20%;
+    }
+	
+	.heading div{
+	    font-size: 21px;
+		max-width:80%;
+		margin: auto;
+	}
+
+    .heading .button {
+        background-color: #fcf7ff;
+        border: 1px solid #b28f5e;
+		color: #b28f5e;
+        padding: 5px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 2px;
+        cursor: pointer;
+		transition: 0.5s;
+    }
+           
+    .heading .button:hover{
+		background-color: #b28f5e;
+	    color: #fcf7ff;
+		transition: 0.5s;
     }
 
     @media screen and (min-width:1124px) {
@@ -286,8 +297,17 @@
                 width: 100vw !important; */
         }
 
-        .lightbox-wrapper div {
-            margin: 10px auto;
+        .lightbox-wrapper div{
+            margin:0.1px auto;
+        }
+        .heading{
+             font-size: 30px;
+        }
+        .heading div{
+             font-size: 17px;
+        }
+        .heading .button {
+             font-size: 17px;
         }
     }
     .content.wrapper{
@@ -296,10 +316,13 @@
     }
 </style>
 
-<section class="heading">
-    <p>Have a look at our work</p>
-    <h1><span>*</span></h1>
-</section>
+        <section class="heading">
+		    <p>View our portfolio of events</p>
+			<h1><span>*</span></h1>
+			<div><p>We've organised many Parties & Events across the world - interested in discussing yours?
+			</p>
+			<button class="button">Let's Talk</button></div>
+        </section>
 
 
 <a href="#" class="lightboxNav prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
