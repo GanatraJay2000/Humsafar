@@ -18,7 +18,7 @@ div.newsletter p{
     'post_type'=>'page',    
 ));
 $i=0; 
-$post_id = 5;
+$post_id = 52;
 $slide_2 = rwmb_meta('slide_2', array( 'size' => 'large' ) , $post_id);
 ?>
 <div class="text-center">
@@ -27,9 +27,13 @@ $slide_2 = rwmb_meta('slide_2', array( 'size' => 'large' ) , $post_id);
 
 
 <?php 
-foreach ( $slide_2 as $image ) {?>
+foreach ( $slide_2 as $image ) {
+    ?>
+
     <div class="block">
+    <a href="<?php echo $image['description'] ?>">
         <img src="<?php echo $image['url'] ?>" alt="">                
+    </a>
     </div>
 <?php } ?> 
     </div>
