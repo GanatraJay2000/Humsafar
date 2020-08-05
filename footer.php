@@ -18,7 +18,7 @@ div.newsletter p{
     'post_type'=>'page',    
 ));
 $i=0; 
-$post_id = 52;
+$post_id = 5;
 $slide_2 = rwmb_meta('slide_2', array( 'size' => 'large' ) , $post_id);
 ?>
 <div class="text-center">
