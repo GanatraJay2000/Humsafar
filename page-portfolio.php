@@ -375,8 +375,8 @@
 
 Array.prototype.slice.call(divs).forEach(function (el) {
 			el.addEventListener('click', function () {
-				this.classList.add('show');
-				body.classList.add('active');
+				this.classList.toggle('show');
+				body.classList.toggle('active');
 				checkNext();
 				checkPrev();
 			});
