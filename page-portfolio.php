@@ -330,11 +330,10 @@
              font-size: 17px;
         }
     }
-	/**
-    .content.wrapper{
-        margin:0 !important;
+	.content.wrapper{
+        margin:-60 !important;
         width:100% !important;
-    }**/
+    }
 </style>
 
         <section class="heading">
