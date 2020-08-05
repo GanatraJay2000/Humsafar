@@ -354,7 +354,7 @@
 
 
 <a href="#" class="lightboxNav prev"><i class="fas fa-chevron-left  "></i></a>
-<a href="#" class="lightboxNav next"><i class="fas fa-chevron-right  "></a>
+<a href="#" class="lightboxNav next"><i class="fas fa-chevron-right  "></i></a>
 
 <?php while(have_posts()){
     the_post();
