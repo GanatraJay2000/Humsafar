@@ -13,7 +13,8 @@
     }
 
     .prev,
-    .next {
+    .next,
+    .close	{
         position: fixed;
         top: 0;
         width: 15%;
@@ -45,14 +46,34 @@
     .next {
         right: -25%;
     }
+	
+	.close {
+        right: -25%;
+	    color: rgba(255,255,255,.9);
+	    font-size: 30px;
+	    transition: all 0s;
+	    height:30px;
+	    width:50px;
+	    font-family:monospace;
+	    border: 0px;
+	    padding: 20px;
+	    background-color: #000;
+    }    
 
     .active .prev {
         left: 0;
+		top: 30%;
     }
 
     .active .next {
         right: 0;
+		top: 30%;
     }
+	
+	.active .close {
+        right: 5%;
+	    top: 4%;
+    }    
 
     .overflow {
         overflow: hidden;
@@ -110,7 +131,7 @@
         height: 100vh;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, .6);
+        background: rgba(0, 0, 0, .9);
     }
 
 
@@ -151,7 +172,7 @@
     .right {
         grid-column-start: -2;
     }
-	nn
+	
 	**/
 
     .horizontal {
@@ -245,7 +266,7 @@
 	    color: #fcf7ff;
 		transition: 0.5s;
     }
-
+/**
     @media screen and (min-width:1124px) {
         .horizontal {
             grid-column-end: span 2;
@@ -270,6 +291,8 @@
                 grid-column-end:-1;
             }
     }
+	
+**/
 
     @media screen and (max-width : 700px) {
         main.lightbox-wrapper {
@@ -311,10 +334,11 @@
              font-size: 17px;
         }
     }
+	/**
     .content.wrapper{
         margin:0 !important;
         width:100% !important;
-    }
+    }**/
 </style>
 
         <section class="heading">
@@ -328,6 +352,7 @@
 
 <a href="#" class="lightboxNav prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
 <a href="#" class="lightboxNav next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+<button class="close">X</button>
 <?php while(have_posts()){
     the_post();
     $portfolio = rwmb_meta('portfolio', array( 'size' => 'large' ) ); 
@@ -346,7 +371,8 @@
     const body = document.body;
     const prev = document.querySelector('.lightboxNav.prev');
     const next = document.querySelector('.lightboxNav.next');
-
+    const close = document.querySelector('.close');
+	
     function checkPrev() {
         if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
             prev.style.display = 'none';
@@ -365,16 +391,19 @@
             next.style.display = 'flex';
         }
     }
+	
+	function checkClose() {
+	    close.style.display = 'flex';
+	}	
 
-    Array.prototype.slice.call(divs).forEach(function (el) {
-        el.addEventListener('click', function () {
-            this.classList.toggle('show');
-            // body.classList.toggle('overflow');
-            body.classList.toggle('active');
-            checkNext();
-            checkPrev();
-        });
-    });
+Array.prototype.slice.call(divs).forEach(function (el) {
+			el.addEventListener('click', function () {
+				this.classList.add('show');
+				body.classList.add('active');
+				checkNext();
+				checkPrev();
+			});
+});
 
     prev.addEventListener('click', function () {
         const show = document.querySelector('.show');
@@ -383,7 +412,7 @@
 
         show.previousElementSibling.dispatchEvent(event);
         show.classList.remove('show');
-        body.classList.toggle('active');
+        body.classList.add('active');
         checkNext();
     });
 
@@ -394,8 +423,17 @@
 
         show.nextElementSibling.dispatchEvent(event);
         show.classList.remove('show');
-        body.classList.toggle('active');
+        body.classList.add('active');
         checkPrev();
+    });
+	
+	close.addEventListener('click', function() {
+		const show = document.querySelector('.show');
+		const event = document.createEvent('HTMLEvents');
+		event.initEvent('click', true, false);
+		show.classList.remove('show');
+		body.classList.remove('active');
+		checkClose();
     });
 </script>
 
