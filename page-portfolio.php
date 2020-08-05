@@ -348,7 +348,7 @@
 
 <a href="#" class="lightboxNav prev">&lt;</a>
 <a href="#" class="lightboxNav next">&gt;</a>
-<button class="close">X</button>
+<button class="close">&times;</button>
 <?php while(have_posts()){
     the_post();
     $portfolio = rwmb_meta('portfolio', array( 'size' => 'large' ) ); 
