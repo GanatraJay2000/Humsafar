@@ -337,7 +337,7 @@
         content:'\274C';
         font-size:28px;
         display:block;
-        position:absolute;
+        position:fixed;
         top:20px;
         right:20px;        
         z-index:1000;
@@ -397,7 +397,7 @@ Array.prototype.slice.call(divs).forEach(function (el) {
 			el.addEventListener('click', function () {
 				this.classList.toggle('show');
 				body.classList.toggle('active');
-                body.classList.toggle('overflow');
+                // body.classList.toggle('overflow');
 				checkNext();
 				checkPrev();
 			});
