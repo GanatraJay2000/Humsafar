@@ -333,6 +333,15 @@
 	.content.wrapper{        
         width:100% !important;
     }
+    .lightbox-wrapper div.show::after{        
+        content:'\274C';
+        font-size:28px;
+        display:block;
+        position:absolute;
+        top:20px;
+        right:20px;        
+        z-index:1000;
+    }
 </style>
 
         <section class="heading">
@@ -344,8 +353,8 @@
         </section>
 
 
-<a href="#" class="lightboxNav prev">&lt;</a>
-<a href="#" class="lightboxNav next">&gt;</a>
+<a href="#" class="lightboxNav prev"><i class="fas fa-chevron-left  "></i></a>
+<a href="#" class="lightboxNav next"><i class="fas fa-chevron-right  "></a>
 
 <?php while(have_posts()){
     the_post();
@@ -369,7 +378,7 @@
     function checkPrev() {
         if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
             prev.style.display = 'none';
-            // body.classList.toggle('overflow');
+             body.classList.toggle('overflow');
 
         } else {
             prev.style.display = 'flex';
@@ -379,7 +388,7 @@
     function checkNext() {
         if (document.querySelector('.lightbox-wrapper div:last-child').classList.contains('show')) {
             next.style.display = 'none';
-            // body.classList.toggle('overflow');
+             body.classList.toggle('overflow');
         } else {
             next.style.display = 'flex';
         }
@@ -390,6 +399,7 @@ Array.prototype.slice.call(divs).forEach(function (el) {
 			el.addEventListener('click', function () {
 				this.classList.toggle('show');
 				body.classList.toggle('active');
+                body.classList.toggle('overflow');
 				checkNext();
 				checkPrev();
 			});
@@ -403,6 +413,7 @@ Array.prototype.slice.call(divs).forEach(function (el) {
         show.previousElementSibling.dispatchEvent(event);
         show.classList.remove('show');
         body.classList.add('active');
+        body.classList.toggle('overflow');
         checkNext();
     });
 
@@ -414,6 +425,7 @@ Array.prototype.slice.call(divs).forEach(function (el) {
         show.nextElementSibling.dispatchEvent(event);
         show.classList.remove('show');
         body.classList.add('active');
+        body.classList.toggle('overflow');
         checkPrev();
     });
 	
