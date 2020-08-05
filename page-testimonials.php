@@ -68,10 +68,13 @@
         left: -80px;
         background-color: #f7efe9;
     }
+    .content.wrapper{
+        margin:0 !important;
+        width:100% !important;
+
+    }
 </style>
 <div class="container">
-    <br />
-    <br /><br />
      <?php
 $events = new WP_Query(array(
     'posts_per_page' => 2,
@@ -119,7 +122,6 @@ while($events->have_posts())
     
     <?php
     $i++;
-}      ?>
-    <br><br><br>       
+}      ?>        
 </div>
 <?php get_footer(); ?>
