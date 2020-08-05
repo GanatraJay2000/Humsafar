@@ -33,15 +33,14 @@
 
     .image {
         position: relative;
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        height: 300px;        
     }
 
-
-
-    .image img {        
+    .image img { 
+        width:100%;       
         height: 100%;
-        position: relative;        
+        position: relative;           
     }
 
 
@@ -49,11 +48,11 @@
         content: "";
         display: block;
         height: 100%;
-        width: 140%;
+        width: 100%;
         z-index: -1;
         position: absolute;
         top: -60px;
-        right: -240px;
+        right: -80px;
         background-color: #f7efe9;
     }
 
@@ -61,7 +60,7 @@
         content: "";
         display: block;
         height: 100%;
-        width: 140%;
+        width: 100%;
         z-index: -1;
         position: absolute;
         top: -60px;
@@ -71,10 +70,25 @@
     .content.wrapper{
         margin:0 !important;
         width:100% !important;
-
+    }
+    @media screen and (max-width:768px){
+        .image::after{
+            display:none !important;
+        }
+        .image {
+            height:270px;
+        }
+        .container{
+            padding-top:0;
+        }
+        .box{
+            padding-bottom:50px;
+        }
     }
 </style>
 <div class="container">
+    <br />
+    <br /><br />
      <?php
 $events = new WP_Query(array(
     'posts_per_page' => 2,
