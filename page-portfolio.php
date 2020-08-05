@@ -14,7 +14,7 @@
         position: fixed;
         top: 0;
         width: 15%;
-        height: 100%;
+        height: 40%;
         display: -webkit-box;
         display: flex;
         -webkit-box-align: center;
