@@ -43,7 +43,18 @@
         right: -25%;
     }
 	
-   
+   .close {
+        right: -25%;
+	    color: rgba(255,255,255,.9);
+	    font-size: 30px;
+	    transition: all 0s;
+	    height:30px;
+	    width:50px;
+	    font-family:monospace;
+	    border: 0px;
+	    padding: 20px;
+	    background-color: #000;
+    }    
 
     .active .prev {
         left: 0;
@@ -55,6 +66,10 @@
 		top: 30%;
     }
 	  
+	.active .close {
+        right: 5%;
+	    top: 4%;
+    }
 
     .overflow {
         overflow: hidden;
