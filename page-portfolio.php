@@ -43,18 +43,7 @@
         right: -25%;
     }
 	
-	.close {
-        right: -25%;
-	    color: rgba(255,255,255,.9);
-	    font-size: 30px;
-	    transition: all 0s;
-	    height:30px;
-	    width:50px;
-	    font-family:monospace;
-	    border: 0px;
-	    padding: 20px;
-	    background-color: #000;
-    }    
+   
 
     .active .prev {
         left: 0;
@@ -65,11 +54,7 @@
         right: 0;
 		top: 30%;
     }
-	
-	.active .close {
-        right: 5%;
-	    top: 4%;
-    }    
+	  
 
     .overflow {
         overflow: hidden;
@@ -346,9 +331,9 @@
         </section>
 
 
-<a href="#" class="lightboxNav prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-<a href="#" class="lightboxNav next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-<button class="close">X</button>
+<a href="#" class="lightboxNav prev">&lt;</a>
+<a href="#" class="lightboxNav next">&gt;</a>
+
 <?php while(have_posts()){
     the_post();
     $portfolio = rwmb_meta('portfolio', array( 'size' => 'large' ) ); 
@@ -367,7 +352,6 @@
     const body = document.body;
     const prev = document.querySelector('.lightboxNav.prev');
     const next = document.querySelector('.lightboxNav.next');
-    const close = document.querySelector('.close');
 	
     function checkPrev() {
         if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
@@ -387,10 +371,7 @@
             next.style.display = 'flex';
         }
     }
-	
-	function checkClose() {
-	    close.style.display = 'flex';
-	}	
+
 
 Array.prototype.slice.call(divs).forEach(function (el) {
 			el.addEventListener('click', function () {
@@ -423,14 +404,7 @@ Array.prototype.slice.call(divs).forEach(function (el) {
         checkPrev();
     });
 	
-	close.addEventListener('click', function() {
-		const show = document.querySelector('.show');
-		const event = document.createEvent('HTMLEvents');
-		event.initEvent('click', true, false);
-		show.classList.remove('show');
-		body.classList.remove('active');
-		checkClose();
-    });
+
 </script>
 
 
