@@ -346,8 +346,8 @@
         </section>
 
 
-<a href="#" class="lightboxNav prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-<a href="#" class="lightboxNav next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+<a href="#" class="lightboxNav prev">&lt;</a>
+<a href="#" class="lightboxNav next">&gt;</a>
 <button class="close">X</button>
 <?php while(have_posts()){
     the_post();
