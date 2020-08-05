@@ -330,8 +330,7 @@
              font-size: 17px;
         }
     }
-	.content.wrapper{
-        margin:-60px !important;
+	.content.wrapper{        
         width:100% !important;
     }
 </style>
