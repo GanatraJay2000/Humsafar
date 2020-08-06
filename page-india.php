@@ -92,16 +92,16 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 <center>
 <div class="gallery">
 <div class="g">
-<img src="http://localhost/wordpress/wp-content/uploads/2020/08/goa.jpg"><div class="centered">Goa</div>
+<img src="<?php echo get_template_directory_uri() . '/images/goa.jpg' ?>"><div class="centered">Goa</div>
 </div>
 <div class="g">
-<img src="http://localhost/wordpress/wp-content/uploads/2020/08/udaipur.jpg"><div class="centered">Udaipur</div>
+<img src="<?php echo get_template_directory_uri() . '/images/udaipur.jpg' ?>"><div class="centered">Udaipur</div>
 </div>
 <div class="g">
-<img src="http://localhost/wordpress/wp-content/uploads/2020/08/kerela.jpg"><div class="centered">Kerela</div>
+<img src="<?php echo get_template_directory_uri() . '/images/kerela.jpg' ?>"><div class="centered">Kerela</div>
 </div>
 <div class="g">
-<img src="http://localhost/wordpress/wp-content/uploads/2020/08/andaman.jpg"><div class="centered">Andaman & Nicobar Islands</div>
+<img src="<?php echo get_template_directory_uri() . '/images/andaman.jpg' ?>"><div class="centered">Andaman & Nicobar Islands</div>
 </div>
 </div>
 </center>
