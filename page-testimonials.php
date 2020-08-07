@@ -43,7 +43,6 @@
         font-size: 100px;
     }
 
-
     .image {
         position: relative;
         width: 100%;
@@ -56,7 +55,6 @@
         position: relative;           
     }
 
-
     .flex-row-reverse .image::after {
         content: "";
         display: block;
@@ -66,7 +64,8 @@
         position: absolute;
         top: -60px;
         right: -80px;
-        background-color: #f7efe9;
+        /* background-image: url('<?php echo get_template_directory_uri() . "/assets_inside/greenbg1.png" ?>'); */
+         background-color: #f7efe9;
     }
 
     .flex-row .image::after {
