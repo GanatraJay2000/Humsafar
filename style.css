@@ -324,7 +324,7 @@ article.post:last-of-type {
   height:0;
   position: relative;
   top: 10px;
-
+  transition:1s;
 }
 .my-responsive-nav ul li.menu-item-has-children{
   display:block;
