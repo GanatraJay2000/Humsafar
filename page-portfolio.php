@@ -3,8 +3,7 @@
 <style>
 
     body {
-        font-family: "Myriad Pro",  'Playfair Display', serif;
-        font-size: 2rem;
+        font-family: "Myriad Pro",  'Playfair Display', serif;        
         background-color: #fcf7ff;
     }
 
