@@ -328,7 +328,14 @@ article.post:last-of-type {
 }
 .my-responsive-nav ul li.menu-item-has-children{
   display:block;
+  position: relative;
 }
+      .my-responsive-nav ul li.menu-item-has-children>a label::after{
+        display:inline-block;
+        content:'\261C';
+        padding: 0 10px;
+        font-size:20px;             
+      }
 .my-responsive-nav ul li.menu-item-has-children>a{
   width:100%;
   margin:20px auto;
@@ -336,6 +343,9 @@ article.post:last-of-type {
   color:var(--primary-color);
   border-bottom:1px solid var(--primary-color);
   border-radius:0px;
+}
+.my-responsive-nav ul li.menu-item-has-children>a label{
+  width:100% !important;
 }
 
 .my-responsive-nav ul li.menu-item-has-children ul{
