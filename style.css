@@ -304,7 +304,7 @@ article.post:last-of-type {
   /* background-color: var(--primary-color); */
   color: var(--primary-color);
   padding:4px;  
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Myriad Pro", sans-serif !important;  
   text-align:center;
 }
