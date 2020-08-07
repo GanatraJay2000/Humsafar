@@ -31,9 +31,13 @@ else{
         font-weight:400;
     }
     .tnp-field input{
+        background-color:#ffffff !important;
         border-radius:5px;
         border:1px solid var(--midnight) !important;
         font-family: "Myriad Pro", "Playfair Display", "Times New Roman", serif;    
+    }
+    .tnp-field-button input{
+        background-color:#444 !important;         
     }
     .tnp-submit{
         background-color:var(--midnight);
