@@ -1,8 +1,4 @@
 
-
-
-
-
 <?php get_header(); ?>
 <style>
 
@@ -152,11 +148,12 @@ h2,h4{
 <div class="row" >
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <?php
-echo do_shortcode('[smartslider3 slider="2"]');
+echo do_shortcode('[smartslider3 slider="5"]');
 ?>
 </div>
 </div>
 </div>
+
 
 <div class="container" style="padding:30px; padding-top:50px;" >
 <div class="row" >
@@ -178,8 +175,65 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 </div>
 </div>
 
+
+
+
+
+<div class="container" style="padding-top:30px;" >
+<div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
+<img src="http://localhost/wordpress/wp-content/uploads/2020/08/udaipur1.jpg" width="100%">
+</div>
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
+			
+<h4>Luxury Wedding & Party Venues in Udaipur</h4>
+
+
+<p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+<div class="more">DISCOVER MORE VENUES WITH US</div></div>
+</div>
+</div>
+
+<div class="container" style="padding-top:30px;">
+<div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
+	
+			<h4>Explore Venice</h4>
+			<p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+</p><div class="more">CONSIDERING OTHER DESTINATIONS?</div></div>
+
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
+<img src="http://localhost/wordpress/wp-content/uploads/2020/08/udaipur2.jpg" width="100%">
+
+
+
+</div>
+</div>
+</div>
+<div class="container" style="padding-top:30px;" >
+<div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
+<img src="http://localhost/wordpress/wp-content/uploads/2020/08/udaipur3.jpeg" width="100%">
+</div>
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
+			
+<h4>World-Class Entertainment & Design</h4>
+
+
+<p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+<div class="more">BOOK A WORLD-CLASS ACT</div></div>
+</div>
+</div>
+
+
 <div class="container" style="padding-top:50px;">
-<div id="title"><span><b>SOME OF OUR FAVOURITE INDIAN LOCATIONS INCLUDE</b></span></div>
+
 <center>
 <div class="gallery">
 <div class="g">
@@ -195,6 +249,7 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 <img id="gimg" src="http://localhost/wordpress/wp-content/uploads/2020/08/andaman.jpg"><div class="centered">Andaman & Nicobar Islands<hr id="imghr"><div class="vv">VIEW</div></div></img>
 </div>
 </div>
+<div id="title" style="padding-top:50px;"><span><b>SOME OF OUR FAVOURITE INDIAN LOCATIONS INCLUDE</b></span></div>
 <div class="locations">
 Goa - Udaipur - Kerela
 </div>
@@ -203,44 +258,4 @@ Goa - Udaipur - Kerela
 
 
 
-<div class="container" style="padding-top:30px;" >
-<div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
-<img src="http://localhost/wordpress/wp-content/uploads/2020/08/dest.jpg" width="100%">
-</div>
-
-
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
-			
-<h4>Destination Parties</h4>
-
-
-<p style="font-size:13px">Scarlet Events are experienced in organising a vast range of events in different locations across the World. We have become accustomed to local culture and customs in many countries, and are proud of our black book of foreign venues and contacts. We’ll ensure that your event is delivered with a World-class finish, irrespective of size or location.
-</p>
-<div class="more">FIND OUT MORE ABOUT PARTIES</div></div>
-</div>
-</div>
-
-<div class="container" style="padding-top:30px;">
-<div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
-	
-			<h4>Destination Weddings</h4>
-			<p style="font-size:13px">Marriage laws vary from country to country and we can take the stress out of organising the paperwork. Our destination wedding planners will work with the local government to legalise your marriage in the location of your choice and organise a translator, whether in English, Chinese or other. Organising a wedding can be challenging for most couples and organising one abroad even more so. Scarlet has the experience in destination weddings and whatever the request, wherever the location, we are here to make it happen.
-</p><div class="more">FIND OUT MORE ABOUT WEDDINGS</div></div>
-
-
-
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
-<img src="http://localhost/wordpress/wp-content/uploads/2020/08/destination2.jpg" width="100%">
-
-
-
-</div>
-</div>
-</div>
-
 <?php get_footer(); ?>
-
-
-
