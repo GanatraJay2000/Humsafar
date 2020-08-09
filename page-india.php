@@ -117,7 +117,7 @@ h2,h4{
     padding:0 10px; 
 }
 
-.locations{
+.locations a{
 	padding:50px;
 	text-align:center;
 	font-size:25px;
@@ -209,7 +209,6 @@ VIEW OUR PORTFOLIO</a></br>
 </div>
 </div>
 <div class="locations">
-Goa - Udaipur - Kerela
 <?php $destinations = new WP_Query(array(
 'post_type'=>'destinations',
 'meta_key' => 'order',
