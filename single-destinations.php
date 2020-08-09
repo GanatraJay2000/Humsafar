@@ -148,6 +148,10 @@ h2,h4{
 
 
    }
+
+   .content.wrapper{
+	   padding:0;
+   }
 </style>
 <div class="container">
 <div class="row" >
