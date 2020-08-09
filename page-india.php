@@ -177,7 +177,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
 Host your luxury party or dream wedding anywhere in the world. Perhaps at an international destination with beautiful weather and breath-taking views! We are a team of international wedding and party planners, with years of experience when it comes to planning the perfect wedding or event. Our distinguished portfolio means that we’ve worked at some of the most exclusive international venues around the world. Scarlet is a leading events company who will plan your party anywhere; from a luxury Yacht off the coast
 
  of Monte Carlo to a Grand Palace in Rajasthan. Whether you are an international client wanting to hold your event in London, or you’re looking to go abroad, we’ll organise everything so you don’t have to. From the suppliers, logistics, flights, transport to the accommodation no request is too small. Bespoke marquee for a wedding in the South of France? No problem. Private dinner at a Palazzo in Rome? Your wish is our command! Find the perfect destination for your wedding or event with us today.
-<br></br><div class="more">VIEW OUR PORTFOLIO</div></br>
+<br></br><a href="<?php echo site_url('/weddings/portfolio'); ?>" class="more">VIEW OUR PORTFOLIO</div></br>
 
 </div>
 
