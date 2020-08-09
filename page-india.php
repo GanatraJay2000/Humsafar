@@ -155,6 +155,11 @@ h2,h4{
 
 
    }
+
+
+      .content.wrapper{
+	   padding:0 !important;
+   }
 </style>
 <div class="container">
 <div class="row" >
@@ -177,7 +182,8 @@ echo do_shortcode('[smartslider3 slider="2"]');
 Host your luxury party or dream wedding anywhere in the world. Perhaps at an international destination with beautiful weather and breath-taking views! We are a team of international wedding and party planners, with years of experience when it comes to planning the perfect wedding or event. Our distinguished portfolio means that we’ve worked at some of the most exclusive international venues around the world. Scarlet is a leading events company who will plan your party anywhere; from a luxury Yacht off the coast
 
  of Monte Carlo to a Grand Palace in Rajasthan. Whether you are an international client wanting to hold your event in London, or you’re looking to go abroad, we’ll organise everything so you don’t have to. From the suppliers, logistics, flights, transport to the accommodation no request is too small. Bespoke marquee for a wedding in the South of France? No problem. Private dinner at a Palazzo in Rome? Your wish is our command! Find the perfect destination for your wedding or event with us today.
-<br></br><a href="<?php echo site_url('/weddings/portfolio'); ?>" class="more">VIEW OUR PORTFOLIO</div></br>
+<br></br><a href="<?php echo site_url('/weddings/portfolio'); ?>" class="more">
+VIEW OUR PORTFOLIO</a></br>
 
 </div>
 
@@ -186,7 +192,7 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 </div>
 </div>
 
-<div class="container" style="padding-top:50px;">
+<div class="container" style="padding:50px 0;">
 <div id="title"><span><b>SOME OF OUR FAVOURITE INDIAN LOCATIONS INCLUDE</b></span></div>
 <center>
 <div class="gallery">
@@ -208,7 +214,7 @@ Goa - Udaipur - Kerela
 </div>
 </center>
 </div>
-
+<!-- 
 
 
 <div class="container" style="padding-top:30px;" >
@@ -225,11 +231,14 @@ Goa - Udaipur - Kerela
 
 <p style="font-size:13px">Scarlet Events are experienced in organising a vast range of events in different locations across the World. We have become accustomed to local culture and customs in many countries, and are proud of our black book of foreign venues and contacts. We’ll ensure that your event is delivered with a World-class finish, irrespective of size or location.
 </p>
-<div class="more">FIND OUT MORE ABOUT PARTIES</div></div>
+<a href="<?php echo site_url('/weddings/portfolio'); ?>" class="more">
+VIEW OUR PORTFOLIO</a>
+<div class="more">FIND OUT MORE ABOUT PARTIES</div>
 </div>
 </div>
+</div> -->
 
-<div class="container" style="padding-top:30px;">
+<div class="container" style="padding:60px 0;">
 <div class="row d-flex flex-wrap flex-row-reverse">
            
 
@@ -245,7 +254,10 @@ Goa - Udaipur - Kerela
 	
 			<h4>Destination Weddings</h4>
 			<p style="font-size:13px">Marriage laws vary from country to country and we can take the stress out of organising the paperwork. Our destination wedding planners will work with the local government to legalise your marriage in the location of your choice and organise a translator, whether in English, Chinese or other. Organising a wedding can be challenging for most couples and organising one abroad even more so. Scarlet has the experience in destination weddings and whatever the request, wherever the location, we are here to make it happen.
-</p><div class="more">FIND OUT MORE ABOUT WEDDINGS</div></div>
+</p>
+<a href="<?php echo site_url('/weddings/destinations'); ?>" class="more">
+FIND OUT MORE ABOUT WEDDINGS</a>
+</div>
 </div>
 </div>
 
