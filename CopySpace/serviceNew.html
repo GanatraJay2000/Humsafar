@@ -1,0 +1,431 @@
+<!-- First Complete the tasks on this page -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+	
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+    body {
+        background-color: #fff;
+    }
+
+    .service-part {
+        text-align: center;
+        font-family: "Myriad Pro",  'playfair display', serif;
+    }
+
+    .heading {
+        padding-top: 10px;
+        margin-bottom: 0;
+        text-align: center;
+        color: #2f2e2e;
+        font-size: 45px;
+    }
+
+    .heading p {
+        margin: 0;
+    }
+
+    .heading h1 {
+        font-family: "Myriad Pro",  sans-serif;
+        margin: auto;
+        text-align: center;
+        font-size: 40px;
+        max-width: 600px;
+        position: relative;
+        color: #b28f5e;
+
+    }
+
+    .heading h1::before,
+    .heading h1::after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 3px;
+        background: #000;
+        position: absolute;
+        top: 30%;
+        z-index: -2;
+        background-color: #b28f5e;
+    }
+
+    .heading h1::before {
+        left: 0;
+        margin-left: 20%;
+    }
+
+    .heading h1:after {
+        right: 0;
+        margin-right: 20%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        //padding: 10px;
+    }
+
+    .flex-container>div {
+	    position:relative;
+        margin: 5px;
+        margin-top: 30px;
+        width: 250px;
+		height:250px;
+        text-align: center;
+        font-size: 20px;
+        color: #b28f5e;
+		//background-color: blue;
+    }
+
+    .flex-container p {
+        margin: 5px;
+		font-size:30px;
+		color: #6b6b6b;
+    }
+	
+	.flex-container .image{
+	    //background-color: yellow;
+		position:relative;
+		width: 250px;
+        height: 190px;
+		overflow:hidden;
+	}
+	
+	.flex-container>div:hover .image .sub{
+	    bottom:0;
+		transition: bottom 0.8s ease;
+	}
+	
+	.flex-container .image .sub{
+        position:absolute;
+        bottom:-190px;
+        width:250px;
+        height:190px;
+        background-color: #cbf5e8;
+        transition: bottom 0.8s ease;
+    }
+	
+	.flex-container .image .sub p{
+	    font-size:12px;
+		padding: 10px;
+		text-align:justify;
+	}
+
+    .flex-container .image>img {
+        background-color: white;
+        width: 100px;
+        height: 100px;
+		margin-top:70px;
+    }
+
+    .flex-container>div>img:hover {
+        background-color: white;
+    }
+	
+	.flex-container .text{
+	    position:absolute;
+	    bottom:0;
+		width:100%;
+		margin-bottom:10px;
+		background-color: #cbf5e8;
+	}
+	
+	.flex-container>div:hover .text p{
+	    margin:5px 20px;
+	    border-top: 2px solid #115c44;
+	}
+
+    @media screen and (max-width : 700px) {
+
+        .heading{
+		  font-size:30px;
+		  margin-bottom:0;
+		}
+		
+        .heading h1::before,
+        .heading h1::after {
+            width: 100px;
+        }
+		
+		.flex-container>div{
+		  margin: 5px;
+          margin-top: 30px;
+		  //width: 150px;
+		  font-size: 15px;
+		}
+    }
+
+    @media screen and (max-width : 500px) {
+
+        .heading h1::before,
+        .heading h1::after {
+            width: 60px;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="service-part">
+        <div class="heading">
+            <p>Our Services</p>
+            <h1><span>*</span></h1>
+        </div>
+        <div class="flex-container">
+
+            <div>
+                <div class="image"><img id="my-img1"  alt="venue"
+                      src="https://image.flaticon.com/icons/svg/3069/3069469.svg"  />
+                    <div class="sub">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor condimentum lacus, vel tincidunt lectus consequat at. Ut massa nulla, dapibus convallis feugiat sed, fringilla ac odio. Aliquam dui nisi, facilisis in sem lobortis, elementum accumsan turpis. Duis elementum ligula id ligula laoreet bibendum. Donec ut metus augue.
+					</p>
+                    </div>
+				</div>
+				<div class="text">
+                    <p><i>Venue</i></p>
+                </div>
+            </div>
+            <div>
+                <div class="image"><img id="my-img1"  alt="venue"
+                      src="https://image.flaticon.com/icons/svg/3034/3034068.svg"  />
+                    <div class="sub">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor condimentum lacus, vel tincidunt lectus consequat at. Ut massa nulla, dapibus convallis feugiat sed, fringilla ac odio. Aliquam dui nisi, facilisis in sem lobortis, elementum accumsan turpis. Duis elementum ligula id ligula laoreet bibendum. Donec ut metus augue.
+					</p>
+                    </div>
+				</div>
+				<div class="text">
+                    <p><i>Decoration</i></p>
+                </div>
+            </div>
+            <div>
+                <div class="image"><img id="my-img1"  alt="venue"
+                      src="https://image.flaticon.com/icons/svg/333/333316.svg"  />
+                    <div class="sub">
+					<p>Lorem ipsum dolor sit amet,  dapibus convallis feugiat sed, fringilla ac odio. Aliquam dui nisi, facilisis in sem lobortis, elementum accumsan turpis. Duis elementum ligula id ligula laoreet bibendum. Donec ut metus augue.
+					</p>
+                    </div>
+				</div>
+				<div class="text">
+                    <p><i>Catering</i></p>
+                </div>
+            </div>
+            <div>
+                <div class="image"><img id="my-img1"  alt="venue"
+                      src="https://image.flaticon.com/icons/svg/3004/3004587.svg"  />
+                    <div class="sub">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor condimentum lacus, vel tincidunt lectus consequat at. Ut massa nulla, dapibus convallis feugiat sed, fringilla ac odio. Aliquam dui nisi, facilisis in sem lobortis, elementum accumsan turpis. Duis elementum ligula id ligula laoreet bibendum. Donec ut metus augue.
+					</p>
+                    </div>
+				</div>
+				<div class="text">
+                    <p><i>Entertainments</i></p>
+                </div>
+            </div>
+			<div>
+                <div class="image"><img id="my-img1"  alt="venue"
+                      src="https://image.flaticon.com/icons/svg/867/867988.svg"  />
+                    <div class="sub">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor condimentum lacus, vel tincidunt lectus consequat at. Ut massa nulla, dapibus convallis feugiat sed, fringilla ac odio. Aliquam dui nisi, facilisis in sem lobortis, elementum accumsan turpis. Duis elementum ligula id ligula laoreet bibendum. Donec ut metus augue.
+					</p>
+                    </div>
+				</div>
+				<div class="text">
+                    <p><i>Photography</i></p>
+                </div>
+            </div>
+			<div>
+                <div class="image"><img id="my-img1"  alt="venue"
+                      src="https://image.flaticon.com/icons/svg/3004/3004587.svg"  />
+                    <div class="sub">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor condimentum lacus, vel tincidunt lectus consequat at. Ut massa nulla, dapibus convallis feugiat sed, fringilla ac odio. Aliquam dui nisi, facilisis in sem lobortis, elementum accumsan turpis. Duis elementum ligula id ligula laoreet bibendum. Donec ut metus augue.
+					</p>
+                    </div>
+				</div>
+				<div class="text">
+                    <p><i>Entertainments</i></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div><br><br><br><br><br></div>
+
+    <script>
+        /* *********************** */
+
+        
+        function hover5() {
+            document.getElementById("my-img5").src = "https://image.flaticon.com/icons/svg/867/867988.svg";
+        }
+
+        function unhover5() {
+            document.getElementById("my-img5").src = "https://image.flaticon.com/icons/svg/868/868039.svg";
+        }
+
+        /* *********************** */
+
+        function hover6() {
+            document.getElementById("my-img6").src = "https://image.flaticon.com/icons/svg/703/703306.svg";
+        }
+
+        function unhover6() {
+            document.getElementById("my-img6").src = "https://image.flaticon.com/icons/svg/706/706481.svg";
+        }
+
+        /* *********************** */
+
+        function hover7() {
+            document.getElementById("my-img7").src = "https://image.flaticon.com/icons/svg/2448/2448159.svg";
+        }
+
+        function unhover7() {
+            document.getElementById("my-img7").src = "https://image.flaticon.com/icons/svg/2448/2448162.svg";
+        }
+
+        /* *********************** */
+
+        function hover8() {
+            document.getElementById("my-img8").src = "https://image.flaticon.com/icons/svg/1024/1024541.svg";
+        }
+
+        function unhover8() {
+            document.getElementById("my-img8").src = "https://image.flaticon.com/icons/svg/1024/1024490.svg";
+        }
+
+        /* *********************** */
+
+        function hover9() {
+            document.getElementById("my-img9").src = "https://image.flaticon.com/icons/svg/2269/2269061.svg";
+        }
+
+        function unhover9() {
+            document.getElementById("my-img9").src = "https://image.flaticon.com/icons/svg/2269/2269086.svg";
+        }
+
+        /* *********************** */
+
+        function hover10() {
+            document.getElementById("my-img10").src = "https://image.flaticon.com/icons/svg/2548/2548360.svg";
+        }
+
+        function unhover10() {
+            document.getElementById("my-img10").src = "https://image.flaticon.com/icons/svg/2548/2548328.svg";
+        }
+
+        /* *********************** */
+
+        function hover11() {
+            document.getElementById("my-img11").src = "https://image.flaticon.com/icons/svg/3132/3132720.svg";
+        }
+
+        function unhover11() {
+            document.getElementById("my-img11").src = "https://image.flaticon.com/icons/svg/3132/3132676.svg";
+        }
+
+        /* *********************** */
+
+        function hover12() {
+            document.getElementById("my-img12").src = "https://image.flaticon.com/icons/svg/827/827300.svg";
+        }
+
+        function unhover12() {
+            document.getElementById("my-img12").src = "https://image.flaticon.com/icons/svg/827/827249.svg";
+        }
+
+        /* *********************** */
+
+        function hover13() {
+            document.getElementById("my-img13").src = "https://image.flaticon.com/icons/svg/1034/1034017.svg";
+        }
+
+        function unhover13() {
+            document.getElementById("my-img13").src = "https://image.flaticon.com/icons/svg/1034/1034068.svg";
+        }
+
+        /* *********************** */
+
+        function hover14() {
+            document.getElementById("my-img14").src = "https://image.flaticon.com/icons/svg/868/868028.svg";
+        }
+
+        function unhover14() {
+            document.getElementById("my-img14").src = "https://image.flaticon.com/icons/svg/868/868079.svg";
+        }
+
+        /* *********************** */
+
+        function hover15() {
+            document.getElementById("my-img15").src = "https://image.flaticon.com/icons/svg/1139/1139982.svg";
+        }
+
+        function unhover15() {
+            document.getElementById("my-img15").src = "https://image.flaticon.com/icons/svg/1139/1139931.svg";
+        }
+
+        /* *********************** */
+
+        function hover16() {
+            document.getElementById("my-img16").src = "https://image.flaticon.com/icons/svg/3126/3126805.svg";
+        }
+
+        function unhover16() {
+            document.getElementById("my-img16").src = "https://image.flaticon.com/icons/svg/3094/3094107.svg";
+        }
+
+        /* *********************** */
+
+        function hover17() {
+            document.getElementById("my-img17").src = "https://image.flaticon.com/icons/svg/375/375279.svg";
+        }
+
+        function unhover17() {
+            document.getElementById("my-img17").src = "https://image.flaticon.com/icons/svg/375/375177.svg";
+        }
+
+        /* *********************** */
+
+        function hover18() {
+            document.getElementById("my-img18").src = "https://image.flaticon.com/icons/svg/706/706509.svg";
+        }
+
+        function unhover18() {
+            document.getElementById("my-img18").src = "https://image.flaticon.com/icons/svg/859/859259.svg";
+        }
+
+        /* *********************** */
+
+        function hover19() {
+            document.getElementById("my-img19").src = "https://image.flaticon.com/icons/svg/806/806033.svg";
+        }
+
+        function unhover19() {
+            document.getElementById("my-img19").src = "https://image.flaticon.com/icons/svg/805/805952.svg";
+        }
+
+        /* *********************** */
+
+        function hover20() {
+            document.getElementById("my-img20").src = "https://image.flaticon.com/icons/svg/860/860039.svg";
+        }
+
+        function unhover20() {
+            document.getElementById("my-img20").src = "https://image.flaticon.com/icons/svg/859/859937.svg";
+        }
+    </script>
+    </div>
+
+
+	    
+		
+    </body>
+</html>
