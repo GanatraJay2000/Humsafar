@@ -155,11 +155,10 @@ h2,h4{
 
 
    }
-
-
       .content.wrapper{
-	   padding:0 !important;
+	   padding:5px 0 !important;
    }
+
 </style>
 <div class="container">
 <div class="row" >
@@ -211,6 +210,25 @@ VIEW OUR PORTFOLIO</a></br>
 </div>
 <div class="locations">
 Goa - Udaipur - Kerela
+<?php $destinations = new WP_Query(array(
+'post_type'=>'destinations',
+'meta_key' => 'order',
+'orderby' => 'meta_value_num',
+'order' => 'ASC',
+'meta_query' => array(
+    array(
+        'key' => 'destination_type',
+        'compare' => '==',
+        'value' => 'Traditional',   
+    ),
+),
+));
+$i=0; 
+while( $destinations->have_posts() ){ 
+$destinations->the_post(); 
+?>
+<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+<?php } ?>
 </div>
 </center>
 </div>
