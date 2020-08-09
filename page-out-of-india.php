@@ -117,11 +117,17 @@ h2,h4{
     padding:0 10px; 
 }
 
-.locations a{
+.locations{
 	padding:50px;
 	text-align:center;
 	font-size:25px;
 	 font-family:"Playfair Display", sans-serif;
+	 color:#b18a60 !important;
+}
+.locations a{
+    padding:10px;
+    font-size:25px;
+     font-family:"Playfair Display", sans-serif;
 	 color:#b18a60 !important;
 }
 
@@ -214,7 +220,7 @@ VIEW OUR PORTFOLIO</a></br>
 'meta_key' => 'order',
 'orderby' => 'meta_value_num',
 'order' => 'ASC',
-'meta_query' => array(
+'meta_query' => array(  
     array(
         'key' => 'destination_type',
         'compare' => '==',
