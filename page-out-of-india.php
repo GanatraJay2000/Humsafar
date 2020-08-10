@@ -1,399 +1,226 @@
+
+
+
+
+
 <?php get_header(); ?>
-
-
-
-
-
 <style>
-section a{
-text-decoration:none !important;
-color:#333 !important;
+
+body{
+	font-family: "Myriad Pro", sans-serif;
+			font-size:15px;
+			letter-spacing:1.2px;
+			line-height:30px;
+		
 }
-section a:hover{
-color:#b28f5e !important;
+
+h2,h4{
+	font-family:"Playfair Display", sans-serif;
 }
+.columns{
+	 column-count: 2;
+  column-gap: 50px;
 
-
-    .col-text {
-height: 15em;
-!important}
-
-.grid-flex {
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
-flex-wrap:wrap;
--webkit-box-flex: 1;
--webkit-flex-grow: 1;
--ms-flex-positive: 1;
-flex-grow: 1;
-flex-direction: row;
--webkit-flex-direction: row;
--webkit-flex-wrap: wrap;
--webkit-justify-content: space-around;
 }
 
 
-.col {
--webkit-box-flex: 1;
--webkit-flex: 1;
--ms-flex: 1;
-flex: 1;
+
+
+
+.g{
+	
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size:25px;
+
+
 }
 
-.col-left {
--webkit-box-ordinal-group: -1;
--webkit-order: -1;
--ms-flex-order: -1;
-order: -1;
+
+.gallery {
+  justify-content: center;
+  display: flex;
+  flex-wrap:wrap;
+
+}
+.gallery img{
+	height:270px;
+	width:270px;
+	border:7px solid transparent;
+	
+	
+}
+.centered {
+		font-family:"Playfair Display", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events:none;
 }
 
-.col-text {
-display: flex;
-justify-content: center;
-}
-
-.Aligner-item {
-width: 70%;
-}
-
-.col-image {
-background-size: cover;
-background-position: center center;
-}
-
-.mybox{
-padding: 50px 50px 50px 50px;
-}
-
-.myheading{
-text-align:center;
-font-size:22px;
-font-family: "Myriad Pro",  playfair display,serif ;
-}
-
-.playfair {
-font-family: "Myriad Pro",  Playbill;
+   #imghr {
+        width:100px;
+        background-color: white;
+	margin-left:auto;
+	margin-right:auto;
+		
+      }
+	  
+.more{
+			color:#b18a60 !important;
+			font-weight:600;
+			font-family: "Myriad Pro", sans-serif;
+			font-size:15px;
+			letter-spacing:1.2px;
+			text-decoration:none !important;
+			position:relative;
+			width:fit-content;
+			
+		}
+		.more::after{
+			content:'';
+			display:block;
+			width:0;
+			height:2px;
+			border-radius:4px;
+			background-color:#b18a60;
+			position:absolute;
+			bottom:-5px;
+			left:0;
+			transition:ease-in-out width .3s;
+		}
+		.more:hover::after{
+			width:100%;
+		}
+		
+		.vv{
+			font-size:20px;
+		}
+		
+		#title {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+   font-family:"Playfair Display", sans-serif;
+   font-size:17px;
 } 
-.mypara{
-font-size:14px;
-color:dimgray;
-font-style:italic
+
+
+
+
+#title span { 
+    background:#fff; 
+    padding:0 10px; 
 }
 
-.title {
-font-size: 45px;
-font-family: "Myriad Pro",  playfair display,serif;
+.locations{
+	padding:50px;
+	text-align:center;
+	font-size:25px;
+	 font-family:"Playfair Display", sans-serif;
+	 color:#b18a60 !important;
 }
-.sideheading{
-padding-top:5px;
-font-size: 25px;
-font-family: "Myriad Pro",  playfair display,serif;
-}
-.sideheading2{
-text-align:center;
-font-size: 12px;
-font-family: "Myriad Pro",  playfair display,serif;
-color:dimgrey;
-}
-.sideheading3{
-text-align:center;
-font-size:20px;
-font-family: "Myriad Pro",  playfair display,serif;
-color:darkslategrey;
-}
-.sideheading.sideheading{
-font-size:38px;
+.locations a{
+    padding:10px;
+    font-size:25px;
+     font-family:"Playfair Display", sans-serif;
+	 color:#b18a60 !important;
 }
 
-.lastpara{
-font-family: "Myriad Pro", "Playfair Display", serif;
-font-size:16px;
-letter-spacing:.75px;
+#gimg{
+	transition:0.5s;
+	filter:brightness(80%);
+}
+#gimg:hover{
+	filter:brightness(40%);
 }
 
 
-@media (max-width: 1080px) {
-.Aligner-item {
-width: 100% !important;
-height:fit-content;
+ @media screen and (max-width : 700px) {
+
+       .columns{
+	 column-count: 1;
+
+  text-align:justify;
 }
+.container{
+	padding:auto 0 !important;
 }
-@media (max-width: 780px) {
-.grid-flex {
-    min-height: 40em;        
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    flex-direction: column !important;
-}
-.grid-flex *{
-    text-align:center;
-}
-.sideheading.sideheading{
-font-size:28px;
-}
+	
 
-.col {
-    order: vertical;
-}
-
-.col-left {
-    -webkit-box-ordinal-group: 0;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-}
-
-.col-text div p {
-    padding:0 !important;
-}
-
-.Aligner-item {
-    width: 90%;
-}
-}
-
-@media (max-width: 650px) {
-.mybox{
-padding: 0px !important;
-}
-.myheading h1{
-font-size:22px;
-}
-.sideheading h2, .sideheading2 h2, .sideheading3 h2{
-font-size:22px;
-}
-}
-
-
-
-
-* {
-        padding: 0;
-        margin: 0;
-    }
-
-    .wrapper {
-        padding: 0;
-        margin: 0;
-    }
-
-    .complex-element {
-        margin: 50px auto;
-        width: 1000px;
-    }
-
-    .dest {
-        position: relative;
-        display: flex;
-    }
-
-    .dest_1 {
-        flex-direction: row;
-        margin-bottom: 50px;
-    }
-
-    .dest_2 {
-        flex-direction: row-reverse;
-        margin-bottom: 50px;
-    }
-
-    .dest img {
-        /* width: 665px; */
-        height: 513px;
-        padding: 0;
-        margin: 0;
-    }
-
-    .dest .details {
-        padding: 30px;
-        /* padding-top: 10px; */
-    }
-
-    .dest .details .infotext {
-        color: #777;
-        /* font-size: 16px;
-        letter-spacing: 0.6px; */
-
-    }
-
-    .dest .details .title {
-        padding-top: 30px;
-        position: relative;
-        text-align: center;
-        color: #555;
-        font-size: 32px;
-        font-weight: 400;
-        font-family: "Myriad Pro",  'Playfair Display', serif;
-    }
-
-    .dest .details .title::after {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: -20px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: black;
-    }
-
-    .dest .mssg {
-        background-color: #333;
-        color: white;
-        position: absolute;
-        height: 160px;
-        width: 560px;
-        z-index: 1;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 30px;
-        box-sizing: border-box;
-        font-size: 24px;
-
-    }
-
-    .dest_1 .mssg {
-        right: 0;
-        bottom: -80px;
-    }
-
-    .dest_2 .mssg {
-        left: 0;
-        bottom: 10px;
-    }
-    
-
-    @media screen and (max-width:1200px) {
-        .complex-element{
-            width:100% !important;
-        }       
-        .dest {
-            display: block;
-            margin-bottom: 100px;
-        }
-
-        .dest .mssg {
-            display: block;
-            position: relative !important;
-            margin: 20px 0 !important;
-            width: 100%;
-            z-index: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 30px;                
-        }
-
-        .dest img {
-            width: 100%;
-            height: 500px;
-        }
-
-        .dest .title {
-            font-size: 44px !important;
-            margin: 0 60px;
-        }
-
-        .dest .infotext {
-            display: none !important;
-        }
-    }
-
-    @media screen and (max-width:600px) {
-                    .dest img {
-            width: 100%;
-            height: 300px;
-        }
-        .dest .title {
-            font-size: 20px !important;
-            margin: 0 auto;
-        }
-        .dest .mssg {
-            padding:0;
-            margin:0 auto;
-            text-center;
-            font-size:20px;
-        }
-    }
+    	#title {
+  display:none;
+} 
 
 
 
 
 
-
+   }
+      .content.wrapper{
+	   padding:5px 0 !important;
+   }
 
 </style>
-</head>
-<body>
-<!-- <div class="myheading">
-    <h1>TIMELESS AND EXCLUSIVE</h1>
+<div class="container">
+<div class="row" >
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 px-xs-0">
+<?php
+echo do_shortcode('[smartslider3 slider="2"]');
+?>
 </div>
-<div class="sideheading2">
-    <h2>
-        THE AESTHETIC OF HUMSAFAR WEDDINGS IS
-        ONE GLAMOUR ELEGANCE.
-    </h2>
 </div>
- -->
-
-
-<!-- 
-<div class="complex-element">
-    <div class="dest dest_1">
-        <img src="<?php //echo get_template_directory_uri() . '/assets_inside/paris.webp' ?>" alt="Paris">
-        <div class="details">
-            <p class="infotext">A Spring wedding under the Eiffel Tower, with the Fragrance of Fresh Flowers in
-                the air, and colors galore all around, as Reality transcends the boundaries of your Dream
-                wedding.
-            </p>
-            <h1 class="title">BESPOKE LUX & PERFECT PLAN</h1>
-        </div>
-        <div class="mssg">WE TAKE YOUR DREAM WEDDING TO IT’S “DESTINATION”, FROM PARIS TO MAURITIUS, FROM DUBAI
-            TO GREECE.</div>
-    </div>
-    <div class="dest dest_2">
-        <img src="<?php //echo get_template_directory_uri() . '/assets_inside/somehotel.webp' ?>" alt="">
-
-        <div class="details">
-            <p class="infotext">With our setup in India we have a huge clientele within India. We also deliver
-                weddings all over the world including some major locations like Paris, Dubai, Greece & Italy. We
-                work with an international clientele, travelling across the world to the finest hotels, resorts
-                and islands for our luxury weddings.
-            </p>
-            <h1 class="title">DEDICATED TO DESTINATIONS</h1>
-        </div>
-        <div class="mssg">WE WANT TO MAKE UNFORGETTABLE MEMORIES AND ENJOY EVERY LAST MINUTE OF YOUR EVENT.
-        </div>
-    </div>
 </div>
 
+<div class="container" style="padding:30px; padding-top:50px;" >
+<div class="row" >
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 px-xs-0" >
+<h2>Your journey starts here...</h2></br>
+</div>
 
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 px-xs-0" >
+			<div class="columns">
+Host your luxury party or dream wedding anywhere in the world. Perhaps at an international destination with beautiful weather and breath-taking views! We are a team of international wedding and party planners, with years of experience when it comes to planning the perfect wedding or event. Our distinguished portfolio means that we’ve worked at some of the most exclusive international venues around the world. Scarlet is a leading events company who will plan your party anywhere; from a luxury Yacht off the coast
 
+ of Monte Carlo to a Grand Palace in Rajasthan. Whether you are an international client wanting to hold your event in London, or you’re looking to go abroad, we’ll organise everything so you don’t have to. From the suppliers, logistics, flights, transport to the accommodation no request is too small. Bespoke marquee for a wedding in the South of France? No problem. Private dinner at a Palazzo in Rome? Your wish is our command! Find the perfect destination for your wedding or event with us today.
+<br></br><a href="<?php echo site_url('/weddings/portfolio'); ?>" class="more">
+VIEW OUR PORTFOLIO</a></br>
 
+</div>
 
+</div>
 
- -->
+</div>
+</div>
 
-
-
-
-
-
-<!--Griglia alternata testo e immagine, resposive con flexbox.-->
-<div class="mybox">
-<section class="heading mb-5">
-        MODERN LUXURY LOCATIONS</p>
-        <h1><span>*</span></h1>
-</section>
-<section>	
+<div class="container" style="padding:50px 0;">
+<div id="title"><span><b>SOME OF OUR FAVOURITE INDIAN LOCATIONS INCLUDE</b></span></div>
+<center>
+<div class="gallery">
+<div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/goa.jpg' ?>"><div class="centered">Goa<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div>
+<div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/udaipur.jpg' ?>"><div class="centered">Udaipur<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div>
+<div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/kerela.jpg' ?>"><div class="centered">Kerela<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div>
+<div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/andaman.jpg' ?>"><div class="centered">Andaman & Nicobar Islands<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div>
+</div>
+<div class="locations">
 <?php $destinations = new WP_Query(array(
 'post_type'=>'destinations',
 'meta_key' => 'order',
 'orderby' => 'meta_value_num',
 'order' => 'ASC',
-'meta_query' => array(
+'meta_query' => array(  
     array(
         'key' => 'destination_type',
         'compare' => '==',
@@ -404,34 +231,60 @@ font-size:22px;
 $i=0; 
 while( $destinations->have_posts() ){ 
 $destinations->the_post(); 
-$image_on_destination_page = rwmb_meta('image_on_destination_page', array( 'size' => 'large' ) );
 ?>
-<a href="<?php the_permalink(); ?>">
-<div class="grid-flex">
-<?php 
-foreach ( $image_on_destination_page as $image ) {?>
-<div class="col col-image" style="background-image: url(<?php echo $image['url'] ?>);">
-</div>						
-<?php } ?> 
-<div class="col col-text<?php if($i%2 == 1) {echo " col-left";} ?>
-">
-<div class="Aligner-item">
-<div class="sideheading">
-<?php the_title(); ?>
+<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+<?php } ?>
 </div>
-<p class="mypara">
-&ldquo;<?php echo rwmb_meta('text_on_destination_page'); ?>&rdquo;
+</center>
+</div>
+<!-- 
+
+
+<div class="container" style="padding-top:30px;" >
+<div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0" style="margin:auto;">
+<img src="<?php echo get_template_directory_uri() . '/images/dest.jpg' ?>" width="100%">
+</div>
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0" style="margin:auto">
+			
+<h4>Destination Parties</h4>
+
+
+<p style="font-size:13px">Scarlet Events are experienced in organising a vast range of events in different locations across the World. We have become accustomed to local culture and customs in many countries, and are proud of our black book of foreign venues and contacts. We’ll ensure that your event is delivered with a World-class finish, irrespective of size or location.
 </p>
+<a href="<?php echo site_url('/weddings/portfolio'); ?>" class="more">
+VIEW OUR PORTFOLIO</a>
+<div class="more">FIND OUT MORE ABOUT PARTIES</div>
+</div>
+</div>
+</div> -->
+
+<div class="container" style="padding:60px 0;">
+<div class="row d-flex flex-wrap flex-row-reverse">
+           
+
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0" style="margin:auto;">
+<img src="<?php echo get_template_directory_uri() . '/images/destination2.jpg' ?>" width="100%">
+
+
+
+</div>
+ <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0" style="margin:auto">
+	
+			<h4>Destination Weddings</h4>
+			<p style="font-size:13px">Marriage laws vary from country to country and we can take the stress out of organising the paperwork. Our destination wedding planners will work with the local government to legalise your marriage in the location of your choice and organise a translator, whether in English, Chinese or other. Organising a wedding can be challenging for most couples and organising one abroad even more so. Scarlet has the experience in destination weddings and whatever the request, wherever the location, we are here to make it happen.
+</p>
+<a href="<?php echo site_url('/weddings/destinations'); ?>" class="more">
+FIND OUT MORE ABOUT WEDDINGS</a>
 </div>
 </div>
 </div>
-</a>
-<?php $i++; } ?>
-</section>
-<center><a href="<?php echo site_url('/weddings/destinations'); ?>" style="background-color:#ecc86b !important;color:white;" class="btn mt-5">Back to Destinations</a></center>
 
-</section>
-    </div>
+<?php get_footer(); ?>
 
 
-    <?php get_footer(); ?> 
+

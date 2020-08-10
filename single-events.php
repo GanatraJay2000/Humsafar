@@ -431,7 +431,7 @@
     </main>
 </div>
 <?php }?>
-<script>
+<!-- <script>
 	
 
 const divs = document.querySelectorAll('div');
@@ -475,7 +475,7 @@ next.addEventListener('click', function() {
 });
 	
 	
-	</script> 
+	</script>  -->
             <?php
             get_footer();
             

@@ -1,209 +1,273 @@
+
 <?php get_header(); ?>
-    <style>
-        * {
-            margin: 0;
-        }
-        body{
-            background-color:white;
-        }
+<style>
 
-        .banner_heading {
-            text-align: center;
-        }
+body{
+	font-family: "Myriad Pro", sans-serif;
+			font-size:15px;
+			letter-spacing:1.2px;
+			/* line-height:30px; */
+		
+}
 
-        .banner_heading h1 {
-            font-size: 72px;
-            font-weight: 900px;
-            font-family: "Myriad Pro",  "Playfair Display", "Times New Roman", serif;
-        }
+h2,h4{
+	font-family:"Playfair Display", sans-serif;
+}
+.columns{
+	 column-count: 2;
+  column-gap: 50px;
+	letter-spacing:0.6px;
+	line-height:25px;
+	font-size:16px;
+	word-spacing:6px;
+}
 
-        .banner_destination {
-            margin: 0 auto;
-            width: 100%;
-            position: relative;
-        }
 
-        .banner_destination img {
-            width: 100%;
-            height: 100%;
-            min-height: 600px;
 
-        }
 
-        .banner_destination div {
-            position: absolute;
-            background-color: #ffffffda;
-            padding: 30px 20px;
-            font-size: 20px;
-            font-family: "Myriad Pro",  "Playfair Display", "Times New Roman", serif;
-            letter-spacing: 1px;
-            line-height: 1.6em;
-            max-width: 60%;
-        }
 
-        .banner_destination div.left {
-            top: 5%;
-            left: 0;
-        }
+.g{
+	
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size:25px;
 
-        .banner_destination div.right {
-            right: 0;
-            bottom: 5%;
-        }
 
-        .title {
-            margin: 20px auto;
-            font-size: 32px;
-            font-weight: 500;
-            text-align: center;
-            font-family: "Myriad Pro",  "Playfair Display", "Times New Roman", serif;
-        }
+}
 
-        .complex-structure {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(6, 125px);
-            grid-gap: 5px;
-        }
 
-        .complex-structure div {
-            width: 100%;
-        }
+.gallery {
+  justify-content: center;
+  display: flex;
+  flex-wrap:wrap;
 
-        .complex-structure .content {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 3;
-            font-size: 17px;
-            color: #555;
-            text-align: justify;
-            padding: 0px 10px 20px 0;
-        }
+}
+.gallery img{
+	height:270px;
+	width:270px;
+	border:7px solid transparent;
+	
+	
+}
+.centered {
+		font-family:"Playfair Display", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events:none;
+}
 
-        .complex-structure .quote {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            color: #333333;
-            font-size: 30px;
-            font-family: "Myriad Pro",  "Playfair Display", "Times New Roman", serif;
-            margin: 0px auto 30px auto;
-            text-align: center;
-        }
+   #imghr {
+        width:100px;
+        background-color: white;
+	margin-left:auto;
+	margin-right:auto;
+		
+      }
+	  
+.more{
+			color:#b18a60 !important;
+			font-weight:600;
+			font-family: "Myriad Pro", sans-serif;
+			font-size:15px;
+			letter-spacing:1.2px;
+			text-decoration:none !important;
+			position:relative;
+			width:fit-content;
+			
+		}
+		.more::after{
+			content:'';
+			display:block;
+			width:0;
+			height:2px;
+			border-radius:4px;
+			background-color:#b18a60;
+			position:absolute;
+			bottom:-5px;
+			left:0;
+			transition:ease-in-out width .3s;
+		}
+		.more:hover::after{
+			width:100%;
+		}
+		
+		.vv{
+			font-size:20px;
+		}
+		
+		#title {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+   font-family:"Playfair Display", sans-serif;
+   font-size:17px;
+} 
 
-        .complex-structure div img {
-            width: 100%;
-            height: 100%;
-        }
 
-        .complex-structure .left-image {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 3;
-            grid-row-end: 5;
-        }
 
-        .complex-structure .right-image {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 5;
-        }
 
-        .complex-structure .full-image {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 5;
-            grid-row-end: 7;
-        }
+#title span { 
+    background:#fff; 
+    padding:0 10px; 
+}
 
-        @media screen and (max-width:600px) {
-            .content.wrapper{
-                margin:0px !important;
-                padding:0 !important;
-            }
-            .banner_destination div {
-                position: relative;
-                max-width: 100%;
-                padding: 10px 10px;
-                text-align: center;
-                font-size:16px;
-            }
-            .banner_destination img{
-                min-height:0;
-            }
+.locations{
+	padding:50px;
+	text-align:center;
+	font-size:25px;
+	 font-family:"Playfair Display", sans-serif;
+	 color:#b18a60 !important;
+}
 
-            .complex-structure {
-                display: block;                
-                margin-bottom: 30px;
-            }
-            .complex-structure div{
-                padding: 0 !important;
-            }
+#gimg{
+	transition:0.5s;
+	filter:brightness(80%);
+}
+#gimg:hover{
+	filter:brightness(40%);
+}
 
-            .complex-structure div img {
-                height: 230px;
-                margin-bottom: 5px;
-            }
-        }
-    </style>
 
-<?php 
+ @media screen and (max-width : 700px) {
 
-while( have_posts() ){ 
-the_post(); 
+       .columns{
+	 column-count: 1;
 
-$thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
-$gallery = rwmb_meta('gallery', array( 'size' => 'large' ) );
+  text-align:justify;
+}
+	
 
+    	#title {
+  display:none;
+} 
+
+
+
+
+
+   }
+
+   .content.wrapper{
+	   padding:0 !important;
+   }
+</style>
+<div class="container">
+<div class="row" >
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<?php
+echo do_shortcode('[smartslider3 slider="3"]');
 ?>
+</div>
+</div>
+</div>
 
-    <div class="banner_heading">
-        <h1> <i><?php the_title(); ?></i></h1>
-    </div>
-    <div class="banner_destination">
-         <?php foreach ( $thumbnail_image as $image ) {?>
-           <img src="<?php echo $image['url'] ?>" alt="">
-<?php } ?>
-        <div class="left">
-           <?php echo rwmb_meta('text_on_thumbnail_one'); ?>
-        </div>
-        <div class="right">
-            <?php echo rwmb_meta('text_on_thumbnail_two'); ?>
-        </div>
-    </div>
-    <div class="title">
-        <?php echo rwmb_meta('feature_title'); ?>
-    </div>
-    <div class="complex-structure">
-        <div class="content">
-           <?php the_content(); ?>
-        </div>
-        <div class="quote">
-            <i><b><?php echo rwmb_meta('quote'); ?></b></i>
-        </div>
-        <?php 
-        $i=0;
-        foreach ( $gallery as $image ) {
-            if($i==0){
-                $class="left-image";
-            }
-            else if($i==1){
-                $class="right-image";
-            }
-            else if($i==2){
-                $class="full-image";
-            }
-            ?>
-        <div class="<?php echo $class; ?>">
-            <img src="<?php echo $image['url'] ?>" alt="">
-        </div>
-           
-        <?php 
-    $i++;
-    } ?>
-    </div>
-<?php } ?>
+
+<div class="container" style="padding:30px; padding-top:50px;" >
+<div class="row" >
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+<h2>Lorem Ipsum</h2></br>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+<div class="columns">
+Host your luxury party or dream wedding anywhere in the world. Perhaps at an international destination with beautiful weather and breath-taking views! We are a team of international wedding and party planners, with years of experience when it comes to planning the perfect wedding or event. Our distinguished portfolio means that we’ve worked at some of the most exclusive international venues around the world. Scarlet is a leading events company who will plan your party anywhere; from a luxury Yacht off the coast
+
+ of Monte Carlo to a Grand Palace in Rajasthan. Whether you are an international client wanting to hold your event in London, or you’re looking to go abroad, we’ll organise everything so you don’t have to. From the suppliers, logistics, flights, transport to the accommodation no request is too small. Bespoke marquee for a wedding in the South of France? No problem. Private dinner at a Palazzo in Rome? Your wish is our command! Find the perfect destination for your wedding or event with us today.
+<!-- <br></br><a href="<?php //echo site_url('/weddings/portfolio'); ?>"  class="more">VIEW OUR PORTFOLIO</a></br> -->
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="container" style="padding-top:30px;">
+<div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
+<img src="<?php echo get_template_directory_uri() . '/images/udaipur1.jpg' ?>" width="100%">
+</div>
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
+			
+<h4>lorem ipsum</h4>
+
+
+<p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+<!-- <div class="more">DISCOVER MORE VENUES WITH US</div> -->
+</div>
+</div>
+</div>
+
+<div class="container" style="padding-top:30px;">
+<div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
+	
+			<h4>lorem ipsum</h4>
+			<p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+</p>
+<!-- <div class="more">CONSIDERING OTHER DESTINATIONS?</div> -->
+</div>
+
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
+<img src="<?php echo get_template_directory_uri() . '/images/udaipur2.jpg' ?>" width="100%">
+
+
+
+</div>
+</div>
+</div>
+<div class="container" style="padding-top:30px;" >
+<div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
+<img src="<?php echo get_template_directory_uri() . '/images/udaipur3.jpeg' ?>" width="100%">
+</div>
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
+			
+<h4>lorem ipsum</h4>
+
+
+<p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+<!-- <div class="more">BOOK A WORLD-CLASS ACT</div> -->
+</div>
+</div>
+</div>
+
+
+<div class="container" style="padding-top:50px;">
+
+<center>
+	<h5 class="locations">View Other Locations</h5>
+<div class="gallery mb-5">
+<div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/goa.jpg' ?>"><div class="centered">Goa<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div>
+<div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/udaipur.jpg' ?>"><div class="centered">Udaipur<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div>
+<div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/kerela.jpg' ?>"><div class="centered">Kerela<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div>
+<div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/andaman.jpg' ?>"><div class="centered">Andaman & Nicobar Islands<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div>
+</div>
+</center>
+</div>
+
+
+
 <?php get_footer(); ?>
