@@ -16,7 +16,10 @@ h2,h4{
 .columns{
 	 column-count: 2;
   column-gap: 50px;
-
+	letter-spacing:0.6px;
+	line-height:25px;
+	font-size:16px;
+	word-spacing:6px;
 }
 
 
@@ -166,16 +169,15 @@ echo do_shortcode('[smartslider3 slider="3"]');
 
 <div class="container" style="padding:30px; padding-top:50px;" >
 <div class="row" >
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-<h2>Your journey starts here...</h2></br>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+<h2>Lorem Ipsum</h2></br>
 </div>
-
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-			<div class="columns">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+<div class="columns">
 Host your luxury party or dream wedding anywhere in the world. Perhaps at an international destination with beautiful weather and breath-taking views! We are a team of international wedding and party planners, with years of experience when it comes to planning the perfect wedding or event. Our distinguished portfolio means that we’ve worked at some of the most exclusive international venues around the world. Scarlet is a leading events company who will plan your party anywhere; from a luxury Yacht off the coast
 
  of Monte Carlo to a Grand Palace in Rajasthan. Whether you are an international client wanting to hold your event in London, or you’re looking to go abroad, we’ll organise everything so you don’t have to. From the suppliers, logistics, flights, transport to the accommodation no request is too small. Bespoke marquee for a wedding in the South of France? No problem. Private dinner at a Palazzo in Rome? Your wish is our command! Find the perfect destination for your wedding or event with us today.
-<br></br><a href="<?php echo site_url('/weddings/portfolio'); ?>"  class="more">VIEW OUR PORTFOLIO</a></br>
+<!-- <br></br><a href="<?php //echo site_url('/weddings/portfolio'); ?>"  class="more">VIEW OUR PORTFOLIO</a></br> -->
 
 </div>
 
@@ -188,7 +190,7 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 
 
 
-<div class="container" style="padding-top:30px;" >
+<div class="container" style="padding-top:30px;">
 <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
 <img src="<?php echo get_template_directory_uri() . '/images/udaipur1.jpg' ?>" width="100%">
@@ -197,11 +199,12 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
 			
-<h4>Luxury Wedding & Party Venues in Udaipur</h4>
+<h4>lorem ipsum</h4>
 
 
 <p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
-<div class="more">DISCOVER MORE VENUES WITH US</div></div>
+<!-- <div class="more">DISCOVER MORE VENUES WITH US</div> -->
+</div>
 </div>
 </div>
 
@@ -209,9 +212,11 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
 	
-			<h4>Explore Venice</h4>
+			<h4>lorem ipsum</h4>
 			<p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
-</p><div class="more">CONSIDERING OTHER DESTINATIONS?</div></div>
+</p>
+<!-- <div class="more">CONSIDERING OTHER DESTINATIONS?</div> -->
+</div>
 
 
 
@@ -232,11 +237,12 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
 			
-<h4>World-Class Entertainment & Design</h4>
+<h4>lorem ipsum</h4>
 
 
 <p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
-<div class="more">BOOK A WORLD-CLASS ACT</div></div>
+<!-- <div class="more">BOOK A WORLD-CLASS ACT</div> -->
+</div>
 </div>
 </div>
 
@@ -244,8 +250,8 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 <div class="container" style="padding-top:50px;">
 
 <center>
-	
-<div class="gallery">
+	<h5 class="locations">View Other Locations</h5>
+<div class="gallery mb-5">
 <div class="g">
 <img id="gimg" src="<?php echo get_template_directory_uri() . '/images/goa.jpg' ?>"><div class="centered">Goa<hr id="imghr"><div class="vv">VIEW</div></div></img>
 </div>
@@ -258,9 +264,6 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 <div class="g">
 <img id="gimg" src="<?php echo get_template_directory_uri() . '/images/andaman.jpg' ?>"><div class="centered">Andaman & Nicobar Islands<hr id="imghr"><div class="vv">VIEW</div></div></img>
 </div>
-</div>
-<div class="locations">
-Goa - Udaipur - Kerela
 </div>
 </center>
 </div>
