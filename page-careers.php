@@ -89,7 +89,7 @@ display:none !important;
 	text-align:Center !important;
 }
 .frm_style_formidable-style.with_frm_style .frm_submit button {
-    background-color:black !important;
+    background-color:#e1b258 !important;
 	font-size:18px !important;
     color:white !important;
 	width:20%;

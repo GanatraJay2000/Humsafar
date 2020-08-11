@@ -1,0 +1,238 @@
+<!-- First Complete the tasks on this page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <style>
+        body {
+            background-color: #fcf7ff;
+        }
+
+        .service-part {
+            text-align: center;
+        }
+
+        .heading {
+            padding-top: 10px;
+            margin-bottom: 0;
+            text-align: center;
+            color: #2f2e2e;
+            font-size: 45px;
+        }
+
+        .heading p {
+            margin: 0;
+        }
+
+        .heading h1 {
+            font-family: "Myriad Pro", sans-serif;
+            margin: auto;
+            text-align: center;
+            font-size: 40px;
+            max-width: 600px;
+            position: relative;
+            color: #b28f5e;
+
+        }
+
+        .heading h1::before,
+        .heading h1::after {
+            content: "";
+            display: block;
+            width: 150px;
+            height: 3px;
+            background: #000;
+            position: absolute;
+            top: 30%;
+            z-index: -2;
+            background-color: #b28f5e;
+        }
+
+        .heading h1::before {
+            left: 0;
+            margin-left: 20%;
+        }
+
+        .heading h1:after {
+            right: 0;
+            margin-right: 20%;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .flex-container .flex-part {
+            position: relative;
+            margin: 10px;
+            margin-top: 30px;
+            width: 40vw;
+            height: 35vw;
+            text-align: center;
+            font-size: 2.9vw;
+            color: #b28f5e;
+            background-color: blue;
+            overflow: hidden;
+        }
+
+        .flex-container .image {
+            //position:relative;
+            width: 40vw;
+            height: 30vw;
+            overflow: hidden;
+        }
+
+        .flex-container .image>img {
+            background-color: white;
+            width: 40vw;
+            height: 30vw;
+        }
+
+        .flex-container .text {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 5vw;
+            margin-bottom: 0;
+            color: #2f2e2e;
+            background-color: #fcf7ff;
+        }
+
+        .flex-container p {
+            margin: 7px;
+        }
+
+        .flex-container .image .sub {
+            position: absolute;
+            bottom: -25vw;
+            width: 40vw;
+            height: 30vw;
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: bottom 0.8s ease;
+            //transition-delay: 0.5s;
+        }
+
+        .image:hover .sub {
+            bottom: 5vw;
+            transition: bottom 0.8s ease;
+            transition-delay: 0.4s;
+        }
+
+        .flex-part .image .sub p {
+            font-size: 2vw;
+            padding: 10px;
+            color: #fcf7ff;
+            text-align: justify;
+        }
+
+        @media screen and (max-width : 500px) {
+
+            .heading h1::before,
+            .heading h1::after {
+                width: 60px;
+            }
+
+            .flex-container .flex-part {
+                width: 90vw;
+                height: 60vw;
+                font-size: 20px;
+            }
+
+            .flex-container .image {
+                width: 90vw;
+                height: 50vw;
+            }
+
+            .flex-container .image>img {
+                width: 90vw;
+                height: 50vw;
+            }
+
+            .flex-container .text {
+                width: 90vw;
+                height: 10vw;
+            }
+
+            .flex-container .image .sub {
+                bottom: -40vw;
+                width: 90vw;
+                height: 50vw;
+            }
+
+            .image:hover .sub {
+                bottom: 10vw;
+                transition-delay: 0s;
+            }
+
+            .flex-part .image .sub p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="service-part">
+        <div class="heading">
+            <p>Our Services</p>
+            <h1><span>*</span></h1>
+        </div>
+        <div class="flex-container">
+            <div class="flex-part">
+                <div class="image">
+                    <img id="my-img1" alt="venue"
+                        src="https://www.phillymag.com/wp-content/uploads/sites/3/2019/03/monet-malatino-wedding-thumb.jpg" />
+                    <div class="sub">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor condimentum
+                            lacus, vel tincidunt lectus consequat at. Ut massa nulla, dapibus convallis feugiat sed,
+                            fringilla ac odio. Aliquam dui nisi, facilisis in sem lobortis, elementum accumsan turpis.
+                            Duis elementum ligula id ligula laoreet bibendum. Donec ut metus augue.
+                        </p>
+                    </div>
+                </div>
+                <div class="text">
+                    <p><i>Venue</i></p>
+                </div>
+            </div>
+            <div class="flex-part">
+                <div class="image"><img id="my-img1" alt="venue"
+                        src="https://www.phillymag.com/wp-content/uploads/sites/3/2019/03/monet-malatino-wedding-thumb.jpg" />
+                    <div class="sub">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor condimentum
+                            lacus, vel tincidunt lectus consequat at. Ut massa nulla, dapibus convallis feugiat sed,
+                            fringilla ac odio. Aliquam dui nisi, facilisis in sem lobortis, elementum accumsan turpis.
+                            Duis elementum ligula id ligula laoreet bibendum. Donec ut metus augue.
+                        </p>
+                    </div>
+                </div>
+                <div class="text">
+                    <p><i>Venue</i></p>
+                </div>
+            </div>
+            <div class="flex-part">
+                <div class="image"><img id="my-img1" alt="venue"
+                        src="https://www.phillymag.com/wp-content/uploads/sites/3/2019/03/monet-malatino-wedding-thumb.jpg" />
+                    <div class="sub">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor condimentum
+                            lacus, vel tincidunt lectus consequat at. Ut massa nulla, dapibus convallis feugiat sed,
+                            fringilla ac odio. Aliquam dui nisi, facilisis in sem lobortis, elementum accumsan turpis.
+                            Duis elementum ligula id ligula laoreet bibendum. Donec ut metus augue.
+                        </p>
+                    </div>
+                </div>
+                <div class="text">
+                    <p><i>Venue</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

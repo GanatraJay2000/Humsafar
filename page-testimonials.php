@@ -31,7 +31,7 @@
     }
 
     .para p{
-        font-family: "Myriad Pro", sans-serif;
+        font-family: "Times New Roman", sans-serif;
         color: #888;
         line-height: 30px;
         text-align: justify;  
@@ -123,6 +123,31 @@
             margin-top:30px;
         }      
     }
+    .read-more{
+			color:#b18a60 !important;
+			font-weight:600;
+			font-family: "Myriad Pro", sans-serif;
+			font-size:17px;
+			letter-spacing:1.2px;
+			text-decoration:none !important;
+			position:relative;
+			
+		}
+		.read-more::after{
+			content:'';
+			display:block;
+			width:0;
+			height:2px;
+			border-radius:4px;
+			background-color:#b18a60;
+			position:absolute;
+			bottom:-5px;
+			left:0;
+			transition:ease-in-out width .3s;
+		}
+		.read-more:hover::after{
+			width:100%;
+		}
     @media screen and (max-width:318px){
          .image::after {
             display:none !important;
@@ -171,9 +196,8 @@ while($events->have_posts())
                 <div class="para">
                    <?php the_excerpt(); ?>
                 </div>
-            </div>
-
-            
+                <a href="#" class="read-more">See our portfolio</a>
+            </div>        
         </div>
     </div>
     
