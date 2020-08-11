@@ -1,51 +1,6 @@
 <?php get_header();?>
 <style>
-    
-        .heading {
-            padding-top: 10px;
-            margin-bottom: 0;
-            text-align: center;
-            color: #2f2e2e;
-            font-size: 45px;
-        }
 
-        .heading p {
-            margin: 0;
-        }
-
-        .heading h1 {
-            font-family: "Myriad Pro", sans-serif;
-            margin: auto;
-            text-align: center;
-            font-size: 40px;
-            max-width: 600px;
-            position: relative;
-            color: #b28f5e;
-
-        }
-
-        .heading h1::before,
-        .heading h1::after {
-            content: "";
-            display: block;
-            width: 150px;
-            height: 3px;
-            background: #000;
-            position: absolute;
-            top: 30%;
-            z-index: -2;
-            background-color: #b28f5e;
-        }
-
-        .heading h1::before {
-            left: 0;
-            margin-left: 20%;
-        }
-
-        .heading h1:after {
-            right: 0;
-            margin-right: 20%;
-        }
         .block-image{
             height:90%;
             width:100%;
@@ -87,10 +42,8 @@
             }        
 </style>
  <div class="service-part">
-        <div class="heading">
-            <p>Our Services</p>
-            <h1><span>*</span></h1>
-        </div>
+    <h1  style="font-family:Playfair Display;text-align:center;margin-bottom:40px;">Services</h1>
+        
         <div class="d-flex flex-wrap justify-content-center">
             <div class="col-md-6 col-12 text-center">
                 <div class="my_block">
