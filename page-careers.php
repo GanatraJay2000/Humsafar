@@ -73,7 +73,7 @@ display:none !important;
 .frm_style_formidable-style.with_frm_style .frm_submit{
 	text-align:Center !important;
 }
-.frm_style_formidable-style.with_frm_style .frm_submit button {
+/* .frm_style_formidable-style.with_frm_style .frm_submit button {
     background-color:black !important;
 	font-size:18px !important;
     color:white !important;
@@ -82,7 +82,7 @@ display:none !important;
 	border-radius:50px !important;
 	transition: transform .2s;
 	
-}
+} */
 
 
 .frm_style_formidable-style.with_frm_style .frm_submit button:hover {
