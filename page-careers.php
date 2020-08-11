@@ -73,8 +73,8 @@ display:none !important;
 .frm_style_formidable-style.with_frm_style .frm_submit{
 	text-align:Center !important;
 }
-/* .frm_style_formidable-style.with_frm_style .frm_submit button {
-    background-color:black !important;
+.frm_style_formidable-style.with_frm_style .frm_submit button {
+    background-color:#e1b258 !important;
 	font-size:18px !important;
     color:white !important;
 	width:20%;
@@ -82,7 +82,7 @@ display:none !important;
 	border-radius:50px !important;
 	transition: transform .2s;
 	
-} */
+}
 
 
 .frm_style_formidable-style.with_frm_style .frm_submit button:hover {
