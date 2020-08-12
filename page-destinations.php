@@ -376,11 +376,11 @@ letter-spacing:.75px;
 
 
 
-    <!--Griglia alternata testo e immagine, resposive con flexbox.-->
+    <!-- Griglia alternata testo e immagine, resposive con flexbox.
     <div class="mybox">
 <section>	
 
-<a href="<?php echo site_url('/weddings/destinations/india') ?>">
+<a href="<?php //echo site_url('/weddings/destinations/india') ?>">
 <div class="d-flex flex-wrap">
 <div class="col-md-6 col-12 p-0 m-0" style="max-height:200px"><img style="width:100%;height:100%;" src='https://static.toiimg.com/photo/41522309.cms'>
 </div>						
@@ -393,7 +393,7 @@ letter-spacing:.75px;
 </div>
 </a>
 
-<a href="<?php echo site_url('/weddings/destinations/out-of-india') ?>">
+<a href="<?php //echo site_url('/weddings/destinations/out-of-india') ?>">
 <div class="d-flex flex-wrap">
 <div class="col-md-6 col-12 p-0 m-0"style="max-height:200px"><img style="width:100%;height:100%;" src='https://www.iata.org/contentassets/4b8ec35d55dd4596a1ee21a75aaab835/paris-330x200.jpg?w=330&h=200&mode=crop&scale=both&v=20190829085556'>
 </div>						
@@ -406,14 +406,20 @@ letter-spacing:.75px;
 </div>
 </div>
 </a>
-</section> 
+</section>  -->
+<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 px-xs-0 text-center" style="margin:auto">
+	
+			<h2>Destination Weddings</h2>
+			<p style="font-size:18px">Marriage laws vary from country to country and we can take the stress out of organising the paperwork. Our destination wedding planners will work with the local government to legalise your marriage in the location of your choice and organise a translator, whether in English, Chinese or other. Organising a wedding can be challenging for most couples and organising one abroad even more so. Scarlet has the experience in destination weddings and whatever the request, wherever the location, we are here to make it happen.
+</p>
+</div>
 
                 
-<div class="grid-flex mt-5">
-	<div class="col-lg-5 col-12 sideheading lastheading text-lg-left text-center mb-3">
-		<i> You will never wish to forget an unforgettable memory of your wedding.</i>
+<div class="col-lg-10 col-12 text-center  mt-5" style="margin:auto">
+	<div class=" col-9 mb-3"  style="margin:auto">
+		<h2><i> You will never wish to forget an unforgettable memory of your wedding.</i></h2>
 	</div>
-	<div class="col-lg-7 col-12 text-center mt-lg-2">
+	<div class="mt-lg-2">
 	<p class="lastpara text-justify">
 		Enjoying the benefit of located in India our clients engage us for perfect Indian and Traditional wedding plans along with international levels of service delivered at the destination of their choice. Working with local suppliers as well as importing those elements which cannot be reliably sourced locally is one of many things we are good at. Delivering a large destination wedding is a logistic challenge, not least because of the challenge of ensuring a flawless guest experience. We’ve built a highly experienced team of more than 50 Members, as well as a network of local partners in the most popular destinations and so are superbly well equipped to deliver the most complex multi-day destination weddings.
 	</p>
