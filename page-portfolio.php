@@ -431,26 +431,18 @@
     const next = document.querySelector('.lightboxNav.next');
 	
     function checkPrev() {
-<<<<<<< HEAD
         if (document.querySelector('.lightbox-wrapper div.first1').classList.contains('show')) {
             prev.style.display = 'none';
 
         }
 		else if (document.querySelector('.lightbox-wrapper div.first2').classList.contains('show')) {
             prev.style.display = 'none';
-=======
-        if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
-            prev.style.display = 'none';             
->>>>>>> 276c996ff264bc06d8eb12ef63b04753ba3567a0
-
-        }
 		else {
             prev.style.display = 'flex';
         }
     }
 
     function checkNext() {
-<<<<<<< HEAD
         if (document.querySelector('.lightbox-wrapper div.last1').classList.contains('show')) {
             next.style.display = 'none';
         }
@@ -458,11 +450,6 @@
             next.style.display = 'none';
         }
 		else {
-=======
-        if (document.querySelector('.lightbox-wrapper div:last-child').classList.contains('show')) {
-            next.style.display = 'none';             
-        } else {
->>>>>>> 276c996ff264bc06d8eb12ef63b04753ba3567a0
             next.style.display = 'flex';
         }
     }
