@@ -433,26 +433,13 @@
     function checkPrev() {
         if (document.querySelector('.lightbox-wrapper div.first1').classList.contains('show')) {
             prev.style.display = 'none';
-
         }
 	else if (document.querySelector('.lightbox-wrapper div.first2').classList.contains('show')) {
             prev.style.display = 'none';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
-            prev.style.display = 'none';             
 
-        }
->>>>>>> 8aa6bfc56af0931c393061a22acad21ae953b971
-		else {
-=======
-	}
-	else if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
-            next.style.display = 'none';             
-        }
+        else if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
+            prev.style.display = 'none';             
         else {
->>>>>>> baf32aca06abcd4a5a23edea2329fea35513c4a5
             prev.style.display = 'flex';
         }
     }
@@ -464,20 +451,10 @@
 	else if (document.querySelector('.lightbox-wrapper div.last2').classList.contains('show')) {
             next.style.display = 'none';
         }
-<<<<<<< HEAD
-		else {
-<<<<<<< HEAD
-=======
-        if (document.querySelector('.lightbox-wrapper div:last-child').classList.contains('show')) {
-            next.style.display = 'none';             
-        } else {
->>>>>>> 8aa6bfc56af0931c393061a22acad21ae953b971
-=======
 	else if (document.querySelector('.lightbox-wrapper div:last-child').classList.contains('show')) {
             next.style.display = 'none';             
         } 
 	else {
->>>>>>> baf32aca06abcd4a5a23edea2329fea35513c4a5
             next.style.display = 'flex';
         }
     }
