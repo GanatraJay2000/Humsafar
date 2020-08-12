@@ -374,7 +374,7 @@
     $portfolio = rwmb_meta('portfolio', array( 'size' => 'large' ) ); 
     ?>
 
-<?php/*	
+<?php /*	
 	<div class="lightbox-wrapper">
         <?php for($k=0; $k < sizeof($portfolio); $k++){ ?>
 		
@@ -437,6 +437,13 @@
         }
 		else if (document.querySelector('.lightbox-wrapper div.first2').classList.contains('show')) {
             prev.style.display = 'none';
+<<<<<<< HEAD
+=======
+        if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
+            prev.style.display = 'none';             
+
+        }
+>>>>>>> 8aa6bfc56af0931c393061a22acad21ae953b971
 		else {
             prev.style.display = 'flex';
         }
@@ -450,6 +457,12 @@
             next.style.display = 'none';
         }
 		else {
+<<<<<<< HEAD
+=======
+        if (document.querySelector('.lightbox-wrapper div:last-child').classList.contains('show')) {
+            next.style.display = 'none';             
+        } else {
+>>>>>>> 8aa6bfc56af0931c393061a22acad21ae953b971
             next.style.display = 'flex';
         }
     }
