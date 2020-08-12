@@ -614,9 +614,9 @@ function redirectSubsToFrontEnd(){
 add_action('wp_loaded', 'noSubsAdminBar');
 function noSubsAdminBar(){
 	$currentUser = wp_get_current_user();
-	if(count($currentUser->roles) == 1 AND $currentUser->roles[0] == 'subscriber'){
+	// if(count($currentUser->roles) == 1 AND $currentUser->roles[0] == 'subscriber'){
 		show_admin_bar( false );
-	}
+	// }
 }
 
 add_action('wp_logout','ps_redirect_after_logout');
