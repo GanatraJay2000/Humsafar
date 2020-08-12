@@ -131,7 +131,7 @@
     }
 
 
-    main.lightbox-wrapper div.show img {
+    div.lightbox-wrapper div.show img {
         position: fixed;
         top: 0;
         left: 0;
@@ -149,7 +149,7 @@
         /* custom cursor to signal close on click */
     }
 
-    main.lightbox-wrapper div:not(.show):hover img {
+    div.lightbox-wrapper div:not(.show):hover img {
         cursor: pointer;
 	    tarnsition: 0.5s;
 	    filter: brightness(50%);
@@ -170,6 +170,20 @@
     }
 	
 	**/
+	
+	.linee{
+        width:90%;
+	    margin: 10px auto;
+	    height: 20px;
+	    border-bottom: 2px solid #b28f5e;
+    }
+
+    .subt{
+        margin: 10px auto;
+	    text-align: center;
+	    background-color: #fcf7ff;
+	    width: 20%;
+    }
 
     .horizontal {
     	grid-column: span 2;
@@ -291,7 +305,7 @@
 **/
 
     @media screen and (max-width : 700px) {
-        main.lightbox-wrapper {
+        div.lightbox-wrapper {
             max-width: 100% !important;
         }
 
@@ -353,36 +367,85 @@
     the_post();
     $portfolio = rwmb_meta('portfolio', array( 'size' => 'large' ) ); 
     ?>
-    <main class="lightbox-wrapper">
+
+<?php/*	
+	<div class="lightbox-wrapper">
+        <?php for($k=0; $k < sizeof($portfolio); $k++){ ?>
+		
+		    <?php if($k==0) { ?> 
+			    <div class="<?php echo $image[$k]['description'] ?> first1">
+                <img src="<?php echo $image[$k]['url'] ?>" alt="">
+                </div>
+            <?php } ?>
+			
+			<?php elseif($k==sizeof($portfolio)-1) { ?> 
+			    <div class="<?php echo $image[$k]['description'] ?> last1">
+                <img src="<?php echo $image[$k]['url'] ?>" alt="">
+                </div>
+            <?php } ?>
+			
+			<?php else($k==sizeof($portfolio)-1) { ?> 
+			    <div class="<?php echo $image[$k]['description'] ?>">
+                <img src="<?php echo $image[$k]['url'] ?>" alt="">
+                </div>
+            <?php } ?>
+			
+        <?php } ?>        
+    </div>
+*/?>
+	
+    <div class="lightbox-wrapper">
         <?php foreach($portfolio as $image){ ?>
             <div class="<?php echo $image['description'] ?>">
             <img src="<?php echo $image['url'] ?>" alt="">
             </div>
         <?php } ?>        
-    </main>
+    </div>
+	
+	<div class="linee">
+	    <div class="subt">
+	        <p>Fiesta
+	        </p>
+	    </div>
+	</div>
+	
+	<div class="lightbox-wrapper">
+        <?php foreach($portfolio as $image){ ?>
+            <div class="<?php echo $image['description'] ?>">
+            <img src="<?php echo $image['url'] ?>" alt="">
+            </div>
+        <?php } ?>        
+    </div>
 <?php } ?>
 
 <script>
-    const divs = document.querySelectorAll('main.lightbox-wrapper div');
+    const divs = document.querySelectorAll('div.lightbox-wrapper div');
     const body = document.body;
     const prev = document.querySelector('.lightboxNav.prev');
     const next = document.querySelector('.lightboxNav.next');
 	
     function checkPrev() {
-        if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
+        if (document.querySelector('.lightbox-wrapper div.first1').classList.contains('show')) {
             prev.style.display = 'none';
-            // body.classList.toggle('overflow');
 
-        } else {
+        }
+		else if (document.querySelector('.lightbox-wrapper div.first2').classList.contains('show')) {
+            prev.style.display = 'none';
+
+        }
+		else {
             prev.style.display = 'flex';
         }
     }
 
     function checkNext() {
-        if (document.querySelector('.lightbox-wrapper div:last-child').classList.contains('show')) {
+        if (document.querySelector('.lightbox-wrapper div.last1').classList.contains('show')) {
             next.style.display = 'none';
-            // body.classList.toggle('overflow');
-        } else {
+        }
+		else if (document.querySelector('.lightbox-wrapper div.last2').classList.contains('show')) {
+            next.style.display = 'none';
+        }
+		else {
             next.style.display = 'flex';
         }
     }
