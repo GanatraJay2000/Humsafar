@@ -40,7 +40,7 @@ foreach ( $slide_2 as $image ) {
 </div>
 
 <footer class="site-footer">
-<?php echo do_shortcode('[instagram-feed]'); ?>
+<?php echo do_shortcode('[insta-gallery id="1"]'); ?>
     <div class="wrapper">
         <div class=" text-lg-center">
             <div class=" text-lg-center">
