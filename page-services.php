@@ -57,7 +57,7 @@
             }
             @media screen and (max-width:768px)     {
                     .block_content{ 
-                        font-size:2.6vw;
+                        font-size:4vw;
                     }
                     .content{
                         width:100%;
