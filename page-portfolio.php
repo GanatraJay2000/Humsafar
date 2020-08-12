@@ -3,8 +3,7 @@
 <style>
 
     body {
-        font-family: "Myriad Pro",  'Playfair Display', serif;
-        font-size: 2rem;
+        font-family: "Myriad Pro",  'Playfair Display', serif;        
         background-color: #fcf7ff;
     }
 
@@ -344,11 +343,18 @@
              font-size: 17px;
         }
     }
-	/**
-    .content.wrapper{
-        margin:0 !important;
+	.content.wrapper{        
         width:100% !important;
-    }**/
+    }
+    .lightbox-wrapper div.show::after{        
+        content:'\274C';
+        font-size:28px;
+        display:block;
+        position:fixed;
+        top:20px;
+        right:20px;        
+        z-index:1000;
+    }
 </style>
 
         <section class="heading">
@@ -360,8 +366,8 @@
         </section>
 
 
-<a href="#" class="lightboxNav prev">&lt;</a>
-<a href="#" class="lightboxNav next">&gt;</a>
+<a href="#" class="lightboxNav prev"><i class="fas fa-chevron-left  "></i></a>
+<a href="#" class="lightboxNav next"><i class="fas fa-chevron-right  "></i></a>
 
 <?php while(have_posts()){
     the_post();
@@ -425,12 +431,17 @@
     const next = document.querySelector('.lightboxNav.next');
 	
     function checkPrev() {
+<<<<<<< HEAD
         if (document.querySelector('.lightbox-wrapper div.first1').classList.contains('show')) {
             prev.style.display = 'none';
 
         }
 		else if (document.querySelector('.lightbox-wrapper div.first2').classList.contains('show')) {
             prev.style.display = 'none';
+=======
+        if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
+            prev.style.display = 'none';             
+>>>>>>> 276c996ff264bc06d8eb12ef63b04753ba3567a0
 
         }
 		else {
@@ -439,6 +450,7 @@
     }
 
     function checkNext() {
+<<<<<<< HEAD
         if (document.querySelector('.lightbox-wrapper div.last1').classList.contains('show')) {
             next.style.display = 'none';
         }
@@ -446,6 +458,11 @@
             next.style.display = 'none';
         }
 		else {
+=======
+        if (document.querySelector('.lightbox-wrapper div:last-child').classList.contains('show')) {
+            next.style.display = 'none';             
+        } else {
+>>>>>>> 276c996ff264bc06d8eb12ef63b04753ba3567a0
             next.style.display = 'flex';
         }
     }
@@ -455,6 +472,7 @@ Array.prototype.slice.call(divs).forEach(function (el) {
 			el.addEventListener('click', function () {
 				this.classList.toggle('show');
 				body.classList.toggle('active');
+                // body.classList.toggle('overflow');
 				checkNext();
 				checkPrev();
 			});
@@ -468,6 +486,7 @@ Array.prototype.slice.call(divs).forEach(function (el) {
         show.previousElementSibling.dispatchEvent(event);
         show.classList.remove('show');
         body.classList.add('active');
+        
         checkNext();
     });
 
@@ -478,7 +497,7 @@ Array.prototype.slice.call(divs).forEach(function (el) {
 
         show.nextElementSibling.dispatchEvent(event);
         show.classList.remove('show');
-        body.classList.add('active');
+        body.classList.add('active');        
         checkPrev();
     });
 	

@@ -20,8 +20,7 @@
             background-color:#1f1f1f;                       
             padding:0.4em 4em;
             font-size:24px;        
-            text-decoration:none !important    ;   
-            
+            text-decoration:none !important    ;           
             position:relative;       
         }
         .contact-us::after{
@@ -43,6 +42,14 @@
             margin:30px;
             font-size:100px;
             font-family: "Great Vibes", cursive; 
+        }
+        @media screen and (max-width:500px){
+            .title{
+                font-size:70px;
+            }
+            .contact-us{
+                padding:0;
+            }
         }
 
     </style>

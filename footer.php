@@ -27,15 +27,20 @@ $slide_2 = rwmb_meta('slide_2', array( 'size' => 'large' ) , $post_id);
 
 
 <?php 
-foreach ( $slide_2 as $image ) {?>
+foreach ( $slide_2 as $image ) {
+    ?>
+
     <div class="block">
+    <a href="<?php echo $image['description'] ?>">
         <img src="<?php echo $image['url'] ?>" alt="">                
+    </a>
     </div>
 <?php } ?> 
     </div>
 </div>
 
 <footer class="site-footer">
+<?php echo do_shortcode('[instagram-feed]'); ?>
     <div class="wrapper">
         <div class=" text-lg-center">
             <div class=" text-lg-center">
