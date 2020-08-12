@@ -374,7 +374,7 @@
     $portfolio = rwmb_meta('portfolio', array( 'size' => 'large' ) ); 
     ?>
 
-<?php/*	
+<?php /*	
 	<div class="lightbox-wrapper">
         <?php for($k=0; $k < sizeof($portfolio); $k++){ ?>
 		
@@ -431,17 +431,14 @@
     const next = document.querySelector('.lightboxNav.next');
 	
     function checkPrev() {
-<<<<<<< HEAD
         if (document.querySelector('.lightbox-wrapper div.first1').classList.contains('show')) {
             prev.style.display = 'none';
 
         }
 		else if (document.querySelector('.lightbox-wrapper div.first2').classList.contains('show')) {
             prev.style.display = 'none';
-=======
         if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
             prev.style.display = 'none';             
->>>>>>> 276c996ff264bc06d8eb12ef63b04753ba3567a0
 
         }
 		else {
