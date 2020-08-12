@@ -68,6 +68,7 @@
                         font-size:23px;
                     }
             }
+
 </style>
  <div class="service-part">
     <h1  style="font-family:Playfair Display;text-align:center;margin-bottom:40px;">Services</h1>

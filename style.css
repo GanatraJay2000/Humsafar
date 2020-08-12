@@ -1000,3 +1000,10 @@ nav.item.nav-links label {
     font-size: 12px;
   }
 }
+
+
+            img{
+                /* border:10px solid #004841 !important; */
+                border: 10px solid transparent;
+                border-image: url("./bg1.png") 30 round;
+            }
