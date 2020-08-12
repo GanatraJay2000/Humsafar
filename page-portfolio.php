@@ -130,7 +130,7 @@
     }
 
 
-    div.lightbox-wrapper div.show img {
+    main.lightbox-wrapper div.show img {
         position: fixed;
         top: 0;
         left: 0;
@@ -148,7 +148,7 @@
         /* custom cursor to signal close on click */
     }
 
-    div.lightbox-wrapper div:not(.show):hover img {
+    main.lightbox-wrapper div:not(.show):hover img {
         cursor: pointer;
 	    tarnsition: 0.5s;
 	    filter: brightness(50%);
@@ -157,7 +157,6 @@
     .left {
         grid-column-start: 1;
     }
-
     .center {
         grid-column-start: 2;
         /* grid-column-end: span 2;
@@ -169,20 +168,6 @@
     }
 	
 	**/
-	
-	.linee{
-        width:90%;
-	    margin: 10px auto;
-	    height: 20px;
-	    border-bottom: 2px solid #b28f5e;
-    }
-
-    .subt{
-        margin: 10px auto;
-	    text-align: center;
-	    background-color: #fcf7ff;
-	    width: 20%;
-    }
 
     .horizontal {
     	grid-column: span 2;
@@ -280,16 +265,13 @@
         .horizontal {
             grid-column-end: span 2;
         }
-
         .vertical {
             grid-row-end: span 2;
         }
-
         .big {
             grid-column-end: span 2;
             grid-row-end: span 2;
         }
-
         .big.right {
             grid-column-start: -3;
             grid-column-end: span 2;
@@ -304,7 +286,7 @@
 **/
 
     @media screen and (max-width : 700px) {
-        div.lightbox-wrapper {
+        main.lightbox-wrapper {
             max-width: 100% !important;
         }
 
@@ -373,88 +355,34 @@
     the_post();
     $portfolio = rwmb_meta('portfolio', array( 'size' => 'large' ) ); 
     ?>
-
-<?php /*	
-	<div class="lightbox-wrapper">
-        <?php for($k=0; $k < sizeof($portfolio); $k++){ ?>
-		
-		    <?php if($k==0) { ?> 
-			    <div class="<?php echo $image[$k]['description'] ?> first1">
-                <img src="<?php echo $image[$k]['url'] ?>" alt="">
-                </div>
-            <?php } ?>
-			
-			<?php elseif($k==sizeof($portfolio)-1) { ?> 
-			    <div class="<?php echo $image[$k]['description'] ?> last1">
-                <img src="<?php echo $image[$k]['url'] ?>" alt="">
-                </div>
-            <?php } ?>
-			
-			<?php else($k==sizeof($portfolio)-1) { ?> 
-			    <div class="<?php echo $image[$k]['description'] ?>">
-                <img src="<?php echo $image[$k]['url'] ?>" alt="">
-                </div>
-            <?php } ?>
-			
-        <?php } ?>        
-    </div>
-*/?>
-	
-    <div class="lightbox-wrapper">
+    <main class="lightbox-wrapper">
         <?php foreach($portfolio as $image){ ?>
             <div class="<?php echo $image['description'] ?>">
             <img src="<?php echo $image['url'] ?>" alt="">
             </div>
         <?php } ?>        
-    </div>
-	
-	<div class="linee">
-	    <div class="subt">
-	        <p>Fiesta
-	        </p>
-	    </div>
-	</div>
-	
-	<div class="lightbox-wrapper">
-        <?php foreach($portfolio as $image){ ?>
-            <div class="<?php echo $image['description'] ?>">
-            <img src="<?php echo $image['url'] ?>" alt="">
-            </div>
-        <?php } ?>        
-    </div>
+    </main>
 <?php } ?>
 
 <script>
-    const divs = document.querySelectorAll('div.lightbox-wrapper div');
+    const divs = document.querySelectorAll('main.lightbox-wrapper div');
     const body = document.body;
     const prev = document.querySelector('.lightboxNav.prev');
     const next = document.querySelector('.lightboxNav.next');
 	
     function checkPrev() {
-        if (document.querySelector('.lightbox-wrapper div.first1').classList.contains('show')) {
-            prev.style.display = 'none';
-        }
-	else if (document.querySelector('.lightbox-wrapper div.first2').classList.contains('show')) {
-            prev.style.display = 'none';
-
-        else if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
+        if (document.querySelector('.lightbox-wrapper div:first-child').classList.contains('show')) {
             prev.style.display = 'none';             
-        else {
+
+        } else {
             prev.style.display = 'flex';
         }
     }
 
     function checkNext() {
-        if (document.querySelector('.lightbox-wrapper div.last1').classList.contains('show')) {
-            next.style.display = 'none';
-        }
-	else if (document.querySelector('.lightbox-wrapper div.last2').classList.contains('show')) {
-            next.style.display = 'none';
-        }
-	else if (document.querySelector('.lightbox-wrapper div:last-child').classList.contains('show')) {
+        if (document.querySelector('.lightbox-wrapper div:last-child').classList.contains('show')) {
             next.style.display = 'none';             
-        } 
-	else {
+        } else {
             next.style.display = 'flex';
         }
     }
