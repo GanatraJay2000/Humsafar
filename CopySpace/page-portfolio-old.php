@@ -6,9 +6,7 @@
         font-family: "Myriad Pro",  'Playfair Display', serif;        
         background-color: #fcf7ff;
     }
-img{
-    border:0;
-}
+
     .prev,
     .next,
     .close	{
@@ -196,16 +194,15 @@ img{
         margin-bottom: 0;
         text-align: center;
         color: #2f2e2e;
-        font-size: 60px;
+        font-size: 45px;
     }
 
     .heading p {
         margin: 0;
-        font-family: "Batang",  serif;
     }
 
     .heading h1 {
-        font-family: "Batang",  serif;
+        font-family: "Myriad Pro",  sans-serif;
         margin: auto;
         text-align: center;
         font-size: 40px;
@@ -237,7 +234,32 @@ img{
         right: 0;
         margin-right: 20%;
     }
+	
+	.heading div{
+	    font-size: 21px;
+		max-width:80%;
+		margin: auto;
+	}
 
+    .heading .button {
+        background-color: #fcf7ff;
+        border: 1px solid #b28f5e;
+		color: #b28f5e;
+        padding: 5px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 2px;
+        cursor: pointer;
+		transition: 0.5s;
+    }
+           
+    .heading .button:hover{
+		background-color: #b28f5e;
+	    color: #fcf7ff;
+		transition: 0.5s;
+    }
 /**
     @media screen and (min-width:1124px) {
         .horizontal {
@@ -315,48 +337,36 @@ img{
         right:20px;        
         z-index:1000;
     }
-    .title{
-        font-size:50px;
-        font-family:"Playfair Display", serif;
-    }
 </style>
 
         <section class="heading">
 		    <p>View our portfolio of events</p>
-			<h1><span>*</span></h1>			
+			<h1><span>*</span></h1>
+			<div><p>We've organised many Parties & Events across the world - interested in discussing yours?
+			</p>
+			<button class="button">Let's Talk</button></div>
         </section>
 
 
 <a href="#" class="lightboxNav prev"><i class="fas fa-chevron-left  "></i></a>
 <a href="#" class="lightboxNav next"><i class="fas fa-chevron-right  "></i></a>
 
-<center>
-<?php
-$events = new WP_Query(array(
-    'post_type'=>'events',
-    'meta_key' => 'event_date',
-    'orderby' => 'meta_value_num',
-    'order' => 'DESC',
-));
-while($events->have_posts())
-{
-    $events->the_post();         
-    $gallery = rwmb_meta('gallery', array( 'size' => 'large' ) );             
+<?php while(have_posts()){
+    the_post();
+    $portfolio = rwmb_meta('portfolio', array( 'size' => 'large' ) ); 
     ?>
-    <h4 class="title" id="<?php echo str_replace(' ','',strtolower(get_the_title())); ?>"><?php the_title(); ?></h4>
     <main class="lightbox-wrapper">
-    <?php foreach($gallery as $image){ ?>
+        <?php foreach($portfolio as $image){ ?>
             <div class="<?php echo $image['description'] ?>">
             <img src="<?php echo $image['url'] ?>" alt="">
             </div>
-            
-        <?php } ?> 
+        <?php } ?>        
     </main>
 <?php } ?>
-    </center>
+
 <script>
     const divs = document.querySelectorAll('main.lightbox-wrapper div');
-    const body = document.body
+    const body = document.body;
     const prev = document.querySelector('.lightboxNav.prev');
     const next = document.querySelector('.lightboxNav.next');
 	

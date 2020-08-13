@@ -196,7 +196,7 @@ while($events->have_posts())
                 <div class="para">
                    <?php the_excerpt(); ?>
                 </div>
-                <a href="#" class="read-more">See our portfolio</a>
+                <a href="<?php echo site_url('/portfolio#').str_replace(' ','',strtolower(get_the_title())); ?>" class="read-more">See our portfolio</a>
             </div>        
         </div>
     </div>
