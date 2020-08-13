@@ -132,9 +132,14 @@ h2,h4{
 	filter:brightness(40%);
 }
 
+.dest-content-image{
+	 width:100%;height:400px;
+}
 
  @media screen and (max-width : 700px) {
-
+.dest-content-image{
+	 width:100%;height:300px;
+}
        .columns{
 	 column-count: 1;
 
@@ -213,7 +218,7 @@ $text = explode('-br-', $content);
 <div class="container" style="padding-top:30px;">
 <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
-<img src="<?php echo $gallery[0]['url'] ?>" width="100%">
+<img src="<?php echo $gallery[0]['url'] ?>" class="dest-content-image">
 </div>
 
 
@@ -228,28 +233,28 @@ $text = explode('-br-', $content);
 </div>
 
 <div class="container" style="padding-top:30px;">
-<div class="row">
+<div class="row d-flex flex-row-reverse">
+	            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
+<img src="<?php echo $gallery[1]['url'] ?>" class="dest-content-image">
+
+
+
+</div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
 				
 			<p style="font-size:13px"><?php echo $text[2]; ?> 
 </p>
-<!-- <div class="more">CONSIDERING OTHER DESTINATIONS?</div> -->
 </div>
 
 
 
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
-<img src="<?php echo $gallery[1]['url'] ?>" width="100%">
 
-
-
-</div>
 </div>
 </div>
 <div class="container" style="padding-top:30px;" >
-<div class="row">
+<div class="row d-flex flex-row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
-<img src="<?php echo $gallery[2]['url'] ?>" width="100%">
+<img src="<?php echo $gallery[2]['url'] ?>" class="dest-content-image">
 </div>
 
 
@@ -264,25 +269,43 @@ $text = explode('-br-', $content);
 
 <div class="container" style="padding-top:50px;">
 
-<center>
+<center class="mb-5">
 	<h5 class="locations">View Other Locations</h5>
 	<div class="destinations-carousel">
 <div class="owl-carousel owl-theme destinations">
+<?php $destinations = new WP_Query(array(
+'post_type'=>'destinations',
+'meta_key' => 'order',
+'orderby' => 'meta_value_num',
+'order' => 'ASC',
+'meta_query' => array(
+    array(
+        'key' => 'destination_type',
+        'compare' => '==',
+        'value' => 'Traditional',   
+    ),
+),
+));
+$i=0; 
+while( $destinations->have_posts() ){ 
+$destinations->the_post(); 
+ $thumbnail = rwmb_meta('image_on_destination_page', array( 'size' => 'large' ) );
+?>
 <div>
-<div class="g">
-<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/goa.jpg' ?>"><div class="centered">Goa<hr id="imghr"><div class="vv">VIEW</div></div></img>
+	<a href="<?php the_permalink(); ?>">
+		<div class="g">
+			<?php foreach ( $thumbnail as $image ) {?>		   
+			<img id="gimg" src="<?php echo $image['url'] ?>">
+			<?php } ?>		
+			<div class="centered">
+				<?php the_title(); ?>
+				<hr id="imghr">
+				<div class="vv">VIEW</div>
+			</div>
+		</div>
+	</a>
 </div>
-</div>
-<div><div class="g">
-<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/udaipur.jpg' ?>"><div class="centered">Udaipur<hr id="imghr"><div class="vv">VIEW</div></div></img>
-</div></div>
-<div><div class="g">
-<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/kerela.jpg' ?>"><div class="centered">Kerela<hr id="imghr"><div class="vv">VIEW</div></div></img>
-</div></div>
-<div><div class="g">
-<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/andaman.jpg' ?>"><div class="centered">Andaman & Nicobar Islands<hr id="imghr"><div class="vv">VIEW</div></div></img>
-</div></div>
-<div>Jayf</div>
+	<?php } ?>
 </div>
 <div class="dest-nav">
     <div class="dest-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>

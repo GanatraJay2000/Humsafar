@@ -11,7 +11,7 @@ div.newsletter p{
 .modal{
     height:auto !important;
 }
-.clents_image_car{
+.clients_image_car{
     border:0;
 }
 
