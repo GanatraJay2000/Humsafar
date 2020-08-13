@@ -189,36 +189,10 @@ VIEW OUR PORTFOLIO</a></br>
 </div>
 
 <div class="container" style="padding:50px 0;">
-<div id="title" class="mb-5"><span><b>SOME OF OUR FAVOURITE INDIAN LOCATIONS INCLUDE</b></span></div>
+<div id="title" class="mb-5"><span><b>SOME OF OUR FAVOURITE FOREIGN LOCATIONS INCLUDE</b></span></div>
 <center>
-<div class="gallery">
-<a href="<?php echo site_url('/destinations/udaipur'); ?>" class="g">
-<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/goa.jpg' ?>"><div class="centered">Goa<hr id="imghr"><div class="vv">VIEW</div></div></img>
-</a>
-<a href="<?php echo site_url('/destinations/udaipur'); ?>" class="g">
-<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/udaipur.jpg' ?>"><div class="centered">Udaipur<hr id="imghr"><div class="vv">VIEW</div></div></img>
-</a>
-<a href="<?php echo site_url('/destinations/udaipur'); ?>" class="g">
-<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/kerela.jpg' ?>"><div class="centered">Kerala<hr id="imghr"><div class="vv">VIEW</div></div></img>
-</a>
-<a href="<?php echo site_url('/destinations/udaipur'); ?>" class="g">
-<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/andaman.jpg' ?>"><div class="centered">Andaman & Nicobar Islands<hr id="imghr"><div class="vv">VIEW</div></div></img>
-</a>
-<a href="<?php echo site_url('/destinations/udaipur'); ?>" class="g">
-<img id="gimg" src="https://image.wedmegood.com/nw/uploads/member/181996/1526606478__DSC7818.jpg"><div class="centered">Jodhpur<hr id="imghr"><div class="vv">VIEW</div></div></img>
-</a>
-<a href="<?php echo site_url('/destinations/udaipur'); ?>" class="g">
-<img id="gimg" src="https://image.wedmegood.com/resized-nw/700X/wp-content/uploads/2018/07/1509217236_18076851_1371853039549003_5253843284320669833_o.jpg"><div class="centered">Jaipur<hr id="imghr"><div class="vv">VIEW</div></div></img>
-</a>
-<a href="<?php echo site_url('/destinations/udaipur'); ?>" class="g">
-<img id="gimg" src="https://wedabout.com/blog/wp-content/uploads/2017/06/The-Oberoi-Amarvilas-Agra-1-e1497942897288.jpg"><div class="centered">Agra<hr id="imghr"><div class="vv">VIEW</div></div></img>
-</a>
-<a href="<?php echo site_url('/destinations/udaipur'); ?>" class="g">
-<img id="gimg" src="https://i.pinimg.com/originals/fb/30/0e/fb300e79f33822cbf1505073562d2d99.jpg"><div class="centered">Musoorie<hr id="imghr"><div class="vv">VIEW</div></div></img>
-</a>
-</div>
-
-<!-- <?php $destinations = new WP_Query(array(
+	<div class="gallery">
+	<?php $destinations = new WP_Query(array(
 'post_type'=>'destinations',
 'meta_key' => 'order',
 'orderby' => 'meta_value_num',
@@ -234,8 +208,16 @@ VIEW OUR PORTFOLIO</a></br>
 $i=0; 
 while( $destinations->have_posts() ){ 
 $destinations->the_post(); 
+ $thumbnail = rwmb_meta('image_on_destination_page', array( 'size' => 'large' ) );
 ?>
-<?php } ?> -->
+	<a href="<?php the_permalink(); ?>" class="g">
+        <?php foreach ( $thumbnail as $image ) {?>		   
+		   <img id="gimg" src="<?php echo $image['url'] ?>"><div class="centered"><?php the_title(); ?><hr id="imghr"><div class="vv">VIEW</div></div></img>
+		<?php } ?>
+	</a>
+	<?php } ?>
+</div>
+
 </center>
 </div>
 

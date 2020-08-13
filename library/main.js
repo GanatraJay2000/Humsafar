@@ -174,4 +174,34 @@ jQuery(document).ready(function ($) {
       },
     },
   });
+
+  var destinations = $(".destinations");
+  destinations.owlCarousel({
+    loop: true,
+    animateIn: "animate__fadeIn",
+    animateOut: "animate__fadeOut",
+    margin: 10,
+    stagePadding: 0,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    responsiveClass: true,
+    autoplayHoverPause: true,
+    dots: true,
+    nav: true,
+    navText: [$(".dest-prev"), $(".dest-next")],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      450: {
+        items: 2,
+      },
+      750: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  });
 });

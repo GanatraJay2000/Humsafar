@@ -12,6 +12,9 @@ div.newsletter p{
     height:auto !important;
 }
 
+.clients_image_car{
+    border:0;
+}
 
 </style>
 <?php $logos = new WP_Query(array(
@@ -32,7 +35,7 @@ foreach ( $slide_2 as $image ) {
 
     <div class="block">
     <a href="<?php echo $image['description'] ?>">
-        <img src="<?php echo $image['url'] ?>" alt="">                
+        <img class="clients_image_car" src="<?php echo $image['url'] ?>" alt="">                
     </a>
     </div>
 <?php } ?> 
@@ -40,6 +43,7 @@ foreach ( $slide_2 as $image ) {
 </div>
 
 <footer class="site-footer">
+<?php echo do_shortcode('[instagram-feed]'); ?>
     <div class="wrapper">
         <div class=" text-lg-center">
             <div class=" text-lg-center">

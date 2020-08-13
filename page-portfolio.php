@@ -6,7 +6,9 @@
         font-family: "Myriad Pro",  'Playfair Display', serif;        
         background-color: #fcf7ff;
     }
-
+img{
+    border:0;
+}
     .prev,
     .next,
     .close	{
@@ -157,7 +159,6 @@
     .left {
         grid-column-start: 1;
     }
-
     .center {
         grid-column-start: 2;
         /* grid-column-end: span 2;
@@ -195,15 +196,16 @@
         margin-bottom: 0;
         text-align: center;
         color: #2f2e2e;
-        font-size: 45px;
+        font-size: 60px;
     }
 
     .heading p {
         margin: 0;
+        font-family: "Batang",  serif;
     }
 
     .heading h1 {
-        font-family: "Myriad Pro",  sans-serif;
+        font-family: "Batang",  serif;
         margin: auto;
         text-align: center;
         font-size: 40px;
@@ -235,47 +237,19 @@
         right: 0;
         margin-right: 20%;
     }
-	
-	.heading div{
-	    font-size: 21px;
-		max-width:80%;
-		margin: auto;
-	}
 
-    .heading .button {
-        background-color: #fcf7ff;
-        border: 1px solid #b28f5e;
-		color: #b28f5e;
-        padding: 5px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 10px 2px;
-        cursor: pointer;
-		transition: 0.5s;
-    }
-           
-    .heading .button:hover{
-		background-color: #b28f5e;
-	    color: #fcf7ff;
-		transition: 0.5s;
-    }
 /**
     @media screen and (min-width:1124px) {
         .horizontal {
             grid-column-end: span 2;
         }
-
         .vertical {
             grid-row-end: span 2;
         }
-
         .big {
             grid-column-end: span 2;
             grid-row-end: span 2;
         }
-
         .big.right {
             grid-column-start: -3;
             grid-column-end: span 2;
@@ -341,36 +315,48 @@
         right:20px;        
         z-index:1000;
     }
+    .title{
+        font-size:50px;
+        font-family:"Playfair Display", serif;
+    }
 </style>
 
         <section class="heading">
 		    <p>View our portfolio of events</p>
-			<h1><span>*</span></h1>
-			<div><p>We've organised many Parties & Events across the world - interested in discussing yours?
-			</p>
-			<button class="button">Let's Talk</button></div>
+			<h1><span>*</span></h1>			
         </section>
 
 
 <a href="#" class="lightboxNav prev"><i class="fas fa-chevron-left  "></i></a>
 <a href="#" class="lightboxNav next"><i class="fas fa-chevron-right  "></i></a>
 
-<?php while(have_posts()){
-    the_post();
-    $portfolio = rwmb_meta('portfolio', array( 'size' => 'large' ) ); 
+<center>
+<?php
+$events = new WP_Query(array(
+    'post_type'=>'events',
+    'meta_key' => 'event_date',
+    'orderby' => 'meta_value_num',
+    'order' => 'DESC',
+));
+while($events->have_posts())
+{
+    $events->the_post();         
+    $gallery = rwmb_meta('gallery', array( 'size' => 'large' ) );             
     ?>
+    <h4 class="title" id="<?php echo str_replace(' ','',strtolower(get_the_title())); ?>"><?php the_title(); ?></h4>
     <main class="lightbox-wrapper">
-        <?php foreach($portfolio as $image){ ?>
+    <?php foreach($gallery as $image){ ?>
             <div class="<?php echo $image['description'] ?>">
             <img src="<?php echo $image['url'] ?>" alt="">
             </div>
-        <?php } ?>        
+            
+        <?php } ?> 
     </main>
 <?php } ?>
-
+    </center>
 <script>
     const divs = document.querySelectorAll('main.lightbox-wrapper div');
-    const body = document.body;
+    const body = document.body
     const prev = document.querySelector('.lightboxNav.prev');
     const next = document.querySelector('.lightboxNav.next');
 	

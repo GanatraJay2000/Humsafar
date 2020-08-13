@@ -12,6 +12,7 @@ wp_enqueue_script( 'main-js', get_template_directory_uri() . '/library/main.js',
 
 
 wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/library/bootstrap.min.css',null, '1.0' );
+
 wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/library/animate.css', null, '1.0' );
 wp_enqueue_style( 'owl-css', get_template_directory_uri() . '/library/owl.carousel.min.css', null, '1.0' );
 wp_enqueue_style( 'owl-css', get_template_directory_uri() . '/library/owl.default.theme.min.css', null, '1.0' );
@@ -614,9 +615,9 @@ function redirectSubsToFrontEnd(){
 add_action('wp_loaded', 'noSubsAdminBar');
 function noSubsAdminBar(){
 	$currentUser = wp_get_current_user();
-	if(count($currentUser->roles) == 1 AND $currentUser->roles[0] == 'subscriber'){
+	// if(count($currentUser->roles) == 1 AND $currentUser->roles[0] == 'subscriber'){
 		show_admin_bar( false );
-	}
+	// }
 }
 
 add_action('wp_logout','ps_redirect_after_logout');

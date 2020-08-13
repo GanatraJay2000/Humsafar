@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <style>
-
+img{
+    border:0;
+}
     .heading {
         padding-top: 10px;
         margin-bottom: 0;
@@ -214,27 +216,26 @@
 
 <div class="about-part">
     <div class="heading">
-        <p>Get to know about us</p>
+        <p>Get To Know Our Story</p>
         <h1><span>*</span></h1>
     </div>
     <div class="flex-container">
 
         <div class="image ">
             <div class="on-desk">
-                <p>We would love to share a little bit about us.</p>
+                <p>Our story to make yours beautiful!</p>
             </div>
             <img src="<?php echo get_template_directory_uri() . '/assets_inside/about_us_page_img.jpg' ?>"
                 alt="Humsafar Weddings" />
             <div class="on-mobile">
-                <p>We would love to share a bit about us.</p>
+                <p>Our story to make yours beautiful!</p>
             </div>
         </div>
         <div class="text-justify">
-        <p>HUMSAFAR WEDDINGS is your one stop destination for all your wedding related tasks. We are your ULTIMATE humsafars in turning your dreams into reality.</p>
-        <p>With over 7 years of experience in the field of wedding planning, HUMSAFAR has successfully planned over 500 weddings. We work hard to satisfy our clients and to fulfill all their desires.</p> 
-        <p>Our team has over 50 young and passionate individuals, who put in all their heart and hard work to make your wedding the most memorable moment for you and your entire guest list. </p>
-        <p>Humsafar Weddings is gaining its reputation across the country for wedding management. We excel at providing our couples with the best and most beautiful DESTINATION WEDDINGS. We are specialized in planning and managing weddings in the most exotic locations of the country including Udaipur, Agra, Jaipur, Kerala and substantially more. Our services extend to the global market as well. We plan weddings in the dreamiest locations which include: Greece, Mauritius, Thailand, Italy and appreciably more. </p>
-        <p>We got you all covered from choosing your wedding locations, beautiful wedding attires, wedding themes, wedding feast, grand entries to taking care of your guests.</p>
+        <p>Based in the bustling capital of Chattisgarh, Raipur which is known for its stunning lakes and ancient temples, Humsafar is a household name to all those couples planning their perfect day. We have been enthusiastically working to carve out the happy moments for you for past 7 years now. The smile on your face while working backdoors gives us relief. Going by its name, Humsafar has planned & organized more than 500 weddings with majestic themes customized by your choice.<br>
+Humsafar has built quite a name in India starting from 2012. From a hotel to a beach, from a hall to a riverside and from a hilltop building to a lush green garden, we have got you covered. Decoration with various themes, planning, budgeting, designing, photography, hospitality, etc. We plan your wedding according to your liking based on your ideas and our resources. Our Raipur team has In-house production house with services like vendors for decoration, photographers, warehouse facilities which are pretty much everything one needs for a wedding to organize. Humsafar weddings have opened the branches in Mumbai and Delhi in 2016 and 2017 respectively making our Indian network stronger and expanded. A destination wedding is one other specialization of ours in places like Greece, Mauritius, Dubai, Singapore, Malaysia, Thailand, Italy, Rome, etc. with professionalism.<br>
+Making your dream come reality is the ultimate motto of Humsafar weddings. Conceptualizing each and every aspect of it is necessary by not only professionally planning but also executing those. We believe in bringing plans to action for you to live the happiest moments. While the bride and groom play the main role and the other supporting them, it is the Humsafar wedding planners who keep on interlocking those strands of happiness in them.  Relax, you have got our back for everything.
+
         </div>
     </div>  
     <div class=" p-5" style="width:100%;background-color:#c5d7be44;">

@@ -2,6 +2,10 @@
   font-family: Anton;
   src: url("./fonts/Anton/Anton-Regular.ttf");
 }
+@font-face {
+  font-family: Batang;
+  src: url("./fonts/Batang/batang.ttf");
+}
 
 @font-face {
   font-family: Convergence;
@@ -54,8 +58,12 @@
 }
 
 @font-face {
-  font-family: Roboto_Slab;
+  font-family: "Roboto Slab";
   src: url("./fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Rufina;
+  src: url("./fonts/Rufina/Rufina-Regular.ttf");
 }
 
 @font-face {
