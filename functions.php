@@ -403,8 +403,8 @@ function destination_custom_fields( $meta_boxes ) {
 				'type' => 'select',
 				'placeholder' => esc_html__( 'Select an Item', 'metabox-online-generator' ),
 				'options' => array(
-					'Modern' => esc_html__( 'Modern', 'metabox-online-generator' ),
-					'Traditional' => esc_html__( 'Traditional', 'metabox-online-generator' ),
+					'India' => esc_html__( 'India', 'metabox-online-generator' ),
+					'Out_Of_India' => esc_html__( 'Out_Of_India', 'metabox-online-generator' ),
 				),
 			),
 			array(
