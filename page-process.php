@@ -97,13 +97,12 @@
 			text-align: center;
 		}
 
-		button {
+		.button {
 			width: 200px;
-			height: 50px;
-			padding: 15px 32px;
+            padding: 15px 0;
 			text-align: center;
 			border: none;
-			color: white;
+			color: white !important;
 			font-size: 17px;
 			cursor: pointer;
 			text-decoration: none;
@@ -156,7 +155,7 @@
 				width: 40vw;
 			}
 
-			button {
+			.button {
 				width: 40%;
 				//display:block;
 				margin: 20px 20px;
@@ -179,7 +178,7 @@
 				padding-bottom: 10px;
 			}
 
-			button {
+			.button {
 				width: 100%;
 				display: block;
 				margin: 10px auto;
@@ -249,9 +248,9 @@
 	</div>
 
 	<div class="buttons">
-		<button type="button">Want to chat?</button>
-		<button type="button">See Our Service</button>
-		<button type="button">Blogs</button>
+		<a class="button" href="<?php echo site_url('/contact-us'); ?>" type="button">Want to chat?</a>
+		<a class="button" href="<?php echo site_url('/services'); ?>" type="button">See Our Service</a>
+		<a class="button" href="<?php echo site_url('/blog'); ?>" type="button">Blogs</a>
 	</div>
 
 </body>
