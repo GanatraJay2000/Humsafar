@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lightbox.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Modal 2</title>
+    <style>
+        body * {
+            //font-family: "Raleway", sans-serif;
+            //font-weight: 300;
+        }
+		
+		body{
+            background-color: #fcf7ff;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .wrapper {
+            margin-top: 10px;
+            width: 90%;
+            display: grid;
+            grid-gap: 5px;
+	        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	        grid-auto-rows: 250px;
+	        grid-auto-flow: dense;
+        }
+
+        .wrapper .image {
+            text-align: center;
+	        padding: 1rem 0;
+	        color: white;
+	        font-size: 3rem;
+	        text-transform: uppercase;
+	        background: rgba(0,0,0,.2);
+	        overflow: hidden;
+	        padding: 0;
+	        margin:1px;
+	        display: -webkit-box;
+	        display: flex;
+	        -webkit-box-align: stretch;
+	        align-items: stretch;
+	        -webkit-box-pack: center;
+	        justify-content: center;
+        }
+
+        .open-image {
+            //width: 180px;
+            //height: 180px;
+            display: block;
+            cursor: pointer;
+        }
+
+        .open-image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .open-modal {
+            padding: 10px 30px;
+            background: #fff;
+            border: 1px solid;
+            transition: 0.3s;
+        }
+
+        .open-modal:hover,
+        .open-modal:focus {
+            color: white;
+            background-color: #222;
+        }
+		
+		.breakit{
+		    margin: 10px auto;
+		}
+		
+		.horizontal {
+	        grid-column: span 2;
+        }
+        .vertical {
+        	grid-row: span 2;
+        }
+        .big {
+        	grid-column: span 2;
+        	grid-row: span 2;
+        }
+		
+		.linee{
+            width:90%;
+        	//background-color: blue;
+        	margin: 40px auto;
+        	height: 30px;
+        	border-bottom: 2px solid #b28f5e;
+        }
+
+        .subt{
+            margin: 10px auto;
+        	text-align: center;
+        	background-color: #fcf7ff;
+        	width: 20%;
+			font-size: 30px;
+        }
+		
+		.heading{
+			  padding-top:10px;
+			  margin-bottom:0;
+			  text-align:center;
+			  color:#2f2e2e;
+			  font-size: 45px;
+			}
+			.heading p{
+			  margin:0;
+			}
+			.heading h1{
+              font-family: sans-serif;
+              margin:auto;
+              text-align: center;
+              font-size: 40px;
+              max-width: 600px;
+              position:relative;
+			  color:#b28f5e;
+            }
+            .heading h1:before{
+              content: "";
+              display:block;
+              width: 150px;
+              height:3px;
+              background: #000;
+              position: absolute;
+              left: 0;
+			  margin-left:20%;              
+			  top: 30%;
+              z-index: -2;
+			  background-color:#b28f5e;
+            }
+            .heading h1:after{
+              content: "";
+              display:block;
+              width: 150px;
+              height:3px;
+              background: #000;
+              position: absolute;
+              right: 0;
+			  margin-right:20%;
+              top: 30%;
+              z-index: -2;
+			  background-color:#b28f5e;
+            }
+
+            .heading div{
+			    font-size: 21px;
+				max-width:80%;
+				margin: auto;
+			}
+
+           .heading .button {
+                background-color: #fcf7ff;
+                border: 1px solid #b28f5e;
+				color: #b28f5e;
+                padding: 5px 30px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin: 10px 2px;
+                cursor: pointer;
+				transition: 0.5s;
+           }
+           
+		   .heading .button:hover{
+		        background-color: #b28f5e;
+				color: #fcf7ff;
+				transition: 0.5s;
+		   }
+		   
+    @media screen and (max-width: 600px){
+      .wrapper{
+        display:flex;
+    	flex-wrap: wrap;
+      }
+      .heading{
+        font-size: 30px;
+      }
+      .heading div{
+        font-size: 17px;
+      }
+      .heading .button {
+        font-size: 17px;
+      }
+      .subt{
+    	width:40%;
+	  }
+    }
+		
+    </style>
+</head>
+
+<body>
+
+    <div class="heading">
+		    <p>View our portfolio of events</p>
+			<h1><span>*</span></h1>
+			<div><p>We've organised many Parties & Events across the world - interested in discussing yours?
+			</p>
+			<button class="button">Let's Talk</button></div>
+	</div>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class=" big open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/1846268/pexels-photo-1846268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="beach">
+            </div>
+            <div class="open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/4755027/pexels-photo-4755027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="beach">
+            </div>
+            <div class="open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/3876937/pexels-photo-3876937.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="beach">
+            </div>
+            <div class="open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/2734404/pexels-photo-2734404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="beach">
+            </div>
+            <div class="vertical open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/4298004/pexels-photo-4298004.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="beach">
+            </div>
+            <div class="open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/2760856/pexels-photo-2760856.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="beach">
+            </div>
+            <div class="open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/2661176/pexels-photo-2661176.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="beach">
+            </div>
+            <div class="horizontal open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/1100946/pexels-photo-1100946.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div class="open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/2524368/pexels-photo-2524368.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+        </div>
+		
+		<div class="linee">
+	        <div class="subt">
+	            <p>Fiesta
+	            </p>
+	        </div>
+	    </div>
+	
+		<div class="wrapper">
+            <div class="open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/2524368/pexels-photo-2524368.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="beach">
+            </div>
+            <div class="big open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/4755027/pexels-photo-4755027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="beach">
+            </div>
+            <div class="vertical open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/3876937/pexels-photo-3876937.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="beach">
+            </div>
+            <div class="open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/2734404/pexels-photo-2734404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="beach">
+            </div>
+            <div class="open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/4298004/pexels-photo-4298004.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="beach">
+            </div>
+            <div class="open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/2760856/pexels-photo-2760856.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="beach">
+            </div>
+            <div class="vertical open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/2661176/pexels-photo-2661176.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="beach">
+            </div>
+            <div class="horizontal open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/1100946/pexels-photo-1100946.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div class="open-image">
+                <img class="image"
+                    src="https://images.pexels.com/photos/2524368/pexels-photo-2524368.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+        </div>
+    </div>
+    <script src="lightbox.js"></script>
+</body>
+
+</html>
