@@ -1,0 +1,131 @@
+<!-- First Complete the tasks on this page -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+	<style>
+	
+	    *{
+		    margin:0;
+			padding:0;
+		}
+	
+	     html,body {
+            //height: 100%;
+        }
+	    
+		.about-top{
+		    position: relative;
+			height: 100%;
+		}
+		
+		.fixed-bg {
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 100%; 
+            width: 100%;
+            text-align: center;
+            display: table;
+        }
+		
+		.scroll-bg {
+            background-color: #e3d1d1;
+            padding: 10px 70px;
+        }
+		
+		.bg-1 {
+            background-image: url('https://images.unsplash.com/photo-1543157145-f78c636d023d?ixlib=rb-1.2.1&w=1000&q=80');
+        }
+	
+	    .image{
+		    width:35vw;
+			height: 45vw;
+			border: 0.5vw solid #004b44;
+			margin: 2.5vw 0;
+			margin-left: 20%;
+		}
+		
+		.image img{
+			width:35vw;
+			height: 45vw;
+		}
+		
+		.quote{
+		    position: absolute;
+			height: 25vw;
+			width: 20vw;
+			top:9vw;
+			margin-left: 50%;
+			padding:5%;
+			font-size:5vw;
+			background-color: #fff;
+		}
+		
+		.text{
+		    width:80%;
+			margin:30px auto;
+			line-height: 30px;
+		}
+		
+		@media screen and (max-width: 700px){
+		
+		    .image{
+				margin-left: 5%;
+				width:60vw;
+				height: 80vw;
+				margin-bottom: 15%;
+			}
+			
+			.image img{
+				width:60vw;
+				height: 80vw;
+			}
+			
+			.quote{
+			    width:30vw;
+				height: 65vw;
+				top:20vw;
+				right:5%;
+				font-size:6.5vw;
+				line-height: 10vw;
+				border-right: 0.5vw solid #004b44;
+				border-bottom: 0.5vw solid #004b44;
+			}
+			
+			.quote p{
+			    padding: 15%;
+			}
+		
+		}
+	
+	</style>
+    </head>	
+    <body>
+	    <div class="about-top">
+		  <div class="fixed-bg bg-1">  
+		    <div class="image">
+			    <img src="https://i.insider.com/5daf59a1045a3114826a3835?width=1100&format=jpeg&auto=webp"/>
+		    </div>
+			<div class="quote">
+			    <p>Our story to make yours beautiful!
+			    </p>
+			</div>
+		  </div>
+		  <div class="scroll-bg">
+		      <div class="text">
+			      <p>Based in the bustling capital of Chattisgarh, Raipur which is known for its stunning lakes and ancient temples, Humsafar
+			      is a household name to all those couples planning their perfect day. We have been enthusiastically working to carve out the
+			      happy moments for you for past 7 years now. The smile on your face while working backdoors gives us relief. Going by its name,
+			      Humsafar has planned & organized more than 500 weddings with majestic themes customized by your choice.
+		          </p>
+		      </div>
+		  </div>
+	    </div>
+		
+    </body>
+</html>
