@@ -71,11 +71,12 @@ div.wrapper.content {
   text-align: center;
   color: #2f2e2e;
   font-size: 45px;
-  font-family: "Myriad Pro", sans-serif !important;
+  font-family:"Batang", serif !important;
 }
 
 .heading p {
   margin: 0;
+  font-family:"Batang", serif !important;
 }
 
 .heading h1 {

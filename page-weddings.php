@@ -16,6 +16,7 @@
     .heading {
         margin-bottom: 10px !important;
         font-size: 34px;
+        font-family:"Batang", serif;
     }
 
     hr.title {
@@ -24,6 +25,7 @@
         width: 100px;
         border: 1px solid #a17e4d;
         color: #a17e4d;
+        font-family:"Playfair Display", serif;
     }
 
     .sub-title {
@@ -42,10 +44,12 @@
         padding: 0;
         margin: 0;
         text-align: center;
+        font-family:"Playfair Display", serif;
     }
 
     ul.title li {
         display: inline-block;
+        font-family:"Playfair Display", serif;
         margin: 0;
     }
 
@@ -124,10 +128,12 @@
         padding-left: 0;
         text-align: left;
         display: block !important;
+        font-family:"Batang", serif;
     }
 
     .post:nth-child(even) .content .heading {
         text-align: right;
+        font-family:"Batang", serif;
     }
 
     .post-footer {
@@ -145,6 +151,7 @@
 
     .post:hover .heading {
         color: #b28f5e;
+        font-family:"Batang", serif;
     }
 
     .post button.heart {
@@ -374,6 +381,7 @@
 
         .post .heading {
             text-align: center !important;
+            font-family:"Batang", serif;
         }
 
         .post .image {

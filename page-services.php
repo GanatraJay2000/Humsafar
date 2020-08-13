@@ -24,7 +24,8 @@
             min-height:10%;
             margin:0px;
             font-size:23px;   
-            padding-top:10px;         
+            padding-top:10px;     
+            font-family:"Playfair Display"    , serif;
             /* border:1px solid; */
         }
         .block_content{            
@@ -35,7 +36,7 @@
             opacity:0;            
             visibility:hidden;
             transition:1s;
-            background-color:#000000aa;
+            background-color:#000000cc;
             color:white;
             font-size:19px;
             display:grid;
@@ -44,6 +45,7 @@
             height:100%;
             width:100%;            
             padding:20px;
+            font-family:"Myriad Pro",sans-serif;
         }
         .my_block:hover .block_content{                                               
                 opacity:1;
@@ -81,7 +83,7 @@
                 <div class="my_block">
                     <div  class="block-image">
                          <img alt="venue"
-                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://image.freepik.com/free-photo/beautiful-couple-posing-their-wedding-day_1328-3508.jpg" />
                         <div class="block_content">
                             Budget planning is essential as it cuts off the extra spending and utilize the money in a planned way. But, we  can actually help you out to achieve your dreams and have a perfect wedding just according to your choice and most importantly providing you with the best according to your budget. 
                         </div>
@@ -102,7 +104,7 @@
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://image.freepik.com/free-photo/plates-with-variety-food-celebration-table_8353-11285.jpg" />
                         <div class="block_content">
                          Food stations are the most important thing in any and every wedding. Selecting the right menu with respect to the season is essential to have a perfect amiable wedding.
  We help you out with a proper planning and management of food by providing the best seasonal and traditional food according to the theme. Thus, we work to achieve perfection and to help you out in the best way we can. 
@@ -114,9 +116,9 @@
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://image.freepik.com/free-photo/man-plays-drums-background-colored-lights_169016-3427.jpg" />
                         <div class="block_content">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam error obcaecati culpa rerum blanditiis laboriosam? Nam ratione vel magni eligendi quia voluptates. Quis non numquam quod reprehenderit iusto doloribus modi impedit consectetur recusandae explicabo. Inventore eaque libero quas suscipit debitis ratione nemo, veritatis id ab assumenda quos cupiditate sit molestias!
+                             After organizing each and every thing, proper execution of plans is important.The artists and vendors need to be managed properly which is a specialization of Humsafar weddings.
                         </div>
                     </div>
                 <div class="title">Artist & Vendor Management</div>
@@ -124,7 +126,7 @@
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                        <img alt="venue"
-                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://image.freepik.com/free-photo/people-celebrating-night_23-2147651886.jpg" />
                         <div class="block_content">
                           Is Haldi possible without turmeric? Is Sangeet possible without music?<br>
 Of course not!<br> Only a proper plan as input will deliver entertainment as an output. We can guarantee you the level of your entertainment! Finally, your day is not only a memorable day for you alone but also for many! 
@@ -136,7 +138,7 @@ Of course not!<br> Only a proper plan as input will deliver entertainment as an 
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://image.freepik.com/free-photo/floral-composition-with-eucalyptus-white-bordeaux-roses-table-metal-cages-mirror-tray_8353-9842.jpg" />
                         <div class="block_content">
                                                    Design your dreams and live in it!<br>
 If designs are humans, all women will be taken-off by them. The matter is the visual attraction! Each place has its own beauty but decorations adore it. The Humsafar Weddings are best in it and will turn your place to a Disney World!
@@ -147,7 +149,7 @@ If designs are humans, all women will be taken-off by them. The matter is the vi
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://image.freepik.com/free-photo/waiter-uniform-holding-metal-tray_23-2148245001.jpg" />
                         <div class="block_content">
                                  Every guest is a precious jewel until treated with hospitality!
 But on your over occupied day will you be able to do that? Don’t worry. We do this with concern, because we know how special you are to us and the day is to you!
@@ -171,7 +173,7 @@ We help you out in designing a beautiful and attractive invitation card along wi
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                        <img alt="venue"
-                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://image.freepik.com/free-photo/close-up-photographer-with-camera_23-2148503542.jpg" />
                         <div class="block_content">
                                        “You don’t take a photograph, you make it ” ~Ansel Adams<br>
 The beauty of it is, it remains constant even after time changes! Videography will take you to the journey of the moments which you might have left unobserved. Chill, for we are here to carry out your day with perfection.
@@ -183,7 +185,7 @@ The beauty of it is, it remains constant even after time changes! Videography wi
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://image.freepik.com/free-photo/successful-business-partners-discussing-contract_1098-14790.jpg" />
                         <div class="block_content">
                          Planning a destination wedding is a great idea for couples but it comes with great deal of legal procedures. Humsafar weddings follows it’s legal responsibility by abiding to the rules and regulations. We have a team specializing in handling all the legal matters quickly.
                         </div>

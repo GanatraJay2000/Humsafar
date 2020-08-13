@@ -31,7 +31,7 @@
     }
 
     .para p{
-        font-family: "Times New Roman", sans-serif;
+        font-family: "Myriad Pro", sans-serif;
         color: #888;
         line-height: 30px;
         text-align: justify;  

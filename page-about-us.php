@@ -13,14 +13,13 @@ img{
     }
 
     h1 {
-        font-family: "Myriad Pro",sans-serif !important;
+        font-family:"Batang", serif !important;
         margin: auto;
         text-align: center;
         font-size: 40px;
         max-width: 600px;
         position: relative;
         color: #b28f5e;
-
     }
 
     h1::before,
@@ -48,7 +47,7 @@ img{
 
     .about-part {
         text-align: left;
-        font-family: "Myriad Pro",sans-serif !important;
+            
     }
 
     .flex-container {
@@ -83,7 +82,8 @@ img{
     }
 
     .flex-container .image div p {
-        font-size: 27px;
+        font-family: "Playfair Display",sans-serif !important;    
+        font-size: 24px;
         line-height:1em;
         padding:0;
         font-style:italic;
@@ -183,6 +183,7 @@ img{
         word-spacing:6px;
     }
     .card-title{
+        font-family: "Playfair Display", sans-serif !important;
         font-size:32px !important;
         letter-spacing:0.6px;
         word-spacing:6px;
@@ -198,6 +199,7 @@ img{
     .planning .card-title{
         background-color:#fcd2d5;
         color:white;
+        font-family: "Playfair Display", sans-serif !important;
     }
 
     .meet-team .card{
