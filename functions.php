@@ -413,37 +413,37 @@ function destination_custom_fields( $meta_boxes ) {
 				'name' => esc_html__( 'Image on Destination Page', 'metabox-online-generator' ),
 				'max_file_uploads' => '1',
 			),
-			array(
-				'id' => $prefix . 'text_on_destination_page',
-				'type' => 'text',
-				'name' => esc_html__( 'Text on Destination Page', 'metabox-online-generator' ),
-			),
-			array(
-				'id' => $prefix . 'thumbnail_image',
-				'type' => 'image_advanced',
-				'name' => esc_html__( 'Thumbnail Image', 'metabox-online-generator' ),
-				'max_file_uploads' => '1',
-			),
-			array(
-				'id' => $prefix . 'text_on_thumbnail_one',
-				'type' => 'text',
-				'name' => esc_html__( 'Text on Thumbnail One', 'metabox-online-generator' ),
-			),
-			array(
-				'id' => $prefix . 'text_on_thumbnail_two',
-				'type' => 'text',
-				'name' => esc_html__( 'Text on Thumbnail Two', 'metabox-online-generator' ),
-			),
-			array(
-				'id' => $prefix . 'feature_title',
-				'type' => 'text',
-				'name' => esc_html__( 'Feature Title', 'metabox-online-generator' ),
-			),
-			array(
-				'id' => $prefix . 'quote',
-				'type' => 'text',
-				'name' => esc_html__( 'Quote', 'metabox-online-generator' ),
-			),
+			// array(
+			// 	'id' => $prefix . 'text_on_destination_page',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Text on Destination Page', 'metabox-online-generator' ),
+			// ),
+			// array(
+			// 	'id' => $prefix . 'thumbnail_image',
+			// 	'type' => 'image_advanced',
+			// 	'name' => esc_html__( 'Thumbnail Image', 'metabox-online-generator' ),
+			// 	'max_file_uploads' => '1',
+			// ),
+			// array(
+			// 	'id' => $prefix . 'text_on_thumbnail_one',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Text on Thumbnail One', 'metabox-online-generator' ),
+			// ),
+			// array(
+			// 	'id' => $prefix . 'text_on_thumbnail_two',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Text on Thumbnail Two', 'metabox-online-generator' ),
+			// ),
+			// array(
+			// 	'id' => $prefix . 'feature_title',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Feature Title', 'metabox-online-generator' ),
+			// ),
+			// array(
+			// 	'id' => $prefix . 'quote',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Quote', 'metabox-online-generator' ),
+			// ),
 			array(
 				'id' => $prefix . 'gallery',
 				'type' => 'image_advanced',
