@@ -190,7 +190,8 @@ $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
 $gallery = rwmb_meta('gallery', array( 'size' => 'large' ) );
 $gallery =array_values($gallery);
 $content = get_the_content();
-$text = explode('-br-', $content);                
+$text = explode('-br-', $content);   
+$type = rwmb_meta('destination_type');             
 
 ?>
 
@@ -265,8 +266,6 @@ $text = explode('-br-', $content);
 </div>
 </div>
 </div>
-
-
 <div class="container" style="padding-top:50px;">
 
 <center class="mb-5">
@@ -282,7 +281,7 @@ $text = explode('-br-', $content);
     array(
         'key' => 'destination_type',
         'compare' => '==',
-        'value' => 'Traditional',   
+        'value' => $type,   
     ),
 ),
 ));
