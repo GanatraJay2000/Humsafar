@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 
 <style>
-img{
-    border:0;
-}
+
     .heading {
         padding-top: 10px;
         margin-bottom: 0;
