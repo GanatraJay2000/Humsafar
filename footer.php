@@ -11,7 +11,9 @@ div.newsletter p{
 .modal{
     height:auto !important;
 }
-
+.clents_image_car{
+    border:0;
+}
 
 </style>
 <?php $logos = new WP_Query(array(
@@ -32,7 +34,7 @@ foreach ( $slide_2 as $image ) {
 
     <div class="block">
     <a href="<?php echo $image['description'] ?>">
-        <img src="<?php echo $image['url'] ?>" alt="">                
+        <img class="clients_image_car" src="<?php echo $image['url'] ?>" alt="">                
     </a>
     </div>
 <?php } ?> 

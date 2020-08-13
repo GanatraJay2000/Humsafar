@@ -145,16 +145,26 @@ h2,h4{
     	#title {
   display:none;
 } 
-
-
-
-
-
    }
 
    .content.wrapper{
 	   padding:0 !important;
    }
+
+   .destinations img{
+	   height:200px;
+	   width:200px;
+	   border:0;
+   }
+   .dest-next, .dest-prev{
+	   margin:25px 50px;
+	   outline:0 !important;
+	   border:0 !important;
+	   box-shadow:0 !important;
+	   font-size:30px;
+   }
+
+
 </style>
 <div class="container">
 <div class="row" >
@@ -166,17 +176,28 @@ echo do_shortcode('[smartslider3 slider="3"]');
 </div>
 </div>
 
+<?php 
+
+while( have_posts() ){ 
+the_post(); 
+
+$thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
+$gallery = rwmb_meta('gallery', array( 'size' => 'large' ) );
+$gallery =array_values($gallery);
+$content = get_the_content();
+$text = explode('-br-', $content);                
+
+?>
+
 
 <div class="container" style="padding:30px; padding-top:50px;" >
 <div class="row" >
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-<h2>Lorem Ipsum</h2></br>
+<h2><?php the_title(); ?></h2></br>
 </div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
 <div class="columns">
-Host your luxury party or dream wedding anywhere in the world. Perhaps at an international destination with beautiful weather and breath-taking views! We are a team of international wedding and party planners, with years of experience when it comes to planning the perfect wedding or event. Our distinguished portfolio means that we’ve worked at some of the most exclusive international venues around the world. Scarlet is a leading events company who will plan your party anywhere; from a luxury Yacht off the coast
-
- of Monte Carlo to a Grand Palace in Rajasthan. Whether you are an international client wanting to hold your event in London, or you’re looking to go abroad, we’ll organise everything so you don’t have to. From the suppliers, logistics, flights, transport to the accommodation no request is too small. Bespoke marquee for a wedding in the South of France? No problem. Private dinner at a Palazzo in Rome? Your wish is our command! Find the perfect destination for your wedding or event with us today.
+<?php echo $text[0]; ?>
 <!-- <br></br><a href="<?php //echo site_url('/weddings/portfolio'); ?>"  class="more">VIEW OUR PORTFOLIO</a></br> -->
 
 </div>
@@ -189,20 +210,18 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 
 
 
-
 <div class="container" style="padding-top:30px;">
 <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
-<img src="<?php echo get_template_directory_uri() . '/images/udaipur1.jpg' ?>" width="100%">
+<img src="<?php echo $gallery[0]['url'] ?>" width="100%">
 </div>
 
 
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
 			
-<h4>lorem ipsum</h4>
 
 
-<p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+<p style="font-size:13px"><?php echo $text[1]; ?></p>
 <!-- <div class="more">DISCOVER MORE VENUES WITH US</div> -->
 </div>
 </div>
@@ -211,9 +230,8 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 <div class="container" style="padding-top:30px;">
 <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
-	
-			<h4>lorem ipsum</h4>
-			<p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+				
+			<p style="font-size:13px"><?php echo $text[2]; ?> 
 </p>
 <!-- <div class="more">CONSIDERING OTHER DESTINATIONS?</div> -->
 </div>
@@ -221,7 +239,7 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 
 
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
-<img src="<?php echo get_template_directory_uri() . '/images/udaipur2.jpg' ?>" width="100%">
+<img src="<?php echo $gallery[1]['url'] ?>" width="100%">
 
 
 
@@ -231,16 +249,13 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 <div class="container" style="padding-top:30px;" >
 <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto;">
-<img src="<?php echo get_template_directory_uri() . '/images/udaipur3.jpeg' ?>" width="100%">
+<img src="<?php echo $gallery[2]['url'] ?>" width="100%">
 </div>
 
 
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">
-			
-<h4>lorem ipsum</h4>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto">		
 
-
-<p style="font-size:13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+<p style="font-size:13px"><?php echo $text[3]; ?></p>
 <!-- <div class="more">BOOK A WORLD-CLASS ACT</div> -->
 </div>
 </div>
@@ -251,7 +266,40 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 
 <center>
 	<h5 class="locations">View Other Locations</h5>
-<div class="gallery mb-5">
+	<div class="destinations-carousel">
+<div class="owl-carousel owl-theme destinations">
+<div>
+<div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/goa.jpg' ?>"><div class="centered">Goa<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div>
+</div>
+<div><div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/udaipur.jpg' ?>"><div class="centered">Udaipur<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div></div>
+<div><div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/kerela.jpg' ?>"><div class="centered">Kerela<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div></div>
+<div><div class="g">
+<img id="gimg" src="<?php echo get_template_directory_uri() . '/images/andaman.jpg' ?>"><div class="centered">Andaman & Nicobar Islands<hr id="imghr"><div class="vv">VIEW</div></div></img>
+</div></div>
+<div>Jayf</div>
+</div>
+<div class="dest-nav">
+    <div class="dest-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+    <div class="dest-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+</div>
+</div>
+</center>
+</div>
+
+<?php } ?>
+
+<?php get_footer(); ?>
+
+
+
+<!-- 
+	<div class="gallery mb-5">
 <div class="g">
 <img id="gimg" src="<?php echo get_template_directory_uri() . '/images/goa.jpg' ?>"><div class="centered">Goa<hr id="imghr"><div class="vv">VIEW</div></div></img>
 </div>
@@ -265,9 +313,4 @@ Host your luxury party or dream wedding anywhere in the world. Perhaps at an int
 <img id="gimg" src="<?php echo get_template_directory_uri() . '/images/andaman.jpg' ?>"><div class="centered">Andaman & Nicobar Islands<hr id="imghr"><div class="vv">VIEW</div></div></img>
 </div>
 </div>
-</center>
-</div>
-
-
-
-<?php get_footer(); ?>
+ -->

@@ -404,7 +404,11 @@
 
 
             <div class="text">
-                <p> <?php the_content(); ?>
+                <p> <?php                 
+                $content = get_the_content();
+                $pages = explode('-br-', $content);                
+                echo $pages[0];
+                ?>
                 </p>
                 <br>
                 <hr style="height:1px;border-width:0;background-color:#cccccc">
