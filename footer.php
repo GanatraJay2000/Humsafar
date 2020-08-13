@@ -63,7 +63,7 @@ foreach ( $slide_2 as $image ) {
                 <h2>Join Mailing List</h2>
             </div>
             <p>Stay Updated with our latest</p>
-            <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn btn-white btn-sm" data-toggle="modal" data-target="#exampleModal">
                 Newsletter
             </button>
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -94,25 +94,16 @@ foreach ( $slide_2 as $image ) {
                 <a target="_blank" href="<?php echo do_shortcode('[sc name="wedding_linkedin"]'); ?>"><span><i style="" class="fab fa-linkedin" aria-hidden="true"></i></span></a>
                 <a target="_blank" href="<?php echo do_shortcode('[sc name="event_youtube"]'); ?>"><span><i style="" class="fab fa-youtube" aria-hidden="true"></i></span></a>
             </div>
-            <div class="mt-3">
-            <a href="<?php echo do_shortcode('[sc name="weddings_wedmegood"]'); ?>" target="_blank" >       
-            <?php require 'wedmegoodlogo.php'; ?>
-            </a> 
-            </div>
-        </div>
-        <div class="reach-us text-lg-center" data-aos="fade-left" data-aos-delay="200">
-            <h2>Reach Us</h2>
+            <div class="mt-3 reach-us">            
             <div>
                 <div>
                     <a target="_blank" href="https://<?php echo do_shortcode('[sc name="website_link"]'); ?>"><?php echo do_shortcode('[sc name="website_link"]'); ?></a>
                 </div>
                 <div>
                     <a href="mailto:<?php echo do_shortcode('[sc name="mail_link_1_wed"]'); ?>"><?php echo do_shortcode('[sc name="mail_link_1_wed"]'); ?></a>
-                </div>
-                <!-- <div>
-                    <a href="mailto:<?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?>"><?php echo do_shortcode('[sc name="info_humsafar_mail"]'); ?></a>
-                </div> -->
+                </div>                
                 <div><a><?php echo do_shortcode('[sc name="mobile_no_wed"]'); ?></a></div>
+            </div>
             </div>
         </div>
     </div>
