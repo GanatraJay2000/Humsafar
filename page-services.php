@@ -11,19 +11,20 @@
             position:relative;
         }
         .block-image img{
-            height:300px;
+            height:100%;
             width:100%;            
         }
         .my_block{
             position:relative;
             box-sizing:border-box;            
             /* border:1px solid purple; */
-            padding-top:30px;
+            padding-top:30px;            
         }
         .my_block .title{
             min-height:10%;
-            margin:0px 0 0px;
-            font-size:23px;
+            margin:0px;
+            font-size:23px;   
+            padding-top:10px;         
             /* border:1px solid; */
         }
         .block_content{            
@@ -57,7 +58,7 @@
             }
             @media screen and (max-width:768px)     {
                     .block_content{ 
-                        font-size:4vw;
+                        font-size:4.4vw;
                     }
                     .content{
                         width:100%;
@@ -77,8 +78,8 @@
             <div class="col-md-6 col-12 text-center">
                 <div class="my_block">
                     <div  class="block-image">
-                        <img alt="venue"
-                        src="https://catalystforbusiness.com/wp-content/uploads/2018/09/project-management-budget.jpg" />
+                         <img alt="venue"
+                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                         <div class="block_content">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam error obcaecati culpa rerum blanditiis laboriosam? Nam ratione vel magni eligendi quia voluptates. Quis non numquam quod reprehenderit iusto doloribus modi impedit consectetur recusandae explicabo. Inventore eaque libero quas suscipit debitis ratione nemo, veritatis id ab assumenda quos cupiditate sit molestias!
                         </div>
@@ -91,7 +92,7 @@
                         <img alt="venue"
                         src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                         <div class="block_content">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam error obcaecati culpa rerum blanditiis laboriosam? Nam ratione vel magni eligendi quia voluptates. Quis non numquam quod reprehenderit iusto doloribus modi impedit consectetur recusandae explicabo. Inventore eaque libero quas suscipit debitis ratione nemo, veritatis id ab assumenda quos cupiditate sit molestias!
+                                    The place where you witness those life changing moments has to be as special as it can be. Planning the destination is a harder yet an important part which is a specialization of Humsafar Weddings. Is it a traditional palace like or a beach with picturesque sceneries you like, we've got you covered. We provide Pan India destination services with tip to top organization. Foreign destination you dreamt of is our responsibility too. All the planning and execution of your wedding arrangements are dealt with utmost care and professionalism.
                         </div>
                     </div>
                 <div class="title">Venues & Destination</div>
@@ -99,7 +100,7 @@
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                         <div class="block_content">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam error obcaecati culpa rerum blanditiis laboriosam? Nam ratione vel magni eligendi quia voluptates. Quis non numquam quod reprehenderit iusto doloribus modi impedit consectetur recusandae explicabo. Inventore eaque libero quas suscipit debitis ratione nemo, veritatis id ab assumenda quos cupiditate sit molestias!
                         </div>
@@ -109,7 +110,27 @@
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/1616113/pexels-photo-1616113.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        <div class="block_content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam error obcaecati culpa rerum blanditiis laboriosam? Nam ratione vel magni eligendi quia voluptates. Quis non numquam quod reprehenderit iusto doloribus modi impedit consectetur recusandae explicabo. Inventore eaque libero quas suscipit debitis ratione nemo, veritatis id ab assumenda quos cupiditate sit molestias!
+                        </div>
+                    </div>
+                <div class="title">Artist & Vendor Management</div>
+            </div>
+            <div class="col-md-6 col-12 text-center my_block">
+                <div class="block-image">
+                       <img alt="venue"
+                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        <div class="block_content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam error obcaecati culpa rerum blanditiis laboriosam? Nam ratione vel magni eligendi quia voluptates. Quis non numquam quod reprehenderit iusto doloribus modi impedit consectetur recusandae explicabo. Inventore eaque libero quas suscipit debitis ratione nemo, veritatis id ab assumenda quos cupiditate sit molestias!
+                        </div>
+                    </div>
+                <div class="title">Entertainment Design & Planning </div>
+            </div>
+            <div class="col-md-6 col-12 text-center my_block">
+                <div class="block-image">
+                        <img alt="venue"
+                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                         <div class="block_content">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam error obcaecati culpa rerum blanditiis laboriosam? Nam ratione vel magni eligendi quia voluptates. Quis non numquam quod reprehenderit iusto doloribus modi impedit consectetur recusandae explicabo. Inventore eaque libero quas suscipit debitis ratione nemo, veritatis id ab assumenda quos cupiditate sit molestias!
                         </div>
@@ -119,7 +140,7 @@
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/3769150/pexels-photo-3769150.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                         <div class="block_content">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam error obcaecati culpa rerum blanditiis laboriosam? Nam ratione vel magni eligendi quia voluptates. Quis non numquam quod reprehenderit iusto doloribus modi impedit consectetur recusandae explicabo. Inventore eaque libero quas suscipit debitis ratione nemo, veritatis id ab assumenda quos cupiditate sit molestias!
                         </div>
@@ -129,7 +150,7 @@
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/360624/pexels-photo-360624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                         <div class="block_content">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam error obcaecati culpa rerum blanditiis laboriosam? Nam ratione vel magni eligendi quia voluptates. Quis non numquam quod reprehenderit iusto doloribus modi impedit consectetur recusandae explicabo. Inventore eaque libero quas suscipit debitis ratione nemo, veritatis id ab assumenda quos cupiditate sit molestias!
                         </div>
@@ -138,8 +159,8 @@
             </div>
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
-                        <img alt="venue"
-                        src="https://images.pexels.com/photos/22185/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                       <img alt="venue"
+                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                         <div class="block_content">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam error obcaecati culpa rerum blanditiis laboriosam? Nam ratione vel magni eligendi quia voluptates. Quis non numquam quod reprehenderit iusto doloribus modi impedit consectetur recusandae explicabo. Inventore eaque libero quas suscipit debitis ratione nemo, veritatis id ab assumenda quos cupiditate sit molestias!
                         </div>
@@ -149,7 +170,7 @@
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/3516911/pexels-photo-3516911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                         <div class="block_content">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam error obcaecati culpa rerum blanditiis laboriosam? Nam ratione vel magni eligendi quia voluptates. Quis non numquam quod reprehenderit iusto doloribus modi impedit consectetur recusandae explicabo. Inventore eaque libero quas suscipit debitis ratione nemo, veritatis id ab assumenda quos cupiditate sit molestias!
                         </div>
