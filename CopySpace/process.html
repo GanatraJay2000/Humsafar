@@ -1,0 +1,289 @@
+<!-- First Complete the tasks on this page -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process</title>
+	
+	<style>
+	
+	* {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #fcf7ff;
+    }
+	
+	.heading {
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align: center;
+        color: #2f2e2e;
+        font-size: 45px;
+    }
+
+    .heading p {
+        margin: 0;
+    }
+
+    .heading h1 {
+        font-family: "Myriad Pro",  sans-serif;
+        margin: auto;
+        text-align: center;
+        font-size: 40px;
+        max-width: 600px;
+        position: relative;
+        color: #b28f5e;
+
+    }
+
+    .heading h1::before,
+    .heading h1::after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 3px;
+        background: #000;
+        position: absolute;
+        top: 30%;
+        z-index: -2;
+        background-color: #b28f5e;
+    }
+
+    .heading h1::before {
+        left: 0;
+        margin-left: 20%;
+    }
+
+    .heading h1:after {
+        right: 0;
+        margin-right: 20%;
+    }
+	
+	.quote{
+	    background-color: #c4bcbc;
+		font-size:40px;
+		line-height: 60px;
+		//padding: 10px;
+		height: 30vw;
+		display: flex;
+		//flex-wrap: wrap;
+		//flex-direction: column-reverse;
+	}
+	
+	.qtext{
+	    width: 30%;
+		height:15vw;
+		//background-color: red;
+		text-align: right;
+		padding:10px ;
+		margin: 7.5% 0;
+		margin-left: 10%;
+	}
+	
+	.image{
+	    width: 50vw;
+		height: 30vw;
+		margin-left: 1.9%;
+		margin-top: 5%;
+		//background-color: yellow;
+	}
+	
+	.image img{
+	    width: 100%;
+		height: 100%;
+		display: block;
+	}
+	
+	.process-part{
+	    margin: 60px auto;
+	    display: flex;
+		flex-wrap: wrap;
+		//background-color: red;
+	}
+	
+	.process-text{
+	    width: 25vw;
+		padding:20px;
+		margin: 20px auto;
+		line-height:25px;
+		font-size: 17px;
+		//background-color: yellow;
+	}
+	
+	.process-text p{
+	    padding-bottom:20px;
+		margin:0;
+	}
+	
+	.title{
+	    font-size: 25px;
+	}
+	
+	.buttons{
+	    width: 100%;
+		margin:20px auto;
+		//background-color: yellow;
+		text-align: center;
+	}
+	
+    button{
+	    width: 200px;
+		height: 50px;
+		padding: 15px 32px;
+        text-align: center;
+		border: none;
+		color:white;
+		font-size:17px;
+		cursor: pointer;
+        text-decoration: none;
+		margin:10px 20px;
+		background-color: #c4bcbc;
+	}
+	
+	@media screen and (max-width: 1000px){
+	
+	    .qtext{
+	        font-size: 4vw;
+	    	line-height: 6vw;
+	    }
+	
+	}
+	
+	@media screen and (max-width: 700px){
+	
+	    .quote{
+	        //background-color: #fcf7ff;
+	    	line-height: 60px;
+	    	height: 40vw;
+	    	display: flex;
+	    	flex-wrap: wrap;
+	    	flex-direction: row;
+	    }
+	
+	    .qtext{
+	        width: 90%;
+	    	font-size:4.5vw;
+	    	height:10vw;
+	    	text-align: center;
+	    	padding: 10px 0;
+	    	margin: 0 auto;
+	    }
+	
+	    .image{
+	        width: 90%;
+	    	height: 45vw;
+	    	float:left;
+	    	margin:0 auto;
+	    }
+		
+		.process-part{
+		    margin-top: 15vw;
+			//background-color: #c4bcbc;
+		}
+		
+		.process-text{
+		    width: 40vw;
+		}
+		
+		button{
+		    width: 40%;
+			//display:block;
+			margin:20px 20px;
+		}
+	}
+	
+	@media screen and (max-width: 400px){
+	
+	    .process-part{
+		   margin-top: 20vw;
+		}
+		
+		.process-text{
+		    width: 70vw;
+			padding:15px;
+		    margin: 10px auto;
+		}
+		
+		.process-text p{
+	       padding-bottom:10px;
+		}
+		
+		button{
+		    width: 100%;
+			display:block;
+			margin:10px auto;
+		}
+		
+		.heading {
+		    font-size: 30px;
+		}
+	}
+		
+	
+	</style>
+	
+    </head>	
+    <body>
+	    <div class="heading">
+            <p>Our Process</p>
+            <h1><span>*</span></h1>
+        </div>
+		
+		<div class="quote">    
+			<div class="qtext">
+			    <p>"Simplicity is the keynote of all true elegance."
+		        </p>
+			</div>
+			<div class="image">
+			    <img src="https://images.squarespace-cdn.com/content/v1/5e8734078136f513e25d34c4/1587400261143-X4ICLQCW8N70J8PQ2FWQ/ke17ZwdGBToddI8pDm48kApm4bZ6Mn3TiUWou3kA3bp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWZaykogqWzieOupsqeSuBYug-y5Ut2InYZT1FrJD3yL-rj95DA1mjJIBxXFGHkuyQ/Beach+Wedding+Crim+Barefoot+Beach+Bride.jpg?format=2500w" />
+			</div>
+		</div>
+		
+		<div class="process-part">
+			
+			<div class="process-text">
+				<p class="title">Reach Out</p>
+				<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form and I'll be in touch within 48 hours.
+				</p>
+		    </div>
+			<div class="process-text">
+				<p class="title">Reach Out</p>
+				<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form and I'll be in touch within 48 hours.
+				</p>
+		    </div>
+			<div class="process-text">
+				<p class="title">Reach Out</p>
+				<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form and I'll be in touch within 48 hours.
+				</p>
+		    </div>
+			<div class="process-text">
+				<p class="title">Reach Out</p>
+				<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form and I'll be in touch within 48 hours.
+				</p>
+		    </div>
+			<div class="process-text">
+				<p class="title">Reach Out</p>
+				<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form and I'll be in touch within 48 hours.
+				</p>
+		    </div>
+			<div class="process-text">
+				<p class="title">Reach Out</p>
+				<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form and I'll be in touch within 48 hours.
+				</p>
+		    </div>
+			
+		</div>
+		
+		<div class="buttons">
+		    <button type="button">Want to chat?</button>
+			<button type="button">See Our Service</button>
+			<button type="button">Blogs</button>
+		</div>
+		
+    </body>
+</html>
