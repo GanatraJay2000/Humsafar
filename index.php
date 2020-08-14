@@ -28,7 +28,7 @@
 			margin:60px 0 80px;
 		}
 		.heading-title h1{
-			font-family:"Playfair Display", serif;
+			font-family:"Batang", serif;
 		}
 		.heading-title p{
 			margin-top:5px;

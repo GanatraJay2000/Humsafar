@@ -76,7 +76,7 @@
 
 </style>
  <div class="service-part">
-    <h1  style="font-family:Playfair Display;text-align:center;margin-bottom:40px;">Services</h1>
+    <h1  style="font-family:Batang;text-align:center;margin-bottom:40px;">Services</h1>
         
         <div class="d-flex flex-wrap justify-content-center content">
             <div class="col-md-6 col-12 text-center my_block">                
