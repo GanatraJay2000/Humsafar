@@ -188,6 +188,9 @@
 				font-size: 30px;
 			}
 		}
+		.contact_us{
+			color:#80d291 !important;
+		}
 	</style>
 
 </head>
@@ -227,7 +230,7 @@
 		<div class="process-text col-lg-4 col-md-4 col-sm-6 col-12">
 			<p class="title">Booking</p>
 			<p>A signed contract and 50% non-refundable retainer will hold your date.<br>
-			<a href="<?php echo site_url('/contact'); ?>">Book a consult</a>
+			<a class="contact_us" href="<?php echo site_url('/contact'); ?>">Book a consult</a>
 			</p>
 		</div>
 		<div class="process-text col-lg-4 col-md-4 col-sm-6 col-12">
