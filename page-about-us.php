@@ -216,8 +216,7 @@ It feels pleasurable to see a couple setting goals at a higher-end but there are
 	
 	 <div class="meet-team">
     <div class="heading">
-        <p>Meet the team</p>
-        <h1><span>*</span></h1>
+        Meet the team
     </div>
     <div class="card-deck text-center">
   <div class="card">
