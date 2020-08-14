@@ -151,7 +151,8 @@
 		<div class="fixed-bg bg-1">
 			<div class="image">
 				<img src="https://i.insider.com/5daf59a1045a3114826a3835?width=1100&format=jpeg&auto=webp" />
-				
+				<img src="<?php echo get_template_directory_uri() . '/assets_inside/about_us_page_img.jpg' ?>"
+                alt="Humsafar Weddings" />
 			</div>
 			<div class="quote">
 				<p>Our story to make yours beautiful!

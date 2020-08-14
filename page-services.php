@@ -79,8 +79,7 @@
     <h1  style="font-family:Playfair Display;text-align:center;margin-bottom:40px;">Services</h1>
         
         <div class="d-flex flex-wrap justify-content-center content">
-            <div class="col-md-6 col-12 text-center">
-                <div class="my_block">
+            <div class="col-md-6 col-12 text-center my_block">                
                     <div  class="block-image">
                          <img alt="venue"
                         src="https://image.freepik.com/free-photo/beautiful-couple-posing-their-wedding-day_1328-3508.jpg" />
@@ -88,8 +87,7 @@
                             Budget planning is essential as it cuts off the extra spending and utilize the money in a planned way. But, we  can actually help you out to achieve your dreams and have a perfect wedding just according to your choice and most importantly providing you with the best according to your budget. 
                         </div>
                     </div>
-                    <div class="title">Budget Management</div>
-                </div>
+                    <div class="title">Budget Management</div>                
             </div>
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
