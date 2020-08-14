@@ -81,7 +81,7 @@ img{
         max-width: 90%;
         display: grid;
         grid-gap: 5px;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-auto-rows: 250px;
         grid-auto-flow: dense;
     }
@@ -349,7 +349,6 @@ while($events->have_posts())
             <div class="<?php echo $image['description'] ?>">
             <img src="<?php echo $image['url'] ?>" alt="">
             </div>
-            
         <?php } ?> 
     </main>
 <?php } ?>
@@ -378,7 +377,7 @@ while($events->have_posts())
     }
 
 
-Array.prototype.slice.call(divs).forEach(function (el) {
+Array.prototype.slice.call(divs).forEach(function (el) {        
 			el.addEventListener('click', function () {
 				this.classList.toggle('show');
 				body.classList.toggle('active');
@@ -389,6 +388,7 @@ Array.prototype.slice.call(divs).forEach(function (el) {
 });
 
     prev.addEventListener('click', function () {
+        this.preventDefault();
         const show = document.querySelector('.show');
         const event = document.createEvent('HTMLEvents');
         event.initEvent('click', true, false);

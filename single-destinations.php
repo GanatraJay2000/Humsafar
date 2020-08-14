@@ -161,9 +161,7 @@ h2,h4{
 	   width:200px;
 	   border:0;
    }
-   .dest-nav{
-	   border:10px solid red;
-   }
+
    .dest-next, .dest-prev{
 	   margin:25px 50px;
 	   outline:0 !important;
