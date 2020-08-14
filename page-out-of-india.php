@@ -197,6 +197,7 @@ VIEW OUR PORTFOLIO</a></br>
 'meta_key' => 'order',
 'orderby' => 'meta_value_num',
 'order' => 'ASC',
+'posts_per_page'=>-1,
 'meta_query' => array(
     array(
         'key' => 'destination_type',
