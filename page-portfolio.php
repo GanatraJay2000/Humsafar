@@ -155,7 +155,7 @@ img{
 	    tarnsition: 0.5s;
 	    filter: brightness(50%);
     }
-/**
+
     .left {
         grid-column-start: 1;
     }
@@ -169,7 +169,7 @@ img{
         grid-column-start: -2;
     }
 	
-	**/
+	
 
     .horizontal {
     	grid-column: span 2;
@@ -238,7 +238,7 @@ img{
         margin-right: 20%;
     }
 
-/**
+
     @media screen and (min-width:1124px) {
         .horizontal {
             grid-column-end: span 2;
@@ -261,7 +261,7 @@ img{
             }
     }
 	
-**/
+
 
     @media screen and (max-width : 700px) {
         main.lightbox-wrapper {
