@@ -189,7 +189,7 @@ VIEW OUR PORTFOLIO</a></br>
 </div>
 
 <div class="container" style="padding:50px 0;">
-<div id="title" class="mb-5"><span><b>SOME OF OUR FAVOURITE INDIAN LOCATIONS INCLUDE</b></span></div>
+<div id="title" class="mb-5"><span><b>SOME OF OUR FAVOURITE FOREIGN LOCATIONS INCLUDE</b></span></div>
 <center>
 	<div class="gallery">
 	<?php $destinations = new WP_Query(array(
@@ -201,7 +201,7 @@ VIEW OUR PORTFOLIO</a></br>
     array(
         'key' => 'destination_type',
         'compare' => '==',
-        'value' => 'Modern',   
+        'value' => 'Out_Of_India',   
     ),
 ),
 ));
