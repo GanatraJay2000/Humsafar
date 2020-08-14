@@ -55,7 +55,9 @@ function add_custom_post() {
     $args = array(
     'labels' => $labels,
     'has_archive' => true,
-    'public' => true,
+	'public' => true,
+	'show_in_rest' => true,
+   'supports' => array('editor'),
     'publicly_queryable' => true,
     'show_ui' => true,
     'show_in_menu' => true,
@@ -87,7 +89,9 @@ function add_custom_post() {
 
     $args = array(
     'labels' => $labels,
-    'public' => true,
+	'public' => true,
+	'show_in_rest' => true,
+   'supports' => array('editor'),
     'publicly_queryable' => true,
     'show_ui' => true,
     'show_in_menu' => true,
@@ -120,7 +124,9 @@ function add_custom_post() {
 
     $args = array(
         'labels' => $labels,
-        'public' => true,
+		'public' => true,
+		'show_in_rest' => true,
+   'supports' => array('editor'),
         'publicly_queryable' => true,
         'show_ui' => true,
         'show_in_menu' => true,
@@ -153,7 +159,9 @@ function add_custom_post() {
 
     $args = array(
         'labels' => $labels,
-        'public' => true,
+		'public' => true,
+		'show_in_rest' => true,
+   'supports' => array('editor'),
         'publicly_queryable' => true,
         'show_ui' => true,
         'show_in_menu' => true,
