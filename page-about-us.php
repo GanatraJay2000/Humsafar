@@ -76,7 +76,10 @@
         border:0;
         /* box-shadow:0 0 10px #00000012; */
         background-color:transparent;        
-    }
+	}
+	.statistics img{
+		border:0;
+	}
 
 	.director{
 		width:70%;
