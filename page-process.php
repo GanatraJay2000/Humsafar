@@ -210,38 +210,34 @@
 
 		<div class="process-text col-lg-4 col-md-4 col-sm-6 col-12">
 			<p class="title">Reach Out</p>
+			<p>We will set up a Google Hangout or phone call and gush over all of your wedding details, vision, and learn more about you as a couple.
+			</p>
+		</div>
+		<div class="process-text col-lg-4 col-md-4 col-sm-6 col-12">
+			<p class="title">Chat</p>
 			<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form
 				and I'll be in touch within 48 hours.
 			</p>
 		</div>
 		<div class="process-text col-lg-4 col-md-4 col-sm-6 col-12">
-			<p class="title">Reach Out</p>
-			<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form
-				and I'll be in touch within 48 hours.
+			<p class="title">Proposal</p>
+			<p>Before we hang up, we’ll set up a second meeting, preferably in person, at my studio. I’ll present the proposal and go over any questions you may have.
 			</p>
 		</div>
 		<div class="process-text col-lg-4 col-md-4 col-sm-6 col-12">
-			<p class="title">Reach Out</p>
-			<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form
-				and I'll be in touch within 48 hours.
+			<p class="title">Booking</p>
+			<p>A signed contract and 50% non-refundable retainer will hold your date.<br>
+			<a href="<?php echo site_url('/contact'); ?>">Book a consult</a>
 			</p>
 		</div>
 		<div class="process-text col-lg-4 col-md-4 col-sm-6 col-12">
-			<p class="title">Reach Out</p>
-			<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form
-				and I'll be in touch within 48 hours.
+			<p class="title">Planning</p>
+			<p>For event design and full-service floral design, we’ll work together to create the final design plan. We’ll meet at the venue for a walk-through and have a final design meeting four to six weeks before your date. For a la carte floral clients, you should expect an email for final counts and order details about four weeks prior to your wedding day.
 			</p>
 		</div>
 		<div class="process-text col-lg-4 col-md-4 col-sm-6 col-12">
-			<p class="title">Reach Out</p>
-			<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form
-				and I'll be in touch within 48 hours.
-			</p>
-		</div>
-		<div class="process-text col-lg-4 col-md-4 col-sm-6 col-12">
-			<p class="title">Reach Out</p>
-			<p>If you like what you see, I'd love to hear from you. To start, contact me here. Fill out the contact form
-				and I'll be in touch within 48 hours.
+			<p class="title">Wedding Week</p>
+			<p>During wedding week, my team and I will be prepping candles, making sure final details are in place, and creating beautiful florals. On your wedding day, I’ll deliver your personal flowers while my team gets started on transforming your event space. Once the candles are lit, it's time to celebrate your new marriage and life together!
 			</p>
 		</div>
 
