@@ -279,14 +279,14 @@ function custom_fields( $meta_boxes ) {
 			// 	'desc' => esc_html__( 'location of event', 'metabox-online-generator' ),
 			// 	'placeholder' => esc_html__( 'Enter Location of Event', 'metabox-online-generator' ),
 			// ),
-			// array(
-			// 	'id' => $prefix . 'event_date',
-			// 	'type' => 'date',
-			// 	'name' => esc_html__( 'Event Date', 'metabox-online-generator' ),
-			// 	'desc' => esc_html__( 'Date of Event to be held', 'metabox-online-generator' ),
-			// 	'js_options' => array(),
-			// 	'attributes' => array(),
-			// ),
+			array(
+				'id' => $prefix . 'event_date',
+				'type' => 'date',
+				'name' => esc_html__( 'Event Date', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'Date of Event to be held', 'metabox-online-generator' ),
+				'js_options' => array(),
+				'attributes' => array(),
+			),
 			// array(
 			// 	'id' => $prefix . 'event_type',
 			// 	'type' => 'text',
