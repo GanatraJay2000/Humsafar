@@ -17,6 +17,9 @@
 			text-align: center;
 			display: table;
 			position:relative;
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-position:center;
 		}
 
 		.scroll-bg-1 {
