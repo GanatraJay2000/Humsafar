@@ -89,7 +89,7 @@
 		color:#444;
 		margin:20px 0;		
 	}
-	.director h1{
+	.director h1,.director h4{
 		font-family:"Batang", serif;
 	}
 	.director img{
@@ -149,8 +149,7 @@
 	</style>
 	<div class="about-top">
 		<div class="fixed-bg bg-1">
-			<div class="image">
-				<img src="https://i.insider.com/5daf59a1045a3114826a3835?width=1100&format=jpeg&auto=webp" />
+			<div class="image">			
 				<img src="<?php echo get_template_directory_uri() . '/assets_inside/about_us_page_img.jpg' ?>"
                 alt="Humsafar Weddings" />
 			</div>
@@ -203,18 +202,13 @@
 	</div>
 	<div class="d-flex flex-wrap flex-row-reverse director">
 		<div class="col-md-5 col-12">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAC6CAMAAAAu0KfDAAAAA1BMVEWcnpvbbJEWAAAAOElEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALwZh94AAaYbEC4AAAAASUVORK5CYII="  alt="...">
+			<img src="https://images.pexels.com/photos/412840/pexels-photo-412840.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
 		</div>
 		<div class="col-md-7 col-12">
-			<h1>This is Director</h1>
+			<h4>Our Prime Mover</h4>
+			<h1>Mr. Arman Sharma</h1>
 			<p>
-Warm, intelligent and creative, Director is an in-demand Vancouver event planner who finds inspiration everywhere from Parisienne opera houses and the streets of New York, to the latest fashion magazine spreads.
-
-Susanna is known for her fashion-forward aesthetic, personalized attention, and intuitive way of working. 
-
-Trust and open communication are essential to her, so you can relax while she takes care of every detail. 
-
-Susanna takes the time to get to know you so she can bring your distinctive style to life in an event with creativity, elegance, and genuine presence. 
+It feels pleasurable to see a couple setting goals at a higher-end but there are people who work backdoors operating those ropes of emotions and blessings. It is our founder who keeps us united and tied up with the responsibility of full filling the dreams. He started working in the industry way back in 2009 managing many events in Mumbai. When he founded Humsafar weddings in 2014, it was his expertise that kept us going and spirited. He has been out driving force since then with an enthusiasm never seen before.
 </p>
 		</div>
 		
