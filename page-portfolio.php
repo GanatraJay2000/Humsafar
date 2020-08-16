@@ -155,7 +155,7 @@ img{
 	    tarnsition: 0.5s;
 	    filter: brightness(50%);
     }
-/**
+
     .left {
         grid-column-start: 1;
     }
@@ -169,8 +169,13 @@ img{
         grid-column-start: -2;
     }
 	
+<<<<<<< HEAD
 	**/
 Z
+=======
+	
+
+>>>>>>> b079d37e37ffdb580a7b602b4d8f9ba250423bc1
     .horizontal {
     	grid-column: span 2;
     }
@@ -238,7 +243,7 @@ Z
         margin-right: 20%;
     }
 
-/**
+
     @media screen and (min-width:1124px) {
         .horizontal {
             grid-column-end: span 2;
@@ -261,7 +266,7 @@ Z
             }
     }
 	
-**/
+
 
     @media screen and (max-width : 700px) {
         main.lightbox-wrapper {
