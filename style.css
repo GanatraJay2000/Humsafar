@@ -1003,4 +1003,5 @@ nav.item.nav-links label {
                 /* border:10px solid #004841 !important; */
                 border: 6px solid transparent;                
                 border-image: url("./bg1.png") 30 stretch;
+                outline:1px solid white ;
             }

@@ -8,8 +8,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        font-family: "Myriad Pro",  "Playfair Display", sans-serif !important;
-        margin: 0px 120px;
+        font-family: "Myriad Pro",  "Playfair Display", sans-serif !important;        
         margin-top: -30px;
     }
 
@@ -352,6 +351,16 @@
 .banner-next{
     right:10px;    
 }
+.bg-1{
+    background-color: #d0f2e1;
+    width:100%;
+    padding:60px 0;
+}
+.bg{
+    width:70%;
+    margin:0 auto;
+    padding:60px 0;
+}
 </style>
 <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
@@ -397,50 +406,10 @@ $slide_1 = array_values($slide_1);
         <div class="banner-prev banner-nav"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
     </div>
 </div>        
-<!-- <div class="banner-carousel">
-    <div class="owl-carousel banners owl-theme ">
-        <div class="banner">        
-            <img src="<?php echo $slide_1[0]['url'] ?>" alt="Post-1">
 
-            <div class="static-content">
-                <h2><i>Say I-Do at the Top of the World!</i></h2>
-                <h6 class="my-4">Explore the most awesome destinations in the world</h6>
-                <a class="button" href="<?php echo site_url('/weddings/destinations'); ?>">Explore Destinations</a>
-            </div>
-        </div>
-        <div class="banner">        
-           <img src="<?php echo $slide_1[1]['url'] ?>" alt="Post-1">
-            <div class="content" style="background-color:#c3d2dcea !important;">
-                <h3>We will Plan Every Detail of Your Wedding</h3>
-                <p class="mb-5">We are your Humsafar in making your memories of your Dream & destination Wedding SPECIAL. Check our exclusive services,</p>
-                <a class="button" href="<?php echo site_url('/weddings/services'); ?>">Check Out Services</a>
-            </div>
-        </div>
-        <div class="banner">        
-           <img src="<?php echo $slide_1[2]['url'] ?>" alt="Post-1">
-            <div class="content" style="background-color:#dd3002ea !important;color:white;">
-                <h3>Plan Your Perfect Wedding & Surprise Everyone.</h3>
-                <p>They say there are 16 Adornments without which an Indian bride is incomplete. Check out these amazing functions of adornments.</p>
-                <a class="button" href="<?php echo site_url('/weddings/functions'); ?>">Explore Functions</a>
-            </div>
-        </div>
-        <div class="banner">        
-            <img src="<?php echo $slide_1[3]['url'] ?>" alt="Post-1">
-
-            <div class="content" style="background-color:#fec9c0ea !important;">
-                <h3>You Will Never Forget the Incredible Memory.</h3>
-                <p>Find our latest work of making their dream come true of having a beautiful wedding they always dreamt of.</p>
-                <a class="button" href="<?php echo site_url('/weddings/events'); ?>">See Weddings</a>
-            </div>
-        </div>
-    </div>
-<div class="owl-navigation">
-    <div class="banner-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-    <div class="banner-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-    </div>
-</div> -->
 
 <div class="home-page">   
+<div class="bg">
     <div class="heading">
         <p><i>We Plan Your Unforgettable Moments</i></p>
     </div>    
@@ -450,6 +419,8 @@ $slide_1 = array_values($slide_1);
         as beautiful and adorable memories. Whether it be the memory of Bidding farewell to the oldest Cog of the
         company or the Dream wedding that you always planned in your head, We Humsafars are always with you in every
         moment.</p>
+        </div>
+<div class="bg-1">
     <div class="sub-title">
         ALWAYS CONSIDERED
     </div>
@@ -465,11 +436,13 @@ $slide_1 = array_values($slide_1);
             <li>Bhilai</li>
         </ul>
     </div>
-    <a href="<?php echo site_url('/weddings/contact-us') ?>" class="inquire text-white">Contact Us</a>
-    <div class="heading"><i>Find our Recent post here!</i></div>
+
+    <center><a href="<?php echo site_url('/weddings/contact-us') ?>" class="inquire text-white">Contact Us</a></center>
+   
+</div>
+<div class="bg">
+ <div class="heading"><i>Find our Recent post here!</i></div>
     <hr class="title">
-
-
     <?php
 $events = new WP_Query(array(
     'posts_per_page' => 2,
@@ -481,14 +454,11 @@ $events = new WP_Query(array(
 while($events->have_posts())
 {
     $events->the_post();         
-    $event_date = rwmb_meta('event_date');
-    $location = rwmb_meta('location');
-    $event_type = rwmb_meta('event_type');
+    $event_date = rwmb_meta('event_date');    
     $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
 
     $eventDate = new DateTime($event_date);          
-    
-if($event_type === 'Wedding'){
+
     ?>
  <a href="<?php the_permalink(  ) ?>" class="post">
         <?php foreach ( $thumbnail_image as $image ) {?>
@@ -497,16 +467,12 @@ if($event_type === 'Wedding'){
         <div class="content">
             <small><?php echo $eventDate->format('M').' '.$eventDate->format('dS').', '.$eventDate->format('Y'); ?></small>
             <div class="heading"><?php the_title(); ?></div>
-            <div><?php echo wp_trim_words(get_the_content(), 18); ?></div>
-            <div class="post-footer">
-                <p class="m-0 p-0 mr-2"><?php echo $location; ?></p>
-                <div>282 views</div>                
-            </div>
+            <div><?php echo wp_trim_words(get_the_content(), 18); ?></div>           
         </div>
     </a>
 <?php
 }
-}
+
 ?>
 
 
@@ -542,6 +508,6 @@ $slide_images = array_values($slide_images);
     <span class="owl-nav-prev"><i class=" fa fa-long-arrow-alt-left"></i></span>
     <span class="owl-nav-next"><i class=" fa fa-long-arrow-alt-right"></i></span>
 </div>
-
+</div>
 
 <?php get_footer(); ?>
