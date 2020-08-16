@@ -162,7 +162,7 @@ img{
     .center {
         grid-column-start: 2;
         /* grid-column-end: span 2;
-        grid-row-end: span 2; */
+        grid-row-end: span 2; 
     }
 
     .right {
@@ -170,7 +170,7 @@ img{
     }
 	
 	**/
-
+Z
     .horizontal {
     	grid-column: span 2;
     }

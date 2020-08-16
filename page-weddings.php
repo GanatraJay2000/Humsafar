@@ -203,113 +203,6 @@
 .content.wrapper{
     padding-top:5px !important;
 }
-.banner-carousel{
-    --max-width: 90%;
-    --height: 500px;
-    width:100%;    
-    margin:0 auto;
-    max-width:var(--max-width);    
-    margin-bottom:20px;   
-     z-index:0;
-}
-
-.banner-next{    
-    font-size:32px;
-    font-weight:200;
-    position:absolute !important;
-    top:47% !important;
-    right:-40px !important;
-}
-.banner-prev{
-    font-size:32px;
-    font-weight:200;
-    position:absolute !important;
-    top:47% !important;
-    left:-40px !important;    
-}
-.banners{
-
-    /* border:2px solid red; */
-    height:var(--height);    
-    margin:0 !important;
-    
-    /* overflow:hidden; */
-}
-.banner{
-    position:relative;
-}
-.banners img{
-    border-radius:3px;
-    width:100vw;
-    max-width:100%;
-    height:var(--height);
-}
-.banner .static-content{
-    z-index:2;
-    position:absolute;
-    background-color:transparent;
-    height:30%;    
-    width:50%;
-    top:5%;
-    left:25%;
-    text-align:center;
-    font-family: "Myriad Pro", "Playfair Display", serif;
-}
-
-
-.banner .content{
-    border-radius:0 3px 3px 0;
-    padding:20px;
-    z-index:2;
-    position:absolute;
-    background-color:#c3d2dcea;
-    background-color:#eaeaeada;
-    height:100%;
-    animation-duration:2s;
-    width:35%;
-    top:0;
-    right:0;
-    font-family: "Myriad Pro", "Playfair Display", serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    text-align:center;
-}
-
-
-    .banners .button {
-        margin: 4px 0px;
-        border: 0;
-        padding: 5px 25px;
-        font-size: 20px;
-        color: white;
-        background-color: #333;
-        text-decoration: none !important;
-        transition:all ease 400ms;
-    }
-        .banners .button:hover {
-            padding:5px 50px;
-            background-color:var(--primary-color);
-            color:var(--bg-color);
-        }
-
-    .banner-carousel .owl-nav {
-        position: absolute;
-        top: 0;        
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        height:100%;                
-        z-index:-1;
-    }
-    .owl-nav {
-        position: absolute;
-        top: 0;        
-        text-align: center;
-        width: 100%;
-        margin: 0;                               
-    }
 
     .owl-nav .owl-prev .owl-nav-prev,
     .owl-nav .owl-next .owl-nav-next {
@@ -396,58 +289,69 @@
         .testimonial-card-content .detail {
             padding: 15px;
         }
-        .banners {
-            padding: 5px;
-            height:230px;
-        }
-        .banners *{
-            margin: 0 auto;
-            width:100%;
-        }
-        .banners img{
-            height:230px;
-        }
-        .banner .static-content{
-            font-size:10px;
-            width:auto;
-            left:0 !important;
-        }
-        .banner .static-content h2{
-            display:none;
-        }
-        .banner .static-content h6{
-            font-size:15px;
-        }
-        .banner .static-content .button{
-            font-size:15px;
-            white-space: nowrap;
-            margin: 4px auto;
-        }
-
-        .banner .content {
-            padding: 3px;
-            width:80%;
-            left:0%;
-            height:fit-content;
-            top:10px;            
-        }
-        .banner .content p{
-            display:none;
-        }
-
-        .banner .content h3{
-            font-size:16px;
-        }
-
-        .banner .content .button{
-            font-size:16px;
-            padding: 2px 5px ;
-            width:fit-content;
-        }
+        
         .owl-navigation{
             display:none;
         }
     }
+    .content.wrapper{
+        padding:0 !important;
+    }
+    .banner-carousel{        
+        max-width:100%;
+        padding:0;
+        margin:0;
+    }
+    .banner-carousel *{
+        padding:0;
+        margin:0;
+    }
+    .banner-carousel .banner{
+        width:100%;
+        position:relative;
+        height:100vh;        
+    }
+    .banner-carousel .banner img{
+        width:100%;
+        height:100%;
+        border:0;
+    }
+    .banner .banner-content{
+        position:absolute;
+        transform:translate(-50%, -50%);
+        top:40%;
+        left:50%;
+        width:100%;
+        text-align:center;
+    }
+    .banner .title{
+        font-weight:700;
+        font-size:40px;
+        color:#fff;
+        text-shadow:0px 0px 8px #000;
+    }
+    .banner .link{
+        text-decoration:none;
+        padding:10px 20px;
+        background:linear-gradient(to right, #c78f41 20%, #cfa757 60%, #dbb25b);
+        border-radius:40px;
+        color:white;
+        text-shadow:0px 0px 3px #00000066;
+        border:2px solid white;
+    }
+.banner-nav{
+    position:absolute;    
+    top:50%;
+    transform:translate(0, -50%);
+    font-size:50px;
+    filter:drop-shadow(0px 0px 2px #fff);
+}
+.banner-prev{
+    left:10px;    
+}
+.banner-next{
+    right:10px;    
+}
 </style>
 <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
@@ -458,6 +362,42 @@ $slide_1 = rwmb_meta('slide_1', array( 'size' => 'large' ) , $post_id);
 $slide_1 = array_values($slide_1);
 ?>
 <div class="banner-carousel">
+    <div class="owl-carousel banners owl-theme">
+        <div class="banner"> 
+            <img src="<?php echo $slide_1[0]['url'] ?>" alt="Post-1">
+            <div class="banner-content">                
+                <h3 class="mb-4 title">Explore the most awesome destinations in the World!</h3>
+                <a class="link" href="<?php echo site_url('/weddings/destinations'); ?>">Explore Destinations</a>
+            </div>
+        </div>
+        <div class="banner"> 
+            <img src="<?php echo $slide_1[1]['url'] ?>" alt="Post-1">
+            <div class="banner-content">
+                <h3 class="mb-4 title">We will Plan Every Detail of Your Wedding</h3>              
+                <a class="link" href="<?php echo site_url('/weddings/process'); ?>">Check Out Process</a>
+            </div>
+        </div>
+        <div class="banner"> 
+            <img src="<?php echo $slide_1[2]['url'] ?>" alt="Post-1">
+             <div class="banner-content">
+                <h3 class="mb-4 title">Plan Your Perfect Wedding & Surprise Everyone.</h3>              
+                <a class="link" href="<?php echo site_url('/weddings/services'); ?>">Check Out Services</a>
+            </div>
+        </div>        
+        <div class="banner"> 
+            <img src="<?php echo $slide_1[3]['url'] ?>" alt="Post-1">
+            <div class="banner-content">
+                <h3 class="mb-4 title">You Will Never Forget the Incredible Memory.</h3>                
+                <a class="link" href="<?php echo site_url('/weddings/testimonials'); ?>">See Testimonials</a>
+            </div>
+        </div>
+    </div>
+    <div class="owl-navigation">
+        <div class="banner-next banner-nav"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+        <div class="banner-prev banner-nav"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+    </div>
+</div>        
+<!-- <div class="banner-carousel">
     <div class="owl-carousel banners owl-theme ">
         <div class="banner">        
             <img src="<?php echo $slide_1[0]['url'] ?>" alt="Post-1">
@@ -498,7 +438,7 @@ $slide_1 = array_values($slide_1);
     <div class="banner-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
     <div class="banner-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
     </div>
-</div>
+</div> -->
 
 <div class="home-page">   
     <div class="heading">
