@@ -360,9 +360,16 @@
 .testimonials-prev{
     position:absolute;
     top:0;
-    height:100px;
-    width:100px;
-    background-color:red;
+    right:-30px;
+    padding: 5px 0;
+    width:30px;    
+}
+.testimonials-next{
+    position:absolute;
+    top:0;
+    left:-30px;
+    padding: 5px 0;
+    width:30px;    
 }
 </style>
 <?php $logos = new WP_Query(array(
