@@ -68,7 +68,9 @@ background-color:black;
 .blocks-gallery-grid, .wp-block-gallery {
         margin-top:20px !important;
     }
-
+.full-width{
+    width:100%;
+}
     .latest-blogs{
         width:100%;        
     }
