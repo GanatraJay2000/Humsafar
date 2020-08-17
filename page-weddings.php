@@ -376,7 +376,8 @@ position:absolute;
         display:none;
     }
     .bg{
-    width:100%;    
+    width:100%;  
+    padding:60px 20px;  
 }
 }
 </style>
