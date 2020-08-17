@@ -380,7 +380,7 @@ position:absolute;
     padding:60px 20px;  
     }
     .banner-carousel .banner{
-        height:400px;        
+        height:300px;        
     }
 }
 </style>
