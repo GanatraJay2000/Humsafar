@@ -314,6 +314,7 @@
         width:100%;
         height:100%;
         border:0;
+        display:block;
     }
     .banner .banner-content{
         position:absolute;
@@ -361,6 +362,55 @@
     margin:0 auto;
     padding:60px 0;
 }
+
+.rhombo-wrapper {
+  position: relative;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  margin: auto;
+  max-width: 1200px;
+  max-height: 1200px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vmin;
+  justify-items: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.rhombo-wrapper>div{
+    overflow:hidden;
+      z-index: 1;
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -52%;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  
+}
+
+.rhombo-wrapper img {
+border:0;
+max-width:100%;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  filter:brightness(60%);
+}
+.rhombo-wrapper>div:nth-child(7n + 1) {
+  grid-column: 2 / span 2;
+}
+.rhombo-wrapper img:hover {
+  z-index: 2;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+          filter:brightness(100%);
+}
+
+
 </style>
 <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
@@ -476,38 +526,36 @@ while($events->have_posts())
 ?>
 
 
-<?php $slideshow = new WP_Query(array(
-    'post_type'=>'page',    
-));
-$i=0; 
-$post_id = 5;
-$list_values = rwmb_meta('list', array() , $post_id);
-$slide_images = rwmb_meta('slide_images', array( 'size' => 'large' ) , $post_id);
-$slide_images = array_values($slide_images);
-?>
    
 <div id="wed_testimonials" class="heading"><i>Testimonials</i></div>
 <hr class="title">
-<div class="owl-carousel testimonials owl-theme ">
-<?php foreach ( $list_values as $key=>$value ) { ?>
-<div class="testimonial-card">
-        <div class="testimonial-card-content">
-            <img src="<?php echo $slide_images[$key]['url'] ?>)"alt="">  
-            <div class="detail">
-                <h6><?php echo $value[0]; // Name    ?></h6>
-                <p><?php echo $value[1]; // Content ?></p>
-            </div>
-        </div>
-    </div>
-     <?php } ?>
+
+
+<div class="rhombo-wrapper">
+   <?php
+$events = new WP_Query(array(
+    'post_type'=>'events',
+    'meta_key' => 'event_date',
+    'orderby' => 'meta_value_num',
+    'order' => 'DESC',
+));
+while($events->have_posts())
+{
+    $events->the_post();         
+    $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );             
+    ?>
+    <?php foreach ( $thumbnail_image as $image ) {?>
+        <div><img src="<?php echo $image['url'] ?>" alt=""></div>
+    <?php } ?>
+<?php } ?>
 </div>
 
 
 </div>
-<div class="owl-navigation">
+<!-- <div class="owl-navigation">
     <span class="owl-nav-prev"><i class=" fa fa-long-arrow-alt-left"></i></span>
     <span class="owl-nav-next"><i class=" fa fa-long-arrow-alt-right"></i></span>
-</div>
+</div> -->
 </div>
 
 <?php get_footer(); ?>
