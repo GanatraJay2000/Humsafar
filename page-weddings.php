@@ -371,6 +371,11 @@ position:absolute;
 .testimonials-next{
     right:-30px;
 }
+@media screen and (max-width:768px){
+    .testimonials-nav{
+        display:none;
+    }
+}
 </style>
 <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
