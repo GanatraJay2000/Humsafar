@@ -375,6 +375,9 @@ position:absolute;
     .testimonials-nav{
         display:none;
     }
+    .bg{
+    width:100%;    
+}
 }
 </style>
 <?php $logos = new WP_Query(array(
