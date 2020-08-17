@@ -76,9 +76,7 @@
     }
 
     .post {
-        margin: 20px 0px;
-        border: 0.5px solid #d0d0d0;
-        border-radius: 5px;
+        margin: 30px 0px 60px;        
         display: flex;
         flex-direction: row;
         background: transparent;
@@ -95,15 +93,11 @@
     }
 
     .post .image {
-        width: 50%;
-        border-radius: 5px 0 0 5px;
+        width: 50%;        
         flex-basis: 50%;
         max-height: 300px;
     }
 
-    .post:nth-child(even) .image {
-        border-radius: 0 5px 5px 0;
-    }
 
     .post .content {
         flex-basis: 50%;
@@ -111,24 +105,20 @@
         color: #444;
         text-decoration: none;
         position: relative;
-        text-align: left;
+        text-align: left;        
     }
 
     .post:nth-child(even) .content {
         text-align: right;
     }
 
-    .post .content small {
-        font-family: "Myriad Pro",  sans-serif;
-        color: #555;
-        margin-bottom: 20px;
-    }
 
     .post .content .heading {
         margin-left: 0 !important;
         padding-left: 0;
         text-align: left;
-        display: block !important;
+        font-size:22px;
+        display: block;
         font-family:"Batang", serif;
     }
 
@@ -137,23 +127,28 @@
         font-family:"Batang", serif;
     }
 
-    .post-footer {
-        border-top: 0.7px solid #444444aa;
-        margin-top: 26px !important;
-        padding-top: 5px !important;
-        font-size: 14px !important;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .post:hover {
-        border: 0.5px solid #cc9d5c88;
-    }
 
     .post:hover .heading {
         color: #b28f5e;
         font-family:"Batang", serif;
     }
+    .more{
+        background-color: #b28f5e;
+        color:white;
+        border:1px solid white;
+        padding:3px 20px;
+        width:fit-content;
+        }
+    .post:nth-child(even) .more {
+       float: right;        
+    }
+    .more:hover{
+        background-color: white;
+        color:#b28f5e;
+        border:1px solid #b28f5e;
+        padding:3px 20px;
+        width:fit-content;
+        }
 
     .post button.heart {
         border: none !important;
@@ -371,6 +366,7 @@ position:absolute;
 .testimonials-next{
     right:-30px;
 }
+
 @media screen and (max-width:768px){
     .testimonials-nav{
         display:none;
@@ -467,66 +463,34 @@ $slide_1 = array_values($slide_1);
    
 </div>
 <div class="bg">
- <!-- <div class="heading"><i>Find our Recent post here!</i></div>
+ <div class="heading"><i>Find our Recent post here!</i></div>
     <hr class="title">
     <?php
 $events = new WP_Query(array(
     'posts_per_page' => 2,
-    'post_type'=>'events',
-    'meta_key' => 'event_date',
-    'orderby' => 'meta_value_num',
     'order' => 'DESC',
 ));
 while($events->have_posts())
 {
-    $events->the_post();         
-    $event_date = rwmb_meta('event_date');    
-    $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
-
-    $eventDate = new DateTime($event_date);          
+    $events->the_post();           
+    $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );         
 
     ?>
  <a href="<?php the_permalink(  ) ?>" class="post">
         <?php foreach ( $thumbnail_image as $image ) {?>
            <img class="image" src="<?php echo $image['url'] ?>" alt="">
         <?php } ?>
-        <div class="content">
-            <small><?php echo $eventDate->format('M').'  '.$eventDate->format('dS').', '.$eventDate->format('Y'); ?></small>
+        <div class="content">        
             <div class="heading"><?php the_title(); ?></div>
-            <div><?php echo wp_trim_words(get_the_content(), 18); ?></div>           
+            <div><?php echo wp_trim_words(get_the_content(), 18); ?></div> 
+            <div class="my-4 more">Read More</div>
         </div>
     </a>
 <?php
 }
 
 ?>
- -->
-<!-- 
-<?php $slideshow = new WP_Query(array(
-    'post_type'=>'page',    
-));
-$i=0; 
-$post_id = 52;
-$list_values = rwmb_meta('list', array() , $post_id);
-$slide_images = rwmb_meta('slide_images', array( 'size' => 'large' ) , $post_id);
-$slide_images = array_values($slide_images);
-?>
-   
 
-
-<?php foreach ( $list_values as $key=>$value ) { ?>
-<div class="testimonial-card">
-        <div class="testimonial-card-content">
-            <img src="<?php echo $slide_images[$key]['url'] ?>"alt="">  
-            <div class="detail">
-                <h6><?php echo $value[0]; // Name    ?></h6>
-                <p><?php echo $value[1]; // Content ?></p>
-            </div>
-        </div>
-    </div>
-     <?php } ?>
-
- -->
  <div id="wed_testimonials" class="heading"><i>Testimonials</i></div>
 <hr class="title">
 <div class="owl-carousel testimonials owl-theme mt-4">
