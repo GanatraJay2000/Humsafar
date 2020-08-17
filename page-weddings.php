@@ -188,6 +188,7 @@
     .testimonial-card-content .detail {
         padding: 20px 5px 5px 10px;
         font-size: 14px;
+        text-align:center;
     }
 
     .testimonial-card-content .detail p {
