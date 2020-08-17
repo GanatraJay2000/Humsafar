@@ -170,7 +170,7 @@
         /* height: 300px; */
         display: flex !important;
         align-items: center;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .testimonial-card {
@@ -192,14 +192,6 @@
 
     .testimonial-card-content .detail p {
         font-size: 12px;
-    }
-
-    .testimonial-card-content .detail p::before {
-        content: '"';
-    }
-
-    .testimonial-card-content .detail p::after {
-        content: '"';
     }
 .content.wrapper{
     padding-top:5px !important;
@@ -364,6 +356,13 @@
     margin:0 auto;
     padding:60px 0;
 }
+.testimonials-prev{
+    position:absolute;
+    top:0;
+    height:100px;
+    width:100px;
+    background-color:red;
+}
 </style>
 <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
@@ -478,24 +477,23 @@ while($events->have_posts())
 
 ?>
  -->
-
+<!-- 
 <?php $slideshow = new WP_Query(array(
     'post_type'=>'page',    
 ));
 $i=0; 
-$post_id = 5;
+$post_id = 52;
 $list_values = rwmb_meta('list', array() , $post_id);
 $slide_images = rwmb_meta('slide_images', array( 'size' => 'large' ) , $post_id);
 $slide_images = array_values($slide_images);
 ?>
    
-<div id="wed_testimonials" class="heading"><i>Testimonials</i></div>
-<hr class="title">
-<div class="owl-carousel testimonials owl-theme ">
+
+
 <?php foreach ( $list_values as $key=>$value ) { ?>
 <div class="testimonial-card">
         <div class="testimonial-card-content">
-            <img src="<?php echo $slide_images[$key]['url'] ?>)"alt="">  
+            <img src="<?php echo $slide_images[$key]['url'] ?>"alt="">  
             <div class="detail">
                 <h6><?php echo $value[0]; // Name    ?></h6>
                 <p><?php echo $value[1]; // Content ?></p>
@@ -503,13 +501,41 @@ $slide_images = array_values($slide_images);
         </div>
     </div>
      <?php } ?>
-</div>
 
+ -->
+ <div id="wed_testimonials" class="heading"><i>Testimonials</i></div>
+<hr class="title">
+<div class="owl-carousel testimonials owl-theme mt-4">
+   <?php
+$events = new WP_Query(array(
+    'posts_per_page' => 10,
+    'post_type'=>'events',
+    'meta_key' => 'event_date',
+    'orderby' => 'meta_value_num',
+    'order' => 'DESC',
+));
+$i=0;
+while($events->have_posts())
+{
+    $events->the_post();             
+    $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
+?>
+<div class="testimonial-card-content">
+             <?php foreach ( $thumbnail_image as $image ) {?>
+                        <img src="<?php echo $image['url'] ?>" alt="">
+                    <?php } ?>
+            <div class="detail">
+                <h6><?php the_title(); // Name    ?></h6>
+                <p><?php echo wp_trim_words(get_the_content(), 25);// Content ?></p>
+            </div>
+        </div>
+<?php } ?>
+</div>
 
 </div>
 <div class="owl-navigation">
-    <span class="owl-nav-prev"><i class=" fa fa-long-arrow-alt-left"></i></span>
-    <span class="owl-nav-next"><i class=" fa fa-long-arrow-alt-right"></i></span>
+    <span class="testimonials-prev"><i class=" fa fa-long-arrow-alt-left"></i></span>
+    <span class="testimonials-next"><i class=" fa fa-long-arrow-alt-right"></i></span>
 </div>
 </div>
 

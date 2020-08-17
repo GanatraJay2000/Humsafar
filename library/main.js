@@ -71,10 +71,7 @@ jQuery(document).ready(function ($) {
     autoplaySpeed: 4000,
     responsiveClass: true,
     nav: true,
-    navText: [
-      $(".owl-navigation .owl-nav-prev"),
-      $(".owl-navigation .owl-nav-next"),
-    ],
+    navText: [$(".testimonials-prev"), $(".testimonials-next")],
     responsive: {
       0: {
         items: 1,
