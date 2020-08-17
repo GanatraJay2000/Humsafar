@@ -72,12 +72,16 @@ background-color:black;
     .latest-blogs{
         width:100%;        
     }
+    .latest-blogs * {
+        font-family: Rufina, sans-serif;
+    }
     .latest-blogs img{
         width:100%;
         height:200px;
     }
     .list-group-item{
         border:0;
+        padding: 10px 0px;
         margin-bottom:30px;
     }
 
@@ -130,7 +134,7 @@ while(have_posts())
     <div class="content"><?php the_content(); ?></div>
     </div>
     <div class="col-md-3 col-12">
-    <h3>Latest Blogs</h3>
+    <h3 style="font-family:playfair display">Latest Blogs</h3>
     <div class="latest-blogs">
     <?php
     
