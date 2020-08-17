@@ -358,18 +358,18 @@
     padding:60px 0;
 }
 .testimonials-prev{
-    position:absolute;
-    top:0;
-    right:-30px;
+     left:-30px;
+}
+.testimonials-nav{
+position:absolute;
+    top:50%;
+    transform:translate(0, -50%);
+    font-size:30px;
     padding: 5px 0;
-    width:30px;    
+    width:30px;   
 }
 .testimonials-next{
-    position:absolute;
-    top:0;
-    left:-30px;
-    padding: 5px 0;
-    width:30px;    
+    right:-30px;
 }
 </style>
 <?php $logos = new WP_Query(array(
@@ -542,8 +542,8 @@ while($events->have_posts())
 
 </div>
 <div class="owl-navigation">
-    <span class="testimonials-prev"><i class=" fa fa-long-arrow-alt-left"></i></span>
-    <span class="testimonials-next"><i class=" fa fa-long-arrow-alt-right"></i></span>
+    <span class="testimonials-prev testimonials-nav"><i class=" fa fa-chevron-left"></i></span>
+    <span class="testimonials-next testimonials-nav"><i class=" fa fa-chevron-right"></i></span>
 </div>
 </div>
 
