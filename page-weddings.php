@@ -378,7 +378,10 @@ position:absolute;
     .bg{
     width:100%;  
     padding:60px 20px;  
-}
+    }
+    .banner-carousel .banner{
+        height:400px;        
+    }
 }
 </style>
 <?php $logos = new WP_Query(array(
