@@ -82,7 +82,7 @@ background-color:black;
     .list-group-item{
         border:0;
         padding: 10px 0px;
-        margin-bottom:30px;
+        /* margin-bottom:30px; */
     }
 
     @media screen and (max-width:1100px){
