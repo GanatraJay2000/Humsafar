@@ -382,6 +382,10 @@ position:absolute;
     .banner-carousel .banner{
         height:300px;        
     }
+        .banner .title{
+        font-weight:600;
+        font-size:30px;
+    }
 }
 </style>
 <?php $logos = new WP_Query(array(
