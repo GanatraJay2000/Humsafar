@@ -64,9 +64,11 @@
     }
 
     .inquire {
-        margin: 4px 0px;
+        margin: 10px 0px;
         border: 0;
-        padding: 3px 45px;
+        outline:1px solid white;
+        outline-offset:-4px;
+        padding: 5px 45px;
         font-size: 20px;
         color: white;
         background-color: #cc9d5c;
@@ -442,7 +444,7 @@ $slide_1 = array_values($slide_1);
    
 </div>
 <div class="bg">
- <div class="heading"><i>Find our Recent post here!</i></div>
+ <!-- <div class="heading"><i>Find our Recent post here!</i></div>
     <hr class="title">
     <?php
 $events = new WP_Query(array(
@@ -466,7 +468,7 @@ while($events->have_posts())
            <img class="image" src="<?php echo $image['url'] ?>" alt="">
         <?php } ?>
         <div class="content">
-            <small><?php echo $eventDate->format('M').' '.$eventDate->format('dS').', '.$eventDate->format('Y'); ?></small>
+            <small><?php echo $eventDate->format('M').'  '.$eventDate->format('dS').', '.$eventDate->format('Y'); ?></small>
             <div class="heading"><?php the_title(); ?></div>
             <div><?php echo wp_trim_words(get_the_content(), 18); ?></div>           
         </div>
@@ -475,7 +477,7 @@ while($events->have_posts())
 }
 
 ?>
-
+ -->
 
 <?php $slideshow = new WP_Query(array(
     'post_type'=>'page',    
