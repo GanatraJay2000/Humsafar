@@ -71,8 +71,18 @@ display:none !important;
 	 font-family:"Playfair Display", sans-serif;
    font-size:23px;
    margin-top:20px;
-
    text-align:Center;
+}
+.careerha{
+border-left:2px solid green;
+
+}
+@media screen and (max-width:786px){
+	.careerha{	 
+border-left:0px ;
+border-top:2px solid green;
+
+}
 }
 
 #careera{
@@ -160,7 +170,7 @@ weddings@humsafar.co<br>
 </div>
 
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
-<center><p id="careerh">Address</p>
+<center class="careerha"><p id="careerh">Address</p>
 <p id="careera">
 In Front of Kool Beb's,<br> 2nd Floor, 18/1, Agrasen Chowk,<br> C.G, Nehru Nagar,<br> Chhattisgarh 490020</p></center>
 </div>

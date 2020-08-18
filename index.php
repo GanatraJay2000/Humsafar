@@ -155,7 +155,7 @@
     $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
 		if($i==0 and $paged==0){
 ?>
-<div class="col-12 blog-post d-flex flex-wrap align-items-center">	
+<div class="col-12 blog-post d-flex flex-wrap align-items-center mb-5">	
 	<div class="col-lg-8 col-md-6 col-12 p-0 image">
 		<?php foreach ( $thumbnail_image as $image ) {?>
             <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['url'] ?>" alt=""></a>
@@ -176,7 +176,7 @@
 		}else{
 ?>
 	
-	<div class="col-md-6 col-12 blog-post">	
+	<div class="col-md-6 col-12 blog-post mt-4">	
 		<div class="image">
 		<?php foreach ( $thumbnail_image as $image ) {?>
             <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['url'] ?>" alt=""></a>

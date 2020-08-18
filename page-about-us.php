@@ -24,11 +24,15 @@
 
 		.scroll-bg-1 {
 			background-color: #d0f2e1;
-			padding: 10px 70px;
+			padding: 40px 70px;
 		}
 		.scroll-bg-2 {
 			background-color: #fff;
-			padding: 10px 70px;
+			padding: 50px 70px;
+		}
+		.scroll-bg-3 {
+			background-color: #fff;
+			padding: 50px 0px;
 		}
 
 		.bg-1 {
@@ -62,12 +66,16 @@
             box-shadow:0px 0px 10px #00000033;
 		}
 
+		.text p{
+			line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
+		}
 		.text {
 			width: 80%;
 			margin: 60px auto;
-			line-height: 30px;
-			text-align:center;
-			font-size:18px;
+			text-align:left;
+			
 		}
 		.text p{
 			margin:40px auto;
@@ -203,6 +211,7 @@
 				<p>Making your dream come reality is the ultimate motto of Humsafar weddings. Conceptualizing each and every aspect of it is necessary by not only professionally planning but also executing those. We believe in bringing plans to action for you to live the happiest moments. While the bride and groom play the main role and the other supporting them, it is the Humsafar wedding planners who keep on interlocking those strands of happiness in them. Relax, you have got our back for everything.</p>
 	</div>
 	</div>
+	<div class="scroll-bg-3">
 	<div class="d-flex flex-wrap flex-row-reverse director">
 		<div class="col-md-5 col-12">
 			<img src="https://images.pexels.com/photos/412840/pexels-photo-412840.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
@@ -278,6 +287,7 @@ It feels pleasurable to see a couple setting goals at a higher-end but there are
         </a>
     </div>
   </div>
+</div>
 </div>
     </div>
 	

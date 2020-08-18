@@ -93,7 +93,6 @@
 		.buttons {
 			width: 100%;
 			margin: 20px auto;
-			//background-color: yellow;
 			text-align: center;
 		}
 
@@ -101,13 +100,20 @@
 			width: 200px;
             padding: 15px 0;
 			text-align: center;
-			border: none;
+			border: 2px solid #dba960;
 			color: white !important;
 			font-size: 17px;
 			cursor: pointer;
 			text-decoration: none;
 			margin: 10px 20px;
 			background-color: #dba960;
+			transition:0.2s ease-in;
+		}
+		.button:hover {
+			border: 2px solid #dba960;
+			color: #dba960 !important;
+			background-color: white;
+			text-decoration:none;
 		}
 
 		@media screen and (max-width: 1000px) {

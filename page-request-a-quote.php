@@ -6,6 +6,10 @@ background-color: #fff;
   font-family: "Myriad Pro",  "Times New Roman", Times, serif;
 
 }
+.content.wrapper{
+  width:80% !important;
+  margin: 0 auto !important;
+}
 
 .heading {
         padding-top: 10px;
@@ -154,6 +158,12 @@ background-color:grey !important;
 
 
 
+   @media screen and (max-width : 1000px) {
+     .content.wrapper{
+  width:100% !important;
+  margin: 0 auto !important;
+}
+   }
    @media screen and (max-width : 500px) {
 
         .heading h1::before,

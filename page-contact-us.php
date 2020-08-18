@@ -244,8 +244,7 @@ padding:20px;
 
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  >
 <h4>Head Office ( Delhi )</h4>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.47986879284244!2d81.3227863!3d21.2049507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x59dd171d40678beb!2sHumsafar%20Weddings%20%7C%20Best%20Wedding%20Planner%20and%20Destination%20Wedding%20Planner%20in%20budget!5e0!3m2!1sen!2sin!4v1595118914250!5m2!1sen!2sin"  
-width="100%" height="300" frameborder="0" class="iframe_maps" style="" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224279.75113561423!2d77.02630593275573!3d28.55861679104418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d023dd22ce9fd%3A0xb8e3e7b8d274f7fa!2sMahavir%20Bhawan!5e0!3m2!1sen!2sin!4v1597759951573!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">

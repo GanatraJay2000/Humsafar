@@ -1,6 +1,8 @@
 <?php get_header();?>
 <style>
-
+.service-part{
+    margin-bottom:50px;
+}
 .content{
     width:80%;
     margin:0 auto;
@@ -18,13 +20,14 @@
             position:relative;
             box-sizing:border-box;            
             /* border:1px solid purple; */
-            padding-top:30px;            
+            padding-top:30px;  
+            margin-bottom:20px;          
         }
         .my_block .title{
             min-height:10%;
             margin:0px;
             font-size:23px;   
-            padding-top:10px;     
+            padding-top:20px;     
             font-family:"Playfair Display"    , serif;
             /* border:1px solid; */
         }

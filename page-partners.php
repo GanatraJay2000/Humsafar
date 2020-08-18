@@ -96,7 +96,7 @@ border:0 !important;
             <h1><span>*</span></h1>
         </div>
 <br>
-<div class="container">
+<div class="container mb-5">
 
 	<div class="row">
 	
