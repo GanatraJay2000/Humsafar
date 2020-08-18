@@ -50,6 +50,9 @@
             padding:20px;
             font-family:"Myriad Pro",sans-serif;
         }
+        .text-small{
+            font-size:17px;
+        }
         .my_block:hover .block_content{                                               
                 opacity:1;
                 visibility:visible;                
@@ -70,6 +73,11 @@
                     .content{
                         width:100%;
                     }
+            }
+            @media screen and (max-width:450px)     {
+                        .my_block{ 
+            margin-bottom:40px;          
+        }
             }
             @media screen and (max-width:340px)     {
                     .my_block .title{
@@ -106,7 +114,7 @@
                 <div class="block-image">
                         <img alt="venue"
                         src="https://image.freepik.com/free-photo/plates-with-variety-food-celebration-table_8353-11285.jpg" />
-                        <div class="block_content">
+                        <div class="block_content text-small">
                          Food stations are the most important thing in any and every wedding. Selecting the right menu with respect to the season is essential to have a perfect amiable wedding.
  We help you out with a proper planning and management of food by providing the best seasonal and traditional food according to the theme. Thus, we work to achieve perfection and to help you out in the best way we can. 
 
@@ -163,7 +171,7 @@ But on your over occupied day will you be able to do that? Don’t worry. We do 
                 <div class="block-image">
                         <img alt="venue"
                         src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-                        <div class="block_content">
+                        <div class="block_content text-small">
                              A form of love and greetings with a heartiest invite to our friends, family and relatives needs to be very special.
 We help you out in designing a beautiful and attractive invitation card along with trending and exciting gifts and that too in your  budget price only. Thus, make sure that your gifts are bombarded with a bundle of excitement and thrill capturing their eyes. 
 
