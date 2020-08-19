@@ -516,12 +516,12 @@ article.post:last-of-type {
 }
 
 .site-footer .reach-us a {
-  color: rgb(212, 252, 204);
+  color: white;
   text-decoration: none;
 }
 
 .site-footer .reach-us a:hover {
-  color: white;
+  color: rgb(212, 252, 204);
 }
 
 /* Footer Nav */
