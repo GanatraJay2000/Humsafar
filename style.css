@@ -23,6 +23,8 @@ Version:1.0
   --Rubik: "Rubik", sans-serif;
 }
 
+
+
 * {
   padding: 0;
   margin: 0;
@@ -55,6 +57,16 @@ a:visited {
 
 p {
   line-height: 1.65em;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #016e60;
+  background: #d2fce8;
+}
+
+::selection {
+  color: #016e60;
+  background: #d2fce8;
 }
 
 /* General Layout */
