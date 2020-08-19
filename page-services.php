@@ -8,12 +8,12 @@
     margin:0 auto;
 }
         .block-image{
-            height:90%;
+            height:fit-content;
             width:100%;
             position:relative;
         }
         .block-image img{
-            height:100%;
+            height:300px !important;
             width:100%;            
         }
         .my_block{
@@ -87,13 +87,13 @@
 
 </style>
  <div class="service-part">
-    <h1  style="font-family:Batang;text-align:center;margin-bottom:40px;">Services</h1>
+    <h1  style="font-family:Batang;text-align:center;margin:40px 0;">Services</h1>
         
         <div class="d-flex flex-wrap justify-content-center content">
             <div class="col-md-6 col-12 text-center my_block">                
                     <div  class="block-image">
                          <img alt="venue"
-                        src="https://image.freepik.com/free-photo/beautiful-couple-posing-their-wedding-day_1328-3508.jpg" />
+                        src="<?php echo get_template_directory_uri() . '/assets_inside/budget.jpg' ?>" />
                         <div class="block_content">
                             Budget planning is essential as it cuts off the extra spending and utilize the money in a planned way. But, we  can actually help you out to achieve your dreams and have a perfect wedding just according to your choice and most importantly providing you with the best according to your budget. 
                         </div>
@@ -103,7 +103,7 @@
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        src="<?php echo get_template_directory_uri() . '/assets_inside/venue.jpg' ?>" />
                         <div class="block_content">
                                   Planning the destination is a specialization of Humsafar weddings. Is it a traditional palace like or a beach with picturesque sceneries you like, we've got you covered. We provide Pan India and foreign destination services with tip to top organization. 
                         </div>
@@ -124,8 +124,8 @@
             </div>
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
-                        <img alt="venue"
-                        src="https://image.freepik.com/free-photo/man-plays-drums-background-colored-lights_169016-3427.jpg" />
+                        <img alt="venue" 
+                       src="<?php echo get_template_directory_uri() . '/assets_inside/artist.jpg' ?>" />
                         <div class="block_content">
                              After organizing each and every thing, proper execution of plans is important.The artists and vendors need to be managed properly which is a specialization of Humsafar weddings.
                         </div>
@@ -135,7 +135,7 @@
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                        <img alt="venue"
-                        src="https://image.freepik.com/free-photo/people-celebrating-night_23-2147651886.jpg" />
+                       src="<?php echo get_template_directory_uri() . '/assets_inside/entertain.png' ?>" />
                         <div class="block_content">
                           Is Haldi possible without turmeric? Is Sangeet possible without music?<br>
 Of course not!<br> Only a proper plan as input will deliver entertainment as an output. We can guarantee you the level of your entertainment! Finally, your day is not only a memorable day for you alone but also for many! 
@@ -158,7 +158,7 @@ If designs are humans, all women will be taken-off by them. The matter is the vi
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://image.freepik.com/free-photo/waiter-uniform-holding-metal-tray_23-2148245001.jpg" />
+                       src="<?php echo get_template_directory_uri() . '/assets_inside/hospt.jpg' ?>" />
                         <div class="block_content">
                                  Every guest is a precious jewel until treated with hospitality!
 But on your over occupied day will you be able to do that? Don’t worry. We do this with concern, because we know how special you are to us and the day is to you!
@@ -170,7 +170,7 @@ But on your over occupied day will you be able to do that? Don’t worry. We do 
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                      src="<?php echo get_template_directory_uri() . '/assets_inside/invitation.jpg' ?>" />
                         <div class="block_content text-small">
                              A form of love and greetings with a heartiest invite to our friends, family and relatives needs to be very special.
 We help you out in designing a beautiful and attractive invitation card along with trending and exciting gifts and that too in your  budget price only. Thus, make sure that your gifts are bombarded with a bundle of excitement and thrill capturing their eyes. 
@@ -194,7 +194,7 @@ The beauty of it is, it remains constant even after time changes! Videography wi
             <div class="col-md-6 col-12 text-center my_block">
                 <div class="block-image">
                         <img alt="venue"
-                        src="https://image.freepik.com/free-photo/successful-business-partners-discussing-contract_1098-14790.jpg" />
+                        src="<?php echo get_template_directory_uri() . '/assets_inside/perm.jpg' ?>" />
                         <div class="block_content">
                          Planning a destination wedding is a great idea for couples but it comes with great deal of legal procedures. Humsafar weddings follows it’s legal responsibility by abiding to the rules and regulations. We have a team specializing in handling all the legal matters quickly.
                         </div>
