@@ -88,6 +88,14 @@
 	.statistics img{
 		border:0;
 	}
+	.statistics .card-img-top{
+width:80px;
+margin:0px auto;
+	}
+	.statistics .card-text{
+font-size:18px;
+font-weight:600;
+	}
 
 	.director{
 		width:70%;
@@ -104,8 +112,10 @@
 		font-family:"Batang", serif;
 	}
 	.director img{
-		width:100%;
-		
+		width:100%;		
+	}
+	.director .director-name{
+		color:#215a53;
 	}
 	.meet-team{
 		width:80%;
@@ -187,21 +197,21 @@
 <div class=" p-5">
         <div class="card-deck statistics">
             <div class="card">    
-            <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/experience.png' ?>" alt="Card image cap"> 
+            <img class="card-img-top"  src="<?php echo get_template_directory_uri() . '/assets_inside/experience.png' ?>" alt="Card image cap"> 
                 <div class="card-body text-center">      
-                <p class="card-text">4<br>YEARS</p>
+                <p class="card-text">4<br>Years</p>
                 </div>
             </div>
             <div class="card">    
-            <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/wedding.png' ?>" alt="Card image cap"> 
+            <img class="card-img-top"  src="<?php echo get_template_directory_uri() . '/assets_inside/wedding.png' ?>" alt="Card image cap"> 
                 <div class="card-body text-center">      
-                <p class="card-text">50+ <br>WEDDINGS</p>
+                <p class="card-text">50+ <br>Weddings</p>
                 </div>
             </div>
             <div class="card">    
-            <img class="card-img-top" style="width:100px;margin:0px auto;" src="<?php echo get_template_directory_uri() . '/assets_inside/travel.png' ?>" alt="Card image cap"> 
+            <img class="card-img-top"  src="<?php echo get_template_directory_uri() . '/assets_inside/travel.png' ?>" alt="Card image cap"> 
                 <div class="card-body text-center">      
-                <p class="card-text">12<br>DESTINATION WEDDINGS</p>
+                <p class="card-text">12<br>Destination Weddings</p>
                 </div>
             </div>
         </div>    
@@ -218,7 +228,7 @@
 		</div>
 		<div class="col-md-7 col-12">
 			<h4>Our Prime Mover</h4>
-			<h1>Mr. Armaan Sharma</h1>
+			<h1 class="director-name">Mr. Armaan Sharma</h1>
 			<p>
 It feels pleasurable to see a couple setting goals at a higher-end but there are people who work backdoors operating those ropes of emotions and blessings. It is our founder who keeps us united and tied up with the responsibility of full filling the dreams. He started working in the industry way back in 2009 managing many events in Mumbai. When he founded Humsafar weddings in 2014, it was his expertise that kept us going and spirited. He has been out driving force since then with an enthusiasm never seen before.
 </p>
@@ -237,8 +247,10 @@ It feels pleasurable to see a couple setting goals at a higher-end but there are
     <div class="card-body">
       <h5 class="card-title">Lorem</h5>
       <h5 class="card-sub-title">lorem ipsum</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci fugiat eligendi nam unde laboriosam sapiente ea quo ullam minus!</p>
-        <a href="#" class="text-dark">
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci fugiat eligendi nam unde laboriosam sapiente ea quo ullam minus!</p>        
+    </div>
+	<div>
+	 <a href="#" class="text-dark">
             <i class="fab fa-facebook fa-2x px-1" aria-hidden="true"></i>
         </a>
         <a href="#" class="text-dark">
@@ -247,7 +259,7 @@ It feels pleasurable to see a couple setting goals at a higher-end but there are
         <a href="#" class="text-dark">
             <i class="fab fa-instagram fa-2x px-1" aria-hidden="true"></i>
         </a>
-    </div>
+		</div>
   </div>
   <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
   <div class="card">
@@ -257,7 +269,10 @@ It feels pleasurable to see a couple setting goals at a higher-end but there are
       <h5 class="card-title">Lorem</h5>
       <h5 class="card-sub-title">Lorem Ipsum</h5>
       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nihil. Molestiae nulla incidunt commodi eos?</p>
-      <a href="#" class="text-dark">
+     
+    </div>
+	<div>
+	 <a href="#" class="text-dark">
             <i class="fab fa-facebook fa-2x px-1" aria-hidden="true"></i>
         </a>
         <a href="#" class="text-dark">
@@ -266,7 +281,7 @@ It feels pleasurable to see a couple setting goals at a higher-end but there are
         <a href="#" class="text-dark">
             <i class="fab fa-instagram fa-2x px-1" aria-hidden="true"></i>
         </a>
-    </div>
+		</div>
   </div>
   <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
   <div class="card">
@@ -276,7 +291,10 @@ It feels pleasurable to see a couple setting goals at a higher-end but there are
       <h5 class="card-title">Lorem</h5>
       <h5 class="card-sub-title">Lorem Ipsum</h5>
       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quisquam cum quae, possimus et, veritatis necessitatibus dolores sapiente excepturi voluptates distinctio iste ipsum inventore quod sint pariatur modi incidunt.</p>
-      <a href="#" class="text-dark">
+      
+    </div>
+	<div>
+	 <a href="#" class="text-dark">
             <i class="fab fa-facebook fa-2x px-1" aria-hidden="true"></i>
         </a>
         <a href="#" class="text-dark">
@@ -285,7 +303,7 @@ It feels pleasurable to see a couple setting goals at a higher-end but there are
         <a href="#" class="text-dark">
             <i class="fab fa-instagram fa-2x px-1" aria-hidden="true"></i>
         </a>
-    </div>
+		</div>
   </div>
 </div>
 </div>
