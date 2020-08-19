@@ -17,7 +17,7 @@ div.newsletter p{
 }
 
 .follow-insta{
-    padding:30px 0 15px;
+    padding:40px 0 25px;
 }
 
 .follow-at-insta{
