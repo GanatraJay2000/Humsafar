@@ -54,7 +54,7 @@ foreach ( $slide_2 as $image ) {
 </div>
 
 <footer class="site-footer">
-<center class="follow-insta"> <a class="follow-at-insta" href="#">follow us  @humsafar.weddings</a> </center>
+<center class="follow-insta"> <a class="follow-at-insta" href="https://www.instagram.com/humsafar.weddings/">follow us  @humsafar.weddings</a> </center>
 <?php echo do_shortcode('[instagram-feed]'); ?>
     <div class="wrapper">
         <div class=" text-lg-center">
