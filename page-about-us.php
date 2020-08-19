@@ -224,7 +224,7 @@ font-weight:600;
 	<div class="scroll-bg-3">
 	<div class="d-flex flex-wrap flex-row-reverse director">
 		<div class="col-md-5 col-12">
-			<img style="height:400px;" src="https://images.pexels.com/photos/412840/pexels-photo-412840.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+			<img style="height:400px;width:300px;" src="https://images.pexels.com/photos/412840/pexels-photo-412840.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
 		</div>
 		<div class="col-md-7 col-12">
 			<h4 class="mb-3 mt-3 mt-md-0">Our Prime Mover</h4>
