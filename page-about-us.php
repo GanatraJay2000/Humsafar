@@ -227,8 +227,8 @@ font-weight:600;
 			<img src="https://images.pexels.com/photos/412840/pexels-photo-412840.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
 		</div>
 		<div class="col-md-7 col-12">
-			<h4>Our Prime Mover</h4>
-			<h1 class="director-name">Mr. Armaan Sharma</h1>
+			<h4 class="mb-3 mt-3 mt-md-0">Our Prime Mover</h4>
+			<h1 class="director-name mb-4">Mr. Armaan Sharma</h1>
 			<p>
 It feels pleasurable to see a couple setting goals at a higher-end but there are people who work backdoors operating those ropes of emotions and blessings. It is our founder who keeps us united and tied up with the responsibility of full filling the dreams. He started working in the industry way back in 2009 managing many events in Mumbai. When he founded Humsafar weddings in 2014, it was his expertise that kept us going and spirited. He has been out driving force since then with an enthusiasm never seen before.
 </p>
