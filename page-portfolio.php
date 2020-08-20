@@ -101,8 +101,7 @@ img{
         -webkit-box-align: stretch;
         align-items: stretch;
         -webkit-box-pack: center;
-        justify-content: center;
-        //position: relative;
+        justify-content: center;        
     }
 
     .lightbox-wrapper div img {
@@ -161,21 +160,14 @@ img{
     }
     .center {
         grid-column-start: 2;
-        /* grid-column-end: span 2;
+         grid-column-end: span 2;
         grid-row-end: span 2; 
     }
 
     .right {
         grid-column-start: -2;
     }
-	
-<<<<<<< HEAD
-	**/
-Z
-=======
-	
 
->>>>>>> b079d37e37ffdb580a7b602b4d8f9ba250423bc1
     .horizontal {
     	grid-column: span 2;
     }
@@ -244,7 +236,7 @@ Z
     }
 
 
-    @media screen and (min-width:1124px) {
+    @media screen and (min-width:1024px) {
         .horizontal {
             grid-column-end: span 2;
         }
