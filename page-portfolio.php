@@ -81,7 +81,7 @@ img{
         max-width: 90%;
         display: grid;
         grid-gap: 5px;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(300px, 0.33fr));
         grid-auto-rows: 250px;
         grid-auto-flow: dense;
     }
