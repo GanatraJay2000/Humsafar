@@ -348,7 +348,7 @@
     padding:60px 0;
 }
 .bg{
-    width:70%;
+    width:80%;
     margin:0 auto;
     padding:60px 0;
 }
@@ -366,6 +366,37 @@ position:absolute;
 .testimonials-next{
     right:-30px;
 }
+
+.services-on-home{
+    margin-bottom:80px;
+}
+.services-on-home .services-card:nth-child(2) .inner-card{
+    margin-top:50px;
+}
+.services-on-home .services-card:nth-child(3) .inner-card{
+    margin-top:100px;
+}
+
+.services-on-home .inner-card img{
+    height:200px;
+    width:100%;
+}
+.services-on-home .service-name{
+    margin-top:15px;
+font-family: "Playfair display", serif;
+    font-size:20px;
+}
+.services-on-home .more-services{
+    margin:35px 0 50px;
+    text-align:center;
+}
+.services-on-home .more-services a{
+    color:#444 !important;
+    text-decoration:none;
+    font-family: "Playfair display", serif;
+    font-size:19px;
+}
+
 
 @media screen and (max-width:768px){
     .testimonials-nav{
@@ -443,6 +474,7 @@ $slide_1 = array_values($slide_1);
         moment.</p>
         </div>
 <div class="bg-1">
+    
     <div class="sub-title">
         ALWAYS CONSIDERED
     </div>
@@ -463,35 +495,46 @@ $slide_1 = array_values($slide_1);
    
 </div>
 <div class="bg">
- <div class="heading"><i>Find our Recent post here!</i></div>
+<div class="services-on-home">
+    <div class="heading"><i>Services</i></div>
     <hr class="title">
-    <?php
-$events = new WP_Query(array(
-    'posts_per_page' => 2,
-    'order' => 'DESC',
-));
-while($events->have_posts())
-{
-    $events->the_post();           
-    $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );         
-
-    ?>
- <a href="<?php the_permalink(  ) ?>" class="post">
-        <?php foreach ( $thumbnail_image as $image ) {?>
-           <img class="image" src="<?php echo $image['url'] ?>" alt="">
-        <?php } ?>
-        <div class="content">        
-            <div class="heading"><?php the_title(); ?></div>
-            <div><?php echo wp_trim_words(get_the_content(), 18); ?></div> 
-            <div class="my-4 more">Read More</div>
+    <div class="row d-flex justify-content-center align-items-flex-start mt-5">
+        <div class="col-4 services-card text-center">
+            <div class="inner-card">
+                 <img alt="venue"
+                        src="<?php echo get_template_directory_uri() . '/assets_inside/budget.jpg' ?>" />
+            </div>    
+            <div class="text-center service-name">
+                Budget Management
+            </div>    
         </div>
-    </a>
-<?php
-}
+        <div class="col-4 services-card text-center">
+            <div class="inner-card">
+                <img alt="venue"
+                        src="<?php echo get_template_directory_uri() . '/assets_inside/venue.jpg' ?>" />
+            </div>    
+            <div class="text-center service-name">
+                Venues & Destination
+            </div>    
+        </div>
+        <div class="col-4 services-card text-center">
+            <div class="inner-card">
+               <img alt="venue"
+                       src="<?php echo get_template_directory_uri() . '/assets_inside/entertain.png' ?>" />
+            </div>    
+            <div class="text-center service-name">
+                Entertainment Design & Planning 
+            </div>    
+        </div>
+    </div>
+    <div class="more-services">
+        <a style="text-decoration:underline;" href="<?php echo site_url('/services'); ?>">Learn about our services</a>
+    </div>
+</div>
 
-?>
 
- <div id="wed_testimonials" class="heading"><i>Testimonials</i></div>
+
+ <div id="wed_testimonials" class="heading mt-5"><i>Testimonials</i></div>
 <hr class="title">
 <div class="owl-carousel testimonials owl-theme mt-4">
    <?php
@@ -520,7 +563,37 @@ while($events->have_posts())
 <?php } ?>
 </div>
 
+<div style="margin:100px 0 50px;">
+ <div class="heading"><i>Find our Recent post here!</i></div>
+    <hr class="title">
+    <?php
+$events = new WP_Query(array(
+    'posts_per_page' => 2,
+    'order' => 'DESC',
+));
+while($events->have_posts())
+{
+    $events->the_post();           
+    $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );         
+
+    ?>
+ <a href="<?php the_permalink(  ) ?>" class="post">
+        <?php foreach ( $thumbnail_image as $image ) {?>
+           <img class="image" src="<?php echo $image['url'] ?>" alt="">
+        <?php } ?>
+        <div class="content">        
+            <div class="heading"><?php the_title(); ?></div>
+            <div><?php echo wp_trim_words(get_the_content(), 18); ?></div> 
+            <div class="my-4 more">Read More</div>
+        </div>
+    </a>
+<?php
+}
+
+?>
 </div>
+</div>
+
 <div class="owl-navigation">
     <span class="testimonials-prev testimonials-nav"><i class=" fa fa-chevron-left"></i></span>
     <span class="testimonials-next testimonials-nav"><i class=" fa fa-chevron-right"></i></span>

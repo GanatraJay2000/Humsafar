@@ -63,7 +63,7 @@
 			content:'Read More...';
 			display:grid;
 			place-items:center;
-			font-family:"Raleway", sans-serif;
+			font-family:"Myriad pro", sans-serif;
 			letter-spacing:1px;
 			word-spacing:5px;
 			font-size:32px;
@@ -83,7 +83,7 @@
 			text-decoration:none !important;
 			font-size:28px;
 			font-weight:500;
-			font-family:"Rufina", serif;
+			font-family:"Playfair Dsiplay", serif;
 			letter-spacing:1px;
 			line-height:1.3em;
 			transition:0.3s;

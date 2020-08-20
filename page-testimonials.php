@@ -5,13 +5,13 @@
     }
 
     .title {
-        font-family: 'Times New Roman';
+        font-family: 'Batang';
         font-size: 30px;
         margin-top:10px;
     }
 
     .title::first-letter {
-        font-family: 'Times New Roman';
+        font-family: 'Batang';
         font-size: 100px;
     }
 
@@ -39,7 +39,7 @@
     }
 
     .first-letter {
-        font-family: 'Times New Roman';
+        font-family: 'Myriad Pro';
         font-size: 100px;
     }
 
@@ -85,14 +85,12 @@
     }
     @media screen and (max-width:768px){
          .title {
-        text-align:center;
-        font-family: 'Times New Roman';
+        text-align:center;        
         font-size: 24px;
         margin-top:10px;    
     }
 
-    .title::first-letter {
-        font-family: 'Times New Roman';
+    .title::first-letter {        
         font-size: 50px !important;
     }
     .para p{        
