@@ -16,6 +16,17 @@ div.newsletter p{
     border:0;
 }
 
+.follow-insta{
+    padding:45px 0 30px;
+}
+
+.follow-at-insta{
+text-decoration:none !important;
+color:white !important;
+font-family: "Rufina", serif;
+font-size:30px;
+}
+
 </style>
 <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
@@ -34,7 +45,7 @@ foreach ( $slide_2 as $image ) {
     ?>
 
     <div class="block">
-    <a href="<?php echo $image['description'] ?>">
+    <a target="_blank" href="<?php echo $image['description'] ?>">
         <img class="clients_image_car" src="<?php echo $image['url'] ?>" alt="">                
     </a>
     </div>
@@ -43,6 +54,7 @@ foreach ( $slide_2 as $image ) {
 </div>
 
 <footer class="site-footer">
+<center class="follow-insta"> <a target="_blank" class="follow-at-insta" href="https://www.instagram.com/humsafar.weddings/">follow us  @humsafar.weddings</a> </center>
 <?php echo do_shortcode('[instagram-feed]'); ?>
     <div class="wrapper">
         <div class=" text-lg-center">

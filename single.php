@@ -68,9 +68,14 @@ background-color:black;
 .blocks-gallery-grid, .wp-block-gallery {
         margin-top:20px !important;
     }
-
+.full-width{
+    width:100%;
+}
     .latest-blogs{
         width:100%;        
+    }
+    .latest-blogs * {
+        font-family: Rufina, sans-serif;
     }
     .latest-blogs img{
         width:100%;
@@ -78,7 +83,32 @@ background-color:black;
     }
     .list-group-item{
         border:0;
-        margin-bottom:30px;
+        padding: 10px 0px;
+        /* margin-bottom:30px; */
+    }
+    p{
+        line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
+            margin: 15px 0px 40px;
+    }
+    .blocks-gallery-grid, .wp-block-gallery {
+        width:100% !important;
+    }
+    .blocks-gallery-grid, .wp-block-gallery img{
+        width:100% !important;
+    }
+    .wp-block-image{
+        margin-top:20px;
+    }
+    .wp-block-image img{
+        width:100% !important;
+    }
+
+    .list-group-item {
+        font-size:19px;
+        font-family:"Playfair Display",serif;
+        margin:20px 0;
     }
 
     @media screen and (max-width:1100px){
@@ -116,9 +146,9 @@ while(have_posts())
 
 	
 <article class="post">
-    <div class="image">
+    <div class="image" style="margin-top:0;">
 	<?php foreach ( $thumbnail_image as $image ) {?>
-        <img style="" src="<?php echo $image['url'] ?>" alt="">
+        <img style="border:0;" src="<?php echo $image['url'] ?>" alt="">
     <?php } ?>
     <div class="image-text">
     <?php the_title(); ?>
@@ -130,7 +160,7 @@ while(have_posts())
     <div class="content"><?php the_content(); ?></div>
     </div>
     <div class="col-md-3 col-12">
-    <h3>Latest Blogs</h3>
+    <h1 class="mb-3" style="font-family:playfair display">Latest Blogs</h1>
     <div class="latest-blogs">
     <?php
     

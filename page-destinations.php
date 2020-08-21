@@ -65,11 +65,11 @@ section a:hover{
 .myheading{
     text-align:center;
     font-size:22px;
-    font-family: "Myriad Pro",sans-serif !important;
+    font-family: "Batang",serif !important;
 }
 
 .playfair {
-    font-family: "Myriad Pro",sans-serif !important;
+    font-family: "Batang",serif !important;
 } 
 .mypara{
     font-size:14px;
@@ -79,23 +79,23 @@ section a:hover{
 
 .title {
     font-size: 45px;
-    font-family: "Myriad Pro",sans-serif !important;
+    font-family: "Playfair Display",sans-serif !important;
 }
 .sideheading{
 	padding-top:5px;
     font-size: 22px;
-    font-family: "Myriad Pro",sans-serif !important;
+    font-family: "Batang",serif !important;
 }
 .sideheading2{
     text-align:center;
     font-size: 12px;
-    font-family: "Myriad Pro",sans-serif !important;
+    font-family: "Batang",serif !important;
     color:dimgrey;
 }
 .sideheading3{
     text-align:center;
     font-size:20px;
-    font-family: "Myriad Pro",sans-serif !important;
+    font-family: "Batang",serif !important;
     color:darkslategrey;
 }
 .sideheading.sideheading{
@@ -220,7 +220,7 @@ letter-spacing:.75px;
             color: #555;
             font-size: 32px;
             font-weight: 400;
-            font-family: "Myriad Pro",sans-serif !important;
+            font-family: "Playfair Display",sans-serif !important;
         }
 
         .dest .details .title::after {
@@ -246,6 +246,7 @@ letter-spacing:.75px;
             padding: 30px;
             box-sizing: border-box;
             font-size: 24px;
+    font-family: "Playfair Display",serif !important;
 
         }
 
@@ -417,7 +418,8 @@ letter-spacing:.75px;
                 
 <div class="col-lg-10 col-12 text-center  mt-5" style="margin:auto">
 	<div class=" col-9 mb-3"  style="margin:auto">
-		<h2><i> You will never wish to forget an unforgettable memory of your wedding.</i></h2>
+		<h2 style="    font-family: 'Playfair Display',serif !important;
+"><i> You will never wish to forget an unforgettable memory of your wedding.</i></h2>
 	</div>
 	<div class="mt-lg-2">
 	<p class="lastpara text-justify">

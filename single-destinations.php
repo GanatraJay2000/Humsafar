@@ -9,6 +9,11 @@ body{
 			/* line-height:30px; */
 		
 }
+.container * {
+	line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
+}
 
 h2,h4{
 	font-family:"Playfair Display", sans-serif;
@@ -17,9 +22,9 @@ h2,h4{
 	 column-count: 2;
   column-gap: 50px;
 	letter-spacing:0.6px;
-	line-height:25px;
-	font-size:16px;
-	word-spacing:6px;
+	line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
 }
 
 
@@ -68,7 +73,7 @@ h2,h4{
       }
 	  
 .more{
-			color:#b18a60 !important;
+			color:#215a54 !important;
 			font-weight:600;
 			font-family: "Myriad Pro", sans-serif;
 			font-size:15px;
@@ -84,7 +89,7 @@ h2,h4{
 			width:0;
 			height:2px;
 			border-radius:4px;
-			background-color:#b18a60;
+			background-color:#215a54;
 			position:absolute;
 			bottom:-5px;
 			left:0;
@@ -121,7 +126,7 @@ h2,h4{
 	text-align:center;
 	font-size:25px;
 	 font-family:"Playfair Display", sans-serif;
-	 color:#b18a60 !important;
+	 color:#215a54 !important;
 }
 
 #gimg{
@@ -161,6 +166,7 @@ h2,h4{
 	   width:200px;
 	   border:0;
    }
+
    .dest-next, .dest-prev{
 	   margin:25px 50px;
 	   outline:0 !important;
@@ -277,6 +283,7 @@ $type = rwmb_meta('destination_type');
 'meta_key' => 'order',
 'orderby' => 'meta_value_num',
 'order' => 'ASC',
+'posts_per_page'=>-1,
 'meta_query' => array(
     array(
         'key' => 'destination_type',

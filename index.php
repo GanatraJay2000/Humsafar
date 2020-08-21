@@ -28,7 +28,7 @@
 			margin:60px 0 80px;
 		}
 		.heading-title h1{
-			font-family:"Playfair Display", serif;
+			font-family:"Batang", serif;
 		}
 		.heading-title p{
 			margin-top:5px;
@@ -63,7 +63,7 @@
 			content:'Read More...';
 			display:grid;
 			place-items:center;
-			font-family:"Raleway", sans-serif;
+			font-family:"Myriad pro", sans-serif;
 			letter-spacing:1px;
 			word-spacing:5px;
 			font-size:32px;
@@ -83,13 +83,13 @@
 			text-decoration:none !important;
 			font-size:28px;
 			font-weight:500;
-			font-family:"Rufina", serif;
+			font-family:"Playfair Display", serif;
 			letter-spacing:1px;
 			line-height:1.3em;
 			transition:0.3s;
 		}
 		p.title a:hover{
-			color:#b18a60;
+			color:#215a54;
 		}
 		p.content{
 			font-family: "Myriad Pro", sans-serif;
@@ -97,9 +97,12 @@
 			letter-spacing:1.2px;
 			word-spacing: 5px;
 			font-weight:200;
+			line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
 		}
 		.read-more{
-			color:#b18a60 !important;
+			color:#215a54 !important;
 			font-weight:600;
 			font-family: "Myriad Pro", sans-serif;
 			font-size:17px;
@@ -114,7 +117,7 @@
 			width:0;
 			height:2px;
 			border-radius:4px;
-			background-color:#b18a60;
+			background-color:#215a54;
 			position:absolute;
 			bottom:-5px;
 			left:0;
@@ -123,12 +126,17 @@
 		.read-more:hover::after{
 			width:100%;
 		}
+		.post-part{
+			width:90%;
+			margin:0 auto;
+		}
 
 		@media screen and (max-width:768px){
 			.blog-post{
 				padding:0;
 				margin-bottom:50px;
 			}
+			
 		}
 		@media screen and (max-width:400px){
 			.heading-title h1{
@@ -155,7 +163,7 @@
     $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
 		if($i==0 and $paged==0){
 ?>
-<div class="col-12 blog-post d-flex flex-wrap align-items-center">	
+<div class="col-12 blog-post d-flex flex-wrap align-items-center mb-5">	
 	<div class="col-lg-8 col-md-6 col-12 p-0 image">
 		<?php foreach ( $thumbnail_image as $image ) {?>
             <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['url'] ?>" alt=""></a>
@@ -176,7 +184,7 @@
 		}else{
 ?>
 	
-	<div class="col-md-6 col-12 blog-post">	
+	<div class="col-md-6 col-12 blog-post mt-4">	
 		<div class="image">
 		<?php foreach ( $thumbnail_image as $image ) {?>
             <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['url'] ?>" alt=""></a>

@@ -5,13 +5,13 @@
     }
 
     .title {
-        font-family: 'Times New Roman';
+        font-family: 'Playfair Display',serif;
         font-size: 30px;
         margin-top:10px;
     }
 
     .title::first-letter {
-        font-family: 'Times New Roman';
+        font-family: 'Playfair Display',serif;
         font-size: 100px;
     }
 
@@ -31,15 +31,19 @@
     }
 
     .para p{
-        font-family: "Times New Roman", sans-serif;
+        font-family: "Myriad Pro", sans-serif;
         color: #888;
         line-height: 30px;
         text-align: justify;  
         text-align-last:left;      
+        font-size:17px;
+        line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
     }
 
     .first-letter {
-        font-family: 'Times New Roman';
+        font-family: 'Myriad Pro';
         font-size: 100px;
     }
 
@@ -65,7 +69,7 @@
         top: -60px;
         right: -80px;
         /* background-image: url('<?php echo get_template_directory_uri() . "/assets_inside/greenbg1.png" ?>'); */
-         background-color: #f7efe9;
+         background-color: #d0f2e1;
     }
 
     .flex-row .image::after {
@@ -77,7 +81,7 @@
         position: absolute;
         top: -60px;
         left: -80px;
-        background-color: #f7efe9;
+        background-color: #d0f2e1;
     }
     .content.wrapper{
         margin:0 !important;
@@ -85,14 +89,12 @@
     }
     @media screen and (max-width:768px){
          .title {
-        text-align:center;
-        font-family: 'Times New Roman';
+        text-align:center;        
         font-size: 24px;
         margin-top:10px;    
     }
 
-    .title::first-letter {
-        font-family: 'Times New Roman';
+    .title::first-letter {        
         font-size: 50px !important;
     }
     .para p{        
@@ -124,7 +126,7 @@
         }      
     }
     .read-more{
-			color:#b18a60 !important;
+			color:#215a54 !important;
 			font-weight:600;
 			font-family: "Myriad Pro", sans-serif;
 			font-size:17px;
@@ -139,7 +141,7 @@
 			width:0;
 			height:2px;
 			border-radius:4px;
-			background-color:#b18a60;
+			background-color:#215a54;
 			position:absolute;
 			bottom:-5px;
 			left:0;
@@ -159,7 +161,7 @@
     <br /><br />
      <?php
 $events = new WP_Query(array(
-    'posts_per_page' => 2,
+    'posts_per_page' => -1,
     'post_type'=>'events',
     'meta_key' => 'event_date',
     'orderby' => 'meta_value_num',

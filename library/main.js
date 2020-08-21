@@ -28,7 +28,7 @@ jQuery(document).ready(function ($) {
         items: 3,
       },
       1000: {
-        items: 4,
+        items: 3,
       },
     },
   });
@@ -64,17 +64,14 @@ jQuery(document).ready(function ($) {
     loop: true,
     // animateIn: 'animate__fadeIn',
     // animateOut: 'animate__fadeOut',
-    margin: 10,
-    stagePadding: 0,
+    margin: 33,
+    stagePadding: 30,
     autoplay: true,
     autoplayTimeout: 12000,
     autoplaySpeed: 4000,
     responsiveClass: true,
     nav: true,
-    navText: [
-      $(".owl-navigation .owl-nav-prev"),
-      $(".owl-navigation .owl-nav-next"),
-    ],
+    navText: [$(".testimonials-prev"), $(".testimonials-next")],
     responsive: {
       0: {
         items: 1,

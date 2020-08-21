@@ -13,6 +13,9 @@ body{
 			line-height:30px;
 		
 }
+.content.wrapper{	
+	padding:0 !important;
+}
 
 h2,h4{
 	font-family:"Playfair Display", sans-serif;
@@ -20,7 +23,9 @@ h2,h4{
 .columns{
 	 column-count: 2;
   column-gap: 50px;
-
+line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
 }
 
 
@@ -66,7 +71,7 @@ h2,h4{
       }
 	  
 .more{
-			color:#b18a60 !important;
+			color:#215a54 !important;
 			font-weight:600;
 			font-family: "Myriad Pro", sans-serif;
 			font-size:15px;
@@ -82,7 +87,7 @@ h2,h4{
 			width:0;
 			height:2px;
 			border-radius:4px;
-			background-color:#b18a60;
+			background-color:#215a54;
 			position:absolute;
 			bottom:-5px;
 			left:0;
@@ -189,7 +194,7 @@ VIEW OUR PORTFOLIO</a></br>
 </div>
 
 <div class="container" style="padding:50px 0;">
-<div id="title" class="mb-5"><span><b>SOME OF OUR FAVOURITE FOREIGN LOCATIONS INCLUDE</b></span></div>
+<div id="title" class="mb-5"><span><b>SOME OF OUR FAVOURITE INDIAN LOCATIONS INCLUDE</b></span></div>
 <center>
 	<div class="gallery">
 	<?php $destinations = new WP_Query(array(
@@ -197,11 +202,12 @@ VIEW OUR PORTFOLIO</a></br>
 'meta_key' => 'order',
 'orderby' => 'meta_value_num',
 'order' => 'ASC',
+'posts_per_page'=>-1,
 'meta_query' => array(
     array(
         'key' => 'destination_type',
         'compare' => '==',
-        'value' => 'Traditional',   
+        'value' => 'India',   
     ),
 ),
 ));

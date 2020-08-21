@@ -55,7 +55,9 @@ function add_custom_post() {
     $args = array(
     'labels' => $labels,
     'has_archive' => true,
-    'public' => true,
+	'public' => true,
+	'show_in_rest' => true,
+   'supports' => array('editor'),
     'publicly_queryable' => true,
     'show_ui' => true,
     'show_in_menu' => true,
@@ -87,7 +89,9 @@ function add_custom_post() {
 
     $args = array(
     'labels' => $labels,
-    'public' => true,
+	'public' => true,
+	'show_in_rest' => true,
+   'supports' => array('editor'),
     'publicly_queryable' => true,
     'show_ui' => true,
     'show_in_menu' => true,
@@ -120,7 +124,9 @@ function add_custom_post() {
 
     $args = array(
         'labels' => $labels,
-        'public' => true,
+		'public' => true,
+		'show_in_rest' => true,
+   'supports' => array('editor'),
         'publicly_queryable' => true,
         'show_ui' => true,
         'show_in_menu' => true,
@@ -153,7 +159,9 @@ function add_custom_post() {
 
     $args = array(
         'labels' => $labels,
-        'public' => true,
+		'public' => true,
+		'show_in_rest' => true,
+   'supports' => array('editor'),
         'publicly_queryable' => true,
         'show_ui' => true,
         'show_in_menu' => true,
@@ -272,13 +280,13 @@ function custom_fields( $meta_boxes ) {
 				'desc' => esc_html__( 'gallery of images', 'metabox-online-generator' ),
 				'max_file_uploads' => '20',
 			),
-			array(
-				'id' => $prefix . 'location',
-				'type' => 'text',
-				'name' => esc_html__( 'Location', 'metabox-online-generator' ),
-				'desc' => esc_html__( 'location of event', 'metabox-online-generator' ),
-				'placeholder' => esc_html__( 'Enter Location of Event', 'metabox-online-generator' ),
-			),
+			// array(
+			// 	'id' => $prefix . 'location',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Location', 'metabox-online-generator' ),
+			// 	'desc' => esc_html__( 'location of event', 'metabox-online-generator' ),
+			// 	'placeholder' => esc_html__( 'Enter Location of Event', 'metabox-online-generator' ),
+			// ),
 			array(
 				'id' => $prefix . 'event_date',
 				'type' => 'date',
@@ -287,12 +295,12 @@ function custom_fields( $meta_boxes ) {
 				'js_options' => array(),
 				'attributes' => array(),
 			),
-			array(
-				'id' => $prefix . 'event_type',
-				'type' => 'text',
-				'name' => esc_html__( 'Event Type', 'metabox-online-generator' ),
-				'placeholder' => esc_html__( 'Type of Event  - Wedding / Concert', 'metabox-online-generator' ),
-			),
+			// array(
+			// 	'id' => $prefix . 'event_type',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Event Type', 'metabox-online-generator' ),
+			// 	'placeholder' => esc_html__( 'Type of Event  - Wedding / Concert', 'metabox-online-generator' ),
+			// ),
 			array(
 				'id' => $prefix . 'thumbnail_image',
 				'type' => 'image_advanced',
@@ -403,8 +411,8 @@ function destination_custom_fields( $meta_boxes ) {
 				'type' => 'select',
 				'placeholder' => esc_html__( 'Select an Item', 'metabox-online-generator' ),
 				'options' => array(
-					'Modern' => esc_html__( 'Modern', 'metabox-online-generator' ),
-					'Traditional' => esc_html__( 'Traditional', 'metabox-online-generator' ),
+					'India' => esc_html__( 'India', 'metabox-online-generator' ),
+					'Out_Of_India' => esc_html__( 'Out_Of_India', 'metabox-online-generator' ),
 				),
 			),
 			array(
@@ -413,37 +421,37 @@ function destination_custom_fields( $meta_boxes ) {
 				'name' => esc_html__( 'Image on Destination Page', 'metabox-online-generator' ),
 				'max_file_uploads' => '1',
 			),
-			array(
-				'id' => $prefix . 'text_on_destination_page',
-				'type' => 'text',
-				'name' => esc_html__( 'Text on Destination Page', 'metabox-online-generator' ),
-			),
-			array(
-				'id' => $prefix . 'thumbnail_image',
-				'type' => 'image_advanced',
-				'name' => esc_html__( 'Thumbnail Image', 'metabox-online-generator' ),
-				'max_file_uploads' => '1',
-			),
-			array(
-				'id' => $prefix . 'text_on_thumbnail_one',
-				'type' => 'text',
-				'name' => esc_html__( 'Text on Thumbnail One', 'metabox-online-generator' ),
-			),
-			array(
-				'id' => $prefix . 'text_on_thumbnail_two',
-				'type' => 'text',
-				'name' => esc_html__( 'Text on Thumbnail Two', 'metabox-online-generator' ),
-			),
-			array(
-				'id' => $prefix . 'feature_title',
-				'type' => 'text',
-				'name' => esc_html__( 'Feature Title', 'metabox-online-generator' ),
-			),
-			array(
-				'id' => $prefix . 'quote',
-				'type' => 'text',
-				'name' => esc_html__( 'Quote', 'metabox-online-generator' ),
-			),
+			// array(
+			// 	'id' => $prefix . 'text_on_destination_page',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Text on Destination Page', 'metabox-online-generator' ),
+			// ),
+			// array(
+			// 	'id' => $prefix . 'thumbnail_image',
+			// 	'type' => 'image_advanced',
+			// 	'name' => esc_html__( 'Thumbnail Image', 'metabox-online-generator' ),
+			// 	'max_file_uploads' => '1',
+			// ),
+			// array(
+			// 	'id' => $prefix . 'text_on_thumbnail_one',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Text on Thumbnail One', 'metabox-online-generator' ),
+			// ),
+			// array(
+			// 	'id' => $prefix . 'text_on_thumbnail_two',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Text on Thumbnail Two', 'metabox-online-generator' ),
+			// ),
+			// array(
+			// 	'id' => $prefix . 'feature_title',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Feature Title', 'metabox-online-generator' ),
+			// ),
+			// array(
+			// 	'id' => $prefix . 'quote',
+			// 	'type' => 'text',
+			// 	'name' => esc_html__( 'Quote', 'metabox-online-generator' ),
+			// ),
 			array(
 				'id' => $prefix . 'gallery',
 				'type' => 'image_advanced',

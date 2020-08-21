@@ -23,6 +23,9 @@ Version:1.0
   --Rubik: "Rubik", sans-serif;
 }
 
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -57,13 +60,19 @@ p {
   line-height: 1.65em;
 }
 
+/* ::-moz-selection { 
+  color: #016e60;
+  background: #d2fce8;
+}
+
+::selection {
+  color: #016e60;
+  background: #d2fce8;
+} */
+
 /* General Layout */
 
-div.wrapper.content {
-  width: 90%;
-  margin: 0 auto !important;
-  padding: 20px 0;
-}
+
 
 .heading {
   margin-top: 20px;
@@ -71,11 +80,12 @@ div.wrapper.content {
   text-align: center;
   color: #2f2e2e;
   font-size: 45px;
-  font-family: "Myriad Pro", sans-serif !important;
+  font-family:"Batang", serif !important;
 }
 
 .heading p {
   margin: 0;
+  font-family:"Batang", serif !important;
 }
 
 .heading h1 {
@@ -85,7 +95,7 @@ div.wrapper.content {
   font-size: 40px;
   max-width: 600px;
   position: relative;
-  color: #b28f5e;
+  color: #215a54;
 }
 
 .heading h1::before,
@@ -98,7 +108,7 @@ div.wrapper.content {
   position: absolute;
   top: 30%;
   z-index: -2;
-  background-color: #b28f5e;
+  background-color: #215a54;
 }
 
 .heading h1::before {
@@ -519,12 +529,12 @@ article.post:last-of-type {
 }
 
 .site-footer .reach-us a {
-  color: rgb(212, 252, 204);
+  color: white;
   text-decoration: none;
 }
 
 .site-footer .reach-us a:hover {
-  color: white;
+  color: rgb(212, 252, 204);
 }
 
 /* Footer Nav */
@@ -538,7 +548,7 @@ article.page h2 {
 /* Clients  */
 .carousel {
   /* background-color: #ffffe0 !important; */
-  background-color: #c5d7be44 !important;
+  background-color:  #d0f2e177 !important;
   height: 200px;
   display: flex !important;
   align-items: center;
@@ -1005,5 +1015,5 @@ nav.item.nav-links label {
             img{
                 /* border:10px solid #004841 !important; */
                 border: 6px solid transparent;                
-                border-image: url("./bg1.png") 30 stretch;
+                border-image: url("./bg1.png") 30 stretch;                
             }

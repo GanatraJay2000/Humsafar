@@ -8,22 +8,23 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        font-family: "Myriad Pro",  "Playfair Display", sans-serif !important;
-        margin: 0px 120px;
+        font-family: "Myriad Pro",  "Playfair Display", sans-serif !important;        
         margin-top: -30px;
     }
 
     .heading {
         margin-bottom: 10px !important;
         font-size: 34px;
+        font-family:"Batang", serif;
     }
 
     hr.title {
         margin: 10px auto;
         margin-top: 0px;
         width: 100px;
-        border: 1px solid #a17e4d;
+        border: 1px solid #215a54;
         color: #a17e4d;
+        font-family:"Playfair Display", serif;
     }
 
     .sub-title {
@@ -42,10 +43,12 @@
         padding: 0;
         margin: 0;
         text-align: center;
+        font-family:"Playfair Display", serif;
     }
 
     ul.title li {
         display: inline-block;
+        font-family:"Playfair Display", serif;
         margin: 0;
     }
 
@@ -61,19 +64,19 @@
     }
 
     .inquire {
-        margin: 4px 0px;
+        margin: 10px 0px;
         border: 0;
-        padding: 3px 45px;
+        outline:1px solid white;
+        outline-offset:-4px;
+        padding: 5px 45px;
         font-size: 20px;
         color: white;
-        background-color: #cc9d5c;
+        background-color: #215a54;
         text-decoration: none !important;
     }
 
     .post {
-        margin: 20px 0px;
-        border: 0.5px solid #d0d0d0;
-        border-radius: 5px;
+        margin: 30px 0px 60px;        
         display: flex;
         flex-direction: row;
         background: transparent;
@@ -90,15 +93,11 @@
     }
 
     .post .image {
-        width: 50%;
-        border-radius: 5px 0 0 5px;
+        width: 50%;        
         flex-basis: 50%;
         max-height: 300px;
     }
 
-    .post:nth-child(even) .image {
-        border-radius: 0 5px 5px 0;
-    }
 
     .post .content {
         flex-basis: 50%;
@@ -106,46 +105,50 @@
         color: #444;
         text-decoration: none;
         position: relative;
-        text-align: left;
+        text-align: left;        
     }
 
     .post:nth-child(even) .content {
         text-align: right;
     }
 
-    .post .content small {
-        font-family: "Myriad Pro",  sans-serif;
-        color: #555;
-        margin-bottom: 20px;
-    }
 
     .post .content .heading {
         margin-left: 0 !important;
         padding-left: 0;
         text-align: left;
-        display: block !important;
+        font-size:22px;
+        display: block;
+        font-family:"Batang", serif;
     }
 
     .post:nth-child(even) .content .heading {
         text-align: right;
+        font-family:"Batang", serif;
     }
 
-    .post-footer {
-        border-top: 0.7px solid #444444aa;
-        margin-top: 26px !important;
-        padding-top: 5px !important;
-        font-size: 14px !important;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .post:hover {
-        border: 0.5px solid #cc9d5c88;
-    }
 
     .post:hover .heading {
-        color: #b28f5e;
+        color: #215a54;
+        font-family:"Batang", serif;
     }
+    .more{
+        background-color: #215a54;
+        color:white;
+        border:1px solid white;
+        padding:3px 20px;
+        width:fit-content;
+        }
+    .post:nth-child(even) .more {
+       float: right;        
+    }
+    .more:hover{
+        background-color: white;
+        color:#215a54;
+        border:1px solid #215a54;
+        padding:3px 20px;
+        width:fit-content;
+        }
 
     .post button.heart {
         border: none !important;
@@ -162,11 +165,11 @@
         /* height: 300px; */
         display: flex !important;
         align-items: center;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .testimonial-card {
-        border: 0.5px solid #cc9d5c88;
+        border: 0.5px solid #215a54;
         margin: 10px;
         margin-top: 50px;
         border-radius: 5px;
@@ -180,129 +183,15 @@
     .testimonial-card-content .detail {
         padding: 20px 5px 5px 10px;
         font-size: 14px;
+        text-align:center;
     }
 
     .testimonial-card-content .detail p {
         font-size: 12px;
     }
-
-    .testimonial-card-content .detail p::before {
-        content: '"';
-    }
-
-    .testimonial-card-content .detail p::after {
-        content: '"';
-    }
 .content.wrapper{
     padding-top:5px !important;
 }
-.banner-carousel{
-    --max-width: 90%;
-    --height: 500px;
-    width:100%;    
-    margin:0 auto;
-    max-width:var(--max-width);    
-    margin-bottom:20px;   
-     z-index:0;
-}
-
-.banner-next{    
-    font-size:32px;
-    font-weight:200;
-    position:absolute !important;
-    top:47% !important;
-    right:-40px !important;
-}
-.banner-prev{
-    font-size:32px;
-    font-weight:200;
-    position:absolute !important;
-    top:47% !important;
-    left:-40px !important;    
-}
-.banners{
-
-    /* border:2px solid red; */
-    height:var(--height);    
-    margin:0 !important;
-    
-    /* overflow:hidden; */
-}
-.banner{
-    position:relative;
-}
-.banners img{
-    border-radius:3px;
-    width:100vw;
-    max-width:100%;
-    height:var(--height);
-}
-.banner .static-content{
-    z-index:2;
-    position:absolute;
-    background-color:transparent;
-    height:30%;    
-    width:50%;
-    top:5%;
-    left:25%;
-    text-align:center;
-    font-family: "Myriad Pro", "Playfair Display", serif;
-}
-
-
-.banner .content{
-    border-radius:0 3px 3px 0;
-    padding:20px;
-    z-index:2;
-    position:absolute;
-    background-color:#c3d2dcea;
-    background-color:#eaeaeada;
-    height:100%;
-    animation-duration:2s;
-    width:35%;
-    top:0;
-    right:0;
-    font-family: "Myriad Pro", "Playfair Display", serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    text-align:center;
-}
-
-
-    .banners .button {
-        margin: 4px 0px;
-        border: 0;
-        padding: 5px 25px;
-        font-size: 20px;
-        color: white;
-        background-color: #333;
-        text-decoration: none !important;
-        transition:all ease 400ms;
-    }
-        .banners .button:hover {
-            padding:5px 50px;
-            background-color:var(--primary-color);
-            color:var(--bg-color);
-        }
-
-    .banner-carousel .owl-nav {
-        position: absolute;
-        top: 0;        
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        height:100%;                
-        z-index:-1;
-    }
-    .owl-nav {
-        position: absolute;
-        top: 0;        
-        text-align: center;
-        width: 100%;
-        margin: 0;                               
-    }
 
     .owl-nav .owl-prev .owl-nav-prev,
     .owl-nav .owl-next .owl-nav-next {
@@ -374,6 +263,7 @@
 
         .post .heading {
             text-align: center !important;
+            font-family:"Batang", serif;
         }
 
         .post .image {
@@ -388,58 +278,142 @@
         .testimonial-card-content .detail {
             padding: 15px;
         }
-        .banners {
-            padding: 5px;
-            height:230px;
-        }
-        .banners *{
-            margin: 0 auto;
-            width:100%;
-        }
-        .banners img{
-            height:230px;
-        }
-        .banner .static-content{
-            font-size:10px;
-            width:auto;
-            left:0 !important;
-        }
-        .banner .static-content h2{
-            display:none;
-        }
-        .banner .static-content h6{
-            font-size:15px;
-        }
-        .banner .static-content .button{
-            font-size:15px;
-            white-space: nowrap;
-            margin: 4px auto;
-        }
-
-        .banner .content {
-            padding: 3px;
-            width:80%;
-            left:0%;
-            height:fit-content;
-            top:10px;            
-        }
-        .banner .content p{
-            display:none;
-        }
-
-        .banner .content h3{
-            font-size:16px;
-        }
-
-        .banner .content .button{
-            font-size:16px;
-            padding: 2px 5px ;
-            width:fit-content;
-        }
+        
         .owl-navigation{
             display:none;
         }
     }
+    .content.wrapper{
+        padding:0 !important;
+    }
+    .banner-carousel{        
+        max-width:100%;
+        padding:0;
+        margin:0;
+    }
+    .banner-carousel *{
+        padding:0;
+        margin:0;
+    }
+    .banner-carousel .banner{
+        width:100%;
+        position:relative;
+        height:100vh;        
+    }
+    .banner-carousel .banner img{
+        width:100%;
+        height:100%;
+        border:0;
+        display:block;
+    }
+    .banner .banner-content{
+        position:absolute;
+        transform:translate(-50%, -50%);
+        top:40%;
+        left:50%;
+        width:100%;
+        text-align:center;
+    }
+    .banner .title{
+        font-weight:700;
+        font-size:40px;
+        color:#fff;
+        text-shadow:0px 0px 8px #000;
+    }
+    .banner .link{
+        text-decoration:none;
+        padding:10px 20px;
+        background:#215a54;
+        border-radius:40px;
+        color:white;
+        text-shadow:0px 0px 3px #00000066;
+        border:2px solid white;
+    }
+.banner-nav{
+    position:absolute;    
+    top:50%;
+    transform:translate(0, -50%);
+    font-size:50px;
+    filter:drop-shadow(0px 0px 2px #fff);
+}
+.banner-prev{
+    left:10px;    
+}
+.banner-next{
+    right:10px;    
+}
+.bg-1{
+    background-color: #d0f2e1;
+    width:100%;
+    padding:60px 0;
+}
+.bg{
+    width:80%;
+    margin:0 auto;
+    padding:60px 0;
+}
+.testimonials-prev{
+     left:-30px;
+}
+.testimonials-nav{
+position:absolute;
+    top:50%;
+    transform:translate(0, -50%);
+    font-size:30px;
+    padding: 5px 0;
+    width:30px;   
+}
+.testimonials-next{
+    right:-30px;
+}
+
+.services-on-home{
+    margin-bottom:80px;
+}
+.services-on-home .services-card:nth-child(2) .inner-card{
+    margin-top:50px;
+}
+.services-on-home .services-card:nth-child(3) .inner-card{
+    margin-top:100px;
+}
+
+.services-on-home .inner-card img{
+    height:200px;
+    width:100%;
+}
+.services-on-home .service-name{
+    margin-top:15px;
+font-family: "Playfair display", serif;
+    font-size:20px;
+}
+.services-on-home .more-services{
+    margin:35px 0 50px;
+    text-align:center;
+}
+.services-on-home .more-services a{
+    color:#444 !important;
+    text-decoration:none;
+    font-family: "Playfair display", serif;
+    font-size:19px;
+}
+
+
+@media screen and (max-width:768px){
+    .testimonials-nav{
+        display:none;
+    }
+    .bg{
+    width:100%;  
+    padding:60px 20px;  
+    }
+    .banner-carousel .banner{
+        height:300px;        
+    }
+        .banner .title{
+        font-weight:600;
+        font-size:30px;
+    }
+}
 </style>
 <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
@@ -450,49 +424,45 @@ $slide_1 = rwmb_meta('slide_1', array( 'size' => 'large' ) , $post_id);
 $slide_1 = array_values($slide_1);
 ?>
 <div class="banner-carousel">
-    <div class="owl-carousel banners owl-theme ">
-        <div class="banner">        
+    <div class="owl-carousel banners owl-theme">
+        <div class="banner"> 
             <img src="<?php echo $slide_1[0]['url'] ?>" alt="Post-1">
-
-            <div class="static-content">
-                <h2><i>Say I-Do at the Top of the World!</i></h2>
-                <h6 class="my-4">Explore the most awesome destinations in the world</h6>
-                <a class="button" href="<?php echo site_url('/weddings/destinations'); ?>">Explore Destinations</a>
+            <div class="banner-content">                
+                <h3 class="mb-4 title">Explore the most awesome destinations in the World!</h3>
+                <a class="link" href="<?php echo site_url('/weddings/destinations'); ?>">Explore Destinations</a>
             </div>
         </div>
-        <div class="banner">        
-           <img src="<?php echo $slide_1[1]['url'] ?>" alt="Post-1">
-            <div class="content" style="background-color:#c3d2dcea !important;">
-                <h3>We will Plan Every Detail of Your Wedding</h3>
-                <p class="mb-5">We are your Humsafar in making your memories of your Dream & destination Wedding SPECIAL. Check our exclusive services,</p>
-                <a class="button" href="<?php echo site_url('/weddings/services'); ?>">Check Out Services</a>
+        <div class="banner"> 
+            <img src="<?php echo $slide_1[1]['url'] ?>" alt="Post-1">
+            <div class="banner-content">
+                <h3 class="mb-4 title">We will Plan Every Detail of Your Wedding</h3>              
+                <a class="link" href="<?php echo site_url('/weddings/process'); ?>">Check Out Process</a>
             </div>
         </div>
-        <div class="banner">        
-           <img src="<?php echo $slide_1[2]['url'] ?>" alt="Post-1">
-            <div class="content" style="background-color:#dd3002ea !important;color:white;">
-                <h3>Plan Your Perfect Wedding & Surprise Everyone.</h3>
-                <p>They say there are 16 Adornments without which an Indian bride is incomplete. Check out these amazing functions of adornments.</p>
-                <a class="button" href="<?php echo site_url('/weddings/functions'); ?>">Explore Functions</a>
+        <div class="banner"> 
+            <img src="<?php echo $slide_1[2]['url'] ?>" alt="Post-1">
+             <div class="banner-content">
+                <h3 class="mb-4 title">Plan Your Perfect Wedding & Surprise Everyone.</h3>              
+                <a class="link" href="<?php echo site_url('/weddings/services'); ?>">Check Out Services</a>
             </div>
-        </div>
-        <div class="banner">        
+        </div>        
+        <div class="banner"> 
             <img src="<?php echo $slide_1[3]['url'] ?>" alt="Post-1">
-
-            <div class="content" style="background-color:#fec9c0ea !important;">
-                <h3>You Will Never Forget the Incredible Memory.</h3>
-                <p>Find our latest work of making their dream come true of having a beautiful wedding they always dreamt of.</p>
-                <a class="button" href="<?php echo site_url('/weddings/events'); ?>">See Weddings</a>
+            <div class="banner-content">
+                <h3 class="mb-4 title">You Will Never Forget the Incredible Memory.</h3>                
+                <a class="link" href="<?php echo site_url('/weddings/testimonials'); ?>">See Testimonials</a>
             </div>
         </div>
     </div>
-<div class="owl-navigation">
-    <div class="banner-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-    <div class="banner-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+    <div class="owl-navigation">
+        <div class="banner-next banner-nav"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+        <div class="banner-prev banner-nav"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
     </div>
-</div>
+</div>        
+
 
 <div class="home-page">   
+<div class="bg">
     <div class="heading">
         <p><i>We Plan Your Unforgettable Moments</i></p>
     </div>    
@@ -502,98 +472,112 @@ $slide_1 = array_values($slide_1);
         as beautiful and adorable memories. Whether it be the memory of Bidding farewell to the oldest Cog of the
         company or the Dream wedding that you always planned in your head, We Humsafars are always with you in every
         moment.</p>
-    <div class="sub-title">
-        ALWAYS CONSIDERED
-    </div>
+        </div>
+
+<div class="bg">
+<div class="services-on-home">
+    <div class="heading"><i>Services</i></div>
     <hr class="title">
-    <div class="sub-title">
-        <ul class="title">
-            <li>Dubai</li>
-            <li>Mumbai</li>
-            <li>Udaipur</li>
-            <li>Jaipur</li>
-            <li>Raigarh</li>
-            <li>Raipur</li>
-            <li>Bhilai</li>
-        </ul>
+    <div class="row d-flex justify-content-center align-items-flex-start mt-5">
+        <div class="col-4 services-card text-center">
+            <div class="inner-card">
+                 <img alt="venue"
+                        src="<?php echo get_template_directory_uri() . '/assets_inside/budget.jpg' ?>" />
+            </div>    
+            <div class="text-center service-name">
+                Budget Management
+            </div>    
+        </div>
+        <div class="col-4 services-card text-center">
+            <div class="inner-card">
+                <img alt="venue"
+                        src="<?php echo get_template_directory_uri() . '/assets_inside/venue.jpg' ?>" />
+            </div>    
+            <div class="text-center service-name">
+                Venues & Destination
+            </div>    
+        </div>
+        <div class="col-4 services-card text-center">
+            <div class="inner-card">
+               <img alt="venue"
+                       src="<?php echo get_template_directory_uri() . '/assets_inside/entertain.png' ?>" />
+            </div>    
+            <div class="text-center service-name">
+                Entertainment Design & Planning 
+            </div>    
+        </div>
     </div>
-    <a href="<?php echo site_url('/weddings/contact-us') ?>" class="inquire text-white">Contact Us</a>
-    <div class="heading"><i>Find our Recent post here!</i></div>
-    <hr class="title">
+    <div class="more-services">
+        <a style="text-decoration:underline;" href="<?php echo site_url('/services'); ?>">Learn about our services</a>
+    </div>
+</div>
 
 
-    <?php
+
+ <div id="wed_testimonials" class="heading mt-5"><i>Testimonials</i></div>
+<hr class="title">
+<div class="owl-carousel testimonials owl-theme mt-4">
+   <?php
 $events = new WP_Query(array(
-    'posts_per_page' => 2,
+    'posts_per_page' => 10,
     'post_type'=>'events',
     'meta_key' => 'event_date',
     'orderby' => 'meta_value_num',
     'order' => 'DESC',
 ));
+$i=0;
 while($events->have_posts())
 {
-    $events->the_post();         
-    $event_date = rwmb_meta('event_date');
-    $location = rwmb_meta('location');
-    $event_type = rwmb_meta('event_type');
+    $events->the_post();             
     $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );
+?>
+<div class="testimonial-card-content">
+             <?php foreach ( $thumbnail_image as $image ) {?>
+                        <img src="<?php echo $image['url'] ?>" alt="">
+                    <?php } ?>
+            <div class="detail">
+                <h6><?php the_title(); // Name    ?></h6>
+                <p><?php echo wp_trim_words(get_the_content(), 25);// Content ?></p>
+            </div>
+        </div>
+<?php } ?>
+</div>
 
-    $eventDate = new DateTime($event_date);          
-    
-if($event_type === 'Wedding'){
+<div style="margin:100px 0 50px;">
+ <div class="heading"><i>Find our Recent post here!</i></div>
+    <hr class="title">
+    <?php
+$events = new WP_Query(array(
+    'posts_per_page' => 2,
+    'order' => 'DESC',
+));
+while($events->have_posts())
+{
+    $events->the_post();           
+    $thumbnail_image = rwmb_meta('thumbnail_image', array( 'size' => 'large' ) );         
+
     ?>
  <a href="<?php the_permalink(  ) ?>" class="post">
         <?php foreach ( $thumbnail_image as $image ) {?>
            <img class="image" src="<?php echo $image['url'] ?>" alt="">
         <?php } ?>
-        <div class="content">
-            <small><?php echo $eventDate->format('M').' '.$eventDate->format('dS').', '.$eventDate->format('Y'); ?></small>
+        <div class="content">        
             <div class="heading"><?php the_title(); ?></div>
-            <div><?php echo wp_trim_words(get_the_content(), 18); ?></div>
-            <div class="post-footer">
-                <p class="m-0 p-0 mr-2"><?php echo $location; ?></p>
-                <div>282 views</div>                
-            </div>
+            <div><?php echo wp_trim_words(get_the_content(), 18); ?></div> 
+            <div class="my-4 more">Read More</div>
         </div>
     </a>
 <?php
 }
-}
-?>
 
-
-<?php $slideshow = new WP_Query(array(
-    'post_type'=>'page',    
-));
-$i=0; 
-$post_id = 5;
-$list_values = rwmb_meta('list', array() , $post_id);
-$slide_images = rwmb_meta('slide_images', array( 'size' => 'large' ) , $post_id);
-$slide_images = array_values($slide_images);
 ?>
-   
-<div id="wed_testimonials" class="heading"><i>Testimonials</i></div>
-<hr class="title">
-<div class="owl-carousel testimonials owl-theme ">
-<?php foreach ( $list_values as $key=>$value ) { ?>
-<div class="testimonial-card">
-        <div class="testimonial-card-content">
-            <img src="<?php echo $slide_images[$key]['url'] ?>)"alt="">  
-            <div class="detail">
-                <h6><?php echo $value[0]; // Name    ?></h6>
-                <p><?php echo $value[1]; // Content ?></p>
-            </div>
-        </div>
-    </div>
-     <?php } ?>
+</div>
 </div>
 
-
-</div>
 <div class="owl-navigation">
-    <span class="owl-nav-prev"><i class=" fa fa-long-arrow-alt-left"></i></span>
-    <span class="owl-nav-next"><i class=" fa fa-long-arrow-alt-right"></i></span>
+    <span class="testimonials-prev testimonials-nav"><i class=" fa fa-chevron-left"></i></span>
+    <span class="testimonials-next testimonials-nav"><i class=" fa fa-chevron-right"></i></span>
 </div>
-
+</div>
 
 <?php get_footer(); ?>

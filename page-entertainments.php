@@ -127,6 +127,61 @@ justify-content:center;
   max-width:100% !important;
   height:550px;
 }
+	        .part{
+		    text-align: center;
+			margin-top:40px;
+			//background-color: yellow;
+		}
+		
+		.subt{
+		     font-size: 19px;
+		}
+	    
+		.work{
+		    display:flex;
+			flex-wrap: wrap;
+			padding:10px 0;
+		}
+		
+		.work-parts{
+		    width: 30%;
+			margin:10px auto;
+			font-size: 15px;
+			padding:10px ;
+		}
+		
+		.work-parts div{
+		    width: 50px;
+		    height: 50px;
+			margin: auto;
+		}
+		
+		.work-parts div img{
+		    width: 50px;
+		    height: 50px;
+		}
+		
+		.text{
+		    color: #777777;
+			text-align: justify;
+			line-height: 25px;
+		}
+		
+		@media screen and (max-width: 900px){
+		
+		    .work-parts{
+			    width: 45%;
+			}
+		
+		}
+		
+		@media screen and (max-width: 600px){
+		
+		    .work-parts{
+			    width: 90%;
+			}
+		
+		}
 
 
 @media only screen and (max-width: 1124px) {
@@ -193,6 +248,9 @@ font-size:1em;
 }
 }
 
+img{
+  border:0;
+}
   </style>
   <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
@@ -315,6 +373,38 @@ $thumbnail_image = rwmb_meta('image_on_home_page', array( 'size' => 'medium' ) )
   </div>
 </div></div></div></center> -->
 </div>
+
+<div class="part">
+	<p class="subt">HOW IT WORKS</p>
+	     
+        <div class="work">
+            <div class="work-parts">
+	        <div>
+		    <img src="https://image.flaticon.com/icons/svg/751/751463.svg"/>
+		</div>
+		<p>FIND YOUR ARTIST</p>
+		<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus interdum nibh nec auctor. Aenean pulvinar vestibulum magna sed sagittis. Praesent et nisi volutpat, ornare eros in, mattis purus. Maecenas pulvinar lorem quis pellentesque rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque ornare rhoncus. Suspendisse imperdiet convallis consectetur. 
+		</p>
+            </div>
+	    <div class="work-parts">
+		<div>
+		    <img src="https://image.flaticon.com/icons/svg/1078/1078014.svg"/>
+		</div>
+		<p>ARTIST'S CONFIRMATION</p>
+		<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus interdum nibh nec auctor. Aenean pulvinar vestibulum magna sed sagittis. Praesent et nisi volutpat, ornare eros in, mattis purus. Maecenas pulvinar lorem quis pellentesque rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque ornare rhoncus. Suspendisse imperdiet convallis consectetur. 
+		</p>
+            </div>
+	    <div class="work-parts">
+		<div>
+		    <img src="https://image.flaticon.com/icons/svg/869/869118.svg"/>
+		</div>
+		<p>SECURE PAYMENT</p>
+		<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus interdum nibh nec auctor. Aenean pulvinar vestibulum magna sed sagittis. Praesent et nisi volutpat, ornare eros in, mattis purus. Maecenas pulvinar lorem quis pellentesque rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque ornare rhoncus. Suspendisse imperdiet convallis consectetur. 
+		</p>
+            </div>
+			
+        </div>
+</div> 
 
 
 <?php get_footer('new'); ?>

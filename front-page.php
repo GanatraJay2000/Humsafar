@@ -245,6 +245,9 @@
             margin: 10px 0;
         }
     }
+    img{
+        border:0;
+    }
 </style>
 </head>
 

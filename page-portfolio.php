@@ -81,7 +81,7 @@ img{
         max-width: 90%;
         display: grid;
         grid-gap: 5px;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(300px, 0.33fr));
         grid-auto-rows: 250px;
         grid-auto-flow: dense;
     }
@@ -101,8 +101,7 @@ img{
         -webkit-box-align: stretch;
         align-items: stretch;
         -webkit-box-pack: center;
-        justify-content: center;
-        //position: relative;
+        justify-content: center;        
     }
 
     .lightbox-wrapper div img {
@@ -155,21 +154,19 @@ img{
 	    tarnsition: 0.5s;
 	    filter: brightness(50%);
     }
-/**
+
     .left {
         grid-column-start: 1;
     }
     .center {
         grid-column-start: 2;
-        /* grid-column-end: span 2;
-        grid-row-end: span 2; */
+         grid-column-end: span 2;
+        grid-row-end: span 2; 
     }
 
     .right {
         grid-column-start: -2;
     }
-	
-	**/
 
     .horizontal {
     	grid-column: span 2;
@@ -211,7 +208,7 @@ img{
         font-size: 40px;
         max-width: 600px;
         position: relative;
-        color: #b28f5e;
+        color: #215a54;
 
     }
 
@@ -225,7 +222,7 @@ img{
         position: absolute;
         top: 30%;
         z-index: -2;
-        background-color: #b28f5e;
+        background-color: #215a54;
     }
 
     .heading h1::before {
@@ -238,8 +235,8 @@ img{
         margin-right: 20%;
     }
 
-/**
-    @media screen and (min-width:1124px) {
+
+    @media screen and (min-width:1024px) {
         .horizontal {
             grid-column-end: span 2;
         }
@@ -261,7 +258,7 @@ img{
             }
     }
 	
-**/
+
 
     @media screen and (max-width : 700px) {
         main.lightbox-wrapper {
@@ -349,7 +346,6 @@ while($events->have_posts())
             <div class="<?php echo $image['description'] ?>">
             <img src="<?php echo $image['url'] ?>" alt="">
             </div>
-            
         <?php } ?> 
     </main>
 <?php } ?>
@@ -378,7 +374,7 @@ while($events->have_posts())
     }
 
 
-Array.prototype.slice.call(divs).forEach(function (el) {
+Array.prototype.slice.call(divs).forEach(function (el) {        
 			el.addEventListener('click', function () {
 				this.classList.toggle('show');
 				body.classList.toggle('active');
@@ -389,6 +385,7 @@ Array.prototype.slice.call(divs).forEach(function (el) {
 });
 
     prev.addEventListener('click', function () {
+        this.preventDefault();
         const show = document.querySelector('.show');
         const event = document.createEvent('HTMLEvents');
         event.initEvent('click', true, false);
