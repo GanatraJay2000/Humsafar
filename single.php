@@ -95,6 +95,9 @@ background-color:black;
     .blocks-gallery-grid, .wp-block-gallery {
         width:100% !important;
     }
+    .wp-block-image{
+        margin-top:20px;
+    }
     img{
         width:100% !important;
     }
