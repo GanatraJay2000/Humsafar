@@ -45,7 +45,7 @@ foreach ( $slide_2 as $image ) {
     ?>
 
     <div class="block">
-    <a href="<?php echo $image['description'] ?>">
+    <a target="_blank" href="<?php echo $image['description'] ?>">
         <img class="clients_image_car" src="<?php echo $image['url'] ?>" alt="">                
     </a>
     </div>
