@@ -89,7 +89,7 @@
 			transition:0.3s;
 		}
 		p.title a:hover{
-			color:#b18a60;
+			color:#215a54;
 		}
 		p.content{
 			font-family: "Myriad Pro", sans-serif;
@@ -99,7 +99,7 @@
 			font-weight:200;
 		}
 		.read-more{
-			color:#b18a60 !important;
+			color:#215a54 !important;
 			font-weight:600;
 			font-family: "Myriad Pro", sans-serif;
 			font-size:17px;
@@ -114,7 +114,7 @@
 			width:0;
 			height:2px;
 			border-radius:4px;
-			background-color:#b18a60;
+			background-color:#215a54;
 			position:absolute;
 			bottom:-5px;
 			left:0;

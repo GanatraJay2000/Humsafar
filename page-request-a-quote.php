@@ -15,7 +15,7 @@ background-color: #fff;
         padding-top: 10px;
         margin-bottom: 0;
         text-align: center;
-        color: #2f2e2e;
+        color: #215a54;
         font-size: 45px;
     }
 
@@ -30,7 +30,7 @@ background-color: #fff;
         font-size: 40px;
         max-width: 600px;
         position: relative;
-        color: #b28f5e;
+        color: #215a54;
 
     }
 
@@ -44,7 +44,7 @@ background-color: #fff;
         position: absolute;
         top: 30%;
         z-index: -2;
-        background-color: #b28f5e;
+        background-color: #215a54;
     }
 
     .heading h1::before {
@@ -99,13 +99,13 @@ padding:0 !important;
     box-shadow: none !important;
 	border:none !important;
     background: transparent !important;
-	border-bottom:1px solid #B28F5E !important;
+	border-bottom:1px solid #215a54 !important;
 
 
 
 }
 .caldera-grid .btn {
-    background-color:#B28F5E !important;
+    background-color:#215a54 !important;
 	font-size:18px !important;
     color:white !important;
 }
@@ -137,7 +137,7 @@ background-color:grey !important;
   padding: 10px 10px;
 	text-align:center;
   float: left;
-  border-bottom: 3px solid #D2BDA0;
+  border-bottom: 3px solid #215a54;
 	font-size:18px;
 
 
@@ -148,7 +148,7 @@ background-color:grey !important;
 }
 
 .caldera-grid .breadcrumb li a {
-  color: #B28F5E;
+  color: #215a54;
 }
 
 .caldera-grid .breadcrumb li a:hover {
@@ -190,7 +190,7 @@ background-color:grey !important;
    }
 
    .frm_button_submit{
-    background-color:#e1b258 !important;
+    background-color:#215a54 !important;
     color:white !important;    
 border:0 !important;
 }

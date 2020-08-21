@@ -65,7 +65,7 @@
         top: -60px;
         right: -80px;
         /* background-image: url('<?php echo get_template_directory_uri() . "/assets_inside/greenbg1.png" ?>'); */
-         background-color: #f7efe9;
+         background-color: #d0f2e1;
     }
 
     .flex-row .image::after {
@@ -77,7 +77,7 @@
         position: absolute;
         top: -60px;
         left: -80px;
-        background-color: #f7efe9;
+        background-color: #d0f2e1;
     }
     .content.wrapper{
         margin:0 !important;
@@ -122,7 +122,7 @@
         }      
     }
     .read-more{
-			color:#b18a60 !important;
+			color:#215a54 !important;
 			font-weight:600;
 			font-family: "Myriad Pro", sans-serif;
 			font-size:17px;
@@ -137,7 +137,7 @@
 			width:0;
 			height:2px;
 			border-radius:4px;
-			background-color:#b18a60;
+			background-color:#215a54;
 			position:absolute;
 			bottom:-5px;
 			left:0;

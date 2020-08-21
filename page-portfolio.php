@@ -208,7 +208,7 @@ img{
         font-size: 40px;
         max-width: 600px;
         position: relative;
-        color: #b28f5e;
+        color: #215a54;
 
     }
 
@@ -222,7 +222,7 @@ img{
         position: absolute;
         top: 30%;
         z-index: -2;
-        background-color: #b28f5e;
+        background-color: #215a54;
     }
 
     .heading h1::before {

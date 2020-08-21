@@ -2,7 +2,7 @@
 <style>
 
 .frm_button_submit{
-    background-color:#e1b258 !important;
+    background-color:#215a54 !important;
     color:white !important;    
 border:0 !important;
 }	
@@ -17,7 +17,7 @@ font-family: "Myriad Pro",sans-serif !important;
         padding-top: 10px;
         margin-bottom: 0;
         text-align: center;
-        color: #2f2e2e;
+        color: #215a54;
         font-size: 45px;
     }
 
@@ -32,7 +32,7 @@ font-family: "Myriad Pro",sans-serif !important;
         font-size: 40px;
         max-width: 600px;
         position: relative;
-        color: #b28f5e;
+        color: #215a54;
 
     }
 
@@ -46,7 +46,7 @@ font-family: "Myriad Pro",sans-serif !important;
         position: absolute;
         top: 30%;
         z-index: -2;
-        background-color: #b28f5e;
+        background-color: #215a54;
     }
 
     .heading h1::before {
@@ -61,7 +61,7 @@ font-family: "Myriad Pro",sans-serif !important;
 
 hr{
 width:60px;
-background-color:#B28F5E;
+background-color:#215a54;
 height:1.5px;
 margin:15px auto;
 }
@@ -199,7 +199,7 @@ padding:20px;
             <h1><span>*</span></h1>
         </div>
 
-<div class="container">
+<div class="container mb-5">
 
 	<div class="row">
 	

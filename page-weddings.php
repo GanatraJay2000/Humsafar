@@ -22,7 +22,7 @@
         margin: 10px auto;
         margin-top: 0px;
         width: 100px;
-        border: 1px solid #a17e4d;
+        border: 1px solid #215a54;
         color: #a17e4d;
         font-family:"Playfair Display", serif;
     }
@@ -71,7 +71,7 @@
         padding: 5px 45px;
         font-size: 20px;
         color: white;
-        background-color: #cc9d5c;
+        background-color: #215a54;
         text-decoration: none !important;
     }
 
@@ -129,11 +129,11 @@
 
 
     .post:hover .heading {
-        color: #b28f5e;
+        color: #215a54;
         font-family:"Batang", serif;
     }
     .more{
-        background-color: #b28f5e;
+        background-color: #215a54;
         color:white;
         border:1px solid white;
         padding:3px 20px;
@@ -144,8 +144,8 @@
     }
     .more:hover{
         background-color: white;
-        color:#b28f5e;
-        border:1px solid #b28f5e;
+        color:#215a54;
+        border:1px solid #215a54;
         padding:3px 20px;
         width:fit-content;
         }
@@ -169,7 +169,7 @@
     }
 
     .testimonial-card {
-        border: 0.5px solid #cc9d5c88;
+        border: 0.5px solid #215a54;
         margin: 10px;
         margin-top: 50px;
         border-radius: 5px;
@@ -323,7 +323,7 @@
     .banner .link{
         text-decoration:none;
         padding:10px 20px;
-        background:linear-gradient(to right, #c78f41 20%, #cfa757 60%, #dbb25b);
+        background:#215a54;
         border-radius:40px;
         color:white;
         text-shadow:0px 0px 3px #00000066;
