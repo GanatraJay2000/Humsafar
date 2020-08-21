@@ -5,13 +5,13 @@
     }
 
     .title {
-        font-family: 'Batang';
+        font-family: 'Playfair Display',serif;
         font-size: 30px;
         margin-top:10px;
     }
 
     .title::first-letter {
-        font-family: 'Batang';
+        font-family: 'Playfair Display',serif;
         font-size: 100px;
     }
 

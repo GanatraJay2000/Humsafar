@@ -95,11 +95,20 @@ background-color:black;
     .blocks-gallery-grid, .wp-block-gallery {
         width:100% !important;
     }
+    .blocks-gallery-grid, .wp-block-gallery img{
+        width:100% !important;
+    }
     .wp-block-image{
         margin-top:20px;
     }
-    img{
+    .wp-block-image img{
         width:100% !important;
+    }
+
+    .list-group-item {
+        font-size:19px;
+        font-family:"Playfair Display",serif;
+        margin:20px 0;
     }
 
     @media screen and (max-width:1100px){
@@ -151,7 +160,7 @@ while(have_posts())
     <div class="content"><?php the_content(); ?></div>
     </div>
     <div class="col-md-3 col-12">
-    <h3 style="font-family:playfair display">Latest Blogs</h3>
+    <h1 class="mb-3" style="font-family:playfair display">Latest Blogs</h1>
     <div class="latest-blogs">
     <?php
     

@@ -83,7 +83,7 @@
 			text-decoration:none !important;
 			font-size:28px;
 			font-weight:500;
-			font-family:"Playfair Dsiplay", serif;
+			font-family:"Playfair Display", serif;
 			letter-spacing:1px;
 			line-height:1.3em;
 			transition:0.3s;
