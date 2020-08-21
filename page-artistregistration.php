@@ -79,7 +79,7 @@ REGISTRATION FORM
 </div></div>
 <div class="row" >
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-			<?php echo do_shortcode( '[formidable id=8]' ); ?>
+			<?php echo do_shortcode( '[formidable id=7]' ); ?>
 </div>
 </div>
 </div>
