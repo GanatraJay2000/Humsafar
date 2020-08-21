@@ -248,6 +248,9 @@ font-size:1em;
 }
 }
 
+img{
+  border:0;
+}
   </style>
   <?php $logos = new WP_Query(array(
     'post_type'=>'page',    
