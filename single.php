@@ -90,6 +90,13 @@ background-color:black;
         line-height: 30px;
 			word-spacing:5px;
 			font-size:16px;
+            margin: 15px 0px 40px;
+    }
+    .blocks-gallery-grid, .wp-block-gallery {
+        width:100% !important;
+    }
+    img{
+        width:100% !important;
     }
 
     @media screen and (max-width:1100px){
