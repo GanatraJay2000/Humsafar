@@ -123,12 +123,17 @@
 		.read-more:hover::after{
 			width:100%;
 		}
+		.post-part{
+			width:90%;
+			margin:0 auto;
+		}
 
 		@media screen and (max-width:768px){
 			.blog-post{
 				padding:0;
 				margin-bottom:50px;
 			}
+			
 		}
 		@media screen and (max-width:400px){
 			.heading-title h1{

@@ -122,9 +122,9 @@ while(have_posts())
 
 	
 <article class="post">
-    <div class="image">
+    <div class="image" style="margin-top:0;">
 	<?php foreach ( $thumbnail_image as $image ) {?>
-        <img style="" src="<?php echo $image['url'] ?>" alt="">
+        <img style="border:0;" src="<?php echo $image['url'] ?>" alt="">
     <?php } ?>
     <div class="image-text">
     <?php the_title(); ?>
