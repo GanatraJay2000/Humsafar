@@ -23,6 +23,12 @@ Version:1.0
   --Rubik: "Rubik", sans-serif;
 }
 
+p {
+    line-height: 30px !important;
+    word-spacing: 5px !important;
+    font-size: 16px !important;
+}
+
 
 
 * {
