@@ -19,8 +19,8 @@
 		}
 
 		.heading {
-			margin-top: 20px;
-			margin-bottom: 0;
+			margin-top: 30px;
+			margin-bottom: 30px;
 			text-align: center;			
             font-size: 45px;
             font-family:"Batang", serif !important;
@@ -63,6 +63,7 @@
 		}
 
 		.process-part {
+			width:90%;
 			margin: 100px auto;			
 		}
 
@@ -100,18 +101,18 @@
 			width: 200px;
             padding: 15px 0;
 			text-align: center;
-			border: 2px solid #dba960;
+			border: 2px solid #215a54;
 			color: white !important;
 			font-size: 17px;
 			cursor: pointer;
 			text-decoration: none;
 			margin: 10px 20px;
-			background-color: #dba960;
+			background-color: #215a54;
 			transition:0.2s ease-in;
 		}
 		.button:hover {
-			border: 2px solid #dba960;
-			color: #dba960 !important;
+			border: 2px solid #215a54;
+			color: #215a54 !important;
 			background-color: white;
 			text-decoration:none;
 		}
@@ -153,8 +154,7 @@
 			}
 
 			.process-part {
-				margin-top: 20vw;
-				//background-color: #c4bcbc;
+				margin-top: 100px;				
 			}
 
 			.process-text {
