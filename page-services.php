@@ -49,6 +49,9 @@
             width:100%;            
             padding:20px;
             font-family:"Myriad Pro",sans-serif;
+            line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
         }
         .text-small{
             font-size:17px;

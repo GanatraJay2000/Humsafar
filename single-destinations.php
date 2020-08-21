@@ -9,6 +9,11 @@ body{
 			/* line-height:30px; */
 		
 }
+.container * {
+	line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
+}
 
 h2,h4{
 	font-family:"Playfair Display", sans-serif;
@@ -17,9 +22,9 @@ h2,h4{
 	 column-count: 2;
   column-gap: 50px;
 	letter-spacing:0.6px;
-	line-height:25px;
-	font-size:16px;
-	word-spacing:6px;
+	line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
 }
 
 

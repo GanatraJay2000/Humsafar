@@ -20,7 +20,9 @@ h2,h4{
 .columns{
 	 column-count: 2;
   column-gap: 50px;
-
+line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
 }
 
 
