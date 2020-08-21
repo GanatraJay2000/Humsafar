@@ -13,6 +13,9 @@ body{
 			line-height:30px;
 		
 }
+.content.wrapper{	
+	padding:0 !important;
+}
 
 h2,h4{
 	font-family:"Playfair Display", sans-serif;

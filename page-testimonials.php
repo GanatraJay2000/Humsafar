@@ -36,6 +36,10 @@
         line-height: 30px;
         text-align: justify;  
         text-align-last:left;      
+        font-size:17px;
+        line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
     }
 
     .first-letter {

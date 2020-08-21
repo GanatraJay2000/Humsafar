@@ -97,6 +97,9 @@
 			letter-spacing:1.2px;
 			word-spacing: 5px;
 			font-weight:200;
+			line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
 		}
 		.read-more{
 			color:#215a54 !important;

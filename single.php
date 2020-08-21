@@ -86,6 +86,11 @@ background-color:black;
         padding: 10px 0px;
         /* margin-bottom:30px; */
     }
+    p{
+        line-height: 30px;
+			word-spacing:5px;
+			font-size:16px;
+    }
 
     @media screen and (max-width:1100px){
         .image img{             
