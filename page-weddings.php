@@ -473,27 +473,7 @@ $slide_1 = array_values($slide_1);
         company or the Dream wedding that you always planned in your head, We Humsafars are always with you in every
         moment.</p>
         </div>
-<div class="bg-1">
-    
-    <div class="sub-title">
-        ALWAYS CONSIDERED
-    </div>
-    <hr class="title">
-    <div class="sub-title">
-        <ul class="title">
-            <li>Dubai</li>
-            <li>Mumbai</li>
-            <li>Udaipur</li>
-            <li>Jaipur</li>
-            <li>Raigarh</li>
-            <li>Raipur</li>
-            <li>Bhilai</li>
-        </ul>
-    </div>
 
-    <center><a href="<?php echo site_url('/weddings/contact-us') ?>" class="inquire text-white">Contact Us</a></center>
-   
-</div>
 <div class="bg">
 <div class="services-on-home">
     <div class="heading"><i>Services</i></div>
