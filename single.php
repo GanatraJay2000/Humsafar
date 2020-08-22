@@ -121,7 +121,7 @@ background-color:black;
 position:absolute;
 bottom:-10px;
 left:0;
-width:30%;
+width:50px;
 height:2.5px;
 background-color:black;
     }
