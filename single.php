@@ -109,6 +109,20 @@ background-color:black;
         height:660px !important;
     }
 
+    h3{
+        font-size:30px;
+        font-family:"Playfair Display";
+        position:relative;
+    }
+    h3:after{
+position:absolute;
+bottom:-10px;
+left:0;
+width:30%;
+height:2.5px;
+background-color:black;
+    }
+
     .list-group-item {
         font-size:19px;
         font-family:"Playfair Display",serif;
