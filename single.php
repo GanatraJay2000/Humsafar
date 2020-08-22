@@ -113,6 +113,7 @@ background-color:black;
         font-size:30px;
         font-family:"Playfair Display";
         position:relative;
+        width:fit-content;
     }
     h3::after{
         display:block;
