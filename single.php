@@ -114,7 +114,9 @@ background-color:black;
         font-family:"Playfair Display";
         position:relative;
     }
-    h3:after{
+    h3::after{
+        display:block;
+        content:'';
 position:absolute;
 bottom:-10px;
 left:0;
