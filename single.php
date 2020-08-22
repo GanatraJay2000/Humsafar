@@ -97,12 +97,14 @@ background-color:black;
     }
     .blocks-gallery-grid, .wp-block-gallery img{
         width:100% !important;
+        height:660px !important;
     }
     .wp-block-image{
         margin-top:20px;
     }
     .wp-block-image img{
         width:100% !important;
+        height:660px !important;
     }
 
     .list-group-item {
