@@ -272,7 +272,7 @@ $slide_1 = rwmb_meta('slide_1', array( 'size' => 'large' ) , $post_id);
 </div>
 <div class="content wrapper">
 
-
+<?php the_content(); ?>
 
 <h1 id="ent_featured_artists" class="mt-4"><center>Featured Artists</center></h1>
 <hr></hr></br>
