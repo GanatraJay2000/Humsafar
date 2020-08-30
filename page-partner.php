@@ -99,7 +99,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 
-            <?php echo do_shortcode('[formidable id=2]'); ?>
+            <?php echo do_shortcode('[formidable id=8]'); ?>
 
 
 
