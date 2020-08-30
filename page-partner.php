@@ -19,29 +19,7 @@
         margin: 0;
     }
 
-    .heading h1 {
-        font-family: "Myriad Pro", sans-serif;
-        margin: auto;
-        text-align: center;
-        font-size: 40px;
-        max-width: 600px;
-        position: relative;
-        color: #215a54;
 
-    }
-
-    .heading h1::before,
-    .heading h1::after {
-        content: "";
-        display: block;
-        width: 150px;
-        height: 3px;
-        background: #000;
-        position: absolute;
-        top: 30%;
-        z-index: -2;
-        background-color: #215a54;
-    }
 
     .heading h1::before {
         left: 0;
