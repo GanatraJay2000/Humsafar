@@ -12,7 +12,6 @@
         padding-top: 10px;
         margin-bottom: 0;
         text-align: center;
-        color: #215a54;
         font-size: 45px;
     }
 
@@ -66,7 +65,7 @@
     }
 
     .frm_button_submit {
-        background-color: #215a54 !important;
+        background-color: #6ea6e7 !important;
         color: white !important;
         border: 0 !important;
 
