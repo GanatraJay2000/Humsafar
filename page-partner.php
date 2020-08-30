@@ -50,8 +50,7 @@
 
 
 <div class="heading">
-    <p>Become a Partner</p>
-    <h1><span>*</span></h1>
+    Become a Partner
 </div>
 <br>
 <div class="container mb-5">
