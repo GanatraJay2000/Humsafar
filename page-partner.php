@@ -21,21 +21,7 @@
 
 
 
-    .heading h1::before {
-        left: 0;
-        margin-left: 20%;
-    }
 
-    .heading h1:after {
-        right: 0;
-        margin-right: 20%;
-    }
-
-    .caldera-grid {
-        width: 70%;
-        margin: auto;
-        align: center;
-    }
 
     .frm_forms {
         width: 60% !important;
