@@ -1,232 +1,243 @@
 <?php get_header('new'); ?>
-  <style>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  .corp-part {
+    font-family: "Myriad Pro", sans-serif !important;
+    text-align: center;
+    position: relative;
+  }
 
-    .corp-part {
-      font-family: "Myriad Pro",sans-serif !important;
-      text-align: center;
-      position: relative;
-    }
+  /*********************************/
 
-    /*********************************/
+  .heading {
+    color: #292929;
+    font-size: 36px;
+    margin: 20px;
+  }
 
-    .heading {
-      color: #292929;
-      font-size: 36px;
-      margin: 20px;
+  .corp-container {
+    width: 90%;
+    height: 30vw;
+    /* //background-color: blue; */
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .image-container {
+    width: 65%;
+    height: 100%;
+    background-color: #77777777;
+  }
+
+  .image-container .image_block {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .image-container .image_block .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .image-container .image_block .image img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .image-container .image_text {
+    position: absolute;
+    top: 45%;
+    width: 60%;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Myriad Pro", sans-serif !important;
+    color: white;
+    padding: 10px 0;
+    background-color: #333339cd;
+  }
+
+  .image-container.image1 .image_text {
+    left: 0;
+  }
+
+  .image-container.image2 .image_text {
+    right: 0;
+  }
+
+  .image1 {
+    float: left;
+  }
+
+  .image2 {
+    float: right;
+  }
+
+  .text-container {
+    width: 34%;
+    height: 100%;
+    /* //background-color: yellow; */
+    text-align: justify;
+    font-family: "Myriad Pro", sans-serif !important;
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+  #text1 {
+    float: right;
+  }
+
+  #text2 {
+    float: left;
+    margin-top: 40px;
+  }
+
+  .text-container p {
+    padding: 20px;
+  }
+
+  .center-part {
+    position: absolute;
+    left: 25%;
+    top: 48%;
+    width: 50%;
+    height: 110px;
+    color: white;
+    font-size: 28px;
+    background-color: #000;
+    text-align: center;
+    font-family: "Myriad Pro", sans-serif !important;
+    z-index: 4;
+  }
+
+  .center-part p {
+    margin: 15px auto;
+    width: 70%;
+  }
+
+  @media screen and (max-width : 1200px) {
+    .content.wrapper {
+      padding: 0 !important;
     }
 
     .corp-container {
-      width: 90%;
-      height: 30vw;
-      /* //background-color: blue; */
+      width: 100%;
+      height: 100%;
       padding: 10px;
       margin: 10px auto;
     }
 
     .image-container {
-      width: 65%;
-      height: 100%;  
-      background-color:#77777777;    
-    }
-
-    .image-container .image_block{
-      height:100%;
-      width:100%;            
-      position:relative;
-    }
-        .image-container .image_block .image{
-          position:absolute;
-          top:0;
-          left:0;
-          height:100%;
-          width:100%;
-        }
-        .image-container .image_block .image img{          
-          height:100%;
-          width:100%;
-        }
-    .image-container .image_text{
-      position:absolute;  
-      top:45%;    
-      width:60%;
-      font-size:35px;  
-      font-weight:700;
-      font-family: "Myriad Pro",sans-serif !important;
-      color:white;
-      padding:10px 0;    
-      background-color:#333339cd;
-    }
-
-    .image-container.image1 .image_text{
-      left:0;
-    }
-    .image-container.image2 .image_text{
-      right:0;
-    }
-
-    .image1 {
-      float: left;
-    }
-
-    .image2 {
-      float: right;
+      width: 92%;
+      height: 40vw;
+      margin: auto;
     }
 
     .text-container {
-      width: 34%;
-      height: 100%;
-      /* //background-color: yellow; */
-      text-align: justify;
-      font-family: "Myriad Pro",sans-serif !important;
-      line-height: 22px;
-      font-size: 14px;
+      width: 100%;
+      margin: auto;
+      padding: 0px;
+      height: auto;
     }
 
-    #text1 {
-      float: right;
-    }
 
+    #image1,
+    #image2,
+    #text1,
     #text2 {
-      float: left;
-      margin-top: 40px;      
-    }
-
-    .text-container p {
-      padding: 20px;
+      float: none;
+      margin-top: 10px;
     }
 
     .center-part {
-      position: absolute;
-      left: 25%;
-      top: 48%;
-      width: 50%;
+      position: relative;
+      left: 15%;
+      width: 70%;
       height: 110px;
-      color: white;
-      font-size: 28px;
-      background-color: #000;
-      text-align: center;
-      font-family: "Myriad Pro",sans-serif !important;
-      z-index: 4;
     }
 
     .center-part p {
       margin: 15px auto;
-      width: 70%;
+      padding: 15px;
+      width: 90%;
     }
 
-    @media screen and (max-width : 1200px) {
-.content.wrapper{
-  padding:0 !important;
-}
-      .corp-container {
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-        margin: 10px auto;
-      }
+  }
 
-      .image-container {
-        width: 92%;
-        height: 40vw;
-        margin: auto;
-      }
+  @media screen and (max-width : 700px) {
 
-      .text-container {
-        width: 100%;        
-        margin: auto;
-        padding: 0px;
-        height:auto;
-      }
-
-
-      #image1,
-      #image2,
-      #text1,
-      #text2 {
-        float: none;
-        margin-top: 10px;
-      }
-
-      .center-part {
-        position: relative;
-        left: 15%;
-        width: 70%;
-        height: 110px;
-      }
-
-      .center-part p {
-        margin: 15px auto;
-        padding: 15px;
-        width: 90%;
-      }
-
+    .center-part {
+      position: relative;
+      margin: 0 !important;
+      font-size: 22px;
+      height: fit-content;
     }
 
-    @media screen and (max-width : 700px) {
-
-      .center-part {
-          position:relative;
-          margin:0 !important;
-        font-size: 22px;
-        height: fit-content;
-      }
-      .center-part p{
-          margin:0  auto !important;
-          padding:0 !important;
-      }
-
+    .center-part p {
+      margin: 0 auto !important;
+      padding: 0 !important;
     }
 
-    @media screen and (max-width : 420px) {
+  }
 
-      p{
-        padding: 0 !important;
-      }
-      img.image{
-        width:100%;
-      }
-      .image_text{
-        padding:0 !important;
-        top:auto !important;
-        bottom:0 !important;
-        height:fit-content;
-        font-size:16px !important;
-      }
-      .center-part {
-        font-size: 18px;
-        /* height: 100%; */
-      }
+  @media screen and (max-width : 420px) {
 
-      .text-container {
-        line-height: 18px;
-        font-size: 12px;
-      }
-
-      .image-container figure.slider figure figcaption {
-        font-size: 15px;
-      }
-
-      .corp-container {
-        width: 100%;
-        height:auto !important;
-        /* padding: 0 !important; */
-      }
-
-      .image-container{
-        width: 100%;        
-      }
-
+    p {
+      padding: 0 !important;
     }
 
+    img.image {
+      width: 100%;
+    }
 
-    /*********************************/
-  </style>
+    .image_text {
+      padding: 0 !important;
+      top: auto !important;
+      bottom: 0 !important;
+      height: fit-content;
+      font-size: 16px !important;
+    }
+
+    .center-part {
+      font-size: 18px;
+      /* height: 100%; */
+    }
+
+    .text-container {
+      line-height: 18px;
+      font-size: 12px;
+    }
+
+    .image-container figure.slider figure figcaption {
+      font-size: 15px;
+    }
+
+    .corp-container {
+      width: 100%;
+      height: auto !important;
+      /* padding: 0 !important; */
+    }
+
+    .image-container {
+      width: 100%;
+    }
+
+  }
+
+  img {
+    border: 0 !important;
+  }
+
+  /*********************************/
+</style>
 </head>
 
 <body>
@@ -238,27 +249,31 @@
       <hr style="margin:5px auto;width:60px;height:2px;border-width:0;background-color:#292929">
     </div>
     <?php $logos = new WP_Query(array(
-    'post_type'=>'page',    
-));
-$i=0; 
-$post_id = 108;
-// $post_id = 225;
-$slideshow = rwmb_meta('slide_images', array( 'size' => 'large' ) , $post_id);
-$slideshow = array_values($slideshow);
-$list_values = rwmb_meta('list', array() , $post_id);
-?>
+      'post_type' => 'page',
+    ));
+    $i = 0;
+    $post_id = 108;
+    // $post_id = 225;
+    $slideshow = rwmb_meta('slide_images', array('size' => 'large'), $post_id);
+    $slideshow = array_values($slideshow);
+    $list_values = rwmb_meta('list', array(), $post_id);
+    ?>
 
     <div class="corp-container">
       <div class="image-container image1 owl-carousel owl-theme">
-      <?php foreach ( $slideshow as $key=>$image ) { if($key == 3){break;} ?>         
-        <div class="image_block">
-          <img src="<?php echo $image['url'] ?>"  class="image"  alt="">
-          <div class="image_text">
-            <?php echo $list_values[$key][0]; // Name    ?>
+        <?php foreach ($slideshow as $key => $image) {
+          if ($key == 3) {
+            break;
+          } ?>
+          <div class="image_block">
+            <img src="<?php echo $image['url'] ?>" class="image" alt="">
+            <div class="image_text">
+              <?php echo $list_values[$key][0]; // Name    
+              ?>
+            </div>
           </div>
-        </div>              
-      <?php } ?>                   
-      </div>          
+        <?php } ?>
+      </div>
       <div id="text1" class="text-container">
         <p>Your corporate event is an important time to boost morale and get your business associates,
           partners, shareholders and contributors excited about your mission and where your company is
@@ -276,15 +291,18 @@ $list_values = rwmb_meta('list', array() , $post_id);
 
     <div class="corp-container">
       <div class="image-container image2 owl-carousel owl-theme">
-      <?php foreach ( $slideshow as $key=>$image ) { if($key >= 3){ ?>            
-        <div class="image_block">
-          <img src="<?php echo $image['url'] ?>"  class="image"  alt="">
-          <div class="image_text">
-            <?php echo $list_values[$key][0]; // Name    ?>
-          </div>
-        </div>              
-      <?php } } ?>
-    </div>           
+        <?php foreach ($slideshow as $key => $image) {
+          if ($key >= 3) { ?>
+            <div class="image_block">
+              <img src="<?php echo $image['url'] ?>" class="image" alt="">
+              <div class="image_text">
+                <?php echo $list_values[$key][0]; // Name    
+                ?>
+              </div>
+            </div>
+        <?php }
+        } ?>
+      </div>
       <div id="text2" class="text-container">
         <p>Humsafar Entertainments is your corporate planning specialists who is possessed with all of
           the talent and connections needed to coordinate an unforgettable event of any size or scope while
@@ -298,4 +316,4 @@ $list_values = rwmb_meta('list', array() , $post_id);
 
   </div>
 
-<?php get_footer('new'); ?>
+  <?php get_footer('new'); ?>
