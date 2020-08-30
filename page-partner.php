@@ -80,7 +80,7 @@
     }
 
     img {
-        border: 0;
+        border: 0 !important;
     }
 </style>
 
