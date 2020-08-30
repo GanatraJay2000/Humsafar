@@ -7,6 +7,7 @@
 
     }
 
+
     .heading {
         padding-top: 10px;
         margin-bottom: 0;
@@ -76,6 +77,10 @@
         .frm_forms {
             width: 100% !important;
         }
+    }
+
+    img {
+        border: 0;
     }
 </style>
 
